@@ -1,0 +1,559 @@
+###############################################################################
+#                                                                             #
+# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         20/Apr/2015  19:51:20 #
+# Copyright 2004-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Core               =  plain                                              #
+#    Code model         =  banked                                             #
+#    Data model         =  large                                              #
+#    Calling convention =  xdata reentrant                                    #
+#    Constant location  =  data_rom                                           #
+#    Dptr setup         =  1,16                                               #
+#    Source file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice    #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\Source\EnddeviceVariable.c                 #
+#    Command line       =  -f "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic #
+#                          e Project for editing\Projects\zstack\MyEnddevice\ #
+#                          EndDevice\CC2530DB\..\..\..\Tools\CC2530DB\f8wEnde #
+#                          v.cfg" (-DCPU32MHZ -DROOT=__near_func              #
+#                          -DMAC_CFG_TX_DATA_MAX=3 -DMAC_CFG_TX_MAX=6         #
+#                          -DMAC_CFG_RX_MAX=3) -f "C:\Users\William\Desktop\± #
+#                          œ“µ…Ëº∆\SRC\EndDevice Project for                  #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"        #
+#                          (-DZIGBEEPRO -DSECURE=0 -DZG_SECURE_DYNAMIC=0      #
+#                          -DREFLECTOR -DDEFAULT_CHANLIST=0x02000000          #
+#                          -DZDAPP_CONFIG_PAN_ID=0xFFFF                       #
+#                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MA #
+#                          SK=0x007F -DBEACON_REQUEST_DELAY=100               #
+#                          -DBEACON_REQ_DELAY_MASK=0x00FF                     #
+#                          -DLINK_STATUS_JITTER_MASK=0x007F                   #
+#                          -DROUTE_EXPIRY_TIME=30 -DAPSC_ACK_WAIT_DURATION_PO #
+#                          LLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7             #
+#                          -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3    #
+#                          -DNWK_MAX_DATA_RETRIES=2                           #
+#                          -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9         #
+#                          -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40           #
+#                          -DNWK_MAX_BINDING_ENTRIES=4                        #
+#                          -DMAX_BINDING_CLUSTER_IDS=4 "-DDEFAULT_KEY={0x01,  #
+#                          0x03, 0x05, 0x07, 0x09, 0x0B, 0x0D, 0x0F, 0x00,    #
+#                          0x02, 0x04, 0x06, 0x08, 0x0A, 0x0C, 0x0D}"         #
+#                          -DMAC_MAX_FRAME_SIZE=116                           #
+#                          -DZDNWKMGR_MIN_TRANSMISSIONS=20 "-DCONST=const     #
+#                          __code" -DGENERIC=__generic                        #
+#                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000        #
+#                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)   #
+#                          -DREJOIN_POLL_RATE=440 "C:\Users\William\Desktop\± #
+#                          œ“µ…Ëº∆\SRC\EndDevice Project for                  #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\Sour #
+#                          ce\EnddeviceVariable.c" -D NWK_AUTO_POLL -D        #
+#                          NV_RESTORE=1 -D xZTOOL_P1 -D xMT_TASK -D           #
+#                          xMT_SYS_FUNC -D xMT_ZDO_FUNC -D                    #
+#                          xLCD_SUPPORTED=DEBUG -lC                           #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\List\" -lA            #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\List\"                #
+#                          --diag_suppress Pe001,Pa010 -o                     #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\Obj\" -e              #
+#                          --no_code_motion --debug --core=plain --dptr=16,1  #
+#                          --data_model=large --code_model=banked             #
+#                          --calling_convention=xdata_reentrant               #
+#                          --place_constants=data_rom --nr_virtual_regs 16    #
+#                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic #
+#                          e Project for editing\Projects\zstack\MyEnddevice\ #
+#                          EndDevice\CC2530DB\" -I "C:\Users\William\Desktop\ #
+#                          ±œ“µ…Ëº∆\SRC\EndDevice Project for                 #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\Source\" -I "C:\Users\William\Desktop\±œ“µ #
+#                          …Ëº∆\SRC\EndDevice Project for                     #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\ZMain\TI2530DB\" -I                  #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\hal\inc #
+#                          lude\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\E #
+#                          ndDevice Project for editing\Projects\zstack\MyEnd #
+#                          device\EndDevice\CC2530DB\..\..\..\..\..\Component #
+#                          s\hal\target\CC2530EB\" -I                         #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\mac\inc #
+#                          lude\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\E #
+#                          ndDevice Project for editing\Projects\zstack\MyEnd #
+#                          device\EndDevice\CC2530DB\..\..\..\..\..\Component #
+#                          s\mac\high_level\" -I "C:\Users\William\Desktop\±œ #
+#                          “µ…Ëº∆\SRC\EndDevice Project for                   #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\..\..\Components\mac\low_level\srf04 #
+#                          \" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDe #
+#                          vice Project for editing\Projects\zstack\MyEnddevi #
+#                          ce\EndDevice\CC2530DB\..\..\..\..\..\Components\ma #
+#                          c\low_level\srf04\single_chip\" -I                 #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\mt\"    #
+#                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic #
+#                          e Project for editing\Projects\zstack\MyEnddevice\ #
+#                          EndDevice\CC2530DB\..\..\..\..\..\Components\osal\ #
+#                          include\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SR #
+#                          C\EndDevice Project for editing\Projects\zstack\My #
+#                          Enddevice\EndDevice\CC2530DB\..\..\..\..\..\Compon #
+#                          ents\services\saddr\" -I                           #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\service #
+#                          s\sdata\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SR #
+#                          C\EndDevice Project for editing\Projects\zstack\My #
+#                          Enddevice\EndDevice\CC2530DB\..\..\..\..\..\Compon #
+#                          ents\stack\af\" -I "C:\Users\William\Desktop\±œ“µ… #
+#                          Ëº∆\SRC\EndDevice Project for                      #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\..\..\Components\stack\nwk\" -I      #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\stack\s #
+#                          api\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\En #
+#                          dDevice Project for editing\Projects\zstack\MyEndd #
+#                          evice\EndDevice\CC2530DB\..\..\..\..\..\Components #
+#                          \stack\sec\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆ #
+#                          \SRC\EndDevice Project for                         #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\..\..\Components\stack\sys\" -I      #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\stack\z #
+#                          do\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\End #
+#                          Device Project for editing\Projects\zstack\MyEndde #
+#                          vice\EndDevice\CC2530DB\..\..\..\..\..\Components\ #
+#                          zmac\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\E #
+#                          ndDevice Project for editing\Projects\zstack\MyEnd #
+#                          device\EndDevice\CC2530DB\..\..\..\..\..\Component #
+#                          s\zmac\f8w\" -Ohz                                  #
+#    List file          =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice    #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\List\EnddeviceVariabl #
+#                          e.lst                                              #
+#    Object file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice    #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\Obj\EnddeviceVariable #
+#                          .r51                                               #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zstack\MyEnddevice\EndDevice\Source\EnddeviceVariable.c
+      1          #include "EnddeviceVariable.h"
+      2          
+
+   \                                 In  segment XDATA_ROM_C, align 1
+      3          const cId_t EnddeviceApp_ClusterList[EnddeviceApp_MAX_CLUSTERS] =
+   \                     EnddeviceApp_ClusterList:
+   \   000000   0100         DW 1
+   \   000002   0200         DW 2
+   \   000004   0300         DW 3
+   \   000006   0400         DW 4
+      4          {
+      5          
+      6           ENDDEVICE_DATA_CLUSTERID,              
+      7           COORDINATOR_COMMAND_CLUSTERID,   
+      8           COORDINATOR_DATA_CLUSTERID,
+      9           COORDINATOR_BROADCAST_CLUSTERID   
+     10          };
+     11          
+
+   \                                 In  segment XDATA_ROM_C, align 1
+     12          const SimpleDescriptionFormat_t EnddeviceApp_SimpleDesc =
+   \                     EnddeviceApp_SimpleDesc:
+   \   000000   14           DB 20
+   \   000001   080F         DW 3848
+   \   000003   0100         DW 1
+   \   000005   00           DB 0
+   \   000006   04           DB 4
+   \   000007   ....         DW EnddeviceApp_ClusterList
+   \   000009   04           DB 4
+   \   00000A   ....         DW EnddeviceApp_ClusterList
+     13          {
+     14            EnddeviceApp_ENDPOINT,              //  int Endpoint;
+     15            EnddeviceApp_PROFID,                //  uint16 AppProfId[2];
+     16            EnddeviceApp_DEVICEID,              //  uint16 AppDeviceId[2];
+     17            EnddeviceApp_DEVICE_VERSION,        //  int   AppDevVer:4;
+     18            EnddeviceApp_FLAGS,                 //  int   AppFlags:4;
+     19            EnddeviceApp_MAX_CLUSTERS,          //  uint8  AppNumInClusters;
+     20            (cId_t *)EnddeviceApp_ClusterList,  //  uint8 *pAppInClusterList;
+     21            EnddeviceApp_MAX_CLUSTERS,          //  uint8  AppNumInClusters;
+     22            (cId_t *)EnddeviceApp_ClusterList   //  uint8 *pAppInClusterList;
+     23          };
+     24          
+     25          // This is the Endpoint/Interface description.  It is defined here, but
+     26          // filled-in in EnddeviceApp_Init().  Another way to go would be to fill
+     27          // in the structure here and make it a "const" (in code space).  The
+     28          // way it's defined in this sample app it is define in RAM.
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     29          endPointDesc_t EnddeviceApp_epDesc;
+   \                     EnddeviceApp_epDesc:
+   \   000000                DS 6
+   \   000006                REQUIRE __INIT_XDATA_Z
+     30          
+     31          /*********************************************************************
+     32           * EXTERNAL VARIABLES
+     33           */
+     34          
+     35          /*********************************************************************
+     36           * EXTERNAL FUNCTIONS
+     37           */
+     38          
+     39          /*********************************************************************
+     40           * LOCAL VARIABLES
+     41           */
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     42          uint8 EnddeviceApp_TaskID;   // Task ID for internal task/event processing
+   \                     EnddeviceApp_TaskID:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+     43                                    // This variable will be received when
+     44                                    // EnddeviceApp_Init() is called.
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     45          devStates_t EnddeviceApp_NwkState;
+   \                     EnddeviceApp_NwkState:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+     46          
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     47          uint8 EnddeviceApp_TransID;  // This is the unique message ID (counter)
+   \                     EnddeviceApp_TransID:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+     48          
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     49          afAddrType_t EnddeviceApp_Broadcast_DstAddr;
+   \                     EnddeviceApp_Broadcast_DstAddr:
+   \   000000                DS 12
+   \   00000C                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     50          afAddrType_t EnddeviceApp_Group_DstAddr;
+   \                     EnddeviceApp_Group_DstAddr:
+   \   000000                DS 12
+   \   00000C                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     51          afAddrType_t EnddeviceApp_P2PDstAddr;     //µ„∂‘µ„
+   \                     EnddeviceApp_P2PDstAddr:
+   \   000000                DS 12
+   \   00000C                REQUIRE __INIT_XDATA_Z
+     52          
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     53          aps_Group_t EnddeviceApp_Group;
+   \                     EnddeviceApp_Group:
+   \   000000                DS 18
+   \   000012                REQUIRE __INIT_XDATA_Z
+     54          
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     55          uint8 EnddeviceAppPeriodicCounter = 0;
+   \                     EnddeviceAppPeriodicCounter:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     56          uint8 EnddeviceAppFlashCounter = 0;
+   \                     EnddeviceAppFlashCounter:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     57          uint16 GroupId = 0x0000;
+   \                     GroupId:
+   \   000000                DS 2
+   \   000002                REQUIRE __INIT_XDATA_Z
+     58          
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     59          uint16 PANID = 0;
+   \                     PANID:
+   \   000000                DS 2
+   \   000002                REQUIRE __INIT_XDATA_Z
+     60          //uint8 MyNewDeviceId = 1;
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+     61          uint8 MyDeviceId = 1;// the device ID
+   \                     MyDeviceId:
+   \   000000                DS 1
+   \   000001                REQUIRE `?<Initializer for MyDeviceId>`
+   \   000001                REQUIRE __INIT_XDATA_I
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     62          bool  End_Mod = FALSE;// false :the device is operated manually, true :automatically
+   \                     End_Mod:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+     63          bool  Real_Tem_Mod = TRUE; // the real temperature mod ,true to be the room temperature,
+   \                     Real_Tem_Mod:
+   \   000000                DS 1
+   \   000001                REQUIRE `?<Initializer for Real_Tem_Mod>`
+   \   000001                REQUIRE __INIT_XDATA_I
+     64          //false to be the floor
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     65          bool  POWER = FALSE; //false: the device is powered off ,ture :power on 
+   \                     POWER:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+     66          bool TOKEN = TRUE; // the TOKEN of the device,false:taken,true:given
+   \                     TOKEN:
+   \   000000                DS 1
+   \   000001                REQUIRE `?<Initializer for TOKEN>`
+   \   000001                REQUIRE __INIT_XDATA_I
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     67          bool End_Ack = FALSE; // the ack of the gateway.true:ack ,false :not ack
+   \                     End_Ack:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     68          uint8 MsgBuf[9] =  {0};// the message to be send
+   \                     MsgBuf:
+   \   000000                DS 9
+   \   000009                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     69          uint8 WiFi_Mode = 0;  // the wifi mode 
+   \                     WiFi_Mode:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     70          int8  rssi = 0;    //  the rssi 
+   \                     rssi:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+     71          
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+     72          uint8 SetRM_Temperature = 22; // the Room Set Temperature
+   \                     SetRM_Temperature:
+   \   000000                DS 1
+   \   000001                REQUIRE `?<Initializer for SetRM_Temperature>`
+   \   000001                REQUIRE __INIT_XDATA_I
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+     73          uint8 SetFL_Temperature = 30; // the floor Set Temperature
+   \                     SetFL_Temperature:
+   \   000000                DS 1
+   \   000001                REQUIRE `?<Initializer for SetFL_Temperature>`
+   \   000001                REQUIRE __INIT_XDATA_I
+     74          
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     75          bool Error = FALSE;// if the NTC is not installed or short curcuit , error is set to true;
+   \                     Error:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     76          bool Error_Last = FALSE;//  error of last time
+   \                     Error_Last:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+     77          
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+     78          int16 RM_Temperature = 156; // the Room Temperature
+   \                     RM_Temperature:
+   \   000000                DS 2
+   \   000002                REQUIRE `?<Initializer for RM_Temperature>`
+   \   000002                REQUIRE __INIT_XDATA_I
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+     79          int16 FL_Temperature = 405; // the floor Temperature
+   \                     FL_Temperature:
+   \   000000                DS 2
+   \   000002                REQUIRE `?<Initializer for FL_Temperature>`
+   \   000002                REQUIRE __INIT_XDATA_I
+     80          
+     81          
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     82          bool LINKED = FALSE;
+   \                     LINKED:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     83          uint8  send_tick  =0;       // for sending message
+   \                     send_tick:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     84          uint8 sample_tick =0;    // use for sample the temperature
+   \                     sample_tick:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+     85          
+     86          /*****************for debug use******************************/
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+     87          bool ID_OR_NET = TRUE; // for change the device ID or PANID,true for the device ID,
+   \                     ID_OR_NET:
+   \   000000                DS 1
+   \   000001                REQUIRE `?<Initializer for ID_OR_NET>`
+   \   000001                REQUIRE __INIT_XDATA_I
+     88          //false to be another
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     89          bool BIT_SEL = FALSE; //  set the bit to be set
+   \                     BIT_SEL:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     90          uint8  debugnum = 0; // the num for debug use
+   \                     debugnum:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     91          uint8  debughighnum = 0; // for the high bit
+   \                     debughighnum:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     92          uint8  debuglownum = 0;// for the low bit
+   \                     debuglownum:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     93          bool  DebugMode = FALSE;// for the debug mode  to use
+   \                     DebugMode:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     94          bool  Debug_Blink = FALSE; // for the information in the lcd in debug mode to blink
+   \                     Debug_Blink:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     95          uint8 Debug_Blink_Count = 0;// for the information in the lcd in debug mode to blink
+   \                     Debug_Blink_Count:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for MyDeviceId>`:
+   \   000000   01           DB 1
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for Real_Tem_Mod>`:
+   \   000000   01           DB 1
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for TOKEN>`:
+   \   000000   01           DB 1
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for SetRM_Temperature>`:
+   \   000000   16           DB 22
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for SetFL_Temperature>`:
+   \   000000   1E           DB 30
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for RM_Temperature>`:
+   \   000000   9C00         DW 156
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for FL_Temperature>`:
+   \   000000   9501         DW 405
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for ID_OR_NET>`:
+   \   000000   01           DB 1
+
+
+   Segment part sizes:
+
+     Function/Label                       Bytes
+     --------------                       -----
+     EnddeviceApp_ClusterList                8
+     EnddeviceApp_SimpleDesc                12
+     EnddeviceApp_epDesc                     6
+     EnddeviceApp_TaskID                     1
+     EnddeviceApp_NwkState                   1
+     EnddeviceApp_TransID                    1
+     EnddeviceApp_Broadcast_DstAddr         12
+     EnddeviceApp_Group_DstAddr             12
+     EnddeviceApp_P2PDstAddr                12
+     EnddeviceApp_Group                     18
+     EnddeviceAppPeriodicCounter             1
+     EnddeviceAppFlashCounter                1
+     GroupId                                 2
+     PANID                                   2
+     MyDeviceId                              1
+     End_Mod                                 1
+     Real_Tem_Mod                            1
+     POWER                                   1
+     TOKEN                                   1
+     End_Ack                                 1
+     MsgBuf                                  9
+     WiFi_Mode                               1
+     rssi                                    1
+     SetRM_Temperature                       1
+     SetFL_Temperature                       1
+     Error                                   1
+     Error_Last                              1
+     RM_Temperature                          2
+     FL_Temperature                          2
+     LINKED                                  1
+     send_tick                               1
+     sample_tick                             1
+     ID_OR_NET                               1
+     BIT_SEL                                 1
+     debugnum                                1
+     debughighnum                            1
+     debuglownum                             1
+     DebugMode                               1
+     Debug_Blink                             1
+     Debug_Blink_Count                       1
+     ?<Initializer for MyDeviceId>           1
+     ?<Initializer for Real_Tem_Mod>         1
+     ?<Initializer for TOKEN>                1
+     ?<Initializer for SetRM_Temperature>    1
+     ?<Initializer for SetFL_Temperature>    1
+     ?<Initializer for RM_Temperature>       2
+     ?<Initializer for FL_Temperature>       2
+     ?<Initializer for ID_OR_NET>            1
+
+ 
+ 10 bytes in segment XDATA_I
+ 10 bytes in segment XDATA_ID
+ 20 bytes in segment XDATA_ROM_C
+ 95 bytes in segment XDATA_Z
+ 
+  10 bytes of CODE  memory
+  20 bytes of CONST memory
+ 105 bytes of XDATA memory
+
+Errors: none
+Warnings: none

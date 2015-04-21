@@ -1,0 +1,338 @@
+###############################################################################
+#                                                                             #
+# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         20/Apr/2015  20:02:42 #
+# Copyright 2004-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Core               =  plain                                              #
+#    Code model         =  banked                                             #
+#    Data model         =  large                                              #
+#    Calling convention =  xdata reentrant                                    #
+#    Constant location  =  data_rom                                           #
+#    Dptr setup         =  1,16                                               #
+#    Source file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice    #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\Source\EnddeviceSampleADC.c                #
+#    Command line       =  -f "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic #
+#                          e Project for editing\Projects\zstack\MyEnddevice\ #
+#                          EndDevice\CC2530DB\..\..\..\Tools\CC2530DB\f8wEnde #
+#                          v.cfg" (-DCPU32MHZ -DROOT=__near_func              #
+#                          -DMAC_CFG_TX_DATA_MAX=3 -DMAC_CFG_TX_MAX=6         #
+#                          -DMAC_CFG_RX_MAX=3) -f "C:\Users\William\Desktop\± #
+#                          œ“µ…Ëº∆\SRC\EndDevice Project for                  #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"        #
+#                          (-DZIGBEEPRO -DSECURE=0 -DZG_SECURE_DYNAMIC=0      #
+#                          -DREFLECTOR -DDEFAULT_CHANLIST=0x02000000          #
+#                          -DZDAPP_CONFIG_PAN_ID=0xFFFF                       #
+#                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MA #
+#                          SK=0x007F -DBEACON_REQUEST_DELAY=100               #
+#                          -DBEACON_REQ_DELAY_MASK=0x00FF                     #
+#                          -DLINK_STATUS_JITTER_MASK=0x007F                   #
+#                          -DROUTE_EXPIRY_TIME=30 -DAPSC_ACK_WAIT_DURATION_PO #
+#                          LLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7             #
+#                          -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3    #
+#                          -DNWK_MAX_DATA_RETRIES=2                           #
+#                          -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9         #
+#                          -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40           #
+#                          -DNWK_MAX_BINDING_ENTRIES=4                        #
+#                          -DMAX_BINDING_CLUSTER_IDS=4 "-DDEFAULT_KEY={0x01,  #
+#                          0x03, 0x05, 0x07, 0x09, 0x0B, 0x0D, 0x0F, 0x00,    #
+#                          0x02, 0x04, 0x06, 0x08, 0x0A, 0x0C, 0x0D}"         #
+#                          -DMAC_MAX_FRAME_SIZE=116                           #
+#                          -DZDNWKMGR_MIN_TRANSMISSIONS=20 "-DCONST=const     #
+#                          __code" -DGENERIC=__generic                        #
+#                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000        #
+#                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)   #
+#                          -DREJOIN_POLL_RATE=440 "C:\Users\William\Desktop\± #
+#                          œ“µ…Ëº∆\SRC\EndDevice Project for                  #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\Sour #
+#                          ce\EnddeviceSampleADC.c" -D NWK_AUTO_POLL -D       #
+#                          NV_RESTORE=1 -D xZTOOL_P1 -D xMT_TASK -D           #
+#                          xMT_SYS_FUNC -D xMT_ZDO_FUNC -D                    #
+#                          xLCD_SUPPORTED=DEBUG -lC                           #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\List\" -lA            #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\List\"                #
+#                          --diag_suppress Pe001,Pa010 -o                     #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\Obj\" -e              #
+#                          --no_code_motion --debug --core=plain --dptr=16,1  #
+#                          --data_model=large --code_model=banked             #
+#                          --calling_convention=xdata_reentrant               #
+#                          --place_constants=data_rom --nr_virtual_regs 16    #
+#                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic #
+#                          e Project for editing\Projects\zstack\MyEnddevice\ #
+#                          EndDevice\CC2530DB\" -I "C:\Users\William\Desktop\ #
+#                          ±œ“µ…Ëº∆\SRC\EndDevice Project for                 #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\Source\" -I "C:\Users\William\Desktop\±œ“µ #
+#                          …Ëº∆\SRC\EndDevice Project for                     #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\ZMain\TI2530DB\" -I                  #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\hal\inc #
+#                          lude\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\E #
+#                          ndDevice Project for editing\Projects\zstack\MyEnd #
+#                          device\EndDevice\CC2530DB\..\..\..\..\..\Component #
+#                          s\hal\target\CC2530EB\" -I                         #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\mac\inc #
+#                          lude\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\E #
+#                          ndDevice Project for editing\Projects\zstack\MyEnd #
+#                          device\EndDevice\CC2530DB\..\..\..\..\..\Component #
+#                          s\mac\high_level\" -I "C:\Users\William\Desktop\±œ #
+#                          “µ…Ëº∆\SRC\EndDevice Project for                   #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\..\..\Components\mac\low_level\srf04 #
+#                          \" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDe #
+#                          vice Project for editing\Projects\zstack\MyEnddevi #
+#                          ce\EndDevice\CC2530DB\..\..\..\..\..\Components\ma #
+#                          c\low_level\srf04\single_chip\" -I                 #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\mt\"    #
+#                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic #
+#                          e Project for editing\Projects\zstack\MyEnddevice\ #
+#                          EndDevice\CC2530DB\..\..\..\..\..\Components\osal\ #
+#                          include\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SR #
+#                          C\EndDevice Project for editing\Projects\zstack\My #
+#                          Enddevice\EndDevice\CC2530DB\..\..\..\..\..\Compon #
+#                          ents\services\saddr\" -I                           #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\service #
+#                          s\sdata\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SR #
+#                          C\EndDevice Project for editing\Projects\zstack\My #
+#                          Enddevice\EndDevice\CC2530DB\..\..\..\..\..\Compon #
+#                          ents\stack\af\" -I "C:\Users\William\Desktop\±œ“µ… #
+#                          Ëº∆\SRC\EndDevice Project for                      #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\..\..\Components\stack\nwk\" -I      #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\stack\s #
+#                          api\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\En #
+#                          dDevice Project for editing\Projects\zstack\MyEndd #
+#                          evice\EndDevice\CC2530DB\..\..\..\..\..\Components #
+#                          \stack\sec\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆ #
+#                          \SRC\EndDevice Project for                         #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\..\..\Components\stack\sys\" -I      #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\stack\z #
+#                          do\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\End #
+#                          Device Project for editing\Projects\zstack\MyEndde #
+#                          vice\EndDevice\CC2530DB\..\..\..\..\..\Components\ #
+#                          zmac\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\E #
+#                          ndDevice Project for editing\Projects\zstack\MyEnd #
+#                          device\EndDevice\CC2530DB\..\..\..\..\..\Component #
+#                          s\zmac\f8w\" -Ohz                                  #
+#    List file          =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice    #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\List\EnddeviceSampleA #
+#                          DC.lst                                             #
+#    Object file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice    #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\Obj\EnddeviceSampleAD #
+#                          C.r51                                              #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zstack\MyEnddevice\EndDevice\Source\EnddeviceSampleADC.c
+      1          
+      2          #include "EnddeviceVariable.h"
+      3          #include "EnddeviceSampleADC.h"
+      4          #include "hal_adc.h"
+      5          
+      6          /*********************************************************************
+      7           * @fn      TemperADCSampleAndAverage
+      8           *
+      9           * @brief   This function sample the ADC sampletimes and return the average value
+     10           *
+     11           * @param   sampletimes-the times sampled, 
+     12           *           
+     13           *          chanel-which kind of ADC value you want to return
+     14           *
+     15           *          0-room temperature,1-floor temperature
+     16           *
+     17           * @return  the average value
+     18           *******************************************************************************/
+     19          
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     20          uint16 TemperADCSampleAndAverage(uint8 sampletimes,uint8 chanel)
+   \                     TemperADCSampleAndAverage:
+     21           {
+   \   000000   74E8         MOV     A,#-0x18
+   \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
+   \   000005                ; Saved register size: 24
+   \   000005                ; Auto size: 0
+   \   000005   89..         MOV     ?V0 + 6,R1
+   \   000007   EA           MOV     A,R2
+   \   000008   FE           MOV     R6,A
+     22                  uint8 i = 0;
+     23                  uint32 Result_Sum = 0; // average result
+   \   000009   90....       MOV     DPTR,#__Constant_0
+   \   00000C   78..         MOV     R0,#?V0 + 12
+   \   00000E   12....       LCALL   ?L_MOV_X
+     24                  uint16 Result_Max = 0x0000;
+   \   000011   75..00       MOV     ?V0 + 0,#0x0
+   \   000014   75..00       MOV     ?V0 + 1,#0x0
+     25                  uint16 Result_Min = 0xffff;
+   \   000017   75..FF       MOV     ?V0 + 4,#-0x1
+   \   00001A   75..FF       MOV     ?V0 + 5,#-0x1
+     26                  uint16 ADC_Result = 0x0000;
+   \   00001D   7A00         MOV     R2,#0x0
+   \   00001F   7B00         MOV     R3,#0x0
+     27                  for(i = 0; i < sampletimes; i++)
+   \   000021   7F00         MOV     R7,#0x0
+   \   000023   8033         SJMP    ??TemperADCSampleAndAverage_0
+     28                  {
+     29                    if(chanel == 0)
+     30                    {
+     31                      ADC_Result = HalSampleRoomTemperatureADC();
+     32                    }
+     33                    else if(chanel == 1)
+   \                     ??TemperADCSampleAndAverage_1:
+   \   000025   7401         MOV     A,#0x1
+   \   000027   6E           XRL     A,R6
+   \   000028   7003         JNZ     ??TemperADCSampleAndAverage_2
+     34                    {
+     35                      ADC_Result = HalSampleFloorTemperatureADC();
+   \   00002A                ; Setup parameters for call to function HalSampleFloorTemperatureADC
+   \   00002A   12....       LCALL   ??HalSampleFloorTemperatureADC?relay
+     36                    }
+     37                    else;
+     38              /******************find the minium and maxium value of the RM ADC results**********/
+     39                    if(ADC_Result < Result_Min)
+   \                     ??TemperADCSampleAndAverage_2:
+   \   00002D   C3           CLR     C
+   \   00002E   EA           MOV     A,R2
+   \   00002F   95..         SUBB    A,?V0 + 4
+   \   000031   EB           MOV     A,R3
+   \   000032   95..         SUBB    A,?V0 + 5
+   \   000034   5004         JNC     ??TemperADCSampleAndAverage_3
+     40                    {
+     41                      Result_Min = ADC_Result;
+   \   000036   8A..         MOV     ?V0 + 4,R2
+   \   000038   8B..         MOV     ?V0 + 5,R3
+     42                    }
+     43                    if(ADC_Result > Result_Max)
+   \                     ??TemperADCSampleAndAverage_3:
+   \   00003A   C3           CLR     C
+   \   00003B   E5..         MOV     A,?V0 + 0
+   \   00003D   9A           SUBB    A,R2
+   \   00003E   E5..         MOV     A,?V0 + 1
+   \   000040   9B           SUBB    A,R3
+   \   000041   5004         JNC     ??TemperADCSampleAndAverage_4
+     44                    {
+     45                      Result_Max = ADC_Result;
+   \   000043   8A..         MOV     ?V0 + 0,R2
+   \   000045   8B..         MOV     ?V0 + 1,R3
+     46                    } 
+     47                    /******************find the minium and maxium value of the FL ADC results**********/ 
+     48                    
+     49                    Result_Sum += ADC_Result;
+   \                     ??TemperADCSampleAndAverage_4:
+   \   000047   8A..         MOV     ?V0 + 8,R2
+   \   000049   8B..         MOV     ?V0 + 9,R3
+   \   00004B   E4           CLR     A
+   \   00004C   F5..         MOV     ?V0 + 10,A
+   \   00004E   F5..         MOV     ?V0 + 11,A
+   \   000050   78..         MOV     R0,#?V0 + 12
+   \   000052   79..         MOV     R1,#?V0 + 8
+   \   000054   12....       LCALL   ?L_ADD
+   \   000057   0F           INC     R7
+   \                     ??TemperADCSampleAndAverage_0:
+   \   000058   EF           MOV     A,R7
+   \   000059   C3           CLR     C
+   \   00005A   95..         SUBB    A,?V0 + 6
+   \   00005C   5008         JNC     ??TemperADCSampleAndAverage_5
+   \   00005E   EE           MOV     A,R6
+   \   00005F   70C4         JNZ     ??TemperADCSampleAndAverage_1
+   \   000061                ; Setup parameters for call to function HalSampleRoomTemperatureADC
+   \   000061   12....       LCALL   ??HalSampleRoomTemperatureADC?relay
+   \   000064   80C7         SJMP    ??TemperADCSampleAndAverage_2
+     50                  } 
+     51                  
+     52                  Result_Sum = Result_Sum - Result_Max - Result_Min;
+     53                  Result_Sum /= (sampletimes - 2); // average result
+     54                  return Result_Sum;
+   \                     ??TemperADCSampleAndAverage_5:
+   \   000066   E4           CLR     A
+   \   000067   F5..         MOV     ?V0 + 2,A
+   \   000069   F5..         MOV     ?V0 + 3,A
+   \   00006B   78..         MOV     R0,#?V0 + 12
+   \   00006D   79..         MOV     R1,#?V0 + 0
+   \   00006F   12....       LCALL   ?L_SUB
+   \   000072   85....       MOV     ?V0 + 0,?V0 + 4
+   \   000075   85....       MOV     ?V0 + 1,?V0 + 5
+   \   000078   78..         MOV     R0,#?V0 + 12
+   \   00007A   79..         MOV     R1,#?V0 + 0
+   \   00007C   12....       LCALL   ?L_SUB
+   \   00007F   85....       MOV     ?V0 + 0,?V0 + 6
+   \   000082   E5..         MOV     A,?V0 + 0
+   \   000084   24FE         ADD     A,#-0x2
+   \   000086   F5..         MOV     ?V0 + 0,A
+   \   000088   E4           CLR     A
+   \   000089   34FF         ADDC    A,#-0x1
+   \   00008B   F5..         MOV     ?V0 + 1,A
+   \   00008D   33           RLC     A
+   \   00008E   95E0         SUBB    A,0xE0 /* A   */
+   \   000090   F5..         MOV     ?V0 + 2,A
+   \   000092   F5..         MOV     ?V0 + 3,A
+   \   000094   78..         MOV     R0,#?V0 + 12
+   \   000096   79..         MOV     R1,#?V0 + 0
+   \   000098   12....       LCALL   ?UL_DIV_MOD
+   \   00009B   AA..         MOV     R2,?V0 + 12
+   \   00009D   AB..         MOV     R3,?V0 + 13
+   \   00009F   7F10         MOV     R7,#0x10
+   \   0000A1   02....       LJMP    ?BANKED_LEAVE_XDATA
+     55           }
+
+   \                                 In  segment XDATA_ROM_C, align 1
+   \                     __Constant_0:
+   \   000000   00000000     DD 0
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??TemperADCSampleAndAverage?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    TemperADCSampleAndAverage
+
+   Maximum stack usage in bytes:
+
+     Function                       ISTACK PSTACK XSTACK
+     --------                       ------ ------ ------
+     TemperADCSampleAndAverage          0      0     24
+       -> HalSampleFloorTemperatureADC
+                                        0      0     48
+       -> HalSampleRoomTemperatureADC
+                                        0      0     48
+
+
+   Segment part sizes:
+
+     Function/Label                    Bytes
+     --------------                    -----
+     TemperADCSampleAndAverage          164
+     __Constant_0                         4
+     ??TemperADCSampleAndAverage?relay    6
+
+ 
+ 164 bytes in segment BANKED_CODE
+   6 bytes in segment BANK_RELAYS
+   4 bytes in segment XDATA_ROM_C
+ 
+ 170 bytes of CODE  memory
+   0 bytes of CONST memory (+ 4 bytes shared)
+
+Errors: none
+Warnings: none

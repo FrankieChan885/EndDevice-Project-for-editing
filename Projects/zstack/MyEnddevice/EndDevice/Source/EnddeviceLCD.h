@@ -1,0 +1,1 @@
+extern void EnddeviceApp_HandleLCD(void);

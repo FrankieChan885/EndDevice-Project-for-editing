@@ -1,0 +1,1045 @@
+///////////////////////////////////////////////////////////////////////////////
+//                                                                            /
+// IAR C/C++ Compiler V8.10.1.10194/W32 for 8051        20/Apr/2015  19:51:20 /
+// Copyright 2004-2011 IAR Systems AB.                                        /
+//                                                                            /
+//    Core               =  plain                                             /
+//    Code model         =  banked                                            /
+//    Data model         =  large                                             /
+//    Calling convention =  xdata reentrant                                   /
+//    Constant location  =  data_rom                                          /
+//    Dptr setup         =  1,16                                              /
+//    Source file        =  C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice   /
+//                          Project for editing\Projects\zstack\MyEnddevice\E /
+//                          ndDevice\Source\NTC_Table.c                       /
+//    Command line       =  -f "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevi /
+//                          ce Project for editing\Projects\zstack\MyEnddevic /
+//                          e\EndDevice\CC2530DB\..\..\..\Tools\CC2530DB\f8wE /
+//                          ndev.cfg" (-DCPU32MHZ -DROOT=__near_func          /
+//                          -DMAC_CFG_TX_DATA_MAX=3 -DMAC_CFG_TX_MAX=6        /
+//                          -DMAC_CFG_RX_MAX=3) -f "C:\Users\William\Desktop\ /
+//                          ±ÏÒµÉè¼Æ\SRC\EndDevice Project for                /
+//                          editing\Projects\zstack\MyEnddevice\EndDevice\CC2 /
+//                          530DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"      /
+//                          (-DZIGBEEPRO -DSECURE=0 -DZG_SECURE_DYNAMIC=0     /
+//                          -DREFLECTOR -DDEFAULT_CHANLIST=0x02000000         /
+//                          -DZDAPP_CONFIG_PAN_ID=0xFFFF                      /
+//                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_M /
+//                          ASK=0x007F -DBEACON_REQUEST_DELAY=100             /
+//                          -DBEACON_REQ_DELAY_MASK=0x00FF                    /
+//                          -DLINK_STATUS_JITTER_MASK=0x007F                  /
+//                          -DROUTE_EXPIRY_TIME=30 -DAPSC_ACK_WAIT_DURATION_P /
+//                          OLLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7           /
+//                          -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3   /
+//                          -DNWK_MAX_DATA_RETRIES=2                          /
+//                          -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9        /
+//                          -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40          /
+//                          -DNWK_MAX_BINDING_ENTRIES=4                       /
+//                          -DMAX_BINDING_CLUSTER_IDS=4                       /
+//                          "-DDEFAULT_KEY={0x01, 0x03, 0x05, 0x07, 0x09,     /
+//                          0x0B, 0x0D, 0x0F, 0x00, 0x02, 0x04, 0x06, 0x08,   /
+//                          0x0A, 0x0C, 0x0D}" -DMAC_MAX_FRAME_SIZE=116       /
+//                          -DZDNWKMGR_MIN_TRANSMISSIONS=20 "-DCONST=const    /
+//                          __code" -DGENERIC=__generic                       /
+//                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000       /
+//                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)  /
+//                          -DREJOIN_POLL_RATE=440 "C:\Users\William\Desktop\ /
+//                          ±ÏÒµÉè¼Æ\SRC\EndDevice Project for                /
+//                          editing\Projects\zstack\MyEnddevice\EndDevice\Sou /
+//                          rce\NTC_Table.c" -D NWK_AUTO_POLL -D              /
+//                          NV_RESTORE=1 -D xZTOOL_P1 -D xMT_TASK -D          /
+//                          xMT_SYS_FUNC -D xMT_ZDO_FUNC -D                   /
+//                          xLCD_SUPPORTED=DEBUG -lC                          /
+//                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice  /
+//                          Project for editing\Projects\zstack\MyEnddevice\E /
+//                          ndDevice\CC2530DB\EndDeviceEB\List\" -lA          /
+//                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice  /
+//                          Project for editing\Projects\zstack\MyEnddevice\E /
+//                          ndDevice\CC2530DB\EndDeviceEB\List\"              /
+//                          --diag_suppress Pe001,Pa010 -o                    /
+//                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice  /
+//                          Project for editing\Projects\zstack\MyEnddevice\E /
+//                          ndDevice\CC2530DB\EndDeviceEB\Obj\" -e            /
+//                          --no_code_motion --debug --core=plain             /
+//                          --dptr=16,1 --data_model=large                    /
+//                          --code_model=banked --calling_convention=xdata_re /
+//                          entrant --place_constants=data_rom                /
+//                          --nr_virtual_regs 16 -I                           /
+//                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice  /
+//                          Project for editing\Projects\zstack\MyEnddevice\E /
+//                          ndDevice\CC2530DB\" -I "C:\Users\William\Desktop\ /
+//                          ±ÏÒµÉè¼Æ\SRC\EndDevice Project for                /
+//                          editing\Projects\zstack\MyEnddevice\EndDevice\CC2 /
+//                          530DB\..\Source\" -I "C:\Users\William\Desktop\±Ï /
+//                          ÒµÉè¼Æ\SRC\EndDevice Project for                  /
+//                          editing\Projects\zstack\MyEnddevice\EndDevice\CC2 /
+//                          530DB\..\..\..\ZMain\TI2530DB\" -I                /
+//                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice  /
+//                          Project for editing\Projects\zstack\MyEnddevice\E /
+//                          ndDevice\CC2530DB\..\..\..\..\..\Components\hal\i /
+//                          nclude\" -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SR /
+//                          C\EndDevice Project for                           /
+//                          editing\Projects\zstack\MyEnddevice\EndDevice\CC2 /
+//                          530DB\..\..\..\..\..\Components\hal\target\CC2530 /
+//                          EB\" -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\En /
+//                          dDevice Project for editing\Projects\zstack\MyEnd /
+//                          device\EndDevice\CC2530DB\..\..\..\..\..\Componen /
+//                          ts\mac\include\" -I "C:\Users\William\Desktop\±ÏÒ /
+//                          µÉè¼Æ\SRC\EndDevice Project for                   /
+//                          editing\Projects\zstack\MyEnddevice\EndDevice\CC2 /
+//                          530DB\..\..\..\..\..\Components\mac\high_level\"  /
+//                          -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevi /
+//                          ce Project for editing\Projects\zstack\MyEnddevic /
+//                          e\EndDevice\CC2530DB\..\..\..\..\..\Components\ma /
+//                          c\low_level\srf04\" -I "C:\Users\William\Desktop\ /
+//                          ±ÏÒµÉè¼Æ\SRC\EndDevice Project for                /
+//                          editing\Projects\zstack\MyEnddevice\EndDevice\CC2 /
+//                          530DB\..\..\..\..\..\Components\mac\low_level\srf /
+//                          04\single_chip\" -I "C:\Users\William\Desktop\±ÏÒ /
+//                          µÉè¼Æ\SRC\EndDevice Project for                   /
+//                          editing\Projects\zstack\MyEnddevice\EndDevice\CC2 /
+//                          530DB\..\..\..\..\..\Components\mt\" -I           /
+//                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice  /
+//                          Project for editing\Projects\zstack\MyEnddevice\E /
+//                          ndDevice\CC2530DB\..\..\..\..\..\Components\osal\ /
+//                          include\" -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\S /
+//                          RC\EndDevice Project for                          /
+//                          editing\Projects\zstack\MyEnddevice\EndDevice\CC2 /
+//                          530DB\..\..\..\..\..\Components\services\saddr\"  /
+//                          -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevi /
+//                          ce Project for editing\Projects\zstack\MyEnddevic /
+//                          e\EndDevice\CC2530DB\..\..\..\..\..\Components\se /
+//                          rvices\sdata\" -I "C:\Users\William\Desktop\±ÏÒµÉ /
+//                          è¼Æ\SRC\EndDevice Project for                     /
+//                          editing\Projects\zstack\MyEnddevice\EndDevice\CC2 /
+//                          530DB\..\..\..\..\..\Components\stack\af\" -I     /
+//                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice  /
+//                          Project for editing\Projects\zstack\MyEnddevice\E /
+//                          ndDevice\CC2530DB\..\..\..\..\..\Components\stack /
+//                          \nwk\" -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\ /
+//                          EndDevice Project for editing\Projects\zstack\MyE /
+//                          nddevice\EndDevice\CC2530DB\..\..\..\..\..\Compon /
+//                          ents\stack\sapi\" -I "C:\Users\William\Desktop\±Ï /
+//                          ÒµÉè¼Æ\SRC\EndDevice Project for                  /
+//                          editing\Projects\zstack\MyEnddevice\EndDevice\CC2 /
+//                          530DB\..\..\..\..\..\Components\stack\sec\" -I    /
+//                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice  /
+//                          Project for editing\Projects\zstack\MyEnddevice\E /
+//                          ndDevice\CC2530DB\..\..\..\..\..\Components\stack /
+//                          \sys\" -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\ /
+//                          EndDevice Project for editing\Projects\zstack\MyE /
+//                          nddevice\EndDevice\CC2530DB\..\..\..\..\..\Compon /
+//                          ents\stack\zdo\" -I "C:\Users\William\Desktop\±ÏÒ /
+//                          µÉè¼Æ\SRC\EndDevice Project for                   /
+//                          editing\Projects\zstack\MyEnddevice\EndDevice\CC2 /
+//                          530DB\..\..\..\..\..\Components\zmac\" -I         /
+//                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice  /
+//                          Project for editing\Projects\zstack\MyEnddevice\E /
+//                          ndDevice\CC2530DB\..\..\..\..\..\Components\zmac\ /
+//                          f8w\" -Ohz                                        /
+//    List file          =  C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice   /
+//                          Project for editing\Projects\zstack\MyEnddevice\E /
+//                          ndDevice\CC2530DB\EndDeviceEB\List\NTC_Table.s51  /
+//                                                                            /
+//                                                                            /
+///////////////////////////////////////////////////////////////////////////////
+
+        NAME NTC_Table
+
+        RTMODEL "__SystemLibrary", "CLib"
+        RTMODEL "__calling_convention", "xdata_reentrant"
+        RTMODEL "__code_model", "banked"
+        RTMODEL "__core", "plain"
+        RTMODEL "__data_model", "large"
+        RTMODEL "__dptr_size", "16"
+        RTMODEL "__extended_stack", "disabled"
+        RTMODEL "__location_for_constants", "data"
+        RTMODEL "__number_of_dptrs", "1"
+        RTMODEL "__rt_version", "1"
+
+        RSEG DOVERLAY:DATA:NOROOT(0)
+        RSEG IOVERLAY:IDATA:NOROOT(0)
+        RSEG ISTACK:IDATA:NOROOT(0)
+        RSEG PSTACK:XDATA:NOROOT(0)
+        RSEG XSTACK:XDATA:NOROOT(0)
+
+        EXTERN ?BANKED_ENTER_XDATA
+        EXTERN ?BANKED_LEAVE_XDATA
+        EXTERN ?BDISPATCH
+        EXTERN ?SS_SHR
+        EXTERN ?US_DIV_MOD
+        EXTERN ?V0
+
+        PUBLIC ??EnddeviceApp_LookupTemp?relay
+        FUNCTION ??EnddeviceApp_LookupTemp?relay,0203H
+        PUBLIC EnddeviceApp_LookupTemp
+        FUNCTION EnddeviceApp_LookupTemp,0203H
+        ARGFRAME XSTACK, 0, STACK
+        LOCFRAME XSTACK, 12, STACK
+        PUBLIC ntcTableAdcDat
+        PUBLIC ntcTableTemp
+        
+        CFI Names cfiNames0
+        CFI StackFrame CFA_SP SP IDATA
+        CFI StackFrame CFA_PSP16 PSP16 XDATA
+        CFI StackFrame CFA_XSP16 XSP16 XDATA
+        CFI StaticOverlayFrame CFA_IOVERLAY IOVERLAY
+        CFI StaticOverlayFrame CFA_DOVERLAY DOVERLAY
+        CFI Resource `PSW.CY`:1, `B.BR0`:1, `B.BR1`:1, `B.BR2`:1, `B.BR3`:1
+        CFI Resource `B.BR4`:1, `B.BR5`:1, `B.BR6`:1, `B.BR7`:1, `VB.BR8`:1
+        CFI Resource `VB.BR9`:1, `VB.BR10`:1, `VB.BR11`:1, `VB.BR12`:1
+        CFI Resource `VB.BR13`:1, `VB.BR14`:1, `VB.BR15`:1, VB:8, B:8, A:8
+        CFI Resource PSW:8, DPL0:8, DPH0:8, R0:8, R1:8, R2:8, R3:8, R4:8, R5:8
+        CFI Resource R6:8, R7:8, V0:8, V1:8, V2:8, V3:8, V4:8, V5:8, V6:8, V7:8
+        CFI Resource V8:8, V9:8, V10:8, V11:8, V12:8, V13:8, V14:8, V15:8, SP:8
+        CFI Resource PSPH:8, PSPL:8, PSP16:16, XSPH:8, XSPL:8, XSP16:16
+        CFI VirtualResource ?RET:24
+        CFI Resource ?BRET_EXT:8
+        CFI VirtualResource ?RET_HIGH:8, ?RET_LOW:8
+        CFI ResourceParts PSP16 PSPH, PSPL
+        CFI ResourceParts XSP16 XSPH, XSPL
+        CFI ResourceParts ?RET ?BRET_EXT, ?RET_HIGH, ?RET_LOW
+        CFI EndNames cfiNames0
+        
+        CFI Common cfiCommon0 Using cfiNames0
+        CFI CodeAlign 1
+        CFI DataAlign -1
+        CFI ReturnAddress ?RET CODE
+        CFI CFA_DOVERLAY Used
+        CFI CFA_IOVERLAY Used
+        CFI CFA_SP SP+-3
+        CFI CFA_PSP16 PSP16+0
+        CFI CFA_XSP16 XSP16+0
+        CFI `PSW.CY` SameValue
+        CFI `B.BR0` SameValue
+        CFI `B.BR1` SameValue
+        CFI `B.BR2` SameValue
+        CFI `B.BR3` SameValue
+        CFI `B.BR4` SameValue
+        CFI `B.BR5` SameValue
+        CFI `B.BR6` SameValue
+        CFI `B.BR7` SameValue
+        CFI `VB.BR8` SameValue
+        CFI `VB.BR9` SameValue
+        CFI `VB.BR10` SameValue
+        CFI `VB.BR11` SameValue
+        CFI `VB.BR12` SameValue
+        CFI `VB.BR13` SameValue
+        CFI `VB.BR14` SameValue
+        CFI `VB.BR15` SameValue
+        CFI VB SameValue
+        CFI B Undefined
+        CFI A Undefined
+        CFI PSW SameValue
+        CFI DPL0 SameValue
+        CFI DPH0 SameValue
+        CFI R0 Undefined
+        CFI R1 Undefined
+        CFI R2 Undefined
+        CFI R3 Undefined
+        CFI R4 Undefined
+        CFI R5 Undefined
+        CFI R6 SameValue
+        CFI R7 SameValue
+        CFI V0 SameValue
+        CFI V1 SameValue
+        CFI V2 SameValue
+        CFI V3 SameValue
+        CFI V4 SameValue
+        CFI V5 SameValue
+        CFI V6 SameValue
+        CFI V7 SameValue
+        CFI V8 SameValue
+        CFI V9 SameValue
+        CFI V10 SameValue
+        CFI V11 SameValue
+        CFI V12 SameValue
+        CFI V13 SameValue
+        CFI V14 SameValue
+        CFI V15 SameValue
+        CFI PSPH Undefined
+        CFI PSPL Undefined
+        CFI XSPH Undefined
+        CFI XSPL Undefined
+        CFI ?RET Concat
+        CFI ?BRET_EXT Frame(CFA_SP, 3)
+        CFI ?RET_HIGH Frame(CFA_SP, 2)
+        CFI ?RET_LOW Frame(CFA_SP, 1)
+        CFI EndCommon cfiCommon0
+        
+        
+        CFI Common cfiCommon1 Using cfiNames0
+        CFI CodeAlign 1
+        CFI DataAlign -1
+        CFI ReturnAddress ?RET CODE
+        CFI CFA_DOVERLAY Used
+        CFI CFA_IOVERLAY Used
+        CFI CFA_SP SP+-2
+        CFI CFA_PSP16 PSP16+0
+        CFI CFA_XSP16 XSP16+0
+        CFI `PSW.CY` SameValue
+        CFI `B.BR0` SameValue
+        CFI `B.BR1` SameValue
+        CFI `B.BR2` SameValue
+        CFI `B.BR3` SameValue
+        CFI `B.BR4` SameValue
+        CFI `B.BR5` SameValue
+        CFI `B.BR6` SameValue
+        CFI `B.BR7` SameValue
+        CFI `VB.BR8` SameValue
+        CFI `VB.BR9` SameValue
+        CFI `VB.BR10` SameValue
+        CFI `VB.BR11` SameValue
+        CFI `VB.BR12` SameValue
+        CFI `VB.BR13` SameValue
+        CFI `VB.BR14` SameValue
+        CFI `VB.BR15` SameValue
+        CFI VB SameValue
+        CFI B SameValue
+        CFI A SameValue
+        CFI PSW SameValue
+        CFI DPL0 SameValue
+        CFI DPH0 SameValue
+        CFI R0 SameValue
+        CFI R1 SameValue
+        CFI R2 SameValue
+        CFI R3 SameValue
+        CFI R4 SameValue
+        CFI R5 SameValue
+        CFI R6 SameValue
+        CFI R7 SameValue
+        CFI V0 SameValue
+        CFI V1 SameValue
+        CFI V2 SameValue
+        CFI V3 SameValue
+        CFI V4 SameValue
+        CFI V5 SameValue
+        CFI V6 SameValue
+        CFI V7 SameValue
+        CFI V8 SameValue
+        CFI V9 SameValue
+        CFI V10 SameValue
+        CFI V11 SameValue
+        CFI V12 SameValue
+        CFI V13 SameValue
+        CFI V14 SameValue
+        CFI V15 SameValue
+        CFI PSPH Undefined
+        CFI PSPL Undefined
+        CFI XSPH Undefined
+        CFI XSPL Undefined
+        CFI ?RET Concat
+        CFI ?BRET_EXT SameValue
+        CFI ?RET_HIGH Frame(CFA_SP, 2)
+        CFI ?RET_LOW Frame(CFA_SP, 1)
+        CFI EndCommon cfiCommon1
+        
+EnddeviceApp_LookupTemp SYMBOL "EnddeviceApp_LookupTemp"
+??EnddeviceApp_LookupTemp?relay SYMBOL "?relay", EnddeviceApp_LookupTemp
+
+// C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice Project for editing\Projects\zstack\MyEnddevice\EndDevice\Source\NTC_Table.c
+//    1 #include "EnddeviceVariable.h"
+//    2 #include "NTC_Table.h"
+//    3 
+//    4 uint16 EnddeviceApp_LookupTemp( uint16 adcDat);
+//    5 
+
+        RSEG XDATA_ROM_C:CONST:REORDER:NOROOT(0)
+        DATA8
+//    6 const unsigned int ntcTableAdcDat[NTC_TABLE_SIZE] = {
+ntcTableAdcDat:
+        DATA16
+        DW 3496
+        DW 3466
+        DW 3435
+        DW 3404
+        DW 3371
+        DW 3338
+        DW 3303
+        DW 3268
+        DW 3232
+        DW 3195
+        DW 3157
+        DW 3118
+        DW 3079
+        DW 3038
+        DW 2998
+        DW 2956
+        DW 2914
+        DW 2871
+        DW 2827
+        DW 2783
+        DW 2739
+        DW 2694
+        DW 2648
+        DW 2603
+        DW 2557
+        DW 2511
+        DW 2464
+        DW 2418
+        DW 2371
+        DW 2325
+        DW 2278
+        DW 2232
+        DW 2186
+        DW 2140
+        DW 2094
+        DW 2048
+        DW 2003
+        DW 1958
+        DW 1913
+        DW 1869
+        DW 1825
+        DW 1782
+        DW 1739
+        DW 1697
+        DW 1655
+        DW 1614
+        DW 1574
+        DW 1534
+        DW 1495
+        DW 1457
+        DW 1419
+        DW 1382
+        DW 1346
+        DW 1310
+        DW 1275
+        DW 1241
+        DW 1208
+        DW 1175
+        DW 1143
+        DW 1112
+        DW 1082
+        DW 1052
+        DW 1023
+        DW 995
+        DW 967
+        DW 940
+        DW 914
+        DW 888
+        DW 863
+        DW 839
+        DW 816
+        DW 793
+        DW 770
+        DW 749
+        DW 728
+        DW 707
+        DW 687
+        DW 668
+        DW 649
+        DW 631
+        DW 613
+        DW 596
+        DW 579
+        DW 563
+        DW 547
+        DW 532
+//    7 	0xDA8,0xD8A,0xD6B,0xD4C,0xD2B,
+//    8 	0xD0A,0xCE7,0xCC4,0xCA0,0xC7B,
+//    9 	0xC55,0xC2E,0xC07,0xBDE,0xBB6,
+//   10 	0xB8C,0xB62,0xB37,0xB0B,0xADF,
+//   11 	0xAB3,0xA86,0xA58,0xA2B,0x9FD,
+//   12 	0x9CF,0x9A0,0x972,0x943,0x915,
+//   13 	0x8E6,0x8B8,0x88A,0x85C,0x82E,
+//   14 	0x800,0x7D3,0x7A6,0x779,0x74D,
+//   15 	0x721,0x6F6,0x6CB,0x6A1,0x677,
+//   16 	0x64E,0x626,0x5FE,0x5D7,0x5B1,
+//   17 	0x58B,0x566,0x542,0x51E,0x4FB,
+//   18 	0x4D9,0x4B8,0x497,0x477,0x458,
+//   19 	0x43A,0x41C,0x3FF,0x3E3,0x3C7,
+//   20 	0x3AC,0x392,0x378,0x35F,0x347,
+//   21 	0x330,0x319,0x302,0x2ED,0x2D8,
+//   22 	0x2C3,0x2AF,0x29C,0x289,0x277,
+//   23 	0x265,0x254,0x243,0x233,0x223,
+//   24 	0x214
+//   25 };
+//   26 
+
+        RSEG XDATA_ROM_C:CONST:REORDER:NOROOT(0)
+        DATA8
+//   27 const int ntcTableTemp[NTC_TABLE_SIZE] = {
+ntcTableTemp:
+        DATA16
+        DW -100
+        DW -90
+        DW -80
+        DW -70
+        DW -60
+        DW -50
+        DW -40
+        DW -30
+        DW -20
+        DW -10
+        DW 0
+        DW 10
+        DW 20
+        DW 30
+        DW 40
+        DW 50
+        DW 60
+        DW 70
+        DW 80
+        DW 90
+        DW 10
+        DW 110
+        DW 120
+        DW 130
+        DW 140
+        DW 150
+        DW 160
+        DW 170
+        DW 180
+        DW 190
+        DW 200
+        DW 210
+        DW 220
+        DW 230
+        DW 240
+        DW 250
+        DW 260
+        DW 270
+        DW 280
+        DW 290
+        DW 300
+        DW 310
+        DW 320
+        DW 330
+        DW 340
+        DW 350
+        DW 360
+        DW 370
+        DW 380
+        DW 390
+        DW 400
+        DW 410
+        DW 420
+        DW 430
+        DW 440
+        DW 450
+        DW 460
+        DW 470
+        DW 480
+        DW 490
+        DW 500
+        DW 510
+        DW 520
+        DW 530
+        DW 540
+        DW 550
+        DW 560
+        DW 570
+        DW 580
+        DW 590
+        DW 600
+        DW 610
+        DW 620
+        DW 630
+        DW 640
+        DW 650
+        DW 660
+        DW 670
+        DW 680
+        DW 690
+        DW 700
+        DW 710
+        DW 720
+        DW 730
+        DW 740
+        DW 750
+//   28     -100, -90, -80, -70, -60, -50, -40, -30, -20, -10, 
+//   29 	 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 
+//   30 	10, 110, 120, 130, 140, 150, 160, 170, 180, 190, 
+//   31 	200, 210, 220, 230, 240, 250, 260, 270, 280, 290, 
+//   32 	300, 310, 320, 330, 340, 350, 360, 370, 380, 390, 
+//   33 	400, 410, 420, 430, 440, 450, 460, 470, 480, 490, 
+//   34 	500, 510, 520, 530, 540, 550, 560, 570, 580, 590, 
+//   35 	600, 610, 620, 630, 640, 650, 660, 670, 680, 690, 
+//   36 	700, 710, 720, 730, 740, 750
+//   37 };
+//   38 
+//   39 
+//   40 
+
+        RSEG BANKED_CODE:CODE:NOROOT(0)
+//   41 uint16 EnddeviceApp_LookupTemp( uint16 adcDat )
+EnddeviceApp_LookupTemp:
+        CFI Block cfiBlock0 Using cfiCommon0
+        CFI Function EnddeviceApp_LookupTemp
+        CODE
+//   42 {
+        MOV     A,#-0xc
+        LCALL   ?BANKED_ENTER_XDATA
+        CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+        CFI DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+        CFI ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+        CFI ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+        CFI ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+        CFI R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+        CFI V3 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+        CFI V2 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+        CFI V1 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+        CFI V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+        CFI VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
+        CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+        CFI CFA_SP SP+0
+        CFI CFA_XSP16 add(XSP16, 12)
+        ; Saved register size: 12
+        ; Auto size: 0
+//   43     uint16 temp;
+//   44 	uint8 mid, left = 0, right = NTC_TABLE_SIZE - 1;
+        MOV     R5,#0x0
+        MOV     R6,#0x55
+//   45 	if (adcDat == ntcTableAdcDat[0])
+        MOV     A,#-0x58
+        XRL     A,R2
+        JNZ     ??EnddeviceApp_LookupTemp_0
+        MOV     A,#0xd
+        XRL     A,R3
+??EnddeviceApp_LookupTemp_0:
+        JNZ     ??EnddeviceApp_LookupTemp_1
+//   46 	{
+//   47 		return ntcTableTemp[0];
+        MOV     R2,#-0x64
+        MOV     R3,#-0x1
+        LJMP    ??EnddeviceApp_LookupTemp_2 & 0xFFFF
+//   48 	}
+//   49 	else if (adcDat == ntcTableAdcDat[NTC_TABLE_SIZE - 1])
+??EnddeviceApp_LookupTemp_1:
+        MOV     A,#0x14
+        XRL     A,R2
+        JNZ     ??EnddeviceApp_LookupTemp_3
+        MOV     A,#0x2
+        XRL     A,R3
+??EnddeviceApp_LookupTemp_3:
+        JNZ     ??EnddeviceApp_LookupTemp_4
+//   50 	{
+//   51 		return ntcTableTemp[NTC_TABLE_SIZE - 1];
+        MOV     R2,#-0x12
+        MOV     R3,#0x2
+        LJMP    ??EnddeviceApp_LookupTemp_2 & 0xFFFF
+//   52 	}
+//   53 	else
+//   54 	{
+//   55 		do
+//   56 		{
+//   57 			mid = (left + right) >> 1;
+??EnddeviceApp_LookupTemp_4:
+        MOV     ?V0 + 2,R5
+        MOV     ?V0 + 0,R6
+        MOV     A,?V0 + 2
+        ADD     A,?V0 + 0
+        MOV     ?V0 + 0,A
+        CLR     A
+        ADDC    A,#0x0
+        MOV     ?V0 + 1,A
+        MOV     A,#0x1
+        MOV     R0,#?V0 + 0
+        LCALL   ?SS_SHR
+        MOV     R4,?V0 + 0
+//   58 			if (adcDat < ntcTableAdcDat[mid])
+        MOV     A,R4
+        CLR     C
+        RLC     A
+        MOV     R0,A
+        CLR     A
+        RLC     A
+        MOV     R1,A
+        LCALL   ?Subroutine2 & 0xFFFF
+??CrossCallReturnLabel_4:
+        MOVX    A,@DPTR
+        MOV     R0,A
+        INC     DPTR
+        MOVX    A,@DPTR
+        MOV     R1,A
+        CLR     C
+        MOV     A,R2
+        SUBB    A,R0
+        MOV     A,R3
+        SUBB    A,R1
+        JNC     ??EnddeviceApp_LookupTemp_5
+//   59 			{
+//   60 				left = mid + 1;
+        MOV     A,#0x1
+        ADD     A,R4
+        MOV     R5,A
+//   61 			}
+//   62 			else if (adcDat > ntcTableAdcDat[mid])
+//   63 			{
+//   64 				right = mid - 1;
+//   65 			}
+//   66 			else
+//   67 			{
+//   68 				return ntcTableTemp[mid];
+//   69             }
+//   70 		}while(left < right); 
+??EnddeviceApp_LookupTemp_6:
+        MOV     A,R5
+        CLR     C
+        SUBB    A,R6
+        JC      ??EnddeviceApp_LookupTemp_4
+//   71         //mid = (left + right) >> 1;// right == left ,right == left -1,mid == right
+//   72 		temp = ntcTableTemp[right];
+        MOV     A,R6
+        CLR     C
+        RLC     A
+        MOV     R0,A
+        CLR     A
+        RLC     A
+        MOV     R1,A
+        LCALL   ?Subroutine1 & 0xFFFF
+??CrossCallReturnLabel_2:
+        MOV     R4,A
+        INC     DPTR
+        MOVX    A,@DPTR
+        MOV     R5,A
+//   73 		if(ntcTableAdcDat[right] >= adcDat)
+        LCALL   ?Subroutine0 & 0xFFFF
+??CrossCallReturnLabel_0:
+        MOV     A,#ntcTableAdcDat & 0xff
+        JC      ??EnddeviceApp_LookupTemp_7
+//   74         {
+//   75           temp += (ntcTableAdcDat[right] - adcDat) * 10 / (ntcTableAdcDat[right] - ntcTableAdcDat[right + 1]);
+        ADD     A,R0
+        MOV     R6,A
+        MOV     A,#(ntcTableAdcDat >> 8) & 0xff
+        ADDC    A,R1
+        MOV     R7,A
+        MOV     DPL,R6
+        MOV     DPH,R7
+        MOVX    A,@DPTR
+        MOV     ?V0 + 0,A
+        INC     DPTR
+        MOVX    A,@DPTR
+        MOV     ?V0 + 1,A
+        MOV     A,?V0 + 0
+        CLR     C
+        SUBB    A,R2
+        MOV     R0,A
+        MOV     A,?V0 + 1
+        SUBB    A,R3
+        MOV     R1,A
+        MOV     A,R0
+        MOV     B,#0xa
+        MUL     AB
+        MOV     R0,A
+        MOV     R2,B
+        MOV     B,#0xa
+        MOV     A,R1
+        MUL     AB
+        ADD     A,R2
+        MOV     R1,A
+        MOV     DPL,R6
+        MOV     DPH,R7
+        INC     DPTR
+        INC     DPTR
+        MOVX    A,@DPTR
+        MOV     R2,A
+        INC     DPTR
+        MOVX    A,@DPTR
+        MOV     R3,A
+        MOV     A,?V0 + 0
+        CLR     C
+        SUBB    A,R2
+        MOV     R2,A
+        MOV     A,?V0 + 1
+        SUBB    A,R3
+        MOV     R3,A
+        LCALL   ?US_DIV_MOD
+        MOV     ?V0 + 0,R0
+        MOV     ?V0 + 1,R1
+        MOV     A,R4
+        ADD     A,?V0 + 0
+        MOV     R4,A
+        MOV     A,R5
+        ADDC    A,?V0 + 1
+        SJMP    ??EnddeviceApp_LookupTemp_8
+//   76         }
+??EnddeviceApp_LookupTemp_5:
+        MOV     A,R4
+        CLR     C
+        RLC     A
+        MOV     R0,A
+        CLR     A
+        RLC     A
+        MOV     R1,A
+        LCALL   ?Subroutine0 & 0xFFFF
+??CrossCallReturnLabel_1:
+        JNC     ??EnddeviceApp_LookupTemp_9
+        MOV     A,#-0x1
+        ADD     A,R4
+        MOV     R6,A
+        SJMP    ??EnddeviceApp_LookupTemp_6
+??EnddeviceApp_LookupTemp_9:
+        LCALL   ?Subroutine1 & 0xFFFF
+??CrossCallReturnLabel_3:
+        MOV     R2,A
+        INC     DPTR
+        MOVX    A,@DPTR
+        SJMP    ??EnddeviceApp_LookupTemp_10
+//   77         else
+//   78         {
+//   79           temp -= (adcDat - ntcTableAdcDat[right]) * 10 / (ntcTableAdcDat[right - 1] - ntcTableAdcDat[right]);
+??EnddeviceApp_LookupTemp_7:
+        ADD     A,R0
+        MOV     R0,A
+        MOV     A,#(ntcTableAdcDat >> 8) & 0xff
+        ADDC    A,R1
+        MOV     R1,A
+        MOV     A,R0
+        MOV     R6,A
+        MOV     A,R1
+        MOV     R7,A
+        MOV     DPL,R6
+        MOV     DPH,R7
+        MOVX    A,@DPTR
+        MOV     ?V0 + 0,A
+        INC     DPTR
+        MOVX    A,@DPTR
+        MOV     ?V0 + 1,A
+        MOV     A,R2
+        CLR     C
+        SUBB    A,?V0 + 0
+        MOV     R0,A
+        MOV     A,R3
+        SUBB    A,?V0 + 1
+        MOV     R1,A
+        MOV     A,R0
+        MOV     B,#0xa
+        MUL     AB
+        MOV     R0,A
+        MOV     R2,B
+        MOV     B,#0xa
+        MOV     A,R1
+        MUL     AB
+        ADD     A,R2
+        MOV     R1,A
+        MOV     A,R6
+        ADD     A,#-0x2
+        MOV     DPL,A
+        MOV     A,R7
+        ADDC    A,#-0x1
+        MOV     DPH,A
+        MOVX    A,@DPTR
+        CLR     C
+        SUBB    A,?V0 + 0
+        MOV     R2,A
+        INC     DPTR
+        MOVX    A,@DPTR
+        SUBB    A,?V0 + 1
+        MOV     R3,A
+        LCALL   ?US_DIV_MOD
+        MOV     ?V0 + 0,R0
+        MOV     ?V0 + 1,R1
+        MOV     A,R4
+        SUBB    A,?V0 + 0
+        MOV     R4,A
+        MOV     A,R5
+        SUBB    A,?V0 + 1
+??EnddeviceApp_LookupTemp_8:
+        MOV     R5,A
+//   80         }
+//   81         
+//   82         return temp;
+        MOV     A,R4
+        MOV     R2,A
+        MOV     A,R5
+??EnddeviceApp_LookupTemp_10:
+        MOV     R3,A
+??EnddeviceApp_LookupTemp_2:
+        MOV     R7,#0x4
+        LJMP    ?BANKED_LEAVE_XDATA
+        CFI EndBlock cfiBlock0
+//   83 	}   
+//   84 }
+
+        RSEG BANKED_CODE:CODE:NOROOT(0)
+?Subroutine1:
+        CFI Block cfiCond1 Using cfiCommon0
+        CFI NoFunction
+        CFI Conditional ??CrossCallReturnLabel_2
+        CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+        CFI VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
+        CFI V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+        CFI V1 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+        CFI V2 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+        CFI V3 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+        CFI R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+        CFI ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+        CFI ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+        CFI ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+        CFI DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+        CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+        CFI CFA_SP SP+0
+        CFI CFA_XSP16 add(XSP16, 12)
+        CFI Block cfiCond2 Using cfiCommon0
+        CFI (cfiCond2) NoFunction
+        CFI (cfiCond2) Conditional ??CrossCallReturnLabel_3
+        CFI (cfiCond2) R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+        CFI (cfiCond2) VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
+        CFI (cfiCond2) V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+        CFI (cfiCond2) V1 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+        CFI (cfiCond2) V2 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+        CFI (cfiCond2) V3 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+        CFI (cfiCond2) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+        CFI (cfiCond2) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+        CFI (cfiCond2) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+        CFI (cfiCond2) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+        CFI (cfiCond2) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+        CFI (cfiCond2) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+        CFI (cfiCond2) CFA_SP SP+0
+        CFI (cfiCond2) CFA_XSP16 add(XSP16, 12)
+        CFI Block cfiPicker3 Using cfiCommon1
+        CFI (cfiPicker3) NoFunction
+        CFI (cfiPicker3) Picker
+        MOV     A,#ntcTableTemp & 0xff
+        ADD     A,R0
+        MOV     DPL,A
+        MOV     A,#(ntcTableTemp >> 8) & 0xff
+        ADDC    A,R1
+        MOV     DPH,A
+        MOVX    A,@DPTR
+        RET
+        CFI EndBlock cfiCond1
+        CFI EndBlock cfiCond2
+        CFI EndBlock cfiPicker3
+
+        RSEG BANKED_CODE:CODE:NOROOT(0)
+?Subroutine0:
+        CFI Block cfiCond4 Using cfiCommon0
+        CFI NoFunction
+        CFI Conditional ??CrossCallReturnLabel_0
+        CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+        CFI VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
+        CFI V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+        CFI V1 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+        CFI V2 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+        CFI V3 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+        CFI R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+        CFI ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+        CFI ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+        CFI ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+        CFI DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+        CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+        CFI CFA_SP SP+0
+        CFI CFA_XSP16 add(XSP16, 12)
+        CFI Block cfiCond5 Using cfiCommon0
+        CFI (cfiCond5) NoFunction
+        CFI (cfiCond5) Conditional ??CrossCallReturnLabel_1
+        CFI (cfiCond5) R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+        CFI (cfiCond5) VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
+        CFI (cfiCond5) V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+        CFI (cfiCond5) V1 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+        CFI (cfiCond5) V2 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+        CFI (cfiCond5) V3 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+        CFI (cfiCond5) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+        CFI (cfiCond5) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+        CFI (cfiCond5) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+        CFI (cfiCond5) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+        CFI (cfiCond5) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+        CFI (cfiCond5) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+        CFI (cfiCond5) CFA_SP SP+0
+        CFI (cfiCond5) CFA_XSP16 add(XSP16, 12)
+        CFI Block cfiPicker6 Using cfiCommon1
+        CFI (cfiPicker6) NoFunction
+        CFI (cfiPicker6) Picker
+        LCALL   ?Subroutine2 & 0xFFFF
+??CrossCallReturnLabel_5:
+        CLR     C
+        MOVX    A,@DPTR
+        SUBB    A,R2
+        INC     DPTR
+        MOVX    A,@DPTR
+        SUBB    A,R3
+        RET
+        CFI EndBlock cfiCond4
+        CFI EndBlock cfiCond5
+        CFI EndBlock cfiPicker6
+
+        RSEG BANKED_CODE:CODE:NOROOT(0)
+?Subroutine2:
+        CFI Block cfiCond7 Using cfiCommon0
+        CFI NoFunction
+        CFI Conditional ??CrossCallReturnLabel_4
+        CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+        CFI VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
+        CFI V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+        CFI V1 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+        CFI V2 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+        CFI V3 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+        CFI R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+        CFI ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+        CFI ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+        CFI ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+        CFI DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+        CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+        CFI CFA_SP SP+0
+        CFI CFA_XSP16 add(XSP16, 12)
+        CFI Block cfiCond8 Using cfiCommon0
+        CFI (cfiCond8) NoFunction
+        CFI (cfiCond8) Conditional ??CrossCallReturnLabel_5, ??CrossCallReturnLabel_0
+        CFI (cfiCond8) R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+        CFI (cfiCond8) VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
+        CFI (cfiCond8) V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+        CFI (cfiCond8) V1 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+        CFI (cfiCond8) V2 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+        CFI (cfiCond8) V3 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+        CFI (cfiCond8) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+        CFI (cfiCond8) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+        CFI (cfiCond8) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+        CFI (cfiCond8) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+        CFI (cfiCond8) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+        CFI (cfiCond8) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+        CFI (cfiCond8) CFA_SP SP+0
+        CFI (cfiCond8) CFA_XSP16 add(XSP16, 12)
+        CFI Block cfiCond9 Using cfiCommon0
+        CFI (cfiCond9) NoFunction
+        CFI (cfiCond9) Conditional ??CrossCallReturnLabel_5, ??CrossCallReturnLabel_1
+        CFI (cfiCond9) R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+        CFI (cfiCond9) VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
+        CFI (cfiCond9) V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+        CFI (cfiCond9) V1 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+        CFI (cfiCond9) V2 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+        CFI (cfiCond9) V3 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+        CFI (cfiCond9) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+        CFI (cfiCond9) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+        CFI (cfiCond9) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+        CFI (cfiCond9) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+        CFI (cfiCond9) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+        CFI (cfiCond9) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+        CFI (cfiCond9) CFA_SP SP+0
+        CFI (cfiCond9) CFA_XSP16 add(XSP16, 12)
+        CFI Block cfiPicker10 Using cfiCommon1
+        CFI (cfiPicker10) NoFunction
+        CFI (cfiPicker10) Picker
+        MOV     A,#ntcTableAdcDat & 0xff
+        ADD     A,R0
+        MOV     DPL,A
+        MOV     A,#(ntcTableAdcDat >> 8) & 0xff
+        ADDC    A,R1
+        MOV     DPH,A
+        RET
+        CFI EndBlock cfiCond7
+        CFI EndBlock cfiCond8
+        CFI EndBlock cfiCond9
+        CFI EndBlock cfiPicker10
+
+        RSEG BANK_RELAYS:CODE:REORDER:NOROOT(0)
+??EnddeviceApp_LookupTemp?relay:
+        LCALL   ?BDISPATCH
+        DATA
+        DC24    EnddeviceApp_LookupTemp
+
+        END
+//   85 
+//   86 
+// 
+// 344 bytes in segment BANKED_CODE
+//   6 bytes in segment BANK_RELAYS
+// 344 bytes in segment XDATA_ROM_C
+// 
+// 350 bytes of CODE  memory
+// 344 bytes of CONST memory
+//
+//Errors: none
+//Warnings: none

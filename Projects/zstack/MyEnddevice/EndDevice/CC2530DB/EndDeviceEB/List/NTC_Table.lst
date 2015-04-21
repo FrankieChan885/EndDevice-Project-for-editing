@@ -1,0 +1,708 @@
+###############################################################################
+#                                                                             #
+# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         20/Apr/2015  19:51:20 #
+# Copyright 2004-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Core               =  plain                                              #
+#    Code model         =  banked                                             #
+#    Data model         =  large                                              #
+#    Calling convention =  xdata reentrant                                    #
+#    Constant location  =  data_rom                                           #
+#    Dptr setup         =  1,16                                               #
+#    Source file        =  C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice    #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\Source\NTC_Table.c                         #
+#    Command line       =  -f "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevic #
+#                          e Project for editing\Projects\zstack\MyEnddevice\ #
+#                          EndDevice\CC2530DB\..\..\..\Tools\CC2530DB\f8wEnde #
+#                          v.cfg" (-DCPU32MHZ -DROOT=__near_func              #
+#                          -DMAC_CFG_TX_DATA_MAX=3 -DMAC_CFG_TX_MAX=6         #
+#                          -DMAC_CFG_RX_MAX=3) -f "C:\Users\William\Desktop\± #
+#                          ÏÒµÉè¼Æ\SRC\EndDevice Project for                  #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"        #
+#                          (-DZIGBEEPRO -DSECURE=0 -DZG_SECURE_DYNAMIC=0      #
+#                          -DREFLECTOR -DDEFAULT_CHANLIST=0x02000000          #
+#                          -DZDAPP_CONFIG_PAN_ID=0xFFFF                       #
+#                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MA #
+#                          SK=0x007F -DBEACON_REQUEST_DELAY=100               #
+#                          -DBEACON_REQ_DELAY_MASK=0x00FF                     #
+#                          -DLINK_STATUS_JITTER_MASK=0x007F                   #
+#                          -DROUTE_EXPIRY_TIME=30 -DAPSC_ACK_WAIT_DURATION_PO #
+#                          LLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7             #
+#                          -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3    #
+#                          -DNWK_MAX_DATA_RETRIES=2                           #
+#                          -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9         #
+#                          -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40           #
+#                          -DNWK_MAX_BINDING_ENTRIES=4                        #
+#                          -DMAX_BINDING_CLUSTER_IDS=4 "-DDEFAULT_KEY={0x01,  #
+#                          0x03, 0x05, 0x07, 0x09, 0x0B, 0x0D, 0x0F, 0x00,    #
+#                          0x02, 0x04, 0x06, 0x08, 0x0A, 0x0C, 0x0D}"         #
+#                          -DMAC_MAX_FRAME_SIZE=116                           #
+#                          -DZDNWKMGR_MIN_TRANSMISSIONS=20 "-DCONST=const     #
+#                          __code" -DGENERIC=__generic                        #
+#                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000        #
+#                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)   #
+#                          -DREJOIN_POLL_RATE=440 "C:\Users\William\Desktop\± #
+#                          ÏÒµÉè¼Æ\SRC\EndDevice Project for                  #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\Sour #
+#                          ce\NTC_Table.c" -D NWK_AUTO_POLL -D NV_RESTORE=1   #
+#                          -D xZTOOL_P1 -D xMT_TASK -D xMT_SYS_FUNC -D        #
+#                          xMT_ZDO_FUNC -D xLCD_SUPPORTED=DEBUG -lC           #
+#                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\List\" -lA            #
+#                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\List\"                #
+#                          --diag_suppress Pe001,Pa010 -o                     #
+#                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\Obj\" -e              #
+#                          --no_code_motion --debug --core=plain --dptr=16,1  #
+#                          --data_model=large --code_model=banked             #
+#                          --calling_convention=xdata_reentrant               #
+#                          --place_constants=data_rom --nr_virtual_regs 16    #
+#                          -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevic #
+#                          e Project for editing\Projects\zstack\MyEnddevice\ #
+#                          EndDevice\CC2530DB\" -I "C:\Users\William\Desktop\ #
+#                          ±ÏÒµÉè¼Æ\SRC\EndDevice Project for                 #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\Source\" -I "C:\Users\William\Desktop\±ÏÒµ #
+#                          Éè¼Æ\SRC\EndDevice Project for                     #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\ZMain\TI2530DB\" -I                  #
+#                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\hal\inc #
+#                          lude\" -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\E #
+#                          ndDevice Project for editing\Projects\zstack\MyEnd #
+#                          device\EndDevice\CC2530DB\..\..\..\..\..\Component #
+#                          s\hal\target\CC2530EB\" -I                         #
+#                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\mac\inc #
+#                          lude\" -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\E #
+#                          ndDevice Project for editing\Projects\zstack\MyEnd #
+#                          device\EndDevice\CC2530DB\..\..\..\..\..\Component #
+#                          s\mac\high_level\" -I "C:\Users\William\Desktop\±Ï #
+#                          ÒµÉè¼Æ\SRC\EndDevice Project for                   #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\..\..\Components\mac\low_level\srf04 #
+#                          \" -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDe #
+#                          vice Project for editing\Projects\zstack\MyEnddevi #
+#                          ce\EndDevice\CC2530DB\..\..\..\..\..\Components\ma #
+#                          c\low_level\srf04\single_chip\" -I                 #
+#                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\mt\"    #
+#                          -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevic #
+#                          e Project for editing\Projects\zstack\MyEnddevice\ #
+#                          EndDevice\CC2530DB\..\..\..\..\..\Components\osal\ #
+#                          include\" -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SR #
+#                          C\EndDevice Project for editing\Projects\zstack\My #
+#                          Enddevice\EndDevice\CC2530DB\..\..\..\..\..\Compon #
+#                          ents\services\saddr\" -I                           #
+#                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\service #
+#                          s\sdata\" -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SR #
+#                          C\EndDevice Project for editing\Projects\zstack\My #
+#                          Enddevice\EndDevice\CC2530DB\..\..\..\..\..\Compon #
+#                          ents\stack\af\" -I "C:\Users\William\Desktop\±ÏÒµÉ #
+#                          è¼Æ\SRC\EndDevice Project for                      #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\..\..\Components\stack\nwk\" -I      #
+#                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\stack\s #
+#                          api\" -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\En #
+#                          dDevice Project for editing\Projects\zstack\MyEndd #
+#                          evice\EndDevice\CC2530DB\..\..\..\..\..\Components #
+#                          \stack\sec\" -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ #
+#                          \SRC\EndDevice Project for                         #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\..\..\Components\stack\sys\" -I      #
+#                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\stack\z #
+#                          do\" -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\End #
+#                          Device Project for editing\Projects\zstack\MyEndde #
+#                          vice\EndDevice\CC2530DB\..\..\..\..\..\Components\ #
+#                          zmac\" -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\E #
+#                          ndDevice Project for editing\Projects\zstack\MyEnd #
+#                          device\EndDevice\CC2530DB\..\..\..\..\..\Component #
+#                          s\zmac\f8w\" -Ohz                                  #
+#    List file          =  C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice    #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\List\NTC_Table.lst    #
+#    Object file        =  C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice    #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\Obj\NTC_Table.r51     #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\EndDevice Project for editing\Projects\zstack\MyEnddevice\EndDevice\Source\NTC_Table.c
+      1          #include "EnddeviceVariable.h"
+      2          #include "NTC_Table.h"
+      3          
+      4          uint16 EnddeviceApp_LookupTemp( uint16 adcDat);
+      5          
+
+   \                                 In  segment XDATA_ROM_C, align 1
+      6          const unsigned int ntcTableAdcDat[NTC_TABLE_SIZE] = {
+   \                     ntcTableAdcDat:
+   \   000000   A80D         DW 3496
+   \   000002   8A0D         DW 3466
+   \   000004   6B0D         DW 3435
+   \   000006   4C0D         DW 3404
+   \   000008   2B0D         DW 3371
+   \   00000A   0A0D         DW 3338
+   \   00000C   E70C         DW 3303
+   \   00000E   C40C         DW 3268
+   \   000010   A00C         DW 3232
+   \   000012   7B0C         DW 3195
+   \   000014   550C         DW 3157
+   \   000016   2E0C         DW 3118
+   \   000018   070C         DW 3079
+   \   00001A   DE0B         DW 3038
+   \   00001C   B60B         DW 2998
+   \   00001E   8C0B         DW 2956
+   \   000020   620B         DW 2914
+   \   000022   370B         DW 2871
+   \   000024   0B0B         DW 2827
+   \   000026   DF0A         DW 2783
+   \   000028   B30A         DW 2739
+   \   00002A   860A         DW 2694
+   \   00002C   580A         DW 2648
+   \   00002E   2B0A         DW 2603
+   \   000030   FD09         DW 2557
+   \   000032   CF09         DW 2511
+   \   000034   A009         DW 2464
+   \   000036   7209         DW 2418
+   \   000038   4309         DW 2371
+   \   00003A   1509         DW 2325
+   \   00003C   E608         DW 2278
+   \   00003E   B808         DW 2232
+   \   000040   8A08         DW 2186
+   \   000042   5C08         DW 2140
+   \   000044   2E08         DW 2094
+   \   000046   0008         DW 2048
+   \   000048   D307         DW 2003
+   \   00004A   A607         DW 1958
+   \   00004C   7907         DW 1913
+   \   00004E   4D07         DW 1869
+   \   000050   2107         DW 1825
+   \   000052   F606         DW 1782
+   \   000054   CB06         DW 1739
+   \   000056   A106         DW 1697
+   \   000058   7706         DW 1655
+   \   00005A   4E06         DW 1614
+   \   00005C   2606         DW 1574
+   \   00005E   FE05         DW 1534
+   \   000060   D705         DW 1495
+   \   000062   B105         DW 1457
+   \   000064   8B05         DW 1419
+   \   000066   6605         DW 1382
+   \   000068   4205         DW 1346
+   \   00006A   1E05         DW 1310
+   \   00006C   FB04         DW 1275
+   \   00006E   D904         DW 1241
+   \   000070   B804         DW 1208
+   \   000072   9704         DW 1175
+   \   000074   7704         DW 1143
+   \   000076   5804         DW 1112
+   \   000078   3A04         DW 1082
+   \   00007A   1C04         DW 1052
+   \   00007C   FF03         DW 1023
+   \   00007E   E303         DW 995
+   \   000080   C703         DW 967
+   \   000082   AC03         DW 940
+   \   000084   9203         DW 914
+   \   000086   7803         DW 888
+   \   000088   5F03         DW 863
+   \   00008A   4703         DW 839
+   \   00008C   3003         DW 816
+   \   00008E   1903         DW 793
+   \   000090   0203         DW 770
+   \   000092   ED02         DW 749
+   \   000094   D802         DW 728
+   \   000096   C302         DW 707
+   \   000098   AF02         DW 687
+   \   00009A   9C02         DW 668
+   \   00009C   8902         DW 649
+   \   00009E   7702         DW 631
+   \   0000A0   6502         DW 613
+   \   0000A2   5402         DW 596
+   \   0000A4   4302         DW 579
+   \   0000A6   3302         DW 563
+   \   0000A8   2302         DW 547
+   \   0000AA   1402         DW 532
+      7          	0xDA8,0xD8A,0xD6B,0xD4C,0xD2B,
+      8          	0xD0A,0xCE7,0xCC4,0xCA0,0xC7B,
+      9          	0xC55,0xC2E,0xC07,0xBDE,0xBB6,
+     10          	0xB8C,0xB62,0xB37,0xB0B,0xADF,
+     11          	0xAB3,0xA86,0xA58,0xA2B,0x9FD,
+     12          	0x9CF,0x9A0,0x972,0x943,0x915,
+     13          	0x8E6,0x8B8,0x88A,0x85C,0x82E,
+     14          	0x800,0x7D3,0x7A6,0x779,0x74D,
+     15          	0x721,0x6F6,0x6CB,0x6A1,0x677,
+     16          	0x64E,0x626,0x5FE,0x5D7,0x5B1,
+     17          	0x58B,0x566,0x542,0x51E,0x4FB,
+     18          	0x4D9,0x4B8,0x497,0x477,0x458,
+     19          	0x43A,0x41C,0x3FF,0x3E3,0x3C7,
+     20          	0x3AC,0x392,0x378,0x35F,0x347,
+     21          	0x330,0x319,0x302,0x2ED,0x2D8,
+     22          	0x2C3,0x2AF,0x29C,0x289,0x277,
+     23          	0x265,0x254,0x243,0x233,0x223,
+     24          	0x214
+     25          };
+     26          
+
+   \                                 In  segment XDATA_ROM_C, align 1
+     27          const int ntcTableTemp[NTC_TABLE_SIZE] = {
+   \                     ntcTableTemp:
+   \   000000   9CFF         DW -100
+   \   000002   A6FF         DW -90
+   \   000004   B0FF         DW -80
+   \   000006   BAFF         DW -70
+   \   000008   C4FF         DW -60
+   \   00000A   CEFF         DW -50
+   \   00000C   D8FF         DW -40
+   \   00000E   E2FF         DW -30
+   \   000010   ECFF         DW -20
+   \   000012   F6FF         DW -10
+   \   000014   0000         DW 0
+   \   000016   0A00         DW 10
+   \   000018   1400         DW 20
+   \   00001A   1E00         DW 30
+   \   00001C   2800         DW 40
+   \   00001E   3200         DW 50
+   \   000020   3C00         DW 60
+   \   000022   4600         DW 70
+   \   000024   5000         DW 80
+   \   000026   5A00         DW 90
+   \   000028   0A00         DW 10
+   \   00002A   6E00         DW 110
+   \   00002C   7800         DW 120
+   \   00002E   8200         DW 130
+   \   000030   8C00         DW 140
+   \   000032   9600         DW 150
+   \   000034   A000         DW 160
+   \   000036   AA00         DW 170
+   \   000038   B400         DW 180
+   \   00003A   BE00         DW 190
+   \   00003C   C800         DW 200
+   \   00003E   D200         DW 210
+   \   000040   DC00         DW 220
+   \   000042   E600         DW 230
+   \   000044   F000         DW 240
+   \   000046   FA00         DW 250
+   \   000048   0401         DW 260
+   \   00004A   0E01         DW 270
+   \   00004C   1801         DW 280
+   \   00004E   2201         DW 290
+   \   000050   2C01         DW 300
+   \   000052   3601         DW 310
+   \   000054   4001         DW 320
+   \   000056   4A01         DW 330
+   \   000058   5401         DW 340
+   \   00005A   5E01         DW 350
+   \   00005C   6801         DW 360
+   \   00005E   7201         DW 370
+   \   000060   7C01         DW 380
+   \   000062   8601         DW 390
+   \   000064   9001         DW 400
+   \   000066   9A01         DW 410
+   \   000068   A401         DW 420
+   \   00006A   AE01         DW 430
+   \   00006C   B801         DW 440
+   \   00006E   C201         DW 450
+   \   000070   CC01         DW 460
+   \   000072   D601         DW 470
+   \   000074   E001         DW 480
+   \   000076   EA01         DW 490
+   \   000078   F401         DW 500
+   \   00007A   FE01         DW 510
+   \   00007C   0802         DW 520
+   \   00007E   1202         DW 530
+   \   000080   1C02         DW 540
+   \   000082   2602         DW 550
+   \   000084   3002         DW 560
+   \   000086   3A02         DW 570
+   \   000088   4402         DW 580
+   \   00008A   4E02         DW 590
+   \   00008C   5802         DW 600
+   \   00008E   6202         DW 610
+   \   000090   6C02         DW 620
+   \   000092   7602         DW 630
+   \   000094   8002         DW 640
+   \   000096   8A02         DW 650
+   \   000098   9402         DW 660
+   \   00009A   9E02         DW 670
+   \   00009C   A802         DW 680
+   \   00009E   B202         DW 690
+   \   0000A0   BC02         DW 700
+   \   0000A2   C602         DW 710
+   \   0000A4   D002         DW 720
+   \   0000A6   DA02         DW 730
+   \   0000A8   E402         DW 740
+   \   0000AA   EE02         DW 750
+     28              -100, -90, -80, -70, -60, -50, -40, -30, -20, -10, 
+     29          	 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 
+     30          	10, 110, 120, 130, 140, 150, 160, 170, 180, 190, 
+     31          	200, 210, 220, 230, 240, 250, 260, 270, 280, 290, 
+     32          	300, 310, 320, 330, 340, 350, 360, 370, 380, 390, 
+     33          	400, 410, 420, 430, 440, 450, 460, 470, 480, 490, 
+     34          	500, 510, 520, 530, 540, 550, 560, 570, 580, 590, 
+     35          	600, 610, 620, 630, 640, 650, 660, 670, 680, 690, 
+     36          	700, 710, 720, 730, 740, 750
+     37          };
+     38          
+     39          
+     40          
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     41          uint16 EnddeviceApp_LookupTemp( uint16 adcDat )
+   \                     EnddeviceApp_LookupTemp:
+     42          {
+   \   000000   74F4         MOV     A,#-0xc
+   \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
+   \   000005                ; Saved register size: 12
+   \   000005                ; Auto size: 0
+     43              uint16 temp;
+     44          	uint8 mid, left = 0, right = NTC_TABLE_SIZE - 1;
+   \   000005   7D00         MOV     R5,#0x0
+   \   000007   7E55         MOV     R6,#0x55
+     45          	if (adcDat == ntcTableAdcDat[0])
+   \   000009   74A8         MOV     A,#-0x58
+   \   00000B   6A           XRL     A,R2
+   \   00000C   7003         JNZ     ??EnddeviceApp_LookupTemp_0
+   \   00000E   740D         MOV     A,#0xd
+   \   000010   6B           XRL     A,R3
+   \                     ??EnddeviceApp_LookupTemp_0:
+   \   000011   7007         JNZ     ??EnddeviceApp_LookupTemp_1
+     46          	{
+     47          		return ntcTableTemp[0];
+   \   000013   7A9C         MOV     R2,#-0x64
+   \   000015   7BFF         MOV     R3,#-0x1
+   \   000017   02....       LJMP    ??EnddeviceApp_LookupTemp_2 & 0xFFFF
+     48          	}
+     49          	else if (adcDat == ntcTableAdcDat[NTC_TABLE_SIZE - 1])
+   \                     ??EnddeviceApp_LookupTemp_1:
+   \   00001A   7414         MOV     A,#0x14
+   \   00001C   6A           XRL     A,R2
+   \   00001D   7003         JNZ     ??EnddeviceApp_LookupTemp_3
+   \   00001F   7402         MOV     A,#0x2
+   \   000021   6B           XRL     A,R3
+   \                     ??EnddeviceApp_LookupTemp_3:
+   \   000022   7007         JNZ     ??EnddeviceApp_LookupTemp_4
+     50          	{
+     51          		return ntcTableTemp[NTC_TABLE_SIZE - 1];
+   \   000024   7AEE         MOV     R2,#-0x12
+   \   000026   7B02         MOV     R3,#0x2
+   \   000028   02....       LJMP    ??EnddeviceApp_LookupTemp_2 & 0xFFFF
+     52          	}
+     53          	else
+     54          	{
+     55          		do
+     56          		{
+     57          			mid = (left + right) >> 1;
+   \                     ??EnddeviceApp_LookupTemp_4:
+   \   00002B   8D..         MOV     ?V0 + 2,R5
+   \   00002D   8E..         MOV     ?V0 + 0,R6
+   \   00002F   E5..         MOV     A,?V0 + 2
+   \   000031   25..         ADD     A,?V0 + 0
+   \   000033   F5..         MOV     ?V0 + 0,A
+   \   000035   E4           CLR     A
+   \   000036   3400         ADDC    A,#0x0
+   \   000038   F5..         MOV     ?V0 + 1,A
+   \   00003A   7401         MOV     A,#0x1
+   \   00003C   78..         MOV     R0,#?V0 + 0
+   \   00003E   12....       LCALL   ?SS_SHR
+   \   000041   AC..         MOV     R4,?V0 + 0
+     58          			if (adcDat < ntcTableAdcDat[mid])
+   \   000043   EC           MOV     A,R4
+   \   000044   C3           CLR     C
+   \   000045   33           RLC     A
+   \   000046   F8           MOV     R0,A
+   \   000047   E4           CLR     A
+   \   000048   33           RLC     A
+   \   000049   F9           MOV     R1,A
+   \   00004A   12....       LCALL   ?Subroutine2 & 0xFFFF
+   \                     ??CrossCallReturnLabel_4:
+   \   00004D   E0           MOVX    A,@DPTR
+   \   00004E   F8           MOV     R0,A
+   \   00004F   A3           INC     DPTR
+   \   000050   E0           MOVX    A,@DPTR
+   \   000051   F9           MOV     R1,A
+   \   000052   C3           CLR     C
+   \   000053   EA           MOV     A,R2
+   \   000054   98           SUBB    A,R0
+   \   000055   EB           MOV     A,R3
+   \   000056   99           SUBB    A,R1
+   \   000057   506B         JNC     ??EnddeviceApp_LookupTemp_5
+     59          			{
+     60          				left = mid + 1;
+   \   000059   7401         MOV     A,#0x1
+   \   00005B   2C           ADD     A,R4
+   \   00005C   FD           MOV     R5,A
+     61          			}
+     62          			else if (adcDat > ntcTableAdcDat[mid])
+     63          			{
+     64          				right = mid - 1;
+     65          			}
+     66          			else
+     67          			{
+     68          				return ntcTableTemp[mid];
+     69                      }
+     70          		}while(left < right); 
+   \                     ??EnddeviceApp_LookupTemp_6:
+   \   00005D   ED           MOV     A,R5
+   \   00005E   C3           CLR     C
+   \   00005F   9E           SUBB    A,R6
+   \   000060   40C9         JC      ??EnddeviceApp_LookupTemp_4
+     71                  //mid = (left + right) >> 1;// right == left ,right == left -1,mid == right
+     72          		temp = ntcTableTemp[right];
+   \   000062   EE           MOV     A,R6
+   \   000063   C3           CLR     C
+   \   000064   33           RLC     A
+   \   000065   F8           MOV     R0,A
+   \   000066   E4           CLR     A
+   \   000067   33           RLC     A
+   \   000068   F9           MOV     R1,A
+   \   000069   12....       LCALL   ?Subroutine1 & 0xFFFF
+   \                     ??CrossCallReturnLabel_2:
+   \   00006C   FC           MOV     R4,A
+   \   00006D   A3           INC     DPTR
+   \   00006E   E0           MOVX    A,@DPTR
+   \   00006F   FD           MOV     R5,A
+     73          		if(ntcTableAdcDat[right] >= adcDat)
+   \   000070   12....       LCALL   ?Subroutine0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_0:
+   \   000073   74..         MOV     A,#ntcTableAdcDat & 0xff
+   \   000075   4067         JC      ??EnddeviceApp_LookupTemp_7
+     74                  {
+     75                    temp += (ntcTableAdcDat[right] - adcDat) * 10 / (ntcTableAdcDat[right] - ntcTableAdcDat[right + 1]);
+   \   000077   28           ADD     A,R0
+   \   000078   FE           MOV     R6,A
+   \   000079   74..         MOV     A,#(ntcTableAdcDat >> 8) & 0xff
+   \   00007B   39           ADDC    A,R1
+   \   00007C   FF           MOV     R7,A
+   \   00007D   8E82         MOV     DPL,R6
+   \   00007F   8F83         MOV     DPH,R7
+   \   000081   E0           MOVX    A,@DPTR
+   \   000082   F5..         MOV     ?V0 + 0,A
+   \   000084   A3           INC     DPTR
+   \   000085   E0           MOVX    A,@DPTR
+   \   000086   F5..         MOV     ?V0 + 1,A
+   \   000088   E5..         MOV     A,?V0 + 0
+   \   00008A   C3           CLR     C
+   \   00008B   9A           SUBB    A,R2
+   \   00008C   F8           MOV     R0,A
+   \   00008D   E5..         MOV     A,?V0 + 1
+   \   00008F   9B           SUBB    A,R3
+   \   000090   F9           MOV     R1,A
+   \   000091   E8           MOV     A,R0
+   \   000092   75F00A       MOV     B,#0xa
+   \   000095   A4           MUL     AB
+   \   000096   F8           MOV     R0,A
+   \   000097   AAF0         MOV     R2,B
+   \   000099   75F00A       MOV     B,#0xa
+   \   00009C   E9           MOV     A,R1
+   \   00009D   A4           MUL     AB
+   \   00009E   2A           ADD     A,R2
+   \   00009F   F9           MOV     R1,A
+   \   0000A0   8E82         MOV     DPL,R6
+   \   0000A2   8F83         MOV     DPH,R7
+   \   0000A4   A3           INC     DPTR
+   \   0000A5   A3           INC     DPTR
+   \   0000A6   E0           MOVX    A,@DPTR
+   \   0000A7   FA           MOV     R2,A
+   \   0000A8   A3           INC     DPTR
+   \   0000A9   E0           MOVX    A,@DPTR
+   \   0000AA   FB           MOV     R3,A
+   \   0000AB   E5..         MOV     A,?V0 + 0
+   \   0000AD   C3           CLR     C
+   \   0000AE   9A           SUBB    A,R2
+   \   0000AF   FA           MOV     R2,A
+   \   0000B0   E5..         MOV     A,?V0 + 1
+   \   0000B2   9B           SUBB    A,R3
+   \   0000B3   FB           MOV     R3,A
+   \   0000B4   12....       LCALL   ?US_DIV_MOD
+   \   0000B7   88..         MOV     ?V0 + 0,R0
+   \   0000B9   89..         MOV     ?V0 + 1,R1
+   \   0000BB   EC           MOV     A,R4
+   \   0000BC   25..         ADD     A,?V0 + 0
+   \   0000BE   FC           MOV     R4,A
+   \   0000BF   ED           MOV     A,R5
+   \   0000C0   35..         ADDC    A,?V0 + 1
+   \   0000C2   8069         SJMP    ??EnddeviceApp_LookupTemp_8
+     76                  }
+   \                     ??EnddeviceApp_LookupTemp_5:
+   \   0000C4   EC           MOV     A,R4
+   \   0000C5   C3           CLR     C
+   \   0000C6   33           RLC     A
+   \   0000C7   F8           MOV     R0,A
+   \   0000C8   E4           CLR     A
+   \   0000C9   33           RLC     A
+   \   0000CA   F9           MOV     R1,A
+   \   0000CB   12....       LCALL   ?Subroutine0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_1:
+   \   0000CE   5006         JNC     ??EnddeviceApp_LookupTemp_9
+   \   0000D0   74FF         MOV     A,#-0x1
+   \   0000D2   2C           ADD     A,R4
+   \   0000D3   FE           MOV     R6,A
+   \   0000D4   8087         SJMP    ??EnddeviceApp_LookupTemp_6
+   \                     ??EnddeviceApp_LookupTemp_9:
+   \   0000D6   12....       LCALL   ?Subroutine1 & 0xFFFF
+   \                     ??CrossCallReturnLabel_3:
+   \   0000D9   FA           MOV     R2,A
+   \   0000DA   A3           INC     DPTR
+   \   0000DB   E0           MOVX    A,@DPTR
+   \   0000DC   8053         SJMP    ??EnddeviceApp_LookupTemp_10
+     77                  else
+     78                  {
+     79                    temp -= (adcDat - ntcTableAdcDat[right]) * 10 / (ntcTableAdcDat[right - 1] - ntcTableAdcDat[right]);
+   \                     ??EnddeviceApp_LookupTemp_7:
+   \   0000DE   28           ADD     A,R0
+   \   0000DF   F8           MOV     R0,A
+   \   0000E0   74..         MOV     A,#(ntcTableAdcDat >> 8) & 0xff
+   \   0000E2   39           ADDC    A,R1
+   \   0000E3   F9           MOV     R1,A
+   \   0000E4   E8           MOV     A,R0
+   \   0000E5   FE           MOV     R6,A
+   \   0000E6   E9           MOV     A,R1
+   \   0000E7   FF           MOV     R7,A
+   \   0000E8   8E82         MOV     DPL,R6
+   \   0000EA   8F83         MOV     DPH,R7
+   \   0000EC   E0           MOVX    A,@DPTR
+   \   0000ED   F5..         MOV     ?V0 + 0,A
+   \   0000EF   A3           INC     DPTR
+   \   0000F0   E0           MOVX    A,@DPTR
+   \   0000F1   F5..         MOV     ?V0 + 1,A
+   \   0000F3   EA           MOV     A,R2
+   \   0000F4   C3           CLR     C
+   \   0000F5   95..         SUBB    A,?V0 + 0
+   \   0000F7   F8           MOV     R0,A
+   \   0000F8   EB           MOV     A,R3
+   \   0000F9   95..         SUBB    A,?V0 + 1
+   \   0000FB   F9           MOV     R1,A
+   \   0000FC   E8           MOV     A,R0
+   \   0000FD   75F00A       MOV     B,#0xa
+   \   000100   A4           MUL     AB
+   \   000101   F8           MOV     R0,A
+   \   000102   AAF0         MOV     R2,B
+   \   000104   75F00A       MOV     B,#0xa
+   \   000107   E9           MOV     A,R1
+   \   000108   A4           MUL     AB
+   \   000109   2A           ADD     A,R2
+   \   00010A   F9           MOV     R1,A
+   \   00010B   EE           MOV     A,R6
+   \   00010C   24FE         ADD     A,#-0x2
+   \   00010E   F582         MOV     DPL,A
+   \   000110   EF           MOV     A,R7
+   \   000111   34FF         ADDC    A,#-0x1
+   \   000113   F583         MOV     DPH,A
+   \   000115   E0           MOVX    A,@DPTR
+   \   000116   C3           CLR     C
+   \   000117   95..         SUBB    A,?V0 + 0
+   \   000119   FA           MOV     R2,A
+   \   00011A   A3           INC     DPTR
+   \   00011B   E0           MOVX    A,@DPTR
+   \   00011C   95..         SUBB    A,?V0 + 1
+   \   00011E   FB           MOV     R3,A
+   \   00011F   12....       LCALL   ?US_DIV_MOD
+   \   000122   88..         MOV     ?V0 + 0,R0
+   \   000124   89..         MOV     ?V0 + 1,R1
+   \   000126   EC           MOV     A,R4
+   \   000127   95..         SUBB    A,?V0 + 0
+   \   000129   FC           MOV     R4,A
+   \   00012A   ED           MOV     A,R5
+   \   00012B   95..         SUBB    A,?V0 + 1
+   \                     ??EnddeviceApp_LookupTemp_8:
+   \   00012D   FD           MOV     R5,A
+     80                  }
+     81                  
+     82                  return temp;
+   \   00012E   EC           MOV     A,R4
+   \   00012F   FA           MOV     R2,A
+   \   000130   ED           MOV     A,R5
+   \                     ??EnddeviceApp_LookupTemp_10:
+   \   000131   FB           MOV     R3,A
+   \                     ??EnddeviceApp_LookupTemp_2:
+   \   000132   7F04         MOV     R7,#0x4
+   \   000134   02....       LJMP    ?BANKED_LEAVE_XDATA
+     83          	}   
+     84          }
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine1:
+   \   000000   74..         MOV     A,#ntcTableTemp & 0xff
+   \   000002   28           ADD     A,R0
+   \   000003   F582         MOV     DPL,A
+   \   000005   74..         MOV     A,#(ntcTableTemp >> 8) & 0xff
+   \   000007   39           ADDC    A,R1
+   \   000008   F583         MOV     DPH,A
+   \   00000A   E0           MOVX    A,@DPTR
+   \   00000B   22           RET
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine0:
+   \   000000   12....       LCALL   ?Subroutine2 & 0xFFFF
+   \                     ??CrossCallReturnLabel_5:
+   \   000003   C3           CLR     C
+   \   000004   E0           MOVX    A,@DPTR
+   \   000005   9A           SUBB    A,R2
+   \   000006   A3           INC     DPTR
+   \   000007   E0           MOVX    A,@DPTR
+   \   000008   9B           SUBB    A,R3
+   \   000009   22           RET
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine2:
+   \   000000   74..         MOV     A,#ntcTableAdcDat & 0xff
+   \   000002   28           ADD     A,R0
+   \   000003   F582         MOV     DPL,A
+   \   000005   74..         MOV     A,#(ntcTableAdcDat >> 8) & 0xff
+   \   000007   39           ADDC    A,R1
+   \   000008   F583         MOV     DPH,A
+   \   00000A   22           RET
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??EnddeviceApp_LookupTemp?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    EnddeviceApp_LookupTemp
+     85          
+     86          
+
+   Maximum stack usage in bytes:
+
+     Function                ISTACK PSTACK XSTACK
+     --------                ------ ------ ------
+     EnddeviceApp_LookupTemp     0      0     12
+
+
+   Segment part sizes:
+
+     Function/Label                  Bytes
+     --------------                  -----
+     ntcTableAdcDat                   172
+     ntcTableTemp                     172
+     EnddeviceApp_LookupTemp          311
+     ?Subroutine1                      12
+     ?Subroutine0                      10
+     ?Subroutine2                      11
+     ??EnddeviceApp_LookupTemp?relay    6
+
+ 
+ 344 bytes in segment BANKED_CODE
+   6 bytes in segment BANK_RELAYS
+ 344 bytes in segment XDATA_ROM_C
+ 
+ 350 bytes of CODE  memory
+ 344 bytes of CONST memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,41 @@
+[DebugChecksum]
+Checksum=-292136763
+[DisAssemblyWindow]
+NumStates=_ 1
+State 1=_ 1
+[InstructionProfiling]
+Enabled=_ 0
+[CodeCoverage]
+Enabled=_ 0
+[StackPlugin]
+Enabled=1
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnHow=0
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Breakpoints]
+Count=0
+[ChipconEmu]
+Stop timers on halt=1
+Leave target running=1
+[Aliases]
+A0=_ "C:\Users\William\Desktop\毕业设计\SRC\EndDevice Project for edited\Projects\zstack\ZMain\TI2530DB\ZMain.c" ""
+A1=_ "C:\Users\William\Desktop\毕业设计\SRC\EndDevice Project test key ok1.0\Components\hal\target\CC2530EB\_hal_uart_dma.c" ""
+A2=_ "C:\Users\William\Desktop\毕业设计\SRC\EndDevice Project test key ok1.0\Components\hal\target\CC2530EB\hal_uart.c" ""
+A3=_ "C:\Users\William\Desktop\毕业设计\SRC\EndDevice Project test key ok1.0\Components\mac\low_level\srf04\single_chip\mac_mcu.c" ""
+A4=_ "C:\Users\William\Desktop\毕业设计\SRC\EndDevice Project test key ok1.0\Projects\zstack\ZMain\TI2530DB\ZMain.c" ""
+A5=_ "C:\Users\William\Desktop\毕业设计\SRC\EndDevice Project test lcd\Components\mac\low_level\srf04\single_chip\mac_mcu.c" ""
+A6=_ "C:\Users\William\Desktop\毕业设计\SRC\EndDevice Project test lcd\Components\osal\common\OSAL_Memory.c" ""
+Count=7
+SuppressDialog=0

@@ -1,0 +1,1636 @@
+###############################################################################
+#                                                                             #
+# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         20/Apr/2015  19:51:19 #
+# Copyright 2004-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Core               =  plain                                              #
+#    Code model         =  banked                                             #
+#    Data model         =  large                                              #
+#    Calling convention =  xdata reentrant                                    #
+#    Constant location  =  data_rom                                           #
+#    Dptr setup         =  1,16                                               #
+#    Source file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice    #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\Source\Enddevicekey.c                      #
+#    Command line       =  -f "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic #
+#                          e Project for editing\Projects\zstack\MyEnddevice\ #
+#                          EndDevice\CC2530DB\..\..\..\Tools\CC2530DB\f8wEnde #
+#                          v.cfg" (-DCPU32MHZ -DROOT=__near_func              #
+#                          -DMAC_CFG_TX_DATA_MAX=3 -DMAC_CFG_TX_MAX=6         #
+#                          -DMAC_CFG_RX_MAX=3) -f "C:\Users\William\Desktop\± #
+#                          œ“µ…Ëº∆\SRC\EndDevice Project for                  #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"        #
+#                          (-DZIGBEEPRO -DSECURE=0 -DZG_SECURE_DYNAMIC=0      #
+#                          -DREFLECTOR -DDEFAULT_CHANLIST=0x02000000          #
+#                          -DZDAPP_CONFIG_PAN_ID=0xFFFF                       #
+#                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MA #
+#                          SK=0x007F -DBEACON_REQUEST_DELAY=100               #
+#                          -DBEACON_REQ_DELAY_MASK=0x00FF                     #
+#                          -DLINK_STATUS_JITTER_MASK=0x007F                   #
+#                          -DROUTE_EXPIRY_TIME=30 -DAPSC_ACK_WAIT_DURATION_PO #
+#                          LLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7             #
+#                          -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3    #
+#                          -DNWK_MAX_DATA_RETRIES=2                           #
+#                          -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9         #
+#                          -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40           #
+#                          -DNWK_MAX_BINDING_ENTRIES=4                        #
+#                          -DMAX_BINDING_CLUSTER_IDS=4 "-DDEFAULT_KEY={0x01,  #
+#                          0x03, 0x05, 0x07, 0x09, 0x0B, 0x0D, 0x0F, 0x00,    #
+#                          0x02, 0x04, 0x06, 0x08, 0x0A, 0x0C, 0x0D}"         #
+#                          -DMAC_MAX_FRAME_SIZE=116                           #
+#                          -DZDNWKMGR_MIN_TRANSMISSIONS=20 "-DCONST=const     #
+#                          __code" -DGENERIC=__generic                        #
+#                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000        #
+#                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)   #
+#                          -DREJOIN_POLL_RATE=440 "C:\Users\William\Desktop\± #
+#                          œ“µ…Ëº∆\SRC\EndDevice Project for                  #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\Sour #
+#                          ce\Enddevicekey.c" -D NWK_AUTO_POLL -D             #
+#                          NV_RESTORE=1 -D xZTOOL_P1 -D xMT_TASK -D           #
+#                          xMT_SYS_FUNC -D xMT_ZDO_FUNC -D                    #
+#                          xLCD_SUPPORTED=DEBUG -lC                           #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\List\" -lA            #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\List\"                #
+#                          --diag_suppress Pe001,Pa010 -o                     #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\Obj\" -e              #
+#                          --no_code_motion --debug --core=plain --dptr=16,1  #
+#                          --data_model=large --code_model=banked             #
+#                          --calling_convention=xdata_reentrant               #
+#                          --place_constants=data_rom --nr_virtual_regs 16    #
+#                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic #
+#                          e Project for editing\Projects\zstack\MyEnddevice\ #
+#                          EndDevice\CC2530DB\" -I "C:\Users\William\Desktop\ #
+#                          ±œ“µ…Ëº∆\SRC\EndDevice Project for                 #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\Source\" -I "C:\Users\William\Desktop\±œ“µ #
+#                          …Ëº∆\SRC\EndDevice Project for                     #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\ZMain\TI2530DB\" -I                  #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\hal\inc #
+#                          lude\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\E #
+#                          ndDevice Project for editing\Projects\zstack\MyEnd #
+#                          device\EndDevice\CC2530DB\..\..\..\..\..\Component #
+#                          s\hal\target\CC2530EB\" -I                         #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\mac\inc #
+#                          lude\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\E #
+#                          ndDevice Project for editing\Projects\zstack\MyEnd #
+#                          device\EndDevice\CC2530DB\..\..\..\..\..\Component #
+#                          s\mac\high_level\" -I "C:\Users\William\Desktop\±œ #
+#                          “µ…Ëº∆\SRC\EndDevice Project for                   #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\..\..\Components\mac\low_level\srf04 #
+#                          \" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDe #
+#                          vice Project for editing\Projects\zstack\MyEnddevi #
+#                          ce\EndDevice\CC2530DB\..\..\..\..\..\Components\ma #
+#                          c\low_level\srf04\single_chip\" -I                 #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\mt\"    #
+#                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic #
+#                          e Project for editing\Projects\zstack\MyEnddevice\ #
+#                          EndDevice\CC2530DB\..\..\..\..\..\Components\osal\ #
+#                          include\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SR #
+#                          C\EndDevice Project for editing\Projects\zstack\My #
+#                          Enddevice\EndDevice\CC2530DB\..\..\..\..\..\Compon #
+#                          ents\services\saddr\" -I                           #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\service #
+#                          s\sdata\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SR #
+#                          C\EndDevice Project for editing\Projects\zstack\My #
+#                          Enddevice\EndDevice\CC2530DB\..\..\..\..\..\Compon #
+#                          ents\stack\af\" -I "C:\Users\William\Desktop\±œ“µ… #
+#                          Ëº∆\SRC\EndDevice Project for                      #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\..\..\Components\stack\nwk\" -I      #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\stack\s #
+#                          api\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\En #
+#                          dDevice Project for editing\Projects\zstack\MyEndd #
+#                          evice\EndDevice\CC2530DB\..\..\..\..\..\Components #
+#                          \stack\sec\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆ #
+#                          \SRC\EndDevice Project for                         #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\..\..\Components\stack\sys\" -I      #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\stack\z #
+#                          do\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\End #
+#                          Device Project for editing\Projects\zstack\MyEndde #
+#                          vice\EndDevice\CC2530DB\..\..\..\..\..\Components\ #
+#                          zmac\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\E #
+#                          ndDevice Project for editing\Projects\zstack\MyEnd #
+#                          device\EndDevice\CC2530DB\..\..\..\..\..\Component #
+#                          s\zmac\f8w\" -Ohz                                  #
+#    List file          =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice    #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\List\Enddevicekey.lst #
+#    Object file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice    #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\Obj\Enddevicekey.r51  #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zstack\MyEnddevice\EndDevice\Source\Enddevicekey.c
+      1          #include "EnddeviceVariable.h"
+
+   \                                 In  segment SFR_AN, at 0x90
+   \   union <unnamed> volatile __sfr _A_P1
+   \                     _A_P1:
+   \   000000                DS 1
+      2          #include "Enddevicekey.h"
+      3          #include "EnddeviceAF.h"
+      4          
+      5          /*********************************************************************
+      6           * @fn      EnddeviceApp_HandleKeys
+      7           *
+      8           * @brief   Handles all key events for this device.
+      9           *
+     10           * @param   shift - true if in shift/alt.
+     11           * @param   keys - bit field for key events. Valid entries:
+     12           *
+     13           * @return  none
+     14           */
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     15          void EnddeviceApp_HandleKeys( uint8 shift, uint8 keys)
+   \                     EnddeviceApp_HandleKeys:
+     16          {
+   \   000000   74F4         MOV     A,#-0xc
+   \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
+   \   000005                ; Saved register size: 12
+   \   000005                ; Auto size: 0
+   \   000005   E9           MOV     A,R1
+   \   000006   FE           MOV     R6,A
+   \   000007   EA           MOV     A,R2
+   \   000008   FF           MOV     R7,A
+     17             /*********************************************************
+     18             *          
+     19             *                  the shift is not pressed
+     20             *
+     21            **************************************************************/
+     22            if(shift == 0x00) /// 
+   \   000009   EE           MOV     A,R6
+   \   00000A   6003         JZ      $+5
+   \   00000C   02....       LJMP    ??EnddeviceApp_HandleKeys_0 & 0xFFFF
+     23            {
+     24              
+     25              /****respond key1 only when powered on**********************************/
+     26              if ( (keys & HAL_KEY_DEC) && (POWER))
+   \   00000F   EF           MOV     A,R7
+   \   000010   A2E0         MOV     C,0xE0 /* A   */.0
+   \   000012   5043         JNC     ??EnddeviceApp_HandleKeys_1
+   \   000014   90....       MOV     DPTR,#POWER
+   \   000017   E0           MOVX    A,@DPTR
+   \   000018   603D         JZ      ??EnddeviceApp_HandleKeys_1
+     27              {
+     28                if(End_Mod)// the enddevice is automatically operated
+   \   00001A   90....       MOV     DPTR,#End_Mod
+   \   00001D   E0           MOVX    A,@DPTR
+   \   00001E   6035         JZ      ??EnddeviceApp_HandleKeys_2
+     29                {
+     30                  if(Real_Tem_Mod) // the enddevice now control the room temperature,
+   \   000020   90....       MOV     DPTR,#Real_Tem_Mod
+   \   000023   E0           MOVX    A,@DPTR
+   \   000024   601A         JZ      ??EnddeviceApp_HandleKeys_3
+     31                                //decline the set temperature
+     32                  {
+     33                    SetRM_Temperature--;
+   \   000026   90....       MOV     DPTR,#SetRM_Temperature
+   \   000029   E0           MOVX    A,@DPTR
+   \   00002A   14           DEC     A
+   \   00002B   F0           MOVX    @DPTR,A
+     34                    if(SetRM_Temperature <= 16)
+   \   00002C   C3           CLR     C
+   \   00002D   9411         SUBB    A,#0x11
+   \   00002F   5005         JNC     ??EnddeviceApp_HandleKeys_4
+     35                      SetRM_Temperature = 16;
+   \                     ??EnddeviceApp_HandleKeys_5:
+   \   000031   7410         MOV     A,#0x10
+   \                     ??EnddeviceApp_HandleKeys_6:
+   \   000033   F0           MOVX    @DPTR,A
+   \   000034   8021         SJMP    ??EnddeviceApp_HandleKeys_1
+     36                    if(SetRM_Temperature >= 30)
+   \                     ??EnddeviceApp_HandleKeys_4:
+   \   000036   E0           MOVX    A,@DPTR
+   \   000037   C3           CLR     C
+   \   000038   941E         SUBB    A,#0x1e
+   \   00003A   401B         JC      ??EnddeviceApp_HandleKeys_1
+     37                      SetRM_Temperature = 30;
+   \   00003C   741E         MOV     A,#0x1e
+   \   00003E   80F3         SJMP    ??EnddeviceApp_HandleKeys_6
+     38                  }
+     39                  else // the enddevice now control the floor temperature,
+     40                       // decline the set temperature
+     41                  {
+     42                    SetFL_Temperature--;
+   \                     ??EnddeviceApp_HandleKeys_3:
+   \   000040   90....       MOV     DPTR,#SetFL_Temperature
+   \   000043   E0           MOVX    A,@DPTR
+   \   000044   14           DEC     A
+   \   000045   F0           MOVX    @DPTR,A
+     43                    if(SetFL_Temperature <= 16)
+   \   000046   C3           CLR     C
+   \   000047   9411         SUBB    A,#0x11
+   \   000049   40E6         JC      ??EnddeviceApp_HandleKeys_5
+     44                      SetFL_Temperature = 16;
+     45                    if(SetFL_Temperature >= 50)
+   \   00004B   E0           MOVX    A,@DPTR
+   \   00004C   C3           CLR     C
+   \   00004D   9432         SUBB    A,#0x32
+   \   00004F   4006         JC      ??EnddeviceApp_HandleKeys_1
+     46                      SetFL_Temperature =50;
+   \   000051   7432         MOV     A,#0x32
+   \   000053   80DE         SJMP    ??EnddeviceApp_HandleKeys_6
+     47          		// send the messge to the coordinator
+     48                  }
+     49                }
+     50                else // the enddevice is manually operated
+     51                {
+     52                  REL_CTL = 0; // open the relay, shutdown the heater
+   \                     ??EnddeviceApp_HandleKeys_2:
+   \   000055   C292         CLR     0x90.2
+     53                }
+     54              }
+     55            
+     56              /**************respond key2 only when powered on**********************/
+     57              if ( (keys & HAL_KEY_INC) &&  (POWER))
+   \                     ??EnddeviceApp_HandleKeys_1:
+   \   000057   EF           MOV     A,R7
+   \   000058   A2E1         MOV     C,0xE0 /* A   */.1
+   \   00005A   5043         JNC     ??EnddeviceApp_HandleKeys_7
+   \   00005C   90....       MOV     DPTR,#POWER
+   \   00005F   E0           MOVX    A,@DPTR
+   \   000060   603D         JZ      ??EnddeviceApp_HandleKeys_7
+     58              {
+     59                 if(End_Mod)// the enddevice is in the auto mode
+   \   000062   90....       MOV     DPTR,#End_Mod
+   \   000065   E0           MOVX    A,@DPTR
+   \   000066   6035         JZ      ??EnddeviceApp_HandleKeys_8
+     60                {
+     61                  if(Real_Tem_Mod) // the enddevice now control the room temperature,
+   \   000068   90....       MOV     DPTR,#Real_Tem_Mod
+   \   00006B   E0           MOVX    A,@DPTR
+   \   00006C   601A         JZ      ??EnddeviceApp_HandleKeys_9
+     62                                  //decline the set temperature
+     63                  {
+     64                    SetRM_Temperature++;
+   \   00006E   90....       MOV     DPTR,#SetRM_Temperature
+   \   000071   E0           MOVX    A,@DPTR
+   \   000072   04           INC     A
+   \   000073   F0           MOVX    @DPTR,A
+     65                    if(SetRM_Temperature <= 16)
+   \   000074   C3           CLR     C
+   \   000075   9411         SUBB    A,#0x11
+   \   000077   5005         JNC     ??EnddeviceApp_HandleKeys_10
+     66                      SetRM_Temperature = 16;
+   \                     ??EnddeviceApp_HandleKeys_11:
+   \   000079   7410         MOV     A,#0x10
+   \                     ??EnddeviceApp_HandleKeys_12:
+   \   00007B   F0           MOVX    @DPTR,A
+   \   00007C   8021         SJMP    ??EnddeviceApp_HandleKeys_7
+     67                    if(SetRM_Temperature >= 30)
+   \                     ??EnddeviceApp_HandleKeys_10:
+   \   00007E   E0           MOVX    A,@DPTR
+   \   00007F   C3           CLR     C
+   \   000080   941E         SUBB    A,#0x1e
+   \   000082   401B         JC      ??EnddeviceApp_HandleKeys_7
+     68                      SetRM_Temperature = 30;
+   \   000084   741E         MOV     A,#0x1e
+   \   000086   80F3         SJMP    ??EnddeviceApp_HandleKeys_12
+     69                  }
+     70                  else // the enddevice now control the floor temperature,
+     71                       // decline the set temperature
+     72                  {
+     73                    SetFL_Temperature++;
+   \                     ??EnddeviceApp_HandleKeys_9:
+   \   000088   90....       MOV     DPTR,#SetFL_Temperature
+   \   00008B   E0           MOVX    A,@DPTR
+   \   00008C   04           INC     A
+   \   00008D   F0           MOVX    @DPTR,A
+     74                    if(SetFL_Temperature <= 16)
+   \   00008E   C3           CLR     C
+   \   00008F   9411         SUBB    A,#0x11
+   \   000091   40E6         JC      ??EnddeviceApp_HandleKeys_11
+     75                      SetFL_Temperature = 16;
+     76                    if(SetFL_Temperature >= 50)
+   \   000093   E0           MOVX    A,@DPTR
+   \   000094   C3           CLR     C
+   \   000095   9432         SUBB    A,#0x32
+   \   000097   4006         JC      ??EnddeviceApp_HandleKeys_7
+     77                      SetFL_Temperature =50;
+   \   000099   7432         MOV     A,#0x32
+   \   00009B   80DE         SJMP    ??EnddeviceApp_HandleKeys_12
+     78                  }
+     79                }
+     80                else // the enddevice is in the manual mode
+     81                {
+     82                  REL_CTL = 1; // open the relay, shutdown the heater
+   \                     ??EnddeviceApp_HandleKeys_8:
+   \   00009D   D292         SETB    0x90.2
+     83                }
+     84              }
+     85              
+     86            /*******************************key3**********************************/
+     87              if ( keys & HAL_KEY_PWR )
+   \                     ??EnddeviceApp_HandleKeys_7:
+   \   00009F   EF           MOV     A,R7
+   \   0000A0   A2E2         MOV     C,0xE0 /* A   */.2
+   \   0000A2   500F         JNC     ??EnddeviceApp_HandleKeys_13
+     88              {
+     89                    POWER ^= 1;
+   \   0000A4   90....       MOV     DPTR,#POWER
+   \   0000A7   E0           MOVX    A,@DPTR
+   \   0000A8   6401         XRL     A,#0x1
+   \   0000AA   F0           MOVX    @DPTR,A
+     90                    REL_CTL = 0;
+   \   0000AB   C292         CLR     0x90.2
+     91                    Real_Tem_Mod = TRUE; 
+   \   0000AD   90....       MOV     DPTR,#Real_Tem_Mod
+   \   0000B0   7401         MOV     A,#0x1
+   \   0000B2   F0           MOVX    @DPTR,A
+     92              }
+     93            
+     94            /**************respond key4 only when powered on**********************/
+     95              if ( (keys & HAL_KEY_FLR) &&  (POWER) )
+   \                     ??EnddeviceApp_HandleKeys_13:
+   \   0000B3   EF           MOV     A,R7
+   \   0000B4   A2E3         MOV     C,0xE0 /* A   */.3
+   \   0000B6   500D         JNC     ??EnddeviceApp_HandleKeys_14
+   \   0000B8   90....       MOV     DPTR,#POWER
+   \   0000BB   E0           MOVX    A,@DPTR
+   \   0000BC   6007         JZ      ??EnddeviceApp_HandleKeys_14
+     96              { 
+     97                  Real_Tem_Mod ^= 1;// switch the Temperature to be displayed
+   \   0000BE   90....       MOV     DPTR,#Real_Tem_Mod
+   \   0000C1   E0           MOVX    A,@DPTR
+   \   0000C2   6401         XRL     A,#0x1
+   \   0000C4   F0           MOVX    @DPTR,A
+     98              }
+     99              
+    100            /************respond key5 only when powered on**********************/
+    101              if ( (keys & HAL_KEY_AIR) &&  (POWER))
+   \                     ??EnddeviceApp_HandleKeys_14:
+   \   0000C5   EF           MOV     A,R7
+   \   0000C6   A2E4         MOV     C,0xE0 /* A   */.4
+   \   0000C8   4003         JC      $+5
+   \   0000CA   02....       LJMP    ??EnddeviceApp_HandleKeys_15 & 0xFFFF
+   \   0000CD   90....       MOV     DPTR,#POWER
+   \   0000D0   E0           MOVX    A,@DPTR
+   \   0000D1   7003         JNZ     $+5
+   \   0000D3   02....       LJMP    ??EnddeviceApp_HandleKeys_15 & 0xFFFF
+    102              {
+    103                  End_Mod ^= 1;// switch the enddeivece mode
+   \   0000D6   90....       MOV     DPTR,#End_Mod
+   \   0000D9   E0           MOVX    A,@DPTR
+   \   0000DA   6401         XRL     A,#0x1
+   \   0000DC   F0           MOVX    @DPTR,A
+    104                  REL_CTL = 0;
+   \   0000DD   C292         CLR     0x90.2
+   \   0000DF   02....       LJMP    ??EnddeviceApp_HandleKeys_15 & 0xFFFF
+    105              }
+    106          	
+    107            }
+    108            
+    109            /*********************************************************
+    110             *          
+    111             *                  the shift is  pressed
+    112             *
+    113            **************************************************************/
+    114            else if(shift == 0x01 && (!POWER))///////the shift is pressed only
+   \                     ??EnddeviceApp_HandleKeys_0:
+   \   0000E2   7401         MOV     A,#0x1
+   \   0000E4   6E           XRL     A,R6
+   \   0000E5   6003         JZ      $+5
+   \   0000E7   02....       LJMP    ??EnddeviceApp_HandleKeys_16 & 0xFFFF
+   \   0000EA   90....       MOV     DPTR,#POWER
+   \   0000ED   E0           MOVX    A,@DPTR
+   \   0000EE   6003         JZ      $+5
+   \   0000F0   02....       LJMP    ??EnddeviceApp_HandleKeys_15 & 0xFFFF
+    115             // in power off mode
+    116            { 
+    117              debughighnum = debugnum / 16;
+   \   0000F3   90....       MOV     DPTR,#debugnum
+   \   0000F6   E0           MOVX    A,@DPTR
+   \   0000F7   C4           SWAP    A
+   \   0000F8   540F         ANL     A,#0xf
+   \   0000FA   90....       MOV     DPTR,#debughighnum
+   \   0000FD   F0           MOVX    @DPTR,A
+    118              debuglownum  = debugnum % 16;
+   \   0000FE   90....       MOV     DPTR,#debugnum
+   \   000101   E0           MOVX    A,@DPTR
+   \   000102   540F         ANL     A,#0xf
+   \   000104   90....       MOV     DPTR,#debuglownum
+   \   000107   F0           MOVX    @DPTR,A
+    119              if((keys & HAL_KEY_AIR) && (DebugMode))// selecting which to be changed the ID or NETID
+   \   000108   EF           MOV     A,R7
+   \   000109   A2E4         MOV     C,0xE0 /* A   */.4
+   \   00010B   5012         JNC     ??EnddeviceApp_HandleKeys_17
+   \   00010D   90....       MOV     DPTR,#DebugMode
+   \   000110   E0           MOVX    A,@DPTR
+   \   000111   600C         JZ      ??EnddeviceApp_HandleKeys_17
+    120              {
+    121                ID_OR_NET ^= 1; 
+   \   000113   90....       MOV     DPTR,#ID_OR_NET
+   \   000116   E0           MOVX    A,@DPTR
+   \   000117   6401         XRL     A,#0x1
+   \   000119   F0           MOVX    @DPTR,A
+    122                BIT_SEL = FALSE;    // set the low bit to be changed
+   \   00011A   90....       MOV     DPTR,#BIT_SEL
+   \   00011D   E4           CLR     A
+   \   00011E   F0           MOVX    @DPTR,A
+    123              }
+    124              
+    125              if((keys & HAL_KEY_FLR) && (DebugMode))
+   \                     ??EnddeviceApp_HandleKeys_17:
+   \   00011F   EF           MOV     A,R7
+   \   000120   A2E3         MOV     C,0xE0 /* A   */.3
+   \   000122   500D         JNC     ??EnddeviceApp_HandleKeys_18
+   \   000124   90....       MOV     DPTR,#DebugMode
+   \   000127   E0           MOVX    A,@DPTR
+   \   000128   6007         JZ      ??EnddeviceApp_HandleKeys_18
+    126              {
+    127                 BIT_SEL ^= 1; // switch between the low or high bit
+   \   00012A   90....       MOV     DPTR,#BIT_SEL
+   \   00012D   E0           MOVX    A,@DPTR
+   \   00012E   6401         XRL     A,#0x1
+   \   000130   F0           MOVX    @DPTR,A
+    128              }
+    129              
+    130              if(keys & HAL_KEY_DEC)
+   \                     ??EnddeviceApp_HandleKeys_18:
+   \   000131   EF           MOV     A,R7
+   \   000132   A2E0         MOV     C,0xE0 /* A   */.0
+   \   000134   5022         JNC     ??EnddeviceApp_HandleKeys_19
+    131              {
+    132                if(!DebugMode)  // enter the debug mode
+   \   000136   90....       MOV     DPTR,#DebugMode
+   \   000139   E0           MOVX    A,@DPTR
+   \   00013A   7004         JNZ     ??EnddeviceApp_HandleKeys_20
+    133                {
+    134                  DebugMode = TRUE;
+   \   00013C   7401         MOV     A,#0x1
+   \   00013E   8017         SJMP    ??EnddeviceApp_HandleKeys_21
+    135                }
+    136                else// in the debug mode to  decline the corresponding  bit num
+    137                {
+    138                  if(BIT_SEL)
+   \                     ??EnddeviceApp_HandleKeys_20:
+   \   000140   90....       MOV     DPTR,#BIT_SEL
+   \   000143   E0           MOVX    A,@DPTR
+   \   000144   6005         JZ      ??EnddeviceApp_HandleKeys_22
+    139                  {
+    140                    debughighnum--;
+   \   000146   90....       MOV     DPTR,#debughighnum
+   \   000149   8003         SJMP    ??EnddeviceApp_HandleKeys_23
+    141                     if(debughighnum <= 0)
+    142                     {
+    143                      debughighnum = 0;
+    144                     }
+    145                     if(debughighnum > 15)
+    146                     {
+    147                      debughighnum = 0;
+    148                     }
+    149                  }
+    150                  else
+    151                  {
+    152                     debuglownum--;
+   \                     ??EnddeviceApp_HandleKeys_22:
+   \   00014B   90....       MOV     DPTR,#debuglownum
+   \                     ??EnddeviceApp_HandleKeys_23:
+   \   00014E   E0           MOVX    A,@DPTR
+   \   00014F   14           DEC     A
+   \   000150   F0           MOVX    @DPTR,A
+    153                     if(debuglownum <= 0)
+    154                     {
+    155                      debuglownum = 0;
+    156                     }
+    157                     if(debuglownum > 15)
+   \   000151   C3           CLR     C
+   \   000152   9410         SUBB    A,#0x10
+   \   000154   4002         JC      ??EnddeviceApp_HandleKeys_19
+    158                     {
+    159                      debuglownum = 0;
+   \   000156   E4           CLR     A
+   \                     ??EnddeviceApp_HandleKeys_21:
+   \   000157   F0           MOVX    @DPTR,A
+    160                     }
+    161                  }
+    162                } 
+    163              }
+    164              
+    165              // in the debug mode to  increase the corresponding  bit num
+    166              if((keys & HAL_KEY_INC) && (DebugMode)) 
+   \                     ??EnddeviceApp_HandleKeys_19:
+   \   000158   EF           MOV     A,R7
+   \   000159   A2E1         MOV     C,0xE0 /* A   */.1
+   \   00015B   501E         JNC     ??EnddeviceApp_HandleKeys_24
+   \   00015D   90....       MOV     DPTR,#DebugMode
+   \   000160   E0           MOVX    A,@DPTR
+   \   000161   6018         JZ      ??EnddeviceApp_HandleKeys_24
+    167              {
+    168                 if(BIT_SEL)
+   \   000163   90....       MOV     DPTR,#BIT_SEL
+   \   000166   E0           MOVX    A,@DPTR
+   \   000167   6005         JZ      ??EnddeviceApp_HandleKeys_25
+    169                {
+    170                  debughighnum++;
+   \   000169   90....       MOV     DPTR,#debughighnum
+   \   00016C   8003         SJMP    ??EnddeviceApp_HandleKeys_26
+    171                   if(debughighnum <= 0)
+    172                   {
+    173                    debughighnum = 0;
+    174                   }
+    175                   if(debughighnum > 15)
+    176                   {
+    177                    debughighnum = 0;
+    178                   }
+    179                }
+    180                else
+    181                {
+    182                   debuglownum++;
+   \                     ??EnddeviceApp_HandleKeys_25:
+   \   00016E   90....       MOV     DPTR,#debuglownum
+   \                     ??EnddeviceApp_HandleKeys_26:
+   \   000171   E0           MOVX    A,@DPTR
+   \   000172   04           INC     A
+   \   000173   F0           MOVX    @DPTR,A
+    183                   if(debuglownum <= 0)
+    184                   {
+    185                    debuglownum = 0;
+    186                   }
+    187                   if(debuglownum > 15)
+   \   000174   C3           CLR     C
+   \   000175   9410         SUBB    A,#0x10
+   \   000177   4002         JC      ??EnddeviceApp_HandleKeys_24
+    188                   {
+    189                    debuglownum = 0;
+   \   000179   E4           CLR     A
+   \   00017A   F0           MOVX    @DPTR,A
+    190                   }
+    191                }
+    192              }
+    193              debugnum = debughighnum * 16 + debuglownum; 
+   \                     ??EnddeviceApp_HandleKeys_24:
+   \   00017B   90....       MOV     DPTR,#debuglownum
+   \   00017E   C082         PUSH    DPL
+   \   000180   90....       MOV     DPTR,#debughighnum
+   \   000183   E0           MOVX    A,@DPTR
+   \   000184   C4           SWAP    A
+   \   000185   54F0         ANL     A,#0xf0
+   \   000187   7583..       MOV     DPH,#(debuglownum >> 8) & 0xff
+   \   00018A   D082         POP     DPL
+   \   00018C   F8           MOV     R0,A
+   \   00018D   E0           MOVX    A,@DPTR
+   \   00018E   28           ADD     A,R0
+   \   00018F   90....       MOV     DPTR,#debugnum
+   \   000192   F0           MOVX    @DPTR,A
+   \   000193   02....       LJMP    ??EnddeviceApp_HandleKeys_15 & 0xFFFF
+    194            }
+    195            
+    196            /*********************************************************
+    197             *          
+    198             *                  the shift is  depressed
+    199             *
+    200            **************************************************************/
+    201            else if(shift == 0x02)
+   \                     ??EnddeviceApp_HandleKeys_16:
+   \   000196   7402         MOV     A,#0x2
+   \   000198   6E           XRL     A,R6
+   \   000199   6003         JZ      $+5
+   \   00019B   02....       LJMP    ??EnddeviceApp_HandleKeys_27 & 0xFFFF
+    202            {
+    203              DebugMode = FALSE;
+   \   00019E   90....       MOV     DPTR,#DebugMode
+   \   0001A1   E4           CLR     A
+   \   0001A2   F0           MOVX    @DPTR,A
+    204              if(ID_OR_NET)
+   \   0001A3   90....       MOV     DPTR,#ID_OR_NET
+   \   0001A6   E0           MOVX    A,@DPTR
+   \   0001A7   90....       MOV     DPTR,#debugnum
+   \   0001AA   6070         JZ      ??EnddeviceApp_HandleKeys_28
+    205              {
+    206                MyDeviceId = debugnum;
+   \   0001AC   E0           MOVX    A,@DPTR
+   \   0001AD   90....       MOV     DPTR,#MyDeviceId
+   \   0001B0   F0           MOVX    @DPTR,A
+    207                MsgBuf[0] = 1;
+   \   0001B1   12....       LCALL   ?Subroutine5 & 0xFFFF
+    208                MsgBuf[1] = MyDeviceId;
+    209                MsgBuf[2] = CMD_SET_NEW_DEVICEID;
+   \                     ??CrossCallReturnLabel_5:
+   \   0001B4   740A         MOV     A,#0xa
+   \   0001B6   F0           MOVX    @DPTR,A
+    210                MsgBuf[3] = MyDeviceId ;
+   \   0001B7   90....       MOV     DPTR,#MyDeviceId
+   \   0001BA   12....       LCALL   ??Subroutine13_0 & 0xFFFF
+    211                
+    212                
+    213                //MyDeviceId = MyDeviceId;
+    214                // the item is initialized already
+    215                if(osal_nv_item_init(MY_DEVICEID_NV,1,NULL) == SUCCESS)
+   \                     ??CrossCallReturnLabel_42:
+   \   0001BD   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   0001C0   7C01         MOV     R4,#0x1
+   \   0001C2   7D00         MOV     R5,#0x0
+   \   0001C4   7A01         MOV     R2,#0x1
+   \   0001C6   12....       LCALL   ??Subroutine10_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_26:
+   \   0001C9   12....       LCALL   ?DEALLOC_XSTACK8
+   \   0001CC   E9           MOV     A,R1
+   \   0001CD   7035         JNZ     ??EnddeviceApp_HandleKeys_29
+    216                {
+    217                   osal_nv_write(MY_DEVICEID_NV,0,1,&MyDeviceId);
+   \                     ??EnddeviceApp_HandleKeys_30:
+   \   0001CF                ; Setup parameters for call to function osal_nv_write
+   \   0001CF   75....       MOV     ?V0 + 0,#MyDeviceId & 0xff
+   \   0001D2   75....       MOV     ?V0 + 1,#(MyDeviceId >> 8) & 0xff
+   \   0001D5   78..         MOV     R0,#?V0 + 0
+   \   0001D7   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   0001DA   75..01       MOV     ?V0 + 0,#0x1
+   \   0001DD   75..00       MOV     ?V0 + 1,#0x0
+   \   0001E0   78..         MOV     R0,#?V0 + 0
+   \   0001E2   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   0001E5   7C00         MOV     R4,#0x0
+   \   0001E7   7D00         MOV     R5,#0x0
+   \   0001E9   7A01         MOV     R2,#0x1
+   \   0001EB   12....       LCALL   ?Subroutine8 & 0xFFFF
+   \                     ??CrossCallReturnLabel_15:
+   \   0001EE   12....       LCALL   ?DEALLOC_XSTACK8
+    218                   EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
+   \   0001F1                ; Setup parameters for call to function EnddeviceApp_SendP2PMessage
+   \   0001F1   75....       MOV     ?V0 + 0,#MsgBuf & 0xff
+   \   0001F4   75....       MOV     ?V0 + 1,#(MsgBuf >> 8) & 0xff
+   \   0001F7   78..         MOV     R0,#?V0 + 0
+   \   0001F9   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   0001FC   12....       LCALL   ?Subroutine7 & 0xFFFF
+    219                  // HalLcdWriteChar5x8(17,0,50,TRUE);
+    220                }
+   \                     ??CrossCallReturnLabel_8:
+   \   0001FF   12....       LCALL   ?DEALLOC_XSTACK8
+   \   000202   8040         SJMP    ??EnddeviceApp_HandleKeys_31
+    221                else if(osal_nv_item_init(MY_DEVICEID_NV,1,NULL) ==  NV_ITEM_UNINIT)
+   \                     ??EnddeviceApp_HandleKeys_29:
+   \   000204                ; Setup parameters for call to function osal_nv_item_init
+   \   000204   78..         MOV     R0,#?V0 + 0
+   \   000206   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   000209   7C01         MOV     R4,#0x1
+   \   00020B   7D00         MOV     R5,#0x0
+   \   00020D   7A01         MOV     R2,#0x1
+   \   00020F   12....       LCALL   ??Subroutine10_0 & 0xFFFF
+    222                {
+    223                   osal_nv_write(MY_DEVICEID_NV,0,1,&MyDeviceId);
+    224                   EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
+    225                }
+    226                else;
+    227                  
+    228                
+    229              }
+   \                     ??CrossCallReturnLabel_27:
+   \   000212   12....       LCALL   ?DEALLOC_XSTACK8
+   \   000215   E9           MOV     A,R1
+   \   000216   6409         XRL     A,#0x9
+   \   000218   702A         JNZ     ??EnddeviceApp_HandleKeys_31
+   \   00021A   80B3         SJMP    ??EnddeviceApp_HandleKeys_30
+    230              else
+    231              {
+    232                PANID = debugnum;
+   \                     ??EnddeviceApp_HandleKeys_28:
+   \   00021C   E0           MOVX    A,@DPTR
+   \   00021D   90....       MOV     DPTR,#PANID
+   \   000220   F0           MOVX    @DPTR,A
+   \   000221   A3           INC     DPTR
+   \   000222   E4           CLR     A
+   \   000223   F0           MOVX    @DPTR,A
+    233                _NIB.nwkPanId = PANID;
+   \   000224   90....       MOV     DPTR,#PANID
+   \   000227   E0           MOVX    A,@DPTR
+   \   000228   90....       MOV     DPTR,#_NIB + 33
+   \   00022B   F0           MOVX    @DPTR,A
+   \   00022C   A3           INC     DPTR
+   \   00022D   E4           CLR     A
+   \   00022E   F0           MOVX    @DPTR,A
+    234                NLME_UpdateNV(0x01);
+   \   00022F                ; Setup parameters for call to function NLME_UpdateNV
+   \   00022F   7901         MOV     R1,#0x1
+   \   000231   12....       LCALL   ??NLME_UpdateNV?relay
+    235                // one second later ,restart
+    236                osal_start_timerEx(EnddeviceApp_TaskID,
+    237                               EnddeviceApp_RESET_MSG_EVT ,
+    238                              2000);   
+   \   000234                ; Setup parameters for call to function osal_start_timerEx
+   \   000234   7CD0         MOV     R4,#-0x30
+   \   000236   7D07         MOV     R5,#0x7
+   \   000238   7A04         MOV     R2,#0x4
+   \   00023A   7B00         MOV     R3,#0x0
+   \   00023C   90....       MOV     DPTR,#EnddeviceApp_TaskID
+   \   00023F   E0           MOVX    A,@DPTR
+   \   000240   F9           MOV     R1,A
+   \   000241   12....       LCALL   ??osal_start_timerEx?relay
+    239              }
+    240              
+    241              uint8 first = PANID / 4096;
+   \                     ??EnddeviceApp_HandleKeys_31:
+   \   000244   90....       MOV     DPTR,#PANID
+   \   000247   E0           MOVX    A,@DPTR
+   \   000248   F5..         MOV     ?V0 + 0,A
+   \   00024A   A3           INC     DPTR
+   \   00024B   E0           MOVX    A,@DPTR
+   \   00024C   F5..         MOV     ?V0 + 1,A
+   \   00024E   740C         MOV     A,#0xc
+   \   000250   78..         MOV     R0,#?V0 + 0
+   \   000252   12....       LCALL   ?US_SHR
+   \   000255   E5..         MOV     A,?V0 + 0
+   \   000257   F5..         MOV     ?V0 + 2,A
+    242              uint8 second = PANID / 256 % 16;
+   \   000259   E0           MOVX    A,@DPTR
+   \   00025A   540F         ANL     A,#0xf
+   \   00025C   F5..         MOV     ?V0 + 3,A
+    243              uint8 third = PANID / 16 % 16;
+   \   00025E   90....       MOV     DPTR,#PANID
+   \   000261   E0           MOVX    A,@DPTR
+   \   000262   C4           SWAP    A
+   \   000263   540F         ANL     A,#0xf
+   \   000265   F5..         MOV     ?V0 + 0,A
+    244              uint8 fourth = PANID % 16;
+   \   000267   E0           MOVX    A,@DPTR
+   \   000268   540F         ANL     A,#0xf
+   \   00026A   F5..         MOV     ?V0 + 1,A
+    245              // clear the debug information
+    246              HalLcdWriteDebug(debugnum,BIT_SEL,ID_OR_NET,FALSE,Debug_Blink);
+   \   00026C                ; Setup parameters for call to function HalLcdWriteDebug
+   \   00026C   90....       MOV     DPTR,#Debug_Blink
+   \   00026F   E0           MOVX    A,@DPTR
+   \   000270   FD           MOV     R5,A
+   \   000271   7C00         MOV     R4,#0x0
+   \   000273   90....       MOV     DPTR,#ID_OR_NET
+   \   000276   E0           MOVX    A,@DPTR
+   \   000277   FB           MOV     R3,A
+   \   000278   90....       MOV     DPTR,#BIT_SEL
+   \   00027B   E0           MOVX    A,@DPTR
+   \   00027C   FA           MOV     R2,A
+   \   00027D   90....       MOV     DPTR,#debugnum
+   \   000280   E0           MOVX    A,@DPTR
+   \   000281   F9           MOV     R1,A
+   \   000282   12....       LCALL   ??HalLcdWriteDebug?relay
+    247              HalLcdWriteChar5x8(first,0,30,FALSE);
+   \   000285                ; Setup parameters for call to function HalLcdWriteChar5x8
+   \   000285   7C00         MOV     R4,#0x0
+   \   000287   7B1E         MOV     R3,#0x1e
+   \   000289   7A00         MOV     R2,#0x0
+   \   00028B   A9..         MOV     R1,?V0 + 2
+   \   00028D   12....       LCALL   ??HalLcdWriteChar5x8?relay
+    248              HalLcdWriteChar5x8(second,0,35,FALSE);
+   \   000290                ; Setup parameters for call to function HalLcdWriteChar5x8
+   \   000290   7C00         MOV     R4,#0x0
+   \   000292   7B23         MOV     R3,#0x23
+   \   000294   7A00         MOV     R2,#0x0
+   \   000296   A9..         MOV     R1,?V0 + 3
+   \   000298   12....       LCALL   ??HalLcdWriteChar5x8?relay
+    249              HalLcdWriteChar5x8(third,0,40,FALSE);
+   \   00029B                ; Setup parameters for call to function HalLcdWriteChar5x8
+   \   00029B   7C00         MOV     R4,#0x0
+   \   00029D   7B28         MOV     R3,#0x28
+   \   00029F   7A00         MOV     R2,#0x0
+   \   0002A1   A9..         MOV     R1,?V0 + 0
+   \   0002A3   12....       LCALL   ??HalLcdWriteChar5x8?relay
+    250              HalLcdWriteChar5x8(fourth,0,45,FALSE);
+   \   0002A6                ; Setup parameters for call to function HalLcdWriteChar5x8
+   \   0002A6   7C00         MOV     R4,#0x0
+   \   0002A8   7B2D         MOV     R3,#0x2d
+   \   0002AA   7A00         MOV     R2,#0x0
+   \   0002AC   A9..         MOV     R1,?V0 + 1
+   \   0002AE   12....       LCALL   ??HalLcdWriteChar5x8?relay
+    251              keys = 0;
+   \   0002B1   7F00         MOV     R7,#0x0
+   \   0002B3   02....       LJMP    ??EnddeviceApp_HandleKeys_15 & 0xFFFF
+    252            }
+    253            
+    254            
+    255            /*********************************************************
+    256             *          
+    257             *                  exit the double_hit mode
+    258             *
+    259            **************************************************************/
+    260            
+    261            else if(shift == 0x03)
+   \                     ??EnddeviceApp_HandleKeys_27:
+   \   0002B6   7403         MOV     A,#0x3
+   \   0002B8   6E           XRL     A,R6
+   \   0002B9   6003         JZ      $+5
+   \   0002BB   02....       LJMP    ??EnddeviceApp_HandleKeys_15 & 0xFFFF
+    262            {
+    263              // write the room set temperature  to NV and sent to the coordinator
+    264              MsgBuf[0] = 1;
+   \   0002BE   12....       LCALL   ?Subroutine0 & 0xFFFF
+    265              MsgBuf[1] = MyDeviceId;
+    266              MsgBuf[2] = CMD_SET_ROOM_TEMPER;
+    267              MsgBuf[3] = SetRM_Temperature;
+    268              if(osal_nv_item_init(SET_RM_TEMP_NV,1,NULL) == SUCCESS)
+   \                     ??CrossCallReturnLabel_39:
+   \   0002C1   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   0002C4   12....       LCALL   ?Subroutine6 & 0xFFFF
+   \                     ??CrossCallReturnLabel_23:
+   \   0002C7   12....       LCALL   ?DEALLOC_XSTACK8
+   \   0002CA   E9           MOV     A,R1
+   \   0002CB   7022         JNZ     ??EnddeviceApp_HandleKeys_32
+    269              { 
+    270                 osal_nv_write(SET_RM_TEMP_NV,0,1,&SetRM_Temperature);
+   \   0002CD                ; Setup parameters for call to function osal_nv_write
+   \   0002CD   75....       MOV     ?V0 + 0,#SetRM_Temperature & 0xff
+   \   0002D0   75....       MOV     ?V0 + 1,#(SetRM_Temperature >> 8) & 0xff
+   \   0002D3   78..         MOV     R0,#?V0 + 0
+   \   0002D5   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   0002D8   75..01       MOV     ?V0 + 0,#0x1
+   \   0002DB   75..00       MOV     ?V0 + 1,#0x0
+   \   0002DE   78..         MOV     R0,#?V0 + 0
+   \   0002E0   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   0002E3   7C00         MOV     R4,#0x0
+   \   0002E5   7D00         MOV     R5,#0x0
+   \   0002E7   7A02         MOV     R2,#0x2
+   \   0002E9   12....       LCALL   ?Subroutine8 & 0xFFFF
+    271              }
+   \                     ??CrossCallReturnLabel_16:
+   \   0002EC   12....       LCALL   ?DEALLOC_XSTACK8
+    272              EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
+   \                     ??EnddeviceApp_HandleKeys_32:
+   \   0002EF                ; Setup parameters for call to function EnddeviceApp_SendP2PMessage
+   \   0002EF   75....       MOV     ?V0 + 0,#MsgBuf & 0xff
+   \   0002F2   75....       MOV     ?V0 + 1,#(MsgBuf >> 8) & 0xff
+   \   0002F5   78..         MOV     R0,#?V0 + 0
+   \   0002F7   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   0002FA   12....       LCALL   ?Subroutine7 & 0xFFFF
+   \                     ??CrossCallReturnLabel_9:
+   \   0002FD   12....       LCALL   ?DEALLOC_XSTACK8
+    273              
+    274              // write the room set temperature  to NV and sent to the coordinator
+    275              MsgBuf[0] = 1;
+   \   000300   12....       LCALL   ?Subroutine1 & 0xFFFF
+    276              MsgBuf[1] = MyDeviceId;
+    277              MsgBuf[2] = CMD_SET_FLOOR_TEMPER;
+    278              MsgBuf[3] = SetFL_Temperature;
+   \                     ??CrossCallReturnLabel_0:
+   \   000303   12....       LCALL   ??Subroutine13_0 & 0xFFFF
+    279              if(osal_nv_item_init(SET_FL_TEMP_NV,1,NULL) == SUCCESS)
+   \                     ??CrossCallReturnLabel_43:
+   \   000306   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   000309   7C01         MOV     R4,#0x1
+   \   00030B   7D00         MOV     R5,#0x0
+   \   00030D   7A03         MOV     R2,#0x3
+   \   00030F   12....       LCALL   ??Subroutine10_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_28:
+   \   000312   12....       LCALL   ?DEALLOC_XSTACK8
+   \   000315   E9           MOV     A,R1
+   \   000316   7022         JNZ     ??EnddeviceApp_HandleKeys_33
+    280              { 
+    281                 osal_nv_write(SET_FL_TEMP_NV,0,1,&SetFL_Temperature);
+   \   000318                ; Setup parameters for call to function osal_nv_write
+   \   000318   75....       MOV     ?V0 + 0,#SetFL_Temperature & 0xff
+   \   00031B   75....       MOV     ?V0 + 1,#(SetFL_Temperature >> 8) & 0xff
+   \   00031E   78..         MOV     R0,#?V0 + 0
+   \   000320   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   000323   75..01       MOV     ?V0 + 0,#0x1
+   \   000326   75..00       MOV     ?V0 + 1,#0x0
+   \   000329   78..         MOV     R0,#?V0 + 0
+   \   00032B   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   00032E   7C00         MOV     R4,#0x0
+   \   000330   7D00         MOV     R5,#0x0
+   \   000332   7A03         MOV     R2,#0x3
+   \   000334   12....       LCALL   ?Subroutine8 & 0xFFFF
+    282              }
+   \                     ??CrossCallReturnLabel_17:
+   \   000337   12....       LCALL   ?DEALLOC_XSTACK8
+    283              EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
+   \                     ??EnddeviceApp_HandleKeys_33:
+   \   00033A                ; Setup parameters for call to function EnddeviceApp_SendP2PMessage
+   \   00033A   75....       MOV     ?V0 + 0,#MsgBuf & 0xff
+   \   00033D   75....       MOV     ?V0 + 1,#(MsgBuf >> 8) & 0xff
+   \   000340   78..         MOV     R0,#?V0 + 0
+   \   000342   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   000345   12....       LCALL   ?Subroutine7 & 0xFFFF
+    284            }
+   \                     ??CrossCallReturnLabel_10:
+   \   000348   12....       LCALL   ?DEALLOC_XSTACK8
+    285            else;
+    286             
+    287                   
+    288            /*********************************************************
+    289             *          
+    290             *   after the  depressed, the related things to do
+    291             *
+    292            **************************************************************/       
+    293                
+    294            if(keys & HAL_KEY_PWR) // the  power key  is depressed 
+   \                     ??EnddeviceApp_HandleKeys_15:
+   \   00034B   EF           MOV     A,R7
+   \   00034C   A2E2         MOV     C,0xE0 /* A   */.2
+   \   00034E   5052         JNC     ??EnddeviceApp_HandleKeys_34
+    295            {
+    296               if(POWER)
+   \   000350   90....       MOV     DPTR,#POWER
+   \   000353   E0           MOVX    A,@DPTR
+   \   000354   7900         MOV     R1,#0x0
+   \   000356   6019         JZ      ??EnddeviceApp_HandleKeys_35
+    297               {
+    298                  HalLcdWritePower(FALSE);  // clear the power picture for the ST
+   \   000358                ; Setup parameters for call to function HalLcdWritePower
+   \   000358   12....       LCALL   ??HalLcdWritePower?relay
+    299                  
+    300          	    HalLcd_HW_WriteST(TRUE);
+   \   00035B                ; Setup parameters for call to function HalLcd_HW_WriteST
+   \   00035B   7901         MOV     R1,#0x1
+   \   00035D   12....       LCALL   ??HalLcd_HW_WriteST?relay
+    301                  HalLcdWriteSetTemperature(SetRM_Temperature,TRUE);
+   \   000360                ; Setup parameters for call to function HalLcdWriteSetTemperature
+   \   000360   7A01         MOV     R2,#0x1
+   \   000362   12....       LCALL   ?Subroutine4 & 0xFFFF
+    302          	    HalLcd_HW_WriteSTU(TRUE); 
+   \                     ??CrossCallReturnLabel_31:
+   \   000365                ; Setup parameters for call to function HalLcd_HW_WriteSTU
+   \   000365   7901         MOV     R1,#0x1
+   \   000367   12....       LCALL   ??HalLcd_HW_WriteSTU?relay
+    303          	    HalLcdWriteEndMod(End_Mod);
+   \   00036A                ; Setup parameters for call to function HalLcdWriteEndMod
+   \   00036A   90....       MOV     DPTR,#End_Mod
+   \   00036D   E0           MOVX    A,@DPTR
+   \   00036E   F9           MOV     R1,A
+   \   00036F   8014         SJMP    ??EnddeviceApp_HandleKeys_36
+    304                  HalLcdWriteRealTempeMod(TRUE);
+    305               }
+    306               else
+    307               {
+    308                  HalLcd_HW_WriteST(FALSE);
+   \                     ??EnddeviceApp_HandleKeys_35:
+   \   000371                ; Setup parameters for call to function HalLcd_HW_WriteST
+   \   000371   12....       LCALL   ??HalLcd_HW_WriteST?relay
+    309                  HalLcdWriteSetTemperature(SetRM_Temperature,FALSE);
+   \   000374                ; Setup parameters for call to function HalLcdWriteSetTemperature
+   \   000374   7A00         MOV     R2,#0x0
+   \   000376   12....       LCALL   ?Subroutine4 & 0xFFFF
+    310                  HalLcd_HW_WriteSTU(FALSE);
+   \                     ??CrossCallReturnLabel_32:
+   \   000379                ; Setup parameters for call to function HalLcd_HW_WriteSTU
+   \   000379   7900         MOV     R1,#0x0
+   \   00037B   12....       LCALL   ??HalLcd_HW_WriteSTU?relay
+    311                  
+    312                  HalLcdWritePower(TRUE);  // write the power picture when powered off
+   \   00037E                ; Setup parameters for call to function HalLcdWritePower
+   \   00037E   7901         MOV     R1,#0x1
+   \   000380   12....       LCALL   ??HalLcdWritePower?relay
+    313                  
+    314                  HalLcdWriteEndMod(FALSE);
+   \   000383                ; Setup parameters for call to function HalLcdWriteEndMod
+   \   000383   7900         MOV     R1,#0x0
+   \                     ??EnddeviceApp_HandleKeys_36:
+   \   000385   12....       LCALL   ??HalLcdWriteEndMod?relay
+    315                  
+    316                  HalLcdWriteRealTempeMod(TRUE);	
+   \   000388                ; Setup parameters for call to function HalLcdWriteRealTempeMod
+   \   000388   7901         MOV     R1,#0x1
+   \   00038A   12....       LCALL   ??HalLcdWriteRealTempeMod?relay
+    317               }
+    318               
+    319                MsgBuf[0] = 1;
+   \   00038D   12....       LCALL   ?Subroutine5 & 0xFFFF
+    320                MsgBuf[1] = MyDeviceId;
+    321                MsgBuf[2] = CMD_START_OR_SHUTDOWN;
+   \                     ??CrossCallReturnLabel_6:
+   \   000390   74FF         MOV     A,#-0x1
+   \   000392   F0           MOVX    @DPTR,A
+    322                MsgBuf[3] = POWER;
+   \   000393   90....       MOV     DPTR,#POWER
+   \   000396   12....       LCALL   ?Subroutine3 & 0xFFFF
+    323                EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
+    324             }
+   \                     ??CrossCallReturnLabel_3:
+   \   000399   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   00039C   12....       LCALL   ?Subroutine7 & 0xFFFF
+   \                     ??CrossCallReturnLabel_11:
+   \   00039F   12....       LCALL   ?DEALLOC_XSTACK8
+    325             if((keys & HAL_KEY_AIR))// the  mode key  is depressed 
+   \                     ??EnddeviceApp_HandleKeys_34:
+   \   0003A2   EF           MOV     A,R7
+   \   0003A3   A2E4         MOV     C,0xE0 /* A   */.4
+   \   0003A5   502A         JNC     ??EnddeviceApp_HandleKeys_37
+    326             {
+    327          	if(POWER) 
+   \   0003A7   90....       MOV     DPTR,#POWER
+   \   0003AA   E0           MOVX    A,@DPTR
+   \   0003AB   6024         JZ      ??EnddeviceApp_HandleKeys_37
+    328          	{
+    329                  if(End_Mod) // automaticlly
+   \   0003AD   90....       MOV     DPTR,#End_Mod
+   \   0003B0   E0           MOVX    A,@DPTR
+   \   0003B1   6004         JZ      ??EnddeviceApp_HandleKeys_38
+    330                  {
+    331                    HalLcdWriteEndMod(TRUE);
+   \   0003B3                ; Setup parameters for call to function HalLcdWriteEndMod
+   \   0003B3   7901         MOV     R1,#0x1
+   \   0003B5   8002         SJMP    ??EnddeviceApp_HandleKeys_39
+    332                  }
+    333                  else
+    334                  {
+    335                    HalLcdWriteEndMod(FALSE);
+   \                     ??EnddeviceApp_HandleKeys_38:
+   \   0003B7                ; Setup parameters for call to function HalLcdWriteEndMod
+   \   0003B7   7900         MOV     R1,#0x0
+   \                     ??EnddeviceApp_HandleKeys_39:
+   \   0003B9   12....       LCALL   ??HalLcdWriteEndMod?relay
+    336                  }
+    337                        // send message mode message to the gateway
+    338                   MsgBuf[0] = 1;
+   \   0003BC   12....       LCALL   ?Subroutine5 & 0xFFFF
+    339                   MsgBuf[1] = MyDeviceId;
+    340                   MsgBuf[2] = CMD_SET_MODE;
+   \                     ??CrossCallReturnLabel_7:
+   \   0003BF   740C         MOV     A,#0xc
+   \   0003C1   F0           MOVX    @DPTR,A
+    341                   MsgBuf[3] = End_Mod;
+   \   0003C2   90....       MOV     DPTR,#End_Mod
+   \   0003C5   12....       LCALL   ?Subroutine3 & 0xFFFF
+    342                   EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
+    343               }
+    344               else
+    345               {
+    346                 ;	 
+    347               }
+    348             }
+   \                     ??CrossCallReturnLabel_4:
+   \   0003C8   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   0003CB   12....       LCALL   ?Subroutine7 & 0xFFFF
+   \                     ??CrossCallReturnLabel_12:
+   \   0003CE   12....       LCALL   ?DEALLOC_XSTACK8
+    349            
+    350          	 if(keys & HAL_KEY_FLR) // the  real temperatrue mode key  is depressed 
+   \                     ??EnddeviceApp_HandleKeys_37:
+   \   0003D1   EF           MOV     A,R7
+   \   0003D2   A2E3         MOV     C,0xE0 /* A   */.3
+   \   0003D4   5020         JNC     ??EnddeviceApp_HandleKeys_40
+    351          	 {
+    352          		 if(POWER)
+   \   0003D6   90....       MOV     DPTR,#POWER
+   \   0003D9   E0           MOVX    A,@DPTR
+   \   0003DA   601A         JZ      ??EnddeviceApp_HandleKeys_40
+    353          		 {
+    354          			if(Real_Tem_Mod)
+   \   0003DC   90....       MOV     DPTR,#Real_Tem_Mod
+   \   0003DF   E0           MOVX    A,@DPTR
+   \   0003E0   7A01         MOV     R2,#0x1
+   \   0003E2   6007         JZ      ??EnddeviceApp_HandleKeys_41
+    355          			{
+    356          				HalLcdWriteSetTemperature(SetRM_Temperature,TRUE);
+   \   0003E4                ; Setup parameters for call to function HalLcdWriteSetTemperature
+   \   0003E4   12....       LCALL   ?Subroutine4 & 0xFFFF
+    357          				HalLcdWriteRealTempeMod(TRUE);
+   \                     ??CrossCallReturnLabel_33:
+   \   0003E7                ; Setup parameters for call to function HalLcdWriteRealTempeMod
+   \   0003E7   7901         MOV     R1,#0x1
+   \   0003E9   8008         SJMP    ??EnddeviceApp_HandleKeys_42
+    358          			}	
+    359          			else
+    360          			{
+    361          				HalLcdWriteSetTemperature(SetFL_Temperature,TRUE);
+   \                     ??EnddeviceApp_HandleKeys_41:
+   \   0003EB                ; Setup parameters for call to function HalLcdWriteSetTemperature
+   \   0003EB   90....       MOV     DPTR,#SetFL_Temperature
+   \   0003EE   12....       LCALL   ??Subroutine11_0 & 0xFFFF
+    362          				HalLcdWriteRealTempeMod(FALSE);
+   \                     ??CrossCallReturnLabel_34:
+   \   0003F1                ; Setup parameters for call to function HalLcdWriteRealTempeMod
+   \   0003F1   7900         MOV     R1,#0x0
+   \                     ??EnddeviceApp_HandleKeys_42:
+   \   0003F3   12....       LCALL   ??HalLcdWriteRealTempeMod?relay
+    363          			}
+    364          		 }
+    365          		 else
+    366          		 {
+    367          			;
+    368          		 }
+    369          	 }	
+    370            
+    371          	  if(keys & HAL_KEY_DEC)// the  dec key  is depressed 
+   \                     ??EnddeviceApp_HandleKeys_40:
+   \   0003F6   EF           MOV     A,R7
+   \   0003F7   A2E0         MOV     C,0xE0 /* A   */.0
+   \   0003F9   505E         JNC     ??EnddeviceApp_HandleKeys_43
+    372          	  {
+    373          		 if(POWER)// power on
+   \   0003FB   90....       MOV     DPTR,#POWER
+   \   0003FE   E0           MOVX    A,@DPTR
+   \   0003FF   6058         JZ      ??EnddeviceApp_HandleKeys_43
+    374          		 {
+    375          			if(End_Mod)// automatically
+   \   000401   90....       MOV     DPTR,#End_Mod
+   \   000404   E0           MOVX    A,@DPTR
+   \   000405   6052         JZ      ??EnddeviceApp_HandleKeys_43
+    376          			{
+    377          				if(Real_Tem_Mod)// set room temperatrue
+   \   000407   90....       MOV     DPTR,#Real_Tem_Mod
+   \   00040A   E0           MOVX    A,@DPTR
+   \   00040B   7A01         MOV     R2,#0x1
+   \   00040D   7003         JNZ     $+5
+   \   00040F   02....       LJMP    ??EnddeviceApp_HandleKeys_44 & 0xFFFF
+    378          				{
+    379                             HalLcdWriteSetTemperature(SetRM_Temperature,TRUE);
+   \   000412                ; Setup parameters for call to function HalLcdWriteSetTemperature
+   \   000412   12....       LCALL   ?Subroutine2 & 0xFFFF
+    380                              // not in the double_hit mode ,send the message immediately
+    381                             if(!double_hit)
+   \                     ??CrossCallReturnLabel_35:
+   \   000415   7042         JNZ     ??EnddeviceApp_HandleKeys_43
+    382                             {
+    383                               MsgBuf[0] = 1;
+   \   000417   12....       LCALL   ?Subroutine0 & 0xFFFF
+    384                               MsgBuf[1] = MyDeviceId;
+    385                               MsgBuf[2] = CMD_SET_ROOM_TEMPER;
+    386                               MsgBuf[3] = SetRM_Temperature;
+    387                               if(osal_nv_item_init(SET_RM_TEMP_NV,1,NULL) == SUCCESS)
+   \                     ??CrossCallReturnLabel_40:
+   \   00041A   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   00041D   12....       LCALL   ?Subroutine6 & 0xFFFF
+   \                     ??CrossCallReturnLabel_24:
+   \   000420   12....       LCALL   ?DEALLOC_XSTACK8
+   \   000423   E9           MOV     A,R1
+   \   000424   7022         JNZ     ??EnddeviceApp_HandleKeys_45
+    388                               { 
+    389                                 osal_nv_write(SET_RM_TEMP_NV,0,1,&SetRM_Temperature);
+   \   000426                ; Setup parameters for call to function osal_nv_write
+   \   000426   75....       MOV     ?V0 + 0,#SetRM_Temperature & 0xff
+   \   000429   75....       MOV     ?V0 + 1,#(SetRM_Temperature >> 8) & 0xff
+   \   00042C   78..         MOV     R0,#?V0 + 0
+   \   00042E   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   000431   75..01       MOV     ?V0 + 0,#0x1
+   \   000434   75..00       MOV     ?V0 + 1,#0x0
+   \   000437   78..         MOV     R0,#?V0 + 0
+   \   000439   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   00043C   7C00         MOV     R4,#0x0
+   \   00043E   7D00         MOV     R5,#0x0
+   \   000440   7A02         MOV     R2,#0x2
+    390                               }
+   \                     ??EnddeviceApp_HandleKeys_46:
+   \   000442   12....       LCALL   ?Subroutine8 & 0xFFFF
+   \                     ??CrossCallReturnLabel_18:
+   \   000445   12....       LCALL   ?DEALLOC_XSTACK8
+    391                               EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
+   \                     ??EnddeviceApp_HandleKeys_45:
+   \   000448                ; Setup parameters for call to function EnddeviceApp_SendP2PMessage
+   \   000448   75....       MOV     ?V0 + 0,#MsgBuf & 0xff
+   \   00044B   75....       MOV     ?V0 + 1,#(MsgBuf >> 8) & 0xff
+   \   00044E   78..         MOV     R0,#?V0 + 0
+   \   000450   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   000453   12....       LCALL   ?Subroutine7 & 0xFFFF
+    392                             }
+    393                             else;
+    394          				}
+   \                     ??CrossCallReturnLabel_13:
+   \   000456   12....       LCALL   ?DEALLOC_XSTACK8
+    395                          else// set floor temperatrue
+    396          				{
+    397          					HalLcdWriteSetTemperature(SetFL_Temperature,TRUE);
+    398                               // not in the double_hit mode ,send the message immediately
+    399                              if(!double_hit)
+    400                              {
+    401                                MsgBuf[0] = 1;
+    402          					  MsgBuf[1] = MyDeviceId;
+    403          					  MsgBuf[2] = CMD_SET_FLOOR_TEMPER;
+    404          					  MsgBuf[3] = SetFL_Temperature;
+    405                                if(osal_nv_item_init(SET_FL_TEMP_NV,1,NULL) == SUCCESS)
+    406                                {
+    407                                  osal_nv_write(SET_FL_TEMP_NV,0,1,&SetFL_Temperature); 
+    408                                }
+    409          					  EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
+    410                              }
+    411          				}					
+    412          			}
+    413          			else // manually
+    414          			{
+    415          				;
+    416          			}
+    417          		 }			 
+    418          		 else
+    419          		 {
+    420          			;  
+    421          		 }  
+    422          	  }
+    423          	  
+    424          	  if(keys & HAL_KEY_INC)// the  inc key  is depressed 
+   \                     ??EnddeviceApp_HandleKeys_43:
+   \   000459   EF           MOV     A,R7
+   \   00045A   A2E1         MOV     C,0xE0 /* A   */.1
+   \   00045C   505E         JNC     ??EnddeviceApp_HandleKeys_47
+    425          	  {
+    426          		 if(POWER)// power on
+   \   00045E   90....       MOV     DPTR,#POWER
+   \   000461   E0           MOVX    A,@DPTR
+   \   000462   6058         JZ      ??EnddeviceApp_HandleKeys_47
+    427          		 {
+    428          			if(End_Mod)// automatically
+   \   000464   90....       MOV     DPTR,#End_Mod
+   \   000467   E0           MOVX    A,@DPTR
+   \   000468   6052         JZ      ??EnddeviceApp_HandleKeys_47
+    429          			{
+    430          				if(Real_Tem_Mod)// set room temperatrue
+   \   00046A   90....       MOV     DPTR,#Real_Tem_Mod
+   \   00046D   E0           MOVX    A,@DPTR
+   \   00046E   7A01         MOV     R2,#0x1
+   \   000470   7003         JNZ     $+5
+   \   000472   02....       LJMP    ??EnddeviceApp_HandleKeys_48 & 0xFFFF
+    431          				{
+    432                              HalLcdWriteSetTemperature(SetRM_Temperature,TRUE);
+   \   000475                ; Setup parameters for call to function HalLcdWriteSetTemperature
+   \   000475   12....       LCALL   ?Subroutine2 & 0xFFFF
+    433                              // not in the double_hit mode ,send the message immediately
+    434                              if(!double_hit)
+   \                     ??CrossCallReturnLabel_36:
+   \   000478   7042         JNZ     ??EnddeviceApp_HandleKeys_47
+    435                              {
+    436                                   MsgBuf[0] = 1;
+   \   00047A   12....       LCALL   ?Subroutine0 & 0xFFFF
+    437                                   MsgBuf[1] = MyDeviceId;
+    438                                   MsgBuf[2] = CMD_SET_ROOM_TEMPER;
+    439                                   MsgBuf[3] = SetRM_Temperature;
+    440                                   if(osal_nv_item_init(SET_RM_TEMP_NV,1,NULL) == SUCCESS)
+   \                     ??CrossCallReturnLabel_41:
+   \   00047D   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   000480   12....       LCALL   ?Subroutine6 & 0xFFFF
+   \                     ??CrossCallReturnLabel_25:
+   \   000483   12....       LCALL   ?DEALLOC_XSTACK8
+   \   000486   E9           MOV     A,R1
+   \   000487   7022         JNZ     ??EnddeviceApp_HandleKeys_49
+    441                                   { 
+    442                                     osal_nv_write(SET_RM_TEMP_NV,0,1,&SetRM_Temperature);
+   \   000489                ; Setup parameters for call to function osal_nv_write
+   \   000489   75....       MOV     ?V0 + 0,#SetRM_Temperature & 0xff
+   \   00048C   75....       MOV     ?V0 + 1,#(SetRM_Temperature >> 8) & 0xff
+   \   00048F   78..         MOV     R0,#?V0 + 0
+   \   000491   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   000494   75..01       MOV     ?V0 + 0,#0x1
+   \   000497   75..00       MOV     ?V0 + 1,#0x0
+   \   00049A   78..         MOV     R0,#?V0 + 0
+   \   00049C   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   00049F   7C00         MOV     R4,#0x0
+   \   0004A1   7D00         MOV     R5,#0x0
+   \   0004A3   7A02         MOV     R2,#0x2
+    443                                   }
+   \                     ??EnddeviceApp_HandleKeys_50:
+   \   0004A5   12....       LCALL   ?Subroutine8 & 0xFFFF
+   \                     ??CrossCallReturnLabel_19:
+   \   0004A8   12....       LCALL   ?DEALLOC_XSTACK8
+    444                                   EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
+   \                     ??EnddeviceApp_HandleKeys_49:
+   \   0004AB                ; Setup parameters for call to function EnddeviceApp_SendP2PMessage
+   \   0004AB   75....       MOV     ?V0 + 0,#MsgBuf & 0xff
+   \   0004AE   75....       MOV     ?V0 + 1,#(MsgBuf >> 8) & 0xff
+   \   0004B1   78..         MOV     R0,#?V0 + 0
+   \   0004B3   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   0004B6   12....       LCALL   ?Subroutine7 & 0xFFFF
+    445                             }
+    446                             else;
+    447          				}
+   \                     ??CrossCallReturnLabel_14:
+   \   0004B9   12....       LCALL   ?DEALLOC_XSTACK8
+    448                          else// set floor temperatrue
+    449          				{
+    450          					HalLcdWriteSetTemperature(SetFL_Temperature,TRUE);
+    451                              // not in the double_hit mode ,send the message immediately
+    452                              if(!double_hit)
+    453                              {
+    454                                MsgBuf[0] = 1;
+    455          					  MsgBuf[1] = MyDeviceId;
+    456          					  MsgBuf[2] = CMD_SET_FLOOR_TEMPER;
+    457          					  MsgBuf[3] = SetFL_Temperature;
+    458                                
+    459                                if(osal_nv_item_init(SET_FL_TEMP_NV,1,NULL) == SUCCESS)
+    460                                {
+    461                                  osal_nv_write(SET_FL_TEMP_NV,0,1,&SetFL_Temperature); 
+    462                                }
+    463          					  EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
+    464                              }
+    465          				}					
+    466          			}
+    467          			else // manually
+    468          			{
+    469          				;
+    470          			}
+    471          		 }			 
+    472          		 else
+    473          		 {
+    474          			;  
+    475          		 }  
+    476          	  }
+    477          	  
+    478          	  
+    479          	
+    480          }
+   \                     ??EnddeviceApp_HandleKeys_47:
+   \   0004BC   7F04         MOV     R7,#0x4
+   \   0004BE   02....       LJMP    ?BANKED_LEAVE_XDATA
+   \                     ??EnddeviceApp_HandleKeys_44:
+   \   0004C1                ; Setup parameters for call to function HalLcdWriteSetTemperature
+   \   0004C1   90....       MOV     DPTR,#SetFL_Temperature
+   \   0004C4   12....       LCALL   ??Subroutine12_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_37:
+   \   0004C7   7090         JNZ     ??EnddeviceApp_HandleKeys_43
+   \   0004C9   12....       LCALL   ?Subroutine1 & 0xFFFF
+   \                     ??CrossCallReturnLabel_1:
+   \   0004CC   12....       LCALL   ??Subroutine13_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_44:
+   \   0004CF   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   0004D2   7C01         MOV     R4,#0x1
+   \   0004D4   7D00         MOV     R5,#0x0
+   \   0004D6   7A03         MOV     R2,#0x3
+   \   0004D8   12....       LCALL   ??Subroutine10_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_29:
+   \   0004DB   12....       LCALL   ?DEALLOC_XSTACK8
+   \   0004DE   E9           MOV     A,R1
+   \   0004DF   6003         JZ      $+5
+   \   0004E1   02....       LJMP    ??EnddeviceApp_HandleKeys_45 & 0xFFFF
+   \   0004E4                ; Setup parameters for call to function osal_nv_write
+   \   0004E4   75....       MOV     ?V0 + 0,#SetFL_Temperature & 0xff
+   \   0004E7   75....       MOV     ?V0 + 1,#(SetFL_Temperature >> 8) & 0xff
+   \   0004EA   78..         MOV     R0,#?V0 + 0
+   \   0004EC   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   0004EF   75..01       MOV     ?V0 + 0,#0x1
+   \   0004F2   75..00       MOV     ?V0 + 1,#0x0
+   \   0004F5   78..         MOV     R0,#?V0 + 0
+   \   0004F7   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   0004FA   7C00         MOV     R4,#0x0
+   \   0004FC   7D00         MOV     R5,#0x0
+   \   0004FE   7A03         MOV     R2,#0x3
+   \   000500   02....       LJMP    ??EnddeviceApp_HandleKeys_46 & 0xFFFF
+   \                     ??EnddeviceApp_HandleKeys_48:
+   \   000503                ; Setup parameters for call to function HalLcdWriteSetTemperature
+   \   000503   90....       MOV     DPTR,#SetFL_Temperature
+   \   000506   12....       LCALL   ??Subroutine12_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_38:
+   \   000509   70B1         JNZ     ??EnddeviceApp_HandleKeys_47
+   \   00050B   12....       LCALL   ?Subroutine1 & 0xFFFF
+   \                     ??CrossCallReturnLabel_2:
+   \   00050E   12....       LCALL   ??Subroutine13_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_45:
+   \   000511   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   000514   7C01         MOV     R4,#0x1
+   \   000516   7D00         MOV     R5,#0x0
+   \   000518   7A03         MOV     R2,#0x3
+   \   00051A   12....       LCALL   ??Subroutine10_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_30:
+   \   00051D   12....       LCALL   ?DEALLOC_XSTACK8
+   \   000520   E9           MOV     A,R1
+   \   000521   7088         JNZ     ??EnddeviceApp_HandleKeys_49
+   \   000523                ; Setup parameters for call to function osal_nv_write
+   \   000523   75....       MOV     ?V0 + 0,#SetFL_Temperature & 0xff
+   \   000526   75....       MOV     ?V0 + 1,#(SetFL_Temperature >> 8) & 0xff
+   \   000529   78..         MOV     R0,#?V0 + 0
+   \   00052B   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   00052E   75..01       MOV     ?V0 + 0,#0x1
+   \   000531   75..00       MOV     ?V0 + 1,#0x0
+   \   000534   78..         MOV     R0,#?V0 + 0
+   \   000536   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   000539   7C00         MOV     R4,#0x0
+   \   00053B   7D00         MOV     R5,#0x0
+   \   00053D   7A03         MOV     R2,#0x3
+   \   00053F   02....       LJMP    ??EnddeviceApp_HandleKeys_50 & 0xFFFF
+   \   000542                REQUIRE _A_P1
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine8:
+   \   000000   7B04         MOV     R3,#0x4
+   \   000002   12....       LCALL   ??osal_nv_write?relay
+   \   000005   7404         MOV     A,#0x4
+   \   000007   22           RET
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine7:
+   \   000000   7C04         MOV     R4,#0x4
+   \   000002   7D00         MOV     R5,#0x0
+   \   000004   7A01         MOV     R2,#0x1
+   \   000006   7B00         MOV     R3,#0x0
+   \   000008   12....       LCALL   ??EnddeviceApp_SendP2PMessage?relay
+   \   00000B   7402         MOV     A,#0x2
+   \   00000D   22           RET
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine6:
+   \   000000   7C01         MOV     R4,#0x1
+   \   000002   7D00         MOV     R5,#0x0
+   \   000004   7A02         MOV     R2,#0x2
+   \   000006                REQUIRE ??Subroutine10_0
+   \   000006                ; // Fall through to label ??Subroutine10_0
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ??Subroutine10_0:
+   \   000000   7B04         MOV     R3,#0x4
+   \   000002   12....       LCALL   ??osal_nv_item_init?relay
+   \   000005   7402         MOV     A,#0x2
+   \   000007   22           RET
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine5:
+   \   000000   12....       LCALL   ?Subroutine9 & 0xFFFF
+   \                     ??CrossCallReturnLabel_20:
+   \   000003   22           RET
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine9:
+   \   000000   90....       MOV     DPTR,#MsgBuf
+   \   000003   7401         MOV     A,#0x1
+   \   000005   F0           MOVX    @DPTR,A
+   \   000006   90....       MOV     DPTR,#MyDeviceId
+   \   000009   E0           MOVX    A,@DPTR
+   \   00000A   90....       MOV     DPTR,#MsgBuf + 1
+   \   00000D   F0           MOVX    @DPTR,A
+   \   00000E   A3           INC     DPTR
+   \   00000F   22           RET
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine4:
+   \   000000   90....       MOV     DPTR,#SetRM_Temperature
+   \   000003                REQUIRE ??Subroutine11_0
+   \   000003                ; // Fall through to label ??Subroutine11_0
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ??Subroutine11_0:
+   \   000000   E0           MOVX    A,@DPTR
+   \   000001   F9           MOV     R1,A
+   \   000002   12....       LCALL   ??HalLcdWriteSetTemperature?relay
+   \   000005   22           RET
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine3:
+   \   000000   E0           MOVX    A,@DPTR
+   \   000001   90....       MOV     DPTR,#MsgBuf + 3
+   \   000004   F0           MOVX    @DPTR,A
+   \   000005                ; Setup parameters for call to function EnddeviceApp_SendP2PMessage
+   \   000005                ; Setup parameters for call to function EnddeviceApp_SendP2PMessage
+   \   000005   75....       MOV     ?V0 + 0,#MsgBuf & 0xff
+   \   000008   75....       MOV     ?V0 + 1,#(MsgBuf >> 8) & 0xff
+   \   00000B   78..         MOV     R0,#?V0 + 0
+   \   00000D   22           RET
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine2:
+   \   000000   90....       MOV     DPTR,#SetRM_Temperature
+   \   000003                REQUIRE ??Subroutine12_0
+   \   000003                ; // Fall through to label ??Subroutine12_0
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ??Subroutine12_0:
+   \   000000   E0           MOVX    A,@DPTR
+   \   000001   F9           MOV     R1,A
+   \   000002   12....       LCALL   ??HalLcdWriteSetTemperature?relay
+   \   000005   90....       MOV     DPTR,#double_hit
+   \   000008   E0           MOVX    A,@DPTR
+   \   000009   22           RET
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine1:
+   \   000000   12....       LCALL   ?Subroutine9 & 0xFFFF
+   \                     ??CrossCallReturnLabel_21:
+   \   000003   7402         MOV     A,#0x2
+   \   000005   F0           MOVX    @DPTR,A
+   \   000006   90....       MOV     DPTR,#SetFL_Temperature
+   \   000009   22           RET
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine0:
+   \   000000   12....       LCALL   ?Subroutine9 & 0xFFFF
+   \                     ??CrossCallReturnLabel_22:
+   \   000003   7401         MOV     A,#0x1
+   \   000005   F0           MOVX    @DPTR,A
+   \   000006   90....       MOV     DPTR,#SetRM_Temperature
+   \   000009                REQUIRE ??Subroutine13_0
+   \   000009                ; // Fall through to label ??Subroutine13_0
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ??Subroutine13_0:
+   \   000000   E0           MOVX    A,@DPTR
+   \   000001   90....       MOV     DPTR,#MsgBuf + 3
+   \   000004   F0           MOVX    @DPTR,A
+   \   000005                ; Setup parameters for call to function osal_nv_item_init
+   \   000005                ; Setup parameters for call to function osal_nv_item_init
+   \   000005                ; Setup parameters for call to function osal_nv_item_init
+   \   000005                ; Setup parameters for call to function osal_nv_item_init
+   \   000005                ; Setup parameters for call to function osal_nv_item_init
+   \   000005                ; Setup parameters for call to function osal_nv_item_init
+   \   000005                ; Setup parameters for call to function osal_nv_item_init
+   \   000005   E4           CLR     A
+   \   000006   F5..         MOV     ?V0 + 0,A
+   \   000008   F5..         MOV     ?V0 + 1,A
+   \   00000A   78..         MOV     R0,#?V0 + 0
+   \   00000C   22           RET
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??EnddeviceApp_HandleKeys?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    EnddeviceApp_HandleKeys
+
+   Maximum stack usage in bytes:
+
+     Function                       ISTACK PSTACK XSTACK
+     --------                       ------ ------ ------
+     EnddeviceApp_HandleKeys            2      0     16
+       -> osal_nv_item_init             0      0     28
+       -> osal_nv_write                 0      0     32
+       -> EnddeviceApp_SendP2PMessage
+                                        0      0     28
+       -> osal_nv_item_init             0      0     28
+       -> NLME_UpdateNV                 0      0     24
+       -> osal_start_timerEx            0      0     24
+       -> HalLcdWriteDebug              0      0     24
+       -> HalLcdWriteChar5x8            0      0     24
+       -> HalLcdWriteChar5x8            0      0     24
+       -> HalLcdWriteChar5x8            0      0     24
+       -> HalLcdWriteChar5x8            0      0     24
+       -> osal_nv_item_init             0      0     28
+       -> osal_nv_write                 0      0     32
+       -> EnddeviceApp_SendP2PMessage
+                                        0      0     28
+       -> osal_nv_item_init             0      0     28
+       -> osal_nv_write                 0      0     32
+       -> EnddeviceApp_SendP2PMessage
+                                        0      0     28
+       -> HalLcdWritePower              0      0     24
+       -> HalLcd_HW_WriteST             0      0     24
+       -> HalLcdWriteSetTemperature     0      0     24
+       -> HalLcd_HW_WriteSTU            0      0     24
+       -> HalLcdWriteEndMod             0      0     24
+       -> HalLcdWriteRealTempeMod       0      0     24
+       -> HalLcd_HW_WriteST             0      0     24
+       -> HalLcdWriteSetTemperature     0      0     24
+       -> HalLcd_HW_WriteSTU            0      0     24
+       -> HalLcdWritePower              0      0     24
+       -> HalLcdWriteEndMod             0      0     24
+       -> HalLcdWriteRealTempeMod       0      0     24
+       -> EnddeviceApp_SendP2PMessage
+                                        0      0     28
+       -> HalLcdWriteEndMod             0      0     24
+       -> HalLcdWriteEndMod             0      0     24
+       -> EnddeviceApp_SendP2PMessage
+                                        0      0     28
+       -> HalLcdWriteSetTemperature     0      0     24
+       -> HalLcdWriteRealTempeMod       0      0     24
+       -> HalLcdWriteSetTemperature     0      0     24
+       -> HalLcdWriteRealTempeMod       0      0     24
+       -> HalLcdWriteSetTemperature     0      0     24
+       -> osal_nv_item_init             0      0     28
+       -> osal_nv_write                 0      0     32
+       -> EnddeviceApp_SendP2PMessage
+                                        0      0     28
+       -> HalLcdWriteSetTemperature     0      0     24
+       -> osal_nv_item_init             0      0     28
+       -> osal_nv_write                 0      0     32
+       -> EnddeviceApp_SendP2PMessage
+                                        0      0     28
+       -> HalLcdWriteSetTemperature     0      0     24
+       -> osal_nv_item_init             0      0     28
+       -> osal_nv_write                 0      0     32
+       -> HalLcdWriteSetTemperature     0      0     24
+       -> osal_nv_item_init             0      0     28
+       -> osal_nv_write                 0      0     32
+
+
+   Segment part sizes:
+
+     Function/Label                  Bytes
+     --------------                  -----
+     _A_P1                              1
+     EnddeviceApp_HandleKeys         1346
+     ?Subroutine8                       8
+     ?Subroutine7                      14
+     ?Subroutine6                       6
+     ??Subroutine10_0                   8
+     ?Subroutine5                       4
+     ?Subroutine9                      16
+     ?Subroutine4                       3
+     ??Subroutine11_0                   6
+     ?Subroutine3                      14
+     ?Subroutine2                       3
+     ??Subroutine12_0                  10
+     ?Subroutine1                      10
+     ?Subroutine0                       9
+     ??Subroutine13_0                  13
+     ??EnddeviceApp_HandleKeys?relay    6
+
+ 
+ 1 470 bytes in segment BANKED_CODE
+     6 bytes in segment BANK_RELAYS
+     1 byte  in segment SFR_AN
+ 
+ 1 476 bytes of CODE memory
+     0 bytes of DATA memory (+ 1 byte shared)
+
+Errors: none
+Warnings: none

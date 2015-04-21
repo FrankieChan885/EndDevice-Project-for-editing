@@ -1,0 +1,313 @@
+###############################################################################
+#                                                                             #
+# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         20/Apr/2015  19:51:20 #
+# Copyright 2004-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Core               =  plain                                              #
+#    Code model         =  banked                                             #
+#    Data model         =  large                                              #
+#    Calling convention =  xdata reentrant                                    #
+#    Constant location  =  data_rom                                           #
+#    Dptr setup         =  1,16                                               #
+#    Source file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice    #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\Source\TemperatureControl.c                #
+#    Command line       =  -f "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic #
+#                          e Project for editing\Projects\zstack\MyEnddevice\ #
+#                          EndDevice\CC2530DB\..\..\..\Tools\CC2530DB\f8wEnde #
+#                          v.cfg" (-DCPU32MHZ -DROOT=__near_func              #
+#                          -DMAC_CFG_TX_DATA_MAX=3 -DMAC_CFG_TX_MAX=6         #
+#                          -DMAC_CFG_RX_MAX=3) -f "C:\Users\William\Desktop\± #
+#                          œ“µ…Ëº∆\SRC\EndDevice Project for                  #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"        #
+#                          (-DZIGBEEPRO -DSECURE=0 -DZG_SECURE_DYNAMIC=0      #
+#                          -DREFLECTOR -DDEFAULT_CHANLIST=0x02000000          #
+#                          -DZDAPP_CONFIG_PAN_ID=0xFFFF                       #
+#                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MA #
+#                          SK=0x007F -DBEACON_REQUEST_DELAY=100               #
+#                          -DBEACON_REQ_DELAY_MASK=0x00FF                     #
+#                          -DLINK_STATUS_JITTER_MASK=0x007F                   #
+#                          -DROUTE_EXPIRY_TIME=30 -DAPSC_ACK_WAIT_DURATION_PO #
+#                          LLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7             #
+#                          -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3    #
+#                          -DNWK_MAX_DATA_RETRIES=2                           #
+#                          -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9         #
+#                          -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40           #
+#                          -DNWK_MAX_BINDING_ENTRIES=4                        #
+#                          -DMAX_BINDING_CLUSTER_IDS=4 "-DDEFAULT_KEY={0x01,  #
+#                          0x03, 0x05, 0x07, 0x09, 0x0B, 0x0D, 0x0F, 0x00,    #
+#                          0x02, 0x04, 0x06, 0x08, 0x0A, 0x0C, 0x0D}"         #
+#                          -DMAC_MAX_FRAME_SIZE=116                           #
+#                          -DZDNWKMGR_MIN_TRANSMISSIONS=20 "-DCONST=const     #
+#                          __code" -DGENERIC=__generic                        #
+#                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000        #
+#                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)   #
+#                          -DREJOIN_POLL_RATE=440 "C:\Users\William\Desktop\± #
+#                          œ“µ…Ëº∆\SRC\EndDevice Project for                  #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\Sour #
+#                          ce\TemperatureControl.c" -D NWK_AUTO_POLL -D       #
+#                          NV_RESTORE=1 -D xZTOOL_P1 -D xMT_TASK -D           #
+#                          xMT_SYS_FUNC -D xMT_ZDO_FUNC -D                    #
+#                          xLCD_SUPPORTED=DEBUG -lC                           #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\List\" -lA            #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\List\"                #
+#                          --diag_suppress Pe001,Pa010 -o                     #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\Obj\" -e              #
+#                          --no_code_motion --debug --core=plain --dptr=16,1  #
+#                          --data_model=large --code_model=banked             #
+#                          --calling_convention=xdata_reentrant               #
+#                          --place_constants=data_rom --nr_virtual_regs 16    #
+#                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic #
+#                          e Project for editing\Projects\zstack\MyEnddevice\ #
+#                          EndDevice\CC2530DB\" -I "C:\Users\William\Desktop\ #
+#                          ±œ“µ…Ëº∆\SRC\EndDevice Project for                 #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\Source\" -I "C:\Users\William\Desktop\±œ“µ #
+#                          …Ëº∆\SRC\EndDevice Project for                     #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\ZMain\TI2530DB\" -I                  #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\hal\inc #
+#                          lude\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\E #
+#                          ndDevice Project for editing\Projects\zstack\MyEnd #
+#                          device\EndDevice\CC2530DB\..\..\..\..\..\Component #
+#                          s\hal\target\CC2530EB\" -I                         #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\mac\inc #
+#                          lude\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\E #
+#                          ndDevice Project for editing\Projects\zstack\MyEnd #
+#                          device\EndDevice\CC2530DB\..\..\..\..\..\Component #
+#                          s\mac\high_level\" -I "C:\Users\William\Desktop\±œ #
+#                          “µ…Ëº∆\SRC\EndDevice Project for                   #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\..\..\Components\mac\low_level\srf04 #
+#                          \" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDe #
+#                          vice Project for editing\Projects\zstack\MyEnddevi #
+#                          ce\EndDevice\CC2530DB\..\..\..\..\..\Components\ma #
+#                          c\low_level\srf04\single_chip\" -I                 #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\mt\"    #
+#                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic #
+#                          e Project for editing\Projects\zstack\MyEnddevice\ #
+#                          EndDevice\CC2530DB\..\..\..\..\..\Components\osal\ #
+#                          include\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SR #
+#                          C\EndDevice Project for editing\Projects\zstack\My #
+#                          Enddevice\EndDevice\CC2530DB\..\..\..\..\..\Compon #
+#                          ents\services\saddr\" -I                           #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\service #
+#                          s\sdata\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SR #
+#                          C\EndDevice Project for editing\Projects\zstack\My #
+#                          Enddevice\EndDevice\CC2530DB\..\..\..\..\..\Compon #
+#                          ents\stack\af\" -I "C:\Users\William\Desktop\±œ“µ… #
+#                          Ëº∆\SRC\EndDevice Project for                      #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\..\..\Components\stack\nwk\" -I      #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\stack\s #
+#                          api\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\En #
+#                          dDevice Project for editing\Projects\zstack\MyEndd #
+#                          evice\EndDevice\CC2530DB\..\..\..\..\..\Components #
+#                          \stack\sec\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆ #
+#                          \SRC\EndDevice Project for                         #
+#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
+#                          30DB\..\..\..\..\..\Components\stack\sys\" -I      #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\..\..\..\..\..\Components\stack\z #
+#                          do\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\End #
+#                          Device Project for editing\Projects\zstack\MyEndde #
+#                          vice\EndDevice\CC2530DB\..\..\..\..\..\Components\ #
+#                          zmac\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\E #
+#                          ndDevice Project for editing\Projects\zstack\MyEnd #
+#                          device\EndDevice\CC2530DB\..\..\..\..\..\Component #
+#                          s\zmac\f8w\" -Ohz                                  #
+#    List file          =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice    #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\List\TemperatureContr #
+#                          ol.lst                                             #
+#    Object file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice    #
+#                          Project for editing\Projects\zstack\MyEnddevice\En #
+#                          dDevice\CC2530DB\EndDeviceEB\Obj\TemperatureContro #
+#                          l.r51                                              #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zstack\MyEnddevice\EndDevice\Source\TemperatureControl.c
+      1          
+      2          #include"EnddeviceVariable.h"
+      3          #include "TemperatureControl.h"
+      4          
+      5          
+      6          
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+      7          uint8 ControlTemperature(uint16 RoomSetValue,uint16 FLoorSetValue,
+   \                     ControlTemperature:
+      8                                            uint16 RoomSampleValue,uint16 FloorSampleValue)
+      9          {
+   \   000000   74F7         MOV     A,#-0x9
+   \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
+   \   000005                ; Saved register size: 9
+   \   000005                ; Auto size: 0
+   \   000005   7409         MOV     A,#0x9
+   \   000007   12....       LCALL   ?XSTACK_DISP0_8
+   \   00000A   E0           MOVX    A,@DPTR
+   \   00000B   FE           MOV     R6,A
+   \   00000C   A3           INC     DPTR
+   \   00000D   E0           MOVX    A,@DPTR
+   \   00000E   FF           MOV     R7,A
+   \   00000F   740B         MOV     A,#0xb
+   \   000011   12....       LCALL   ?XSTACK_DISP0_8
+   \   000014   E0           MOVX    A,@DPTR
+   \   000015   FC           MOV     R4,A
+   \   000016   A3           INC     DPTR
+   \   000017   E0           MOVX    A,@DPTR
+   \   000018   FD           MOV     R5,A
+     10            uint8 control = 0;
+   \   000019   7900         MOV     R1,#0x0
+     11            bool over_heat = FALSE;
+     12            int16 Error = FloorSampleValue * 10 -  FloorSampleValue;
+   \   00001B   EC           MOV     A,R4
+   \   00001C   75F009       MOV     B,#0x9
+   \   00001F   A4           MUL     AB
+   \   000020   FC           MOV     R4,A
+   \   000021   A8F0         MOV     R0,B
+   \   000023   75F009       MOV     B,#0x9
+   \   000026   ED           MOV     A,R5
+   \   000027   A4           MUL     AB
+   \   000028   28           ADD     A,R0
+   \   000029   FD           MOV     R5,A
+     13            
+     14            if(Error < -SATURATION)
+   \   00002A   C3           CLR     C
+   \   00002B   EC           MOV     A,R4
+   \   00002C   94E2         SUBB    A,#-0x1e
+   \   00002E   ED           MOV     A,R5
+   \   00002F   94FF         SUBB    A,#-0x1
+   \   000031   A2D2         MOV     C,0xD0 /* PSW */.2
+   \   000033   65D0         XRL     A,PSW
+   \   000035   33           RLC     A
+   \   000036   5004         JNC     ??ControlTemperature_0
+     15            {
+     16              over_heat = TRUE; 
+   \   000038   7801         MOV     R0,#0x1
+   \   00003A   8002         SJMP    ??ControlTemperature_1
+     17            }
+     18            else
+     19            {
+     20              over_heat = FALSE; 
+   \                     ??ControlTemperature_0:
+   \   00003C   7800         MOV     R0,#0x0
+     21            }
+     22            
+     23            if((POWER) && (!over_heat) && !Error)
+   \                     ??ControlTemperature_1:
+   \   00003E   90....       MOV     DPTR,#POWER
+   \   000041   E0           MOVX    A,@DPTR
+   \   000042   6034         JZ      ??ControlTemperature_2
+   \   000044   E8           MOV     A,R0
+   \   000045   A2E0         MOV     C,0xE0 /* A   */.0
+   \   000047   402F         JC      ??ControlTemperature_2
+   \   000049   EC           MOV     A,R4
+   \   00004A   4D           ORL     A,R5
+   \   00004B   702B         JNZ     ??ControlTemperature_2
+     24            {
+     25              Error = RoomSetValue * 10 - RoomSampleValue;
+   \   00004D   EA           MOV     A,R2
+   \   00004E   75F00A       MOV     B,#0xa
+   \   000051   A4           MUL     AB
+   \   000052   FA           MOV     R2,A
+   \   000053   A8F0         MOV     R0,B
+   \   000055   75F00A       MOV     B,#0xa
+   \   000058   EB           MOV     A,R3
+   \   000059   A4           MUL     AB
+   \   00005A   28           ADD     A,R0
+   \   00005B   FB           MOV     R3,A
+   \   00005C   EA           MOV     A,R2
+   \   00005D   C3           CLR     C
+   \   00005E   9E           SUBB    A,R6
+   \   00005F   FC           MOV     R4,A
+   \   000060   EB           MOV     A,R3
+   \   000061   9F           SUBB    A,R7
+   \   000062   FD           MOV     R5,A
+     26              if(TOKEN)// here is the token  now
+   \   000063   90....       MOV     DPTR,#TOKEN
+   \   000066   E0           MOVX    A,@DPTR
+   \   000067   600F         JZ      ??ControlTemperature_2
+     27              {
+     28                if(Error < -SATURATION)
+     29                {
+     30                    control = 0;      
+     31                }
+     32                if(Error > SATURATION)
+   \   000069   C3           CLR     C
+   \   00006A   EC           MOV     A,R4
+   \   00006B   941F         SUBB    A,#0x1f
+   \   00006D   ED           MOV     A,R5
+   \   00006E   9400         SUBB    A,#0x0
+   \   000070   A2D2         MOV     C,0xD0 /* PSW */.2
+   \   000072   65D0         XRL     A,PSW
+   \   000074   33           RLC     A
+   \   000075   4001         JC      ??ControlTemperature_2
+     33                {
+     34                    control = 1;  
+   \   000077   09           INC     R1
+     35                }
+     36              }
+     37              else// the token is took off
+     38              {
+     39                 control = 0;
+     40              } 
+     41            }
+     42            else// not power,overheated or an error occur
+     43            {
+     44                control = 0;
+     45            } 
+     46            
+     47           return control;
+   \                     ??ControlTemperature_2:
+   \   000078   7F01         MOV     R7,#0x1
+   \   00007A   02....       LJMP    ?BANKED_LEAVE_XDATA
+     48          }
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??ControlTemperature?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    ControlTemperature
+
+   Maximum stack usage in bytes:
+
+     Function           ISTACK PSTACK XSTACK
+     --------           ------ ------ ------
+     ControlTemperature     0      0     13
+
+
+   Segment part sizes:
+
+     Function/Label             Bytes
+     --------------             -----
+     ControlTemperature          125
+     ??ControlTemperature?relay    6
+
+ 
+ 125 bytes in segment BANKED_CODE
+   6 bytes in segment BANK_RELAYS
+ 
+ 131 bytes of CODE memory
+
+Errors: none
+Warnings: none
