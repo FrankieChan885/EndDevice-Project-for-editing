@@ -4250,6 +4250,12 @@
       <name>$PROJ_DIR$\..\Source\EnddeviceApp.h</name>
     </file>
     <file>
+      <name>$PROJ_DIR$\..\Source\EnddeviceError.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Source\EnddeviceError.h</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\..\Source\Enddevicekey.c</name>
     </file>
     <file>

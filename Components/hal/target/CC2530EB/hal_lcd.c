@@ -1092,6 +1092,54 @@ void HalLcdWriteError(bool clear)
 
 }
 
+
+/************************************************************** 
+ * @fn      HalLcdWriteErrorCode
+ *
+ * @brief  write the Error_Code when the error is detected
+ *
+ * @param   clear-TRUE-write,false-clear
+ *
+ * @return  None  
+ *
+**************************************************************/
+void HalLcdWriteErrorCode(uint16 error_code,bool clear)
+{
+  
+  uint8 temp = error_code / 4096;
+  if(clear)// write the error_code in the lcd
+  {
+    
+    HalLcdWriteChar5x8(14,2,30,TRUE);
+    HalLcdWriteChar5x8(17,2,35,TRUE);
+    
+    HalLcdWriteChar5x8(temp,2,40,TRUE);
+    
+    temp = error_code / 256 % 16;
+    HalLcdWriteChar5x8(temp,2,45,TRUE);
+    
+    temp = error_code / 16  % 16;
+    HalLcdWriteChar5x8(temp,2,50,TRUE);
+    
+    temp = error_code % 16;
+    HalLcdWriteChar5x8(temp,2,55,TRUE); 
+  }
+  else // clear the error_code in the lcd
+  {
+    HalLcdWriteChar5x8(14,2,30,FALSE);
+    HalLcdWriteChar5x8(17,2,35,FALSE);
+    
+    HalLcdWriteChar5x8(temp,2,40,FALSE);
+    
+    HalLcdWriteChar5x8(temp,2,45,FALSE);
+    
+
+    HalLcdWriteChar5x8(temp,2,50,FALSE);
+  
+    HalLcdWriteChar5x8(temp,2,55,FALSE); 
+  }
+}
+
 #endif
 /**************************************************************************************************
 **************************************************************************************************/

@@ -18,35 +18,7 @@ void Enddevice_HandleLCD(void);
 
 void EnddeviceApp_HandleLCD(void)
 {
-    // get the next rssi and sample the temperature every 2s
-    if(sample_tick == 10)
-    {
- 
-       uint16 RM_ADC_Result = TemperADCSampleAndAverage(10,0);
-       uint16 FL_ADC_Result = TemperADCSampleAndAverage(10,1);
-       RM_Temperature = (uint16)EnddeviceApp_LookupTemp(RM_ADC_Result << 1);
-       FL_Temperature = (uint16)EnddeviceApp_LookupTemp(FL_ADC_Result << 1);
-        
-   
-        // an error occur
-        if((RM_ADC_Result >= 1700) || 
-           (FL_ADC_Result >= 1700) ||
-           (RM_ADC_Result <= 150)  ||
-           (FL_ADC_Result <= 150)
-          )
-       {
-            Error = TRUE; 
-            REL_CTL = 0;
-       }
-       else
-       {
-            Error = FALSE; 
-       }
-       sample_tick = 0;
-    } 
-       
-    sample_tick++;
-     
+    // get the next rssi and sample the temperature every 2s  
     if(rssi >= -55)
       WiFi_Mode = 0;
     else if(rssi >= -85)
@@ -88,7 +60,7 @@ void EnddeviceApp_HandleLCD(void)
         HalLcdWriteDebug(debugnum,BIT_SEL,ID_OR_NET,TRUE,Debug_Blink);
       }
       
-    }
+   }
     
     
     // write the relay state
@@ -96,12 +68,8 @@ void EnddeviceApp_HandleLCD(void)
  
     
     // write the real temperatrue
-    if(!Error)// the error doesn't exist
+    if(!Error_Code)// the error doesn't exist
     {
-        if(Error_Last)// the error has been removed  for the fisrst time
-        {
-          HalLcdWriteError(FALSE);
-        }
         if(!POWER)
         {
            HalLcdWriteRealTemperature(RM_Temperature);
@@ -116,18 +84,10 @@ void EnddeviceApp_HandleLCD(void)
           {
             HalLcdWriteRealTemperature(FL_Temperature);
           }
-        }
-    }
-    else// the error exists
-    {
-      if(!Error_Last)//the error occur for the fisrst time
-      {
-        HalLcdWriteError(TRUE);
-      }
-    }
-    
-    Error_Last = Error;
-}
+       }
+     }
+ }
+  
 
 
 

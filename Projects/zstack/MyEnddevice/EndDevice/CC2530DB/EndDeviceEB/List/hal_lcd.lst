@@ -1,6 +1,6 @@
 ###############################################################################
 #                                                                             #
-# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         20/Apr/2015  20:08:08 #
+# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         21/Apr/2015  17:17:54 #
 # Copyright 2004-2011 IAR Systems AB.                                         #
 #                                                                             #
 #    Core               =  plain                                              #
@@ -9,20 +9,20 @@
 #    Calling convention =  xdata reentrant                                    #
 #    Constant location  =  data_rom                                           #
 #    Dptr setup         =  1,16                                               #
-#    Source file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice    #
-#                          Project for editing\Components\hal\target\CC2530EB #
-#                          \hal_lcd.c                                         #
-#    Command line       =  -f "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic #
-#                          e Project for editing\Projects\zstack\MyEnddevice\ #
-#                          EndDevice\CC2530DB\..\..\..\Tools\CC2530DB\f8wEnde #
-#                          v.cfg" (-DCPU32MHZ -DROOT=__near_func              #
+#    Source file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Components\hal\target\CC2530EB\h #
+#                          al_lcd.c                                           #
+#    Command line       =  -f C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice #
+#                          -Project-for-editing\Projects\zstack\MyEnddevice\E #
+#                          ndDevice\CC2530DB\..\..\..\Tools\CC2530DB\f8wEndev #
+#                          .cfg (-DCPU32MHZ -DROOT=__near_func                #
 #                          -DMAC_CFG_TX_DATA_MAX=3 -DMAC_CFG_TX_MAX=6         #
-#                          -DMAC_CFG_RX_MAX=3) -f "C:\Users\William\Desktop\± #
-#                          œ“µ…Ëº∆\SRC\EndDevice Project for                  #
-#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
-#                          30DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"        #
-#                          (-DZIGBEEPRO -DSECURE=0 -DZG_SECURE_DYNAMIC=0      #
-#                          -DREFLECTOR -DDEFAULT_CHANLIST=0x02000000          #
+#                          -DMAC_CFG_RX_MAX=3) -f C:\Users\William\Desktop\±œ #
+#                          “µ…Ëº∆\SRC\EndDevice-Project-for-editing\Projects\ #
+#                          zstack\MyEnddevice\EndDevice\CC2530DB\..\..\..\Too #
+#                          ls\CC2530DB\f8wConfig.cfg (-DZIGBEEPRO -DSECURE=0  #
+#                          -DZG_SECURE_DYNAMIC=0 -DREFLECTOR                  #
+#                          -DDEFAULT_CHANLIST=0x02000000                      #
 #                          -DZDAPP_CONFIG_PAN_ID=0xFFFF                       #
 #                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MA #
 #                          SK=0x007F -DBEACON_REQUEST_DELAY=100               #
@@ -43,107 +43,104 @@
 #                          __code" -DGENERIC=__generic                        #
 #                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000        #
 #                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)   #
-#                          -DREJOIN_POLL_RATE=440 "C:\Users\William\Desktop\± #
-#                          œ“µ…Ëº∆\SRC\EndDevice Project for                  #
-#                          editing\Components\hal\target\CC2530EB\hal_lcd.c"  #
-#                          -D NWK_AUTO_POLL -D NV_RESTORE=1 -D xZTOOL_P1 -D   #
-#                          xMT_TASK -D xMT_SYS_FUNC -D xMT_ZDO_FUNC -D        #
+#                          -DREJOIN_POLL_RATE=440 C:\Users\William\Desktop\±œ #
+#                          “µ…Ëº∆\SRC\EndDevice-Project-for-editing\Component #
+#                          s\hal\target\CC2530EB\hal_lcd.c -D NWK_AUTO_POLL   #
+#                          -D NV_RESTORE=1 -D xZTOOL_P1 -D xMT_TASK -D        #
+#                          xMT_SYS_FUNC -D xMT_ZDO_FUNC -D                    #
 #                          xLCD_SUPPORTED=DEBUG -lC                           #
-#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
-#                          Project for editing\Projects\zstack\MyEnddevice\En #
-#                          dDevice\CC2530DB\EndDeviceEB\List\" -lA            #
-#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
-#                          Project for editing\Projects\zstack\MyEnddevice\En #
-#                          dDevice\CC2530DB\EndDeviceEB\List\"                #
-#                          --diag_suppress Pe001,Pa010 -o                     #
-#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
-#                          Project for editing\Projects\zstack\MyEnddevice\En #
-#                          dDevice\CC2530DB\EndDeviceEB\Obj\" -e              #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\EndDeviceEB\List\ -lA               #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\EndDeviceEB\List\ --diag_suppress   #
+#                          Pe001,Pa010 -o C:\Users\William\Desktop\±œ“µ…Ëº∆\S #
+#                          RC\EndDevice-Project-for-editing\Projects\zstack\M #
+#                          yEnddevice\EndDevice\CC2530DB\EndDeviceEB\Obj\ -e  #
 #                          --no_code_motion --debug --core=plain --dptr=16,1  #
 #                          --data_model=large --code_model=banked             #
 #                          --calling_convention=xdata_reentrant               #
 #                          --place_constants=data_rom --nr_virtual_regs 16    #
-#                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic #
-#                          e Project for editing\Projects\zstack\MyEnddevice\ #
-#                          EndDevice\CC2530DB\" -I "C:\Users\William\Desktop\ #
-#                          ±œ“µ…Ëº∆\SRC\EndDevice Project for                 #
-#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
-#                          30DB\..\Source\" -I "C:\Users\William\Desktop\±œ“µ #
-#                          …Ëº∆\SRC\EndDevice Project for                     #
-#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
-#                          30DB\..\..\..\ZMain\TI2530DB\" -I                  #
-#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
-#                          Project for editing\Projects\zstack\MyEnddevice\En #
-#                          dDevice\CC2530DB\..\..\..\..\..\Components\hal\inc #
-#                          lude\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\E #
-#                          ndDevice Project for editing\Projects\zstack\MyEnd #
-#                          device\EndDevice\CC2530DB\..\..\..\..\..\Component #
-#                          s\hal\target\CC2530EB\" -I                         #
-#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
-#                          Project for editing\Projects\zstack\MyEnddevice\En #
-#                          dDevice\CC2530DB\..\..\..\..\..\Components\mac\inc #
-#                          lude\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\E #
-#                          ndDevice Project for editing\Projects\zstack\MyEnd #
-#                          device\EndDevice\CC2530DB\..\..\..\..\..\Component #
-#                          s\mac\high_level\" -I "C:\Users\William\Desktop\±œ #
-#                          “µ…Ëº∆\SRC\EndDevice Project for                   #
-#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
-#                          30DB\..\..\..\..\..\Components\mac\low_level\srf04 #
-#                          \" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDe #
-#                          vice Project for editing\Projects\zstack\MyEnddevi #
-#                          ce\EndDevice\CC2530DB\..\..\..\..\..\Components\ma #
-#                          c\low_level\srf04\single_chip\" -I                 #
-#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
-#                          Project for editing\Projects\zstack\MyEnddevice\En #
-#                          dDevice\CC2530DB\..\..\..\..\..\Components\mt\"    #
-#                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic #
-#                          e Project for editing\Projects\zstack\MyEnddevice\ #
-#                          EndDevice\CC2530DB\..\..\..\..\..\Components\osal\ #
-#                          include\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SR #
-#                          C\EndDevice Project for editing\Projects\zstack\My #
-#                          Enddevice\EndDevice\CC2530DB\..\..\..\..\..\Compon #
-#                          ents\services\saddr\" -I                           #
-#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
-#                          Project for editing\Projects\zstack\MyEnddevice\En #
-#                          dDevice\CC2530DB\..\..\..\..\..\Components\service #
-#                          s\sdata\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SR #
-#                          C\EndDevice Project for editing\Projects\zstack\My #
-#                          Enddevice\EndDevice\CC2530DB\..\..\..\..\..\Compon #
-#                          ents\stack\af\" -I "C:\Users\William\Desktop\±œ“µ… #
-#                          Ëº∆\SRC\EndDevice Project for                      #
-#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
-#                          30DB\..\..\..\..\..\Components\stack\nwk\" -I      #
-#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
-#                          Project for editing\Projects\zstack\MyEnddevice\En #
-#                          dDevice\CC2530DB\..\..\..\..\..\Components\stack\s #
-#                          api\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\En #
-#                          dDevice Project for editing\Projects\zstack\MyEndd #
+#                          -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice #
+#                          -Project-for-editing\Projects\zstack\MyEnddevice\E #
+#                          ndDevice\CC2530DB\ -I C:\Users\William\Desktop\±œ“ #
+#                          µ…Ëº∆\SRC\EndDevice-Project-for-editing\Projects\z #
+#                          stack\MyEnddevice\EndDevice\CC2530DB\..\Source\    #
+#                          -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice #
+#                          -Project-for-editing\Projects\zstack\MyEnddevice\E #
+#                          ndDevice\CC2530DB\..\..\..\ZMain\TI2530DB\ -I      #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\..\..\..\..\..\Components\hal\inclu #
+#                          de\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDe #
+#                          vice-Project-for-editing\Projects\zstack\MyEnddevi #
+#                          ce\EndDevice\CC2530DB\..\..\..\..\..\Components\ha #
+#                          l\target\CC2530EB\ -I C:\Users\William\Desktop\±œ“ #
+#                          µ…Ëº∆\SRC\EndDevice-Project-for-editing\Projects\z #
+#                          stack\MyEnddevice\EndDevice\CC2530DB\..\..\..\..\. #
+#                          .\Components\mac\include\ -I                       #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\..\..\..\..\..\Components\mac\high_ #
+#                          level\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\En #
+#                          dDevice-Project-for-editing\Projects\zstack\MyEndd #
 #                          evice\EndDevice\CC2530DB\..\..\..\..\..\Components #
-#                          \stack\sec\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆ #
-#                          \SRC\EndDevice Project for                         #
-#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
-#                          30DB\..\..\..\..\..\Components\stack\sys\" -I      #
-#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
-#                          Project for editing\Projects\zstack\MyEnddevice\En #
-#                          dDevice\CC2530DB\..\..\..\..\..\Components\stack\z #
-#                          do\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\End #
-#                          Device Project for editing\Projects\zstack\MyEndde #
+#                          \mac\low_level\srf04\ -I                           #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\..\..\..\..\..\Components\mac\low_l #
+#                          evel\srf04\single_chip\ -I                         #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\..\..\..\..\..\Components\mt\ -I    #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\..\..\..\..\..\Components\osal\incl #
+#                          ude\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndD #
+#                          evice-Project-for-editing\Projects\zstack\MyEnddev #
+#                          ice\EndDevice\CC2530DB\..\..\..\..\..\Components\s #
+#                          ervices\saddr\ -I C:\Users\William\Desktop\±œ“µ…Ëº #
+#                          ∆\SRC\EndDevice-Project-for-editing\Projects\zstac #
+#                          k\MyEnddevice\EndDevice\CC2530DB\..\..\..\..\..\Co #
+#                          mponents\services\sdata\ -I                        #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\..\..\..\..\..\Components\stack\af\ #
+#                           -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic #
+#                          e-Project-for-editing\Projects\zstack\MyEnddevice\ #
+#                          EndDevice\CC2530DB\..\..\..\..\..\Components\stack #
+#                          \nwk\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\End #
+#                          Device-Project-for-editing\Projects\zstack\MyEndde #
 #                          vice\EndDevice\CC2530DB\..\..\..\..\..\Components\ #
-#                          zmac\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\E #
-#                          ndDevice Project for editing\Projects\zstack\MyEnd #
-#                          device\EndDevice\CC2530DB\..\..\..\..\..\Component #
-#                          s\zmac\f8w\" -Ohz                                  #
-#    List file          =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice    #
-#                          Project for editing\Projects\zstack\MyEnddevice\En #
-#                          dDevice\CC2530DB\EndDeviceEB\List\hal_lcd.lst      #
-#    Object file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice    #
-#                          Project for editing\Projects\zstack\MyEnddevice\En #
-#                          dDevice\CC2530DB\EndDeviceEB\Obj\hal_lcd.r51       #
+#                          stack\sapi\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\S #
+#                          RC\EndDevice-Project-for-editing\Projects\zstack\M #
+#                          yEnddevice\EndDevice\CC2530DB\..\..\..\..\..\Compo #
+#                          nents\stack\sec\ -I C:\Users\William\Desktop\±œ“µ… #
+#                          Ëº∆\SRC\EndDevice-Project-for-editing\Projects\zst #
+#                          ack\MyEnddevice\EndDevice\CC2530DB\..\..\..\..\..\ #
+#                          Components\stack\sys\ -I                           #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\..\..\..\..\..\Components\stack\zdo #
+#                          \ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevi #
+#                          ce-Project-for-editing\Projects\zstack\MyEnddevice #
+#                          \EndDevice\CC2530DB\..\..\..\..\..\Components\zmac #
+#                          \ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevi #
+#                          ce-Project-for-editing\Projects\zstack\MyEnddevice #
+#                          \EndDevice\CC2530DB\..\..\..\..\..\Components\zmac #
+#                          \f8w\ -Ohz                                         #
+#    List file          =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\EndDeviceEB\List\hal_lcd.lst        #
+#    Object file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\EndDeviceEB\Obj\hal_lcd.r51         #
 #                                                                             #
 #                                                                             #
 ###############################################################################
 
-C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\hal\target\CC2530EB\hal_lcd.c
+C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Project-for-editing\Components\hal\target\CC2530EB\hal_lcd.c
       1          /**************************************************************************************************
       2            Filename:       hal_lcd.c
       3            Revised:        $Date: 2010-06-21 17:31:27 -0700 (Mon, 21 Jun 2010) $
@@ -3246,10 +3243,10 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
    \                     ?Subroutine2:
    \   000000   D2A0         SETB    0xa0.0
-   \   000002   80..         SJMP    ??Subroutine9_0
+   \   000002   80..         SJMP    ??Subroutine12_0
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
-   \                     ??Subroutine9_0:
+   \                     ??Subroutine12_0:
    \   000000   7F01         MOV     R7,#0x1
    \   000002   02....       LJMP    ?BANKED_LEAVE_XDATA
     555          
@@ -3385,7 +3382,7 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \   00001D   F9           MOV     R1,A
    \   00001E   12....       LCALL   ??HalLcd_HW_WriteCommand?relay
     614          }
-   \   000021   80..         SJMP    ??Subroutine9_0
+   \   000021   80..         SJMP    ??Subroutine12_0
     615          
     616          /**************************************************************************************************
     617           * @fn      HalLcd_HW_Clear
@@ -3436,7 +3433,7 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \   00001C   9408         SUBB    A,#0x8
    \   00001E   40E7         JC      ??HalLcd_HW_Clear_0
     637          }
-   \   000020   80..         SJMP    ??Subroutine9_0
+   \   000020   80..         SJMP    ??Subroutine12_0
     638          
     639          /**************************************************************************************************
     640           * @fn      HalLcdWriteChar
@@ -3490,8 +3487,8 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \   00001B   75F005       MOV     B,#0x5
    \   00001E   A4           MUL     AB
    \   00001F   85....       MOV     ?V0 + 0,?V0 + 2
-   \   000022   12....       LCALL   ?Subroutine8 & 0xFFFF
-   \                     ??CrossCallReturnLabel_4:
+   \   000022   12....       LCALL   ?Subroutine9 & 0xFFFF
+   \                     ??CrossCallReturnLabel_6:
    \   000025   74..         MOV     A,#ASCII_CODE & 0xff
    \   000027   28           ADD     A,R0
    \   000028   F582         MOV     DPL,A
@@ -3524,7 +3521,7 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \   000002   02....       LJMP    ?BANKED_LEAVE_XDATA
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
-   \                     ?Subroutine8:
+   \                     ?Subroutine9:
    \   000000   25..         ADD     A,?V0 + 0
    \   000002   F8           MOV     R0,A
    \   000003   E5F0         MOV     A,B
@@ -3667,11 +3664,11 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \   000060   85..F0       MOV     B,?V0 + 0
    \   000063   A4           MUL     AB
    \   000064   85....       MOV     ?V0 + 0,?V0 + 9
-   \   000067   12....       LCALL   ?Subroutine8 & 0xFFFF
+   \   000067   12....       LCALL   ?Subroutine9 & 0xFFFF
     736               }
     737               
     738             }
-   \                     ??CrossCallReturnLabel_5:
+   \                     ??CrossCallReturnLabel_7:
    \   00006A   EE           MOV     A,R6
    \   00006B   28           ADD     A,R0
    \   00006C   F582         MOV     DPL,A
@@ -3700,11 +3697,11 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
    \                     ?Subroutine0:
-   \   000000   12....       LCALL   ??Subroutine13_0 & 0xFFFF
-   \                     ??CrossCallReturnLabel_20:
+   \   000000   12....       LCALL   ??Subroutine16_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_26:
    \   000003   12....       LCALL   ?DEALLOC_XSTACK8
-   \   000006                REQUIRE ??Subroutine9_0
-   \   000006                ; // Fall through to label ??Subroutine9_0
+   \   000006                REQUIRE ??Subroutine12_0
+   \   000006                ; // Fall through to label ??Subroutine12_0
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
     752          void HalLcd_HW_WriteST(bool power)
@@ -3732,7 +3729,7 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
     755          }
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
-   \                     ??Subroutine13_0:
+   \                     ??Subroutine16_0:
    \   000000   12....       LCALL   ??HalLcd_HW_LoadPicture?relay
    \   000003   7402         MOV     A,#0x2
    \   000005   22           RET
@@ -3772,8 +3769,8 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \   00001C   7910         MOV     R1,#0x10
    \   00001E   7A..         MOV     R2,#ST_Unit & 0xff
    \   000020   7B..         MOV     R3,#(ST_Unit >> 8) & 0xff
-   \   000022   12....       LCALL   ??Subroutine13_0 & 0xFFFF
-   \                     ??CrossCallReturnLabel_21:
+   \   000022   12....       LCALL   ??Subroutine16_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_27:
    \   000025   12....       LCALL   ?DEALLOC_XSTACK8
    \   000028   802E         SJMP    ??HalLcd_HW_WriteSTU_1
     771            else
@@ -3792,8 +3789,8 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \   00003E   7910         MOV     R1,#0x10
    \   000040   7A..         MOV     R2,#ST_Unit & 0xff
    \   000042   7B..         MOV     R3,#(ST_Unit >> 8) & 0xff
-   \   000044   12....       LCALL   ??Subroutine13_0 & 0xFFFF
-   \                     ??CrossCallReturnLabel_22:
+   \   000044   12....       LCALL   ??Subroutine16_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_28:
    \   000047   12....       LCALL   ?DEALLOC_XSTACK8
     774              HalLcd_HW_WriteAddr(2,112);
    \   00004A                ; Setup parameters for call to function HalLcd_HW_WriteAddr
@@ -3809,20 +3806,20 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \   000053   12....       LCALL   ?Subroutine5 & 0xFFFF
     778              }
     779            }
-   \                     ??CrossCallReturnLabel_6:
+   \                     ??CrossCallReturnLabel_12:
    \   000056   70FB         JNZ     ??HalLcd_HW_WriteSTU_2
     780          }
    \                     ??HalLcd_HW_WriteSTU_1:
-   \   000058   02....       LJMP    ??Subroutine9_0 & 0xFFFF
+   \   000058   02....       LJMP    ??Subroutine12_0 & 0xFFFF
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
    \                     ?Subroutine5:
    \   000000   7980         MOV     R1,#-0x80
-   \   000002                REQUIRE ??Subroutine10_0
-   \   000002                ; // Fall through to label ??Subroutine10_0
+   \   000002                REQUIRE ??Subroutine13_0
+   \   000002                ; // Fall through to label ??Subroutine13_0
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
-   \                     ??Subroutine10_0:
+   \                     ??Subroutine13_0:
    \   000000   12....       LCALL   ??HalLcd_HW_WriteData?relay
    \   000003   1E           DEC     R6
    \   000004   EE           MOV     A,R6
@@ -3960,8 +3957,8 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \   00007D   7A..         MOV     R2,#WiFi_3 & 0xff
    \   00007F   7B..         MOV     R3,#(WiFi_3 >> 8) & 0xff
    \                     ??HalLcdWriteWiFiMod_5:
-   \   000081   12....       LCALL   ??Subroutine13_0 & 0xFFFF
-   \                     ??CrossCallReturnLabel_23:
+   \   000081   12....       LCALL   ??Subroutine16_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_29:
    \   000084   12....       LCALL   ?DEALLOC_XSTACK8
     822              break;
     823            default:
@@ -3969,7 +3966,7 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
     825            }
     826          }
    \                     ??HalLcdWriteWiFiMod_4:
-   \   000087   02....       LJMP    ??Subroutine9_0 & 0xFFFF
+   \   000087   02....       LJMP    ??Subroutine12_0 & 0xFFFF
     827          
     828          /************************************************************** 
     829           * @fn      HalLcdWriteSetTemperature
@@ -4024,8 +4021,8 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \   00002D   7C0C         MOV     R4,#0xc
    \   00002F   7918         MOV     R1,#0x18
    \   000031   EA           MOV     A,R2
-   \   000032   12....       LCALL   ??Subroutine12_0 & 0xFFFF
-   \                     ??CrossCallReturnLabel_18:
+   \   000032   12....       LCALL   ??Subroutine15_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_24:
    \   000035   12....       LCALL   ?DEALLOC_XSTACK8
     848              // write the low bit of the temperatue
     849              HalLcd_HW_LoadPicture(&STCODE[one * 36],24,12,98,0,TRUE);
@@ -4038,7 +4035,7 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \   000045   12....       LCALL   ?PUSH_XSTACK_I_ONE
    \   000048   12....       LCALL   ?Subroutine3 & 0xFFFF
     850            }
-   \                     ??CrossCallReturnLabel_16:
+   \                     ??CrossCallReturnLabel_22:
    \   00004B   12....       LCALL   ?DEALLOC_XSTACK8
    \   00004E   8057         SJMP    ??HalLcdWriteSetTemperature_1
     851            else
@@ -4056,8 +4053,8 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \   00005F   7C0C         MOV     R4,#0xc
    \   000061   7918         MOV     R1,#0x18
    \   000063   EA           MOV     A,R2
-   \   000064   12....       LCALL   ??Subroutine12_0 & 0xFFFF
-   \                     ??CrossCallReturnLabel_19:
+   \   000064   12....       LCALL   ??Subroutine15_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_25:
    \   000067   12....       LCALL   ?DEALLOC_XSTACK8
     855              HalLcd_HW_WriteAddr(2,81);// reload the line
    \   00006A                ; Setup parameters for call to function HalLcd_HW_WriteAddr
@@ -4085,7 +4082,7 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \   000087   78..         MOV     R0,#?V0 + 1
    \   000089   12....       LCALL   ?PUSH_XSTACK_I_ONE
    \   00008C   12....       LCALL   ?Subroutine3 & 0xFFFF
-   \                     ??CrossCallReturnLabel_17:
+   \                     ??CrossCallReturnLabel_23:
    \   00008F   12....       LCALL   ?DEALLOC_XSTACK8
     862              HalLcd_HW_WriteAddr(2,98);  // reload the line 
    \   000092                ; Setup parameters for call to function HalLcd_HW_WriteAddr
@@ -4119,11 +4116,11 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \   000002   7C0C         MOV     R4,#0xc
    \   000004   7918         MOV     R1,#0x18
    \   000006   E5..         MOV     A,?V0 + 0
-   \   000008                REQUIRE ??Subroutine12_0
-   \   000008                ; // Fall through to label ??Subroutine12_0
+   \   000008                REQUIRE ??Subroutine15_0
+   \   000008                ; // Fall through to label ??Subroutine15_0
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
-   \                     ??Subroutine12_0:
+   \                     ??Subroutine15_0:
    \   000000   75F024       MOV     B,#0x24
    \   000003   A4           MUL     AB
    \   000004   FA           MOV     R2,A
@@ -4134,8 +4131,8 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \   00000B   74..         MOV     A,#(STCODE >> 8) & 0xff
    \   00000D   3B           ADDC    A,R3
    \   00000E   FB           MOV     R3,A
-   \   00000F                REQUIRE ??Subroutine13_0
-   \   00000F                ; // Fall through to label ??Subroutine13_0
+   \   00000F                REQUIRE ??Subroutine16_0
+   \   00000F                ; // Fall through to label ??Subroutine16_0
     872          
     873          /************************************************************** 
     874           * @fn      HalLcdWriteEndMod
@@ -4279,9 +4276,9 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \   000023   7B00         MOV     R3,#0x0
    \   000025   12....       LCALL   ?US_DIV_MOD
    \   000028   12....       LCALL   ?Subroutine6 & 0xFFFF
-   \                     ??CrossCallReturnLabel_14:
-   \   00002B   12....       LCALL   ??Subroutine13_0 & 0xFFFF
-   \                     ??CrossCallReturnLabel_24:
+   \                     ??CrossCallReturnLabel_20:
+   \   00002B   12....       LCALL   ??Subroutine16_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_30:
    \   00002E   12....       LCALL   ?DEALLOC_XSTACK8
     925            // write the higher bit of the temperatue
     926            HalLcd_HW_LoadPicture(&RTCODE[ten * 85],40,17,64,24,TRUE);
@@ -4309,9 +4306,9 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \   000056   7B00         MOV     R3,#0x0
    \   000058   12....       LCALL   ?US_DIV_MOD
    \   00005B   12....       LCALL   ?Subroutine6 & 0xFFFF
-   \                     ??CrossCallReturnLabel_15:
-   \   00005E   12....       LCALL   ??Subroutine13_0 & 0xFFFF
-   \                     ??CrossCallReturnLabel_25:
+   \                     ??CrossCallReturnLabel_21:
+   \   00005E   12....       LCALL   ??Subroutine16_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_31:
    \   000061   12....       LCALL   ?DEALLOC_XSTACK8
     927            // write the middle bit of the temperatue
     928            HalLcd_HW_LoadPicture(&RTCODE[one * 85],40,17,90,24,TRUE);
@@ -4332,8 +4329,8 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \   00007E   7B00         MOV     R3,#0x0
    \   000080   12....       LCALL   ?US_DIV_MOD
    \   000083   EA           MOV     A,R2
-   \   000084   12....       LCALL   ??Subroutine11_0 & 0xFFFF
-   \                     ??CrossCallReturnLabel_13:
+   \   000084   12....       LCALL   ??Subroutine14_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_19:
    \   000087   02....       LJMP    ?Subroutine0 & 0xFFFF
     929            // write the lower bit of the temperature
     930          }
@@ -4341,11 +4338,11 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
    \                     ?Subroutine6:
    \   000000   E8           MOV     A,R0
-   \   000001                REQUIRE ??Subroutine11_0
-   \   000001                ; // Fall through to label ??Subroutine11_0
+   \   000001                REQUIRE ??Subroutine14_0
+   \   000001                ; // Fall through to label ??Subroutine14_0
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
-   \                     ??Subroutine11_0:
+   \                     ??Subroutine14_0:
    \   000000   75F055       MOV     B,#0x55
    \   000003   A4           MUL     AB
    \   000004   F8           MOV     R0,A
@@ -4552,7 +4549,7 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \   00000E                ; Setup parameters for call to function HalLcd_HW_WriteData
    \   00000E   12....       LCALL   ?Subroutine5 & 0xFFFF
    1011               }
-   \                     ??CrossCallReturnLabel_7:
+   \                     ??CrossCallReturnLabel_13:
    \   000011   70FB         JNZ     ??LoadBackground_0
    1012               
    1013               
@@ -4563,44 +4560,44 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    1016               for(j = 0; j < 3; j++)
    1017               {
    1018                 HalLcd_HW_WriteData(0x80);
-   \                     ??CrossCallReturnLabel_30:
+   \                     ??CrossCallReturnLabel_36:
    \   000016                ; Setup parameters for call to function HalLcd_HW_WriteData
    \   000016   12....       LCALL   ?Subroutine5 & 0xFFFF
    1019               }
-   \                     ??CrossCallReturnLabel_8:
-   \   000019   70FB         JNZ     ??CrossCallReturnLabel_30
+   \                     ??CrossCallReturnLabel_14:
+   \   000019   70FB         JNZ     ??CrossCallReturnLabel_36
    1020               HalLcd_HW_WriteAddr(7,84);
    \   00001B                ; Setup parameters for call to function HalLcd_HW_WriteAddr
    \   00001B   7A54         MOV     R2,#0x54
    \   00001D   7907         MOV     R1,#0x7
-   \   00001F   12....       LCALL   ??Subroutine14_0 & 0xFFFF
+   \   00001F   12....       LCALL   ??Subroutine17_0 & 0xFFFF
    1021               for(j = 0; j < 3; j++)
    1022               {
    1023                 HalLcd_HW_WriteData(0x03);
-   \                     ??CrossCallReturnLabel_32:
+   \                     ??CrossCallReturnLabel_38:
    \   000022                ; Setup parameters for call to function HalLcd_HW_WriteData
    \   000022   7903         MOV     R1,#0x3
-   \   000024   12....       LCALL   ??Subroutine10_0 & 0xFFFF
+   \   000024   12....       LCALL   ??Subroutine13_0 & 0xFFFF
    1024               }
-   \                     ??CrossCallReturnLabel_11:
-   \   000027   70F9         JNZ     ??CrossCallReturnLabel_32
+   \                     ??CrossCallReturnLabel_17:
+   \   000027   70F9         JNZ     ??CrossCallReturnLabel_38
    1025               //HalLcd_HW_WriteST();
    1026              // HalLcd_HW_WriteSTU();
    1027               HalLcd_HW_WriteRTU();
    \   000029                ; Setup parameters for call to function HalLcd_HW_WriteRTU
    \   000029   12....       LCALL   ??HalLcd_HW_WriteRTU?relay
    1028          }
-   \   00002C   02....       LJMP    ??Subroutine9_0 & 0xFFFF
+   \   00002C   02....       LJMP    ??Subroutine12_0 & 0xFFFF
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
    \                     ?Subroutine7:
    \   000000   7A54         MOV     R2,#0x54
    \   000002   7906         MOV     R1,#0x6
-   \   000004                REQUIRE ??Subroutine14_0
-   \   000004                ; // Fall through to label ??Subroutine14_0
+   \   000004                REQUIRE ??Subroutine17_0
+   \   000004                ; // Fall through to label ??Subroutine17_0
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
-   \                     ??Subroutine14_0:
+   \                     ??Subroutine17_0:
    \   000000   12....       LCALL   ??HalLcd_HW_WriteAddr?relay
    \   000003   7E03         MOV     R6,#0x3
    \   000005   22           RET
@@ -4641,8 +4638,8 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \   000019   7918         MOV     R1,#0x18
    \   00001B   7A..         MOV     R2,#POWER_PIC & 0xff
    \   00001D   7B..         MOV     R3,#(POWER_PIC >> 8) & 0xff
-   \   00001F   12....       LCALL   ??Subroutine13_0 & 0xFFFF
-   \                     ??CrossCallReturnLabel_26:
+   \   00001F   12....       LCALL   ??Subroutine16_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_32:
    \   000022   12....       LCALL   ?DEALLOC_XSTACK8
    1046                 HalLcd_HW_WriteAddr( 2,81);
    \   000025                ; Setup parameters for call to function HalLcd_HW_WriteAddr
@@ -4658,7 +4655,7 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \   00002E   12....       LCALL   ?Subroutine5 & 0xFFFF
    1050                 }
    1051            }
-   \                     ??CrossCallReturnLabel_9:
+   \                     ??CrossCallReturnLabel_15:
    \   000031   6022         JZ      ??HalLcdWritePower_2
    \   000033   80F9         SJMP    ??HalLcdWritePower_1
    1052            else
@@ -4677,14 +4674,14 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \   000049   7918         MOV     R1,#0x18
    \   00004B   7A..         MOV     R2,#POWER_PIC & 0xff
    \   00004D   7B..         MOV     R3,#(POWER_PIC >> 8) & 0xff
-   \   00004F   12....       LCALL   ??Subroutine13_0 & 0xFFFF
+   \   00004F   12....       LCALL   ??Subroutine16_0 & 0xFFFF
    1055            }
-   \                     ??CrossCallReturnLabel_27:
+   \                     ??CrossCallReturnLabel_33:
    \   000052   12....       LCALL   ?DEALLOC_XSTACK8
    1056             
    1057          }
    \                     ??HalLcdWritePower_2:
-   \   000055   02....       LJMP    ??Subroutine9_0 & 0xFFFF
+   \   000055   02....       LJMP    ??Subroutine12_0 & 0xFFFF
    1058          
    1059          /************************************************************** 
    1060           * @fn      HalLcdWriteError
@@ -4722,9 +4719,9 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \   00001C   7928         MOV     R1,#0x28
    \   00001E   7A..         MOV     R2,#ERROR_PIC & 0xff
    \   000020   7B..         MOV     R3,#(ERROR_PIC >> 8) & 0xff
-   \   000022   12....       LCALL   ??Subroutine13_0 & 0xFFFF
+   \   000022   12....       LCALL   ??Subroutine16_0 & 0xFFFF
    1074            }
-   \                     ??CrossCallReturnLabel_28:
+   \                     ??CrossCallReturnLabel_34:
    \   000025   12....       LCALL   ?DEALLOC_XSTACK8
    \   000028   8036         SJMP    ??HalLcdWriteError_1
    1075            else
@@ -4743,8 +4740,8 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \   00003E   7928         MOV     R1,#0x28
    \   000040   7A..         MOV     R2,#ERROR_PIC & 0xff
    \   000042   7B..         MOV     R3,#(ERROR_PIC >> 8) & 0xff
-   \   000044   12....       LCALL   ??Subroutine13_0 & 0xFFFF
-   \                     ??CrossCallReturnLabel_29:
+   \   000044   12....       LCALL   ??Subroutine16_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_35:
    \   000047   12....       LCALL   ?DEALLOC_XSTACK8
    1078               HalLcd_HW_WriteAddr(6,84);
    \   00004A                ; Setup parameters for call to function HalLcd_HW_WriteAddr
@@ -4755,32 +4752,200 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    1082               for(j = 0; j < 3; j++)
    1083               {
    1084                 HalLcd_HW_WriteData(0x80);
-   \                     ??CrossCallReturnLabel_31:
+   \                     ??CrossCallReturnLabel_37:
    \   00004D                ; Setup parameters for call to function HalLcd_HW_WriteData
    \   00004D   12....       LCALL   ?Subroutine5 & 0xFFFF
    1085               }
-   \                     ??CrossCallReturnLabel_10:
-   \   000050   70FB         JNZ     ??CrossCallReturnLabel_31
+   \                     ??CrossCallReturnLabel_16:
+   \   000050   70FB         JNZ     ??CrossCallReturnLabel_37
    1086               HalLcd_HW_WriteAddr(7,84);
    \   000052                ; Setup parameters for call to function HalLcd_HW_WriteAddr
    \   000052   7A54         MOV     R2,#0x54
    \   000054   7907         MOV     R1,#0x7
-   \   000056   12....       LCALL   ??Subroutine14_0 & 0xFFFF
+   \   000056   12....       LCALL   ??Subroutine17_0 & 0xFFFF
    1087               for(j = 0; j < 3; j++)
    1088               {
    1089                 HalLcd_HW_WriteData(0x03);
-   \                     ??CrossCallReturnLabel_33:
+   \                     ??CrossCallReturnLabel_39:
    \   000059                ; Setup parameters for call to function HalLcd_HW_WriteData
    \   000059   7903         MOV     R1,#0x3
-   \   00005B   12....       LCALL   ??Subroutine10_0 & 0xFFFF
+   \   00005B   12....       LCALL   ??Subroutine13_0 & 0xFFFF
    1090               }
    1091            }
-   \                     ??CrossCallReturnLabel_12:
-   \   00005E   70F9         JNZ     ??CrossCallReturnLabel_33
+   \                     ??CrossCallReturnLabel_18:
+   \   00005E   70F9         JNZ     ??CrossCallReturnLabel_39
    1092          
    1093          }
    \                     ??HalLcdWriteError_1:
-   \   000060   02....       LJMP    ??Subroutine9_0 & 0xFFFF
+   \   000060   02....       LJMP    ??Subroutine12_0 & 0xFFFF
+   1094          
+   1095          
+   1096          /************************************************************** 
+   1097           * @fn      HalLcdWriteErrorCode
+   1098           *
+   1099           * @brief  write the Error_Code when the error is detected
+   1100           *
+   1101           * @param   clear-TRUE-write,false-clear
+   1102           *
+   1103           * @return  None  
+   1104           *
+   1105          **************************************************************/
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   1106          void HalLcdWriteErrorCode(uint16 error_code,bool clear)
+   \                     HalLcdWriteErrorCode:
+   1107          {
+   \   000000   74F4         MOV     A,#-0xc
+   \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
+   \   000005                ; Saved register size: 12
+   \   000005                ; Auto size: 0
+   \   000005   EA           MOV     A,R2
+   \   000006   FE           MOV     R6,A
+   \   000007   EB           MOV     A,R3
+   \   000008   FF           MOV     R7,A
+   1108            
+   1109            uint8 temp = error_code / 4096;
+   \   000009   8E..         MOV     ?V0 + 2,R6
+   \   00000B   8F..         MOV     ?V0 + 3,R7
+   \   00000D   740C         MOV     A,#0xc
+   \   00000F   78..         MOV     R0,#?V0 + 2
+   \   000011   12....       LCALL   ?US_SHR
+   \   000014   E5..         MOV     A,?V0 + 2
+   \   000016   F5..         MOV     ?V0 + 0,A
+   1110            if(clear)// write the error_code in the lcd
+   \   000018   E9           MOV     A,R1
+   \   000019   6038         JZ      ??HalLcdWriteErrorCode_0
+   1111            {
+   1112              
+   1113              HalLcdWriteChar5x8(14,2,30,TRUE);
+   \   00001B                ; Setup parameters for call to function HalLcdWriteChar5x8
+   \   00001B   7C01         MOV     R4,#0x1
+   \   00001D   7B1E         MOV     R3,#0x1e
+   \   00001F   7A02         MOV     R2,#0x2
+   \   000021   790E         MOV     R1,#0xe
+   \   000023   12....       LCALL   ?Subroutine11 & 0xFFFF
+   1114              HalLcdWriteChar5x8(17,2,35,TRUE);
+   1115              
+   1116              HalLcdWriteChar5x8(temp,2,40,TRUE);
+   1117              
+   1118              temp = error_code / 256 % 16;
+   1119              HalLcdWriteChar5x8(temp,2,45,TRUE);
+   1120              
+   1121              temp = error_code / 16  % 16;
+   1122              HalLcdWriteChar5x8(temp,2,50,TRUE);
+   1123              
+   1124              temp = error_code % 16;
+   1125              HalLcdWriteChar5x8(temp,2,55,TRUE); 
+   1126            }
+   \                     ??CrossCallReturnLabel_8:
+   \   000026   7B23         MOV     R3,#0x23
+   \   000028   7A02         MOV     R2,#0x2
+   \   00002A   7911         MOV     R1,#0x11
+   \   00002C   12....       LCALL   ?Subroutine11 & 0xFFFF
+   \                     ??CrossCallReturnLabel_9:
+   \   00002F   7B28         MOV     R3,#0x28
+   \   000031   7A02         MOV     R2,#0x2
+   \   000033   A9..         MOV     R1,?V0 + 0
+   \   000035   12....       LCALL   ?Subroutine11 & 0xFFFF
+   \                     ??CrossCallReturnLabel_10:
+   \   000038   7B2D         MOV     R3,#0x2d
+   \   00003A   7A02         MOV     R2,#0x2
+   \   00003C   EF           MOV     A,R7
+   \   00003D   12....       LCALL   ?Subroutine8 & 0xFFFF
+   \                     ??CrossCallReturnLabel_4:
+   \   000040   7B32         MOV     R3,#0x32
+   \   000042   7A02         MOV     R2,#0x2
+   \   000044   EE           MOV     A,R6
+   \   000045   C4           SWAP    A
+   \   000046   12....       LCALL   ?Subroutine8 & 0xFFFF
+   \                     ??CrossCallReturnLabel_5:
+   \   000049   7B37         MOV     R3,#0x37
+   \   00004B   7A02         MOV     R2,#0x2
+   \   00004D   EE           MOV     A,R6
+   \   00004E   540F         ANL     A,#0xf
+   \   000050   F9           MOV     R1,A
+   \   000051   8029         SJMP    ??HalLcdWriteErrorCode_1
+   1127            else // clear the error_code in the lcd
+   1128            {
+   1129              HalLcdWriteChar5x8(14,2,30,FALSE);
+   \                     ??HalLcdWriteErrorCode_0:
+   \   000053                ; Setup parameters for call to function HalLcdWriteChar5x8
+   \   000053   7C00         MOV     R4,#0x0
+   \   000055   7B1E         MOV     R3,#0x1e
+   \   000057   7A02         MOV     R2,#0x2
+   \   000059   790E         MOV     R1,#0xe
+   \   00005B   12....       LCALL   ??Subroutine18_0 & 0xFFFF
+   1130              HalLcdWriteChar5x8(17,2,35,FALSE);
+   1131              
+   1132              HalLcdWriteChar5x8(temp,2,40,FALSE);
+   1133              
+   1134              HalLcdWriteChar5x8(temp,2,45,FALSE);
+   1135              
+   1136          
+   1137              HalLcdWriteChar5x8(temp,2,50,FALSE);
+   1138            
+   1139              HalLcdWriteChar5x8(temp,2,55,FALSE); 
+   1140            }
+   \                     ??CrossCallReturnLabel_43:
+   \   00005E   7B23         MOV     R3,#0x23
+   \   000060   7A02         MOV     R2,#0x2
+   \   000062   7911         MOV     R1,#0x11
+   \   000064   12....       LCALL   ??Subroutine18_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_44:
+   \   000067   7B28         MOV     R3,#0x28
+   \   000069   12....       LCALL   ?Subroutine10 & 0xFFFF
+   \                     ??CrossCallReturnLabel_40:
+   \   00006C   7B2D         MOV     R3,#0x2d
+   \   00006E   12....       LCALL   ?Subroutine10 & 0xFFFF
+   \                     ??CrossCallReturnLabel_41:
+   \   000071   7B32         MOV     R3,#0x32
+   \   000073   12....       LCALL   ?Subroutine10 & 0xFFFF
+   \                     ??CrossCallReturnLabel_42:
+   \   000076   7B37         MOV     R3,#0x37
+   \   000078   7A02         MOV     R2,#0x2
+   \   00007A   A9..         MOV     R1,?V0 + 0
+   \                     ??HalLcdWriteErrorCode_1:
+   \   00007C   12....       LCALL   ??HalLcdWriteChar5x8?relay
+   1141          }
+   \   00007F   7F04         MOV     R7,#0x4
+   \   000081   02....       LJMP    ?BANKED_LEAVE_XDATA
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine10:
+   \   000000   7A02         MOV     R2,#0x2
+   \   000002   A9..         MOV     R1,?V0 + 0
+   \   000004                REQUIRE ??Subroutine18_0
+   \   000004                ; // Fall through to label ??Subroutine18_0
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ??Subroutine18_0:
+   \   000000   12....       LCALL   ??HalLcdWriteChar5x8?relay
+   \   000003                ; Setup parameters for call to function HalLcdWriteChar5x8
+   \   000003                ; Setup parameters for call to function HalLcdWriteChar5x8
+   \   000003                ; Setup parameters for call to function HalLcdWriteChar5x8
+   \   000003                ; Setup parameters for call to function HalLcdWriteChar5x8
+   \   000003                ; Setup parameters for call to function HalLcdWriteChar5x8
+   \   000003   7C00         MOV     R4,#0x0
+   \   000005   22           RET
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine8:
+   \   000000   540F         ANL     A,#0xf
+   \   000002   F9           MOV     R1,A
+   \   000003   12....       LCALL   ?Subroutine11 & 0xFFFF
+   \                     ??CrossCallReturnLabel_11:
+   \   000006   22           RET
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine11:
+   \   000000   12....       LCALL   ??HalLcdWriteChar5x8?relay
+   \   000003                ; Setup parameters for call to function HalLcdWriteChar5x8
+   \   000003                ; Setup parameters for call to function HalLcdWriteChar5x8
+   \   000003                ; Setup parameters for call to function HalLcdWriteChar5x8
+   \   000003                ; Setup parameters for call to function HalLcdWriteChar5x8
+   \   000003                ; Setup parameters for call to function HalLcdWriteChar5x8
+   \   000003   7C01         MOV     R4,#0x1
+   \   000005   22           RET
 
    \                                 In  segment BANK_RELAYS, align 1
    \                     ??HalLcdInit?relay:
@@ -4886,13 +5051,18 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
    \                     ??HalLcdWriteError?relay:
    \   000000   12....       LCALL   ?BDISPATCH
    \   000003   ......       DC24    HalLcdWriteError
-   1094          
-   1095          #endif
-   1096          /**************************************************************************************************
-   1097          **************************************************************************************************/
-   1098          
-   1099          
-   1100          
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??HalLcdWriteErrorCode?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    HalLcdWriteErrorCode
+   1142          
+   1143          #endif
+   1144          /**************************************************************************************************
+   1145          **************************************************************************************************/
+   1146          
+   1147          
+   1148          
 
    Maximum stack usage in bytes:
 
@@ -4940,6 +5110,19 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
        -> HalLcd_HW_WriteData        0      0     18
        -> HalLcd_HW_WriteAddr        0      0     18
        -> HalLcd_HW_WriteData        0      0     18
+     HalLcdWriteErrorCode            0      0     12
+       -> HalLcdWriteChar5x8         0      0     24
+       -> HalLcdWriteChar5x8         0      0     24
+       -> HalLcdWriteChar5x8         0      0     24
+       -> HalLcdWriteChar5x8         0      0     24
+       -> HalLcdWriteChar5x8         0      0     24
+       -> HalLcdWriteChar5x8         0      0     24
+       -> HalLcdWriteChar5x8         0      0     24
+       -> HalLcdWriteChar5x8         0      0     24
+       -> HalLcdWriteChar5x8         0      0     24
+       -> HalLcdWriteChar5x8         0      0     24
+       -> HalLcdWriteChar5x8         0      0     24
+       -> HalLcdWriteChar5x8         0      0     24
      HalLcdWritePower                0      0     11
        -> HalLcd_HW_LoadPicture      0      0     22
        -> HalLcd_HW_WriteAddr        0      0     18
@@ -5038,37 +5221,42 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
      HalLcd_HW_WaitUs                     53
      HalLcd_HW_WriteCommand               59
      ?Subroutine2                          4
-     ??Subroutine9_0                       5
+     ??Subroutine12_0                      5
      HalLcd_HW_WriteData                  56
      HalLcd_HW_WriteAddr                  35
      HalLcd_HW_Clear                      34
      HalLcdWriteChar5x8                   65
      ?Subroutine1                          5
-     ?Subroutine8                          9
+     ?Subroutine9                          9
      HalLcd_HW_LoadPicture               123
      ?Subroutine0                          6
      HalLcd_HW_WriteST                    34
-     ??Subroutine13_0                      6
+     ??Subroutine16_0                      6
      HalLcd_HW_WriteSTU                   91
      ?Subroutine5                          2
-     ??Subroutine10_0                      6
+     ??Subroutine13_0                      6
      HalLcd_HW_WriteRTU                   34
      HalLcdWriteWiFiMod                  138
      HalLcdWriteSetTemperature           172
      ?Subroutine3                          8
-     ??Subroutine12_0                     15
+     ??Subroutine15_0                     15
      HalLcdWriteEndMod                    42
      HalLcdWriteRealTempeMod              60
      HalLcdWriteRealTemperature          138
      ?Subroutine6                          1
-     ??Subroutine11_0                     18
+     ??Subroutine14_0                     18
      HalLcdWriteRelayState                42
      HalLcdWriteDebug                     98
      LoadBackground                       47
      ?Subroutine7                          4
-     ??Subroutine14_0                      6
+     ??Subroutine17_0                      6
      HalLcdWritePower                     88
      HalLcdWriteError                     99
+     HalLcdWriteErrorCode                132
+     ?Subroutine10                         4
+     ??Subroutine18_0                      6
+     ?Subroutine8                          7
+     ?Subroutine11                         6
      ??HalLcdInit?relay                    6
      ??HalLcd_HW_WaitUs?relay              6
      ??HalLcd_HW_WriteCommand?relay        6
@@ -5090,14 +5278,15 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Components\h
      ??LoadBackground?relay                6
      ??HalLcdWritePower?relay              6
      ??HalLcdWriteError?relay              6
+     ??HalLcdWriteErrorCode?relay          6
 
  
- 1 705 bytes in segment BANKED_CODE
-   126 bytes in segment BANK_RELAYS
+ 1 860 bytes in segment BANKED_CODE
+   132 bytes in segment BANK_RELAYS
      6 bytes in segment SFR_AN
  2 288 bytes in segment XDATA_ROM_C
  
- 1 831 bytes of CODE  memory
+ 1 992 bytes of CODE  memory
  2 288 bytes of CONST memory
      0 bytes of DATA  memory (+ 6 bytes shared)
 

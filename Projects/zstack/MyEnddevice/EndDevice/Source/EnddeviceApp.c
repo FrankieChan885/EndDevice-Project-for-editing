@@ -16,12 +16,14 @@
  */
 #include "EnddeviceVariable.h"
 #include "EnddeviceApp.h"
-#include "Enddevicekey.h"
 #include "EnddeviceAF.h"
+#include "Enddevicekey.h"
 #include "EnddeviceLCD.h"
-#include "NTC_Table.h"
 #include "EnddeviceSampleADC.h"
+#include "EnddeviceError.h"
+#include "NTC_Table.h"
 #include "TemperatureControl.h"
+
 
 
 //#include"MT_UART.c"
@@ -313,6 +315,25 @@ uint16 EnddeviceApp_ProcessEvent( uint8 task_id, uint16 events )
   // Scan the LCD
   if ( events & EnddeviceApp_SCAN_LCD_MSG_EVT)
   {
+    if(sample_tick == 10) // sample the NTC ADC every 2 seconds
+    {
+ 
+       uint16 RM_ADC_Result = TemperADCSampleAndAverage(10,0);
+       uint16 FL_ADC_Result = TemperADCSampleAndAverage(10,1);
+       
+       //  detect the NTC error
+        Error_Code = NTC_Error_Detect(RM_ADC_Result,FL_ADC_Result);
+        
+        HandleError(Error_Code);    
+        if(!Error_Code)// no error detected  
+        {
+           RM_Temperature = (uint16)EnddeviceApp_LookupTemp(RM_ADC_Result << 1);
+           FL_Temperature = (uint16)EnddeviceApp_LookupTemp(FL_ADC_Result << 1);
+        }
+       sample_tick = 0;  
+    }   
+    sample_tick++;
+    
     
     EnddeviceApp_HandleLCD();
     

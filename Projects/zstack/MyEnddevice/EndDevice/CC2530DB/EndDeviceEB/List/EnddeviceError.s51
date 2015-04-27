@@ -1,0 +1,710 @@
+///////////////////////////////////////////////////////////////////////////////
+//                                                                            /
+// IAR C/C++ Compiler V8.10.1.10194/W32 for 8051        21/Apr/2015  17:17:57 /
+// Copyright 2004-2011 IAR Systems AB.                                        /
+//                                                                            /
+//    Core               =  plain                                             /
+//    Code model         =  banked                                            /
+//    Data model         =  large                                             /
+//    Calling convention =  xdata reentrant                                   /
+//    Constant location  =  data_rom                                          /
+//    Dptr setup         =  1,16                                              /
+//    Source file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\Source\EnddeviceError.c                   /
+//    Command line       =  -f C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic /
+//                          e-Project-for-editing\Projects\zstack\MyEnddevice /
+//                          \EndDevice\CC2530DB\..\..\..\Tools\CC2530DB\f8wEn /
+//                          dev.cfg (-DCPU32MHZ -DROOT=__near_func            /
+//                          -DMAC_CFG_TX_DATA_MAX=3 -DMAC_CFG_TX_MAX=6        /
+//                          -DMAC_CFG_RX_MAX=3) -f C:\Users\William\Desktop\± /
+//                          œ“µ…Ëº∆\SRC\EndDevice-Project-for-editing\Project /
+//                          s\zstack\MyEnddevice\EndDevice\CC2530DB\..\..\..\ /
+//                          Tools\CC2530DB\f8wConfig.cfg (-DZIGBEEPRO         /
+//                          -DSECURE=0 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR      /
+//                          -DDEFAULT_CHANLIST=0x02000000                     /
+//                          -DZDAPP_CONFIG_PAN_ID=0xFFFF                      /
+//                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_M /
+//                          ASK=0x007F -DBEACON_REQUEST_DELAY=100             /
+//                          -DBEACON_REQ_DELAY_MASK=0x00FF                    /
+//                          -DLINK_STATUS_JITTER_MASK=0x007F                  /
+//                          -DROUTE_EXPIRY_TIME=30 -DAPSC_ACK_WAIT_DURATION_P /
+//                          OLLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7           /
+//                          -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3   /
+//                          -DNWK_MAX_DATA_RETRIES=2                          /
+//                          -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9        /
+//                          -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40          /
+//                          -DNWK_MAX_BINDING_ENTRIES=4                       /
+//                          -DMAX_BINDING_CLUSTER_IDS=4                       /
+//                          "-DDEFAULT_KEY={0x01, 0x03, 0x05, 0x07, 0x09,     /
+//                          0x0B, 0x0D, 0x0F, 0x00, 0x02, 0x04, 0x06, 0x08,   /
+//                          0x0A, 0x0C, 0x0D}" -DMAC_MAX_FRAME_SIZE=116       /
+//                          -DZDNWKMGR_MIN_TRANSMISSIONS=20 "-DCONST=const    /
+//                          __code" -DGENERIC=__generic                       /
+//                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000       /
+//                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)  /
+//                          -DREJOIN_POLL_RATE=440 C:\Users\William\Desktop\± /
+//                          œ“µ…Ëº∆\SRC\EndDevice-Project-for-editing\Project /
+//                          s\zstack\MyEnddevice\EndDevice\Source\EnddeviceEr /
+//                          ror.c -D NWK_AUTO_POLL -D NV_RESTORE=1 -D         /
+//                          xZTOOL_P1 -D xMT_TASK -D xMT_SYS_FUNC -D          /
+//                          xMT_ZDO_FUNC -D xLCD_SUPPORTED=DEBUG -lC          /
+//                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\CC2530DB\EndDeviceEB\List\ -lA            /
+//                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\CC2530DB\EndDeviceEB\List\                /
+//                          --diag_suppress Pe001,Pa010 -o                    /
+//                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\CC2530DB\EndDeviceEB\Obj\ -e              /
+//                          --no_code_motion --debug --core=plain             /
+//                          --dptr=16,1 --data_model=large                    /
+//                          --code_model=banked --calling_convention=xdata_re /
+//                          entrant --place_constants=data_rom                /
+//                          --nr_virtual_regs 16 -I                           /
+//                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\CC2530DB\ -I C:\Users\William\Desktop\±œ“ /
+//                          µ…Ëº∆\SRC\EndDevice-Project-for-editing\Projects\ /
+//                          zstack\MyEnddevice\EndDevice\CC2530DB\..\Source\  /
+//                          -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic /
+//                          e-Project-for-editing\Projects\zstack\MyEnddevice /
+//                          \EndDevice\CC2530DB\..\..\..\ZMain\TI2530DB\ -I   /
+//                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\CC2530DB\..\..\..\..\..\Components\hal\in /
+//                          clude\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\E /
+//                          ndDevice-Project-for-editing\Projects\zstack\MyEn /
+//                          ddevice\EndDevice\CC2530DB\..\..\..\..\..\Compone /
+//                          nts\hal\target\CC2530EB\ -I                       /
+//                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\CC2530DB\..\..\..\..\..\Components\mac\in /
+//                          clude\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\E /
+//                          ndDevice-Project-for-editing\Projects\zstack\MyEn /
+//                          ddevice\EndDevice\CC2530DB\..\..\..\..\..\Compone /
+//                          nts\mac\high_level\ -I C:\Users\William\Desktop\± /
+//                          œ“µ…Ëº∆\SRC\EndDevice-Project-for-editing\Project /
+//                          s\zstack\MyEnddevice\EndDevice\CC2530DB\..\..\..\ /
+//                          ..\..\Components\mac\low_level\srf04\ -I          /
+//                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\CC2530DB\..\..\..\..\..\Components\mac\lo /
+//                          w_level\srf04\single_chip\ -I                     /
+//                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\CC2530DB\..\..\..\..\..\Components\mt\    /
+//                          -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic /
+//                          e-Project-for-editing\Projects\zstack\MyEnddevice /
+//                          \EndDevice\CC2530DB\..\..\..\..\..\Components\osa /
+//                          l\include\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\S /
+//                          RC\EndDevice-Project-for-editing\Projects\zstack\ /
+//                          MyEnddevice\EndDevice\CC2530DB\..\..\..\..\..\Com /
+//                          ponents\services\saddr\ -I                        /
+//                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\CC2530DB\..\..\..\..\..\Components\servic /
+//                          es\sdata\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SR /
+//                          C\EndDevice-Project-for-editing\Projects\zstack\M /
+//                          yEnddevice\EndDevice\CC2530DB\..\..\..\..\..\Comp /
+//                          onents\stack\af\ -I C:\Users\William\Desktop\±œ“µ /
+//                          …Ëº∆\SRC\EndDevice-Project-for-editing\Projects\z /
+//                          stack\MyEnddevice\EndDevice\CC2530DB\..\..\..\..\ /
+//                          ..\Components\stack\nwk\ -I                       /
+//                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\CC2530DB\..\..\..\..\..\Components\stack\ /
+//                          sapi\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\En /
+//                          dDevice-Project-for-editing\Projects\zstack\MyEnd /
+//                          device\EndDevice\CC2530DB\..\..\..\..\..\Componen /
+//                          ts\stack\sec\ -I C:\Users\William\Desktop\±œ“µ…Ëº /
+//                          ∆\SRC\EndDevice-Project-for-editing\Projects\zsta /
+//                          ck\MyEnddevice\EndDevice\CC2530DB\..\..\..\..\..\ /
+//                          Components\stack\sys\ -I                          /
+//                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\CC2530DB\..\..\..\..\..\Components\stack\ /
+//                          zdo\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\End /
+//                          Device-Project-for-editing\Projects\zstack\MyEndd /
+//                          evice\EndDevice\CC2530DB\..\..\..\..\..\Component /
+//                          s\zmac\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\ /
+//                          EndDevice-Project-for-editing\Projects\zstack\MyE /
+//                          nddevice\EndDevice\CC2530DB\..\..\..\..\..\Compon /
+//                          ents\zmac\f8w\ -Ohz                               /
+//    List file          =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\CC2530DB\EndDeviceEB\List\EnddeviceError. /
+//                          s51                                               /
+//                                                                            /
+//                                                                            /
+///////////////////////////////////////////////////////////////////////////////
+
+        NAME EnddeviceError
+
+        RTMODEL "__SystemLibrary", "CLib"
+        RTMODEL "__calling_convention", "xdata_reentrant"
+        RTMODEL "__code_model", "banked"
+        RTMODEL "__core", "plain"
+        RTMODEL "__data_model", "large"
+        RTMODEL "__dptr_size", "16"
+        RTMODEL "__extended_stack", "disabled"
+        RTMODEL "__location_for_constants", "data"
+        RTMODEL "__number_of_dptrs", "1"
+        RTMODEL "__rt_version", "1"
+
+        RSEG DOVERLAY:DATA:NOROOT(0)
+        RSEG IOVERLAY:IDATA:NOROOT(0)
+        RSEG ISTACK:IDATA:NOROOT(0)
+        RSEG PSTACK:XDATA:NOROOT(0)
+        RSEG XSTACK:XDATA:NOROOT(0)
+
+        EXTERN ?BANKED_ENTER_XDATA
+        EXTERN ?BANKED_LEAVE_XDATA
+        EXTERN ?BDISPATCH
+        EXTERN ?BRET
+        EXTERN ?V0
+        EXTERN __INIT_XDATA_Z
+
+        PUBLIC ??HandleError?relay
+        FUNCTION ??HandleError?relay,0203H
+        PUBLIC ??NTC_Error_Detect?relay
+        FUNCTION ??NTC_Error_Detect?relay,0203H
+        PUBLIC Error_Code_Saved
+        PUBLIC HandleError
+        FUNCTION HandleError,021203H
+        ARGFRAME XSTACK, 0, STACK
+        LOCFRAME XSTACK, 9, STACK
+        PUBLIC NTC_Error_Detect
+        FUNCTION NTC_Error_Detect,0203H
+        ARGFRAME XSTACK, 0, STACK
+        PUBWEAK _A_P1
+        
+        CFI Names cfiNames0
+        CFI StackFrame CFA_SP SP IDATA
+        CFI StackFrame CFA_PSP16 PSP16 XDATA
+        CFI StackFrame CFA_XSP16 XSP16 XDATA
+        CFI StaticOverlayFrame CFA_IOVERLAY IOVERLAY
+        CFI StaticOverlayFrame CFA_DOVERLAY DOVERLAY
+        CFI Resource `PSW.CY`:1, `B.BR0`:1, `B.BR1`:1, `B.BR2`:1, `B.BR3`:1
+        CFI Resource `B.BR4`:1, `B.BR5`:1, `B.BR6`:1, `B.BR7`:1, `VB.BR8`:1
+        CFI Resource `VB.BR9`:1, `VB.BR10`:1, `VB.BR11`:1, `VB.BR12`:1
+        CFI Resource `VB.BR13`:1, `VB.BR14`:1, `VB.BR15`:1, VB:8, B:8, A:8
+        CFI Resource PSW:8, DPL0:8, DPH0:8, R0:8, R1:8, R2:8, R3:8, R4:8, R5:8
+        CFI Resource R6:8, R7:8, V0:8, V1:8, V2:8, V3:8, V4:8, V5:8, V6:8, V7:8
+        CFI Resource V8:8, V9:8, V10:8, V11:8, V12:8, V13:8, V14:8, V15:8, SP:8
+        CFI Resource PSPH:8, PSPL:8, PSP16:16, XSPH:8, XSPL:8, XSP16:16
+        CFI VirtualResource ?RET:24
+        CFI Resource ?BRET_EXT:8
+        CFI VirtualResource ?RET_HIGH:8, ?RET_LOW:8
+        CFI ResourceParts PSP16 PSPH, PSPL
+        CFI ResourceParts XSP16 XSPH, XSPL
+        CFI ResourceParts ?RET ?BRET_EXT, ?RET_HIGH, ?RET_LOW
+        CFI EndNames cfiNames0
+        
+        CFI Common cfiCommon0 Using cfiNames0
+        CFI CodeAlign 1
+        CFI DataAlign -1
+        CFI ReturnAddress ?RET CODE
+        CFI CFA_DOVERLAY Used
+        CFI CFA_IOVERLAY Used
+        CFI CFA_SP SP+-3
+        CFI CFA_PSP16 PSP16+0
+        CFI CFA_XSP16 XSP16+0
+        CFI `PSW.CY` SameValue
+        CFI `B.BR0` SameValue
+        CFI `B.BR1` SameValue
+        CFI `B.BR2` SameValue
+        CFI `B.BR3` SameValue
+        CFI `B.BR4` SameValue
+        CFI `B.BR5` SameValue
+        CFI `B.BR6` SameValue
+        CFI `B.BR7` SameValue
+        CFI `VB.BR8` SameValue
+        CFI `VB.BR9` SameValue
+        CFI `VB.BR10` SameValue
+        CFI `VB.BR11` SameValue
+        CFI `VB.BR12` SameValue
+        CFI `VB.BR13` SameValue
+        CFI `VB.BR14` SameValue
+        CFI `VB.BR15` SameValue
+        CFI VB SameValue
+        CFI B Undefined
+        CFI A Undefined
+        CFI PSW SameValue
+        CFI DPL0 SameValue
+        CFI DPH0 SameValue
+        CFI R0 Undefined
+        CFI R1 Undefined
+        CFI R2 Undefined
+        CFI R3 Undefined
+        CFI R4 Undefined
+        CFI R5 Undefined
+        CFI R6 SameValue
+        CFI R7 SameValue
+        CFI V0 SameValue
+        CFI V1 SameValue
+        CFI V2 SameValue
+        CFI V3 SameValue
+        CFI V4 SameValue
+        CFI V5 SameValue
+        CFI V6 SameValue
+        CFI V7 SameValue
+        CFI V8 SameValue
+        CFI V9 SameValue
+        CFI V10 SameValue
+        CFI V11 SameValue
+        CFI V12 SameValue
+        CFI V13 SameValue
+        CFI V14 SameValue
+        CFI V15 SameValue
+        CFI PSPH Undefined
+        CFI PSPL Undefined
+        CFI XSPH Undefined
+        CFI XSPL Undefined
+        CFI ?RET Concat
+        CFI ?BRET_EXT Frame(CFA_SP, 3)
+        CFI ?RET_HIGH Frame(CFA_SP, 2)
+        CFI ?RET_LOW Frame(CFA_SP, 1)
+        CFI EndCommon cfiCommon0
+        
+HalLcdWriteError    SYMBOL "HalLcdWriteError"
+HalLcdWriteErrorCode SYMBOL "HalLcdWriteErrorCode"
+HalLcd_HW_WriteAddr SYMBOL "HalLcd_HW_WriteAddr"
+HalLcd_HW_WriteData SYMBOL "HalLcd_HW_WriteData"
+??HalLcdWriteError?relay SYMBOL "?relay", HalLcdWriteError
+??HalLcdWriteErrorCode?relay SYMBOL "?relay", HalLcdWriteErrorCode
+??HalLcd_HW_WriteAddr?relay SYMBOL "?relay", HalLcd_HW_WriteAddr
+??HalLcd_HW_WriteData?relay SYMBOL "?relay", HalLcd_HW_WriteData
+HandleError         SYMBOL "HandleError"
+??HandleError?relay SYMBOL "?relay", HandleError
+NTC_Error_Detect    SYMBOL "NTC_Error_Detect"
+??NTC_Error_Detect?relay SYMBOL "?relay", NTC_Error_Detect
+
+        EXTERN HalLcdWriteError
+        FUNCTION HalLcdWriteError,0202H
+        ARGFRAME ISTACK, 0, STACK
+        ARGFRAME PSTACK, 0, STACK
+        ARGFRAME XSTACK, 9, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        EXTERN HalLcdWriteErrorCode
+        FUNCTION HalLcdWriteErrorCode,0202H
+        ARGFRAME ISTACK, 0, STACK
+        ARGFRAME PSTACK, 0, STACK
+        ARGFRAME XSTACK, 9, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        EXTERN HalLcd_HW_WriteAddr
+        FUNCTION HalLcd_HW_WriteAddr,0202H
+        ARGFRAME ISTACK, 0, STACK
+        ARGFRAME PSTACK, 0, STACK
+        ARGFRAME XSTACK, 9, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        EXTERN HalLcd_HW_WriteData
+        FUNCTION HalLcd_HW_WriteData,0202H
+        ARGFRAME ISTACK, 0, STACK
+        ARGFRAME PSTACK, 0, STACK
+        ARGFRAME XSTACK, 9, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        EXTERN ??HalLcdWriteError?relay
+        FUNCTION ??HalLcdWriteError?relay,00H
+        EXTERN ??HalLcdWriteErrorCode?relay
+        FUNCTION ??HalLcdWriteErrorCode?relay,00H
+        EXTERN ??HalLcd_HW_WriteAddr?relay
+        FUNCTION ??HalLcd_HW_WriteAddr?relay,00H
+        EXTERN ??HalLcd_HW_WriteData?relay
+        FUNCTION ??HalLcd_HW_WriteData?relay,00H
+
+// C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Project-for-editing\Projects\zstack\MyEnddevice\EndDevice\Source\EnddeviceError.c
+//    1 #include "EnddeviceVariable.h"
+
+        ASEGN SFR_AN:DATA:NOROOT,090H
+// union <unnamed> volatile __sfr _A_P1
+_A_P1:
+        DATA8
+        DS 1
+//    2 #include "hal_lcd.h"
+//    3 #include "EnddeviceError.h"
+//    4 
+//    5 
+//    6 
+//    7 /**********************defines*****************************/
+//    8 #define  NO_ERROR                       0x0000      // no error
+//    9 #define  NTC_FLOOR_NORMAL_ROOM_BROKEN   0x0002      // the floor ntc normal and the room ntc broken:0 + 2
+//   10 #define  NTC_FLOOR_NORMAL_ROOM_SHORT    0x0003      // the floor ntc normal and the room ntc short :0 + 3
+//   11 
+//   12 #define  NTC_FLOOR_BROKEN_ROOM_NORMAL   0x0008      // the floor ntc brokencircuit only  8 + 0
+//   13 #define  NTC_FLOOR_BROKEN_ROOM_BROKEN   0x000A      // the floor ntc broken and the room ntc broken:8 + 2
+//   14 #define  NTC_FLOOR_BROKEN_ROOM_SHORT    0x000B      // the floor ntc broken and the room ntc short :8 + 3
+//   15 
+//   16 #define  NTC_FLOOR_SHORT_ROOM_NORMAL    0x000C      // the floor ntc short and the room ntc normal: C + 0
+//   17 #define  NTC_FLOOR_SHORT_ROOM_BROKEN    0x000D      // the floor ntc short and the room ntc broken: C + 2
+//   18 #define  NTC_FLOOR_SHORT_ROOM_SHORT     0x000F     // the floor ntc short and the room ntc short : C + 3
+//   19 
+//   20 
+//   21 /**********************Variables*****************************/
+
+        RSEG XDATA_Z:XDATA:NOROOT(0)
+        DATA16
+//   22 uint16 Error_Code_Saved = 0x0000;
+Error_Code_Saved:
+        DS 2
+        REQUIRE __INIT_XDATA_Z
+//   23 
+//   24 
+//   25 
+//   26 /**********************Local Functions*****************************/
+//   27 
+//   28 
+//   29 
+//   30 /*********************************************************************
+//   31  * @fn      NTC_Error_Detect
+//   32  *
+//   33  * @brief   detect the ntc error
+//   34  *         
+//   35  * @param   Room_ADC_Result  - the room ntc ADC sample value.
+//   36  *
+//   37  * @param  Floor_ADC_Result - the floor ntc ADC sample value
+//   38  *                   
+//   39  *
+//   40  * @return  the error code
+//   41  **********************************************************************/
+
+        RSEG BANKED_CODE:CODE:NOROOT(0)
+//   42 uint16 NTC_Error_Detect(uint16 Room_ADC_Result,uint16 Floor_ADC_Result)
+NTC_Error_Detect:
+        CFI Block cfiBlock0 Using cfiCommon0
+        CFI Function NTC_Error_Detect
+        CODE
+//   43 {
+        ; Saved register size: 0
+        ; Auto size: 0
+//   44   uint16 error = 0x0000;// the bit1 is set if there is an error on room ntc£¨reset  if no error
+//   45       //the bit0 is set if the NTC is broken circuit , reset if the ntc short circuit.
+//   46       // samely the bit3 and bit2, if bit3 is set the error occur on the floor ntc,and etc...
+//   47    if(Room_ADC_Result >= 1700)
+        CLR     C
+        MOV     A,R2
+        SUBB    A,#-0x5c
+        MOV     A,R3
+        SUBB    A,#0x6
+        JC      ??NTC_Error_Detect_0
+//   48    {
+//   49       error |= 0x0002; // room ntc broken xx_10
+        MOV     R2,#0x2
+        SJMP    ??NTC_Error_Detect_1
+//   50    }
+//   51    else if(Room_ADC_Result <= 150)
+??NTC_Error_Detect_0:
+        CLR     C
+        MOV     A,R2
+        SUBB    A,#-0x69
+        MOV     A,R3
+        SUBB    A,#0x0
+        JNC     ??NTC_Error_Detect_2
+//   52    {
+//   53       error |= 0x0003;// room ntc short circuit xx_11
+        MOV     R2,#0x3
+        SJMP    ??NTC_Error_Detect_1
+//   54    }
+//   55    else 
+//   56    {
+//   57      
+//   58       error |= 0x0000;// no error with the room ntc xx_00
+??NTC_Error_Detect_2:
+        MOV     R2,#0x0
+??NTC_Error_Detect_1:
+        MOV     R3,#0x0
+//   59    }
+//   60    
+//   61    if(Floor_ADC_Result >= 1700)
+        CLR     C
+        MOV     A,R4
+        SUBB    A,#-0x5c
+        MOV     A,R5
+        SUBB    A,#0x6
+        JC      ??NTC_Error_Detect_3
+//   62    {
+//   63       error |= 0x0008;// floor ntc broken 10_xx
+        MOV     A,#0x8
+        SJMP    ??NTC_Error_Detect_4
+//   64    }
+//   65    else if(Floor_ADC_Result <= 150)
+??NTC_Error_Detect_3:
+        CLR     C
+        MOV     A,R4
+        SUBB    A,#-0x69
+        MOV     A,R5
+        SUBB    A,#0x0
+        JNC     ??NTC_Error_Detect_5
+//   66    {
+//   67       error |= 0x000C;// floor ntc shortcircuit 11_xx
+        MOV     A,#0xc
+??NTC_Error_Detect_4:
+        ORL     A,R2
+        MOV     R2,A
+//   68    }
+//   69    else
+//   70    {
+//   71       error |= 0x0000;// no error occur   00_xx 
+//   72    }
+//   73    
+//   74    return error;
+??NTC_Error_Detect_5:
+        LJMP    ?BRET
+        CFI EndBlock cfiBlock0
+//   75 }
+//   76 
+//   77 
+//   78 /*********************************************************************
+//   79  * @fn      HandleError
+//   80  *
+//   81  * @brief  handle the error 
+//   82  *         
+//   83  * @param  Error_Code-the error code
+//   84  *                   
+//   85  * @return none
+//   86  *
+//   87  ***********************************************************************/
+
+        RSEG BANKED_CODE:CODE:NOROOT(0)
+//   88 void HandleError(uint16 Error_Code)
+HandleError:
+        CFI Block cfiBlock1 Using cfiCommon0
+        CFI Function HandleError
+        CODE
+//   89 {
+        FUNCALL HandleError, HalLcdWriteError
+        LOCFRAME ISTACK, 0, STACK
+        LOCFRAME PSTACK, 0, STACK
+        LOCFRAME XSTACK, 9, STACK
+        LOCFRAME IOVERLAY, 0, STATIC
+        LOCFRAME DOVERLAY, 0, STATIC
+        ARGFRAME ISTACK, 0, STACK
+        ARGFRAME PSTACK, 0, STACK
+        ARGFRAME XSTACK, 9, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        FUNCALL HandleError, HalLcdWriteError
+        LOCFRAME ISTACK, 0, STACK
+        LOCFRAME PSTACK, 0, STACK
+        LOCFRAME XSTACK, 9, STACK
+        LOCFRAME IOVERLAY, 0, STATIC
+        LOCFRAME DOVERLAY, 0, STATIC
+        ARGFRAME ISTACK, 0, STACK
+        ARGFRAME PSTACK, 0, STACK
+        ARGFRAME XSTACK, 9, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        FUNCALL HandleError, HalLcdWriteErrorCode
+        LOCFRAME ISTACK, 0, STACK
+        LOCFRAME PSTACK, 0, STACK
+        LOCFRAME XSTACK, 9, STACK
+        LOCFRAME IOVERLAY, 0, STATIC
+        LOCFRAME DOVERLAY, 0, STATIC
+        ARGFRAME ISTACK, 0, STACK
+        ARGFRAME PSTACK, 0, STACK
+        ARGFRAME XSTACK, 9, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        FUNCALL HandleError, HalLcd_HW_WriteAddr
+        LOCFRAME ISTACK, 0, STACK
+        LOCFRAME PSTACK, 0, STACK
+        LOCFRAME XSTACK, 9, STACK
+        LOCFRAME IOVERLAY, 0, STATIC
+        LOCFRAME DOVERLAY, 0, STATIC
+        ARGFRAME ISTACK, 0, STACK
+        ARGFRAME PSTACK, 0, STACK
+        ARGFRAME XSTACK, 9, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        FUNCALL HandleError, HalLcd_HW_WriteData
+        LOCFRAME ISTACK, 0, STACK
+        LOCFRAME PSTACK, 0, STACK
+        LOCFRAME XSTACK, 9, STACK
+        LOCFRAME IOVERLAY, 0, STATIC
+        LOCFRAME DOVERLAY, 0, STATIC
+        ARGFRAME ISTACK, 0, STACK
+        ARGFRAME PSTACK, 0, STACK
+        ARGFRAME XSTACK, 9, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        FUNCALL HandleError, HalLcdWriteErrorCode
+        LOCFRAME ISTACK, 0, STACK
+        LOCFRAME PSTACK, 0, STACK
+        LOCFRAME XSTACK, 9, STACK
+        LOCFRAME IOVERLAY, 0, STATIC
+        LOCFRAME DOVERLAY, 0, STATIC
+        ARGFRAME ISTACK, 0, STACK
+        ARGFRAME PSTACK, 0, STACK
+        ARGFRAME XSTACK, 9, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        MOV     A,#-0x9
+        LCALL   ?BANKED_ENTER_XDATA
+        CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+        CFI DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+        CFI ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+        CFI ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+        CFI ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+        CFI R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+        CFI V0 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+        CFI VB load(1, XDATA, add(CFA_XSP16, literal(-8)))
+        CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+        CFI CFA_SP SP+0
+        CFI CFA_XSP16 add(XSP16, 9)
+        ; Saved register size: 9
+        ; Auto size: 0
+        MOV     A,R2
+        MOV     R6,A
+        MOV     A,R3
+        MOV     R7,A
+//   90   
+//   91  
+//   92   switch(Error_Code)// handle the error here
+        MOV     A,R6
+        ORL     A,R7
+        JZ      ??HandleError_0
+//   93   {
+//   94   case NO_ERROR:
+//   95     break;
+//   96   default:
+//   97      REL_CTL = 0;
+        CLR     0x90.2
+//   98     break;
+        MOV     DPTR,#Error_Code_Saved
+        MOVX    A,@DPTR
+        MOV     R0,A
+        INC     DPTR
+        MOVX    A,@DPTR
+        MOV     R1,A
+        MOV     A,R0
+        ORL     A,R1
+        JNZ     ??HandleError_0
+//   99   }
+//  100   // display the error picture here
+//  101   if(Error_Code && (!Error_Code_Saved)) // load error picture if enter the error state
+//  102   {
+//  103      HalLcdWriteError(TRUE);
+        ; Setup parameters for call to function HalLcdWriteError
+        MOV     R1,#0x1
+        LCALL   ??HalLcdWriteError?relay
+        SJMP    ??HandleError_1
+//  104   }
+//  105   else if(Error_Code_Saved && (!Error_Code))// clear error picture and the error code when 
+??HandleError_0:
+        MOV     DPTR,#Error_Code_Saved
+        MOVX    A,@DPTR
+        MOV     R0,A
+        INC     DPTR
+        MOVX    A,@DPTR
+        MOV     R1,A
+        MOV     A,R0
+        ORL     A,R1
+        JZ      ??HandleError_2
+        MOV     A,R6
+        ORL     A,R7
+        JNZ     ??HandleError_2
+//  106                                              //leave the error state
+//  107   {
+//  108      HalLcdWriteError(FALSE);
+        ; Setup parameters for call to function HalLcdWriteError
+        MOV     R1,#0x0
+        LCALL   ??HalLcdWriteError?relay
+//  109      HalLcdWriteErrorCode(Error_Code,FALSE); 
+        ; Setup parameters for call to function HalLcdWriteErrorCode
+        MOV     R1,#0x0
+        MOV     R2,#0x0
+        MOV     R3,#0x0
+        LCALL   ??HalLcdWriteErrorCode?relay
+//  110      HalLcd_HW_WriteAddr(2,30);
+        ; Setup parameters for call to function HalLcd_HW_WriteAddr
+        MOV     R2,#0x1e
+        MOV     R1,#0x2
+        LCALL   ??HalLcd_HW_WriteAddr?relay
+//  111      for(uint8 i = 0; i < 30; i++)
+        MOV     ?V0 + 0,#0x1e
+//  112      {
+//  113         HalLcd_HW_WriteData(0x80); 
+??HandleError_3:
+        ; Setup parameters for call to function HalLcd_HW_WriteData
+        MOV     R1,#-0x80
+        LCALL   ??HalLcd_HW_WriteData?relay
+//  114      }
+        DEC     ?V0 + 0
+        MOV     A,?V0 + 0
+        JZ      ??HandleError_4
+        SJMP    ??HandleError_3
+//  115   }
+//  116   else;
+//  117   
+//  118   
+//  119   if(Error_Code && (Error_Code_Saved != Error_Code))// write the error code if the code changed
+??HandleError_2:
+        MOV     A,R6
+        ORL     A,R7
+        JZ      ??HandleError_4
+??HandleError_1:
+        MOV     DPTR,#Error_Code_Saved
+        MOVX    A,@DPTR
+        XRL     A,R6
+        JNZ     ??HandleError_5
+        INC     DPTR
+        MOVX    A,@DPTR
+        XRL     A,R7
+??HandleError_5:
+        JZ      ??HandleError_4
+//  120   {
+//  121     HalLcdWriteErrorCode(Error_Code,TRUE); 
+        ; Setup parameters for call to function HalLcdWriteErrorCode
+        MOV     R1,#0x1
+        MOV     A,R6
+        MOV     R2,A
+        MOV     A,R7
+        MOV     R3,A
+        LCALL   ??HalLcdWriteErrorCode?relay
+//  122   }
+//  123   else;
+//  124   Error_Code_Saved = Error_Code;
+??HandleError_4:
+        MOV     DPTR,#Error_Code_Saved
+        MOV     A,R6
+        MOVX    @DPTR,A
+        INC     DPTR
+        MOV     A,R7
+        MOVX    @DPTR,A
+//  125 }
+        MOV     R7,#0x1
+        LJMP    ?BANKED_LEAVE_XDATA
+        CFI EndBlock cfiBlock1
+        REQUIRE _A_P1
+
+        RSEG BANK_RELAYS:CODE:REORDER:NOROOT(0)
+??NTC_Error_Detect?relay:
+        LCALL   ?BDISPATCH
+        DATA
+        DC24    NTC_Error_Detect
+
+        RSEG BANK_RELAYS:CODE:REORDER:NOROOT(0)
+??HandleError?relay:
+        LCALL   ?BDISPATCH
+        DATA
+        DC24    HandleError
+
+        END
+// 
+// 184 bytes in segment BANKED_CODE
+//  12 bytes in segment BANK_RELAYS
+//   1 byte  in segment SFR_AN
+//   2 bytes in segment XDATA_Z
+// 
+// 196 bytes of CODE  memory
+//   0 bytes of DATA  memory (+ 1 byte shared)
+//   2 bytes of XDATA memory
+//
+//Errors: none
+//Warnings: none

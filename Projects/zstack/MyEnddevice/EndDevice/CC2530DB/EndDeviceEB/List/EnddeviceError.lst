@@ -1,0 +1,466 @@
+###############################################################################
+#                                                                             #
+# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         21/Apr/2015  17:17:57 #
+# Copyright 2004-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Core               =  plain                                              #
+#    Code model         =  banked                                             #
+#    Data model         =  large                                              #
+#    Calling convention =  xdata reentrant                                    #
+#    Constant location  =  data_rom                                           #
+#    Dptr setup         =  1,16                                               #
+#    Source file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\Source\EnddeviceError.c                      #
+#    Command line       =  -f C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice #
+#                          -Project-for-editing\Projects\zstack\MyEnddevice\E #
+#                          ndDevice\CC2530DB\..\..\..\Tools\CC2530DB\f8wEndev #
+#                          .cfg (-DCPU32MHZ -DROOT=__near_func                #
+#                          -DMAC_CFG_TX_DATA_MAX=3 -DMAC_CFG_TX_MAX=6         #
+#                          -DMAC_CFG_RX_MAX=3) -f C:\Users\William\Desktop\±œ #
+#                          “µ…Ëº∆\SRC\EndDevice-Project-for-editing\Projects\ #
+#                          zstack\MyEnddevice\EndDevice\CC2530DB\..\..\..\Too #
+#                          ls\CC2530DB\f8wConfig.cfg (-DZIGBEEPRO -DSECURE=0  #
+#                          -DZG_SECURE_DYNAMIC=0 -DREFLECTOR                  #
+#                          -DDEFAULT_CHANLIST=0x02000000                      #
+#                          -DZDAPP_CONFIG_PAN_ID=0xFFFF                       #
+#                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MA #
+#                          SK=0x007F -DBEACON_REQUEST_DELAY=100               #
+#                          -DBEACON_REQ_DELAY_MASK=0x00FF                     #
+#                          -DLINK_STATUS_JITTER_MASK=0x007F                   #
+#                          -DROUTE_EXPIRY_TIME=30 -DAPSC_ACK_WAIT_DURATION_PO #
+#                          LLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7             #
+#                          -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3    #
+#                          -DNWK_MAX_DATA_RETRIES=2                           #
+#                          -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9         #
+#                          -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40           #
+#                          -DNWK_MAX_BINDING_ENTRIES=4                        #
+#                          -DMAX_BINDING_CLUSTER_IDS=4 "-DDEFAULT_KEY={0x01,  #
+#                          0x03, 0x05, 0x07, 0x09, 0x0B, 0x0D, 0x0F, 0x00,    #
+#                          0x02, 0x04, 0x06, 0x08, 0x0A, 0x0C, 0x0D}"         #
+#                          -DMAC_MAX_FRAME_SIZE=116                           #
+#                          -DZDNWKMGR_MIN_TRANSMISSIONS=20 "-DCONST=const     #
+#                          __code" -DGENERIC=__generic                        #
+#                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000        #
+#                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)   #
+#                          -DREJOIN_POLL_RATE=440 C:\Users\William\Desktop\±œ #
+#                          “µ…Ëº∆\SRC\EndDevice-Project-for-editing\Projects\ #
+#                          zstack\MyEnddevice\EndDevice\Source\EnddeviceError #
+#                          .c -D NWK_AUTO_POLL -D NV_RESTORE=1 -D xZTOOL_P1   #
+#                          -D xMT_TASK -D xMT_SYS_FUNC -D xMT_ZDO_FUNC -D     #
+#                          xLCD_SUPPORTED=DEBUG -lC                           #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\EndDeviceEB\List\ -lA               #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\EndDeviceEB\List\ --diag_suppress   #
+#                          Pe001,Pa010 -o C:\Users\William\Desktop\±œ“µ…Ëº∆\S #
+#                          RC\EndDevice-Project-for-editing\Projects\zstack\M #
+#                          yEnddevice\EndDevice\CC2530DB\EndDeviceEB\Obj\ -e  #
+#                          --no_code_motion --debug --core=plain --dptr=16,1  #
+#                          --data_model=large --code_model=banked             #
+#                          --calling_convention=xdata_reentrant               #
+#                          --place_constants=data_rom --nr_virtual_regs 16    #
+#                          -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice #
+#                          -Project-for-editing\Projects\zstack\MyEnddevice\E #
+#                          ndDevice\CC2530DB\ -I C:\Users\William\Desktop\±œ“ #
+#                          µ…Ëº∆\SRC\EndDevice-Project-for-editing\Projects\z #
+#                          stack\MyEnddevice\EndDevice\CC2530DB\..\Source\    #
+#                          -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice #
+#                          -Project-for-editing\Projects\zstack\MyEnddevice\E #
+#                          ndDevice\CC2530DB\..\..\..\ZMain\TI2530DB\ -I      #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\..\..\..\..\..\Components\hal\inclu #
+#                          de\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDe #
+#                          vice-Project-for-editing\Projects\zstack\MyEnddevi #
+#                          ce\EndDevice\CC2530DB\..\..\..\..\..\Components\ha #
+#                          l\target\CC2530EB\ -I C:\Users\William\Desktop\±œ“ #
+#                          µ…Ëº∆\SRC\EndDevice-Project-for-editing\Projects\z #
+#                          stack\MyEnddevice\EndDevice\CC2530DB\..\..\..\..\. #
+#                          .\Components\mac\include\ -I                       #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\..\..\..\..\..\Components\mac\high_ #
+#                          level\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\En #
+#                          dDevice-Project-for-editing\Projects\zstack\MyEndd #
+#                          evice\EndDevice\CC2530DB\..\..\..\..\..\Components #
+#                          \mac\low_level\srf04\ -I                           #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\..\..\..\..\..\Components\mac\low_l #
+#                          evel\srf04\single_chip\ -I                         #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\..\..\..\..\..\Components\mt\ -I    #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\..\..\..\..\..\Components\osal\incl #
+#                          ude\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndD #
+#                          evice-Project-for-editing\Projects\zstack\MyEnddev #
+#                          ice\EndDevice\CC2530DB\..\..\..\..\..\Components\s #
+#                          ervices\saddr\ -I C:\Users\William\Desktop\±œ“µ…Ëº #
+#                          ∆\SRC\EndDevice-Project-for-editing\Projects\zstac #
+#                          k\MyEnddevice\EndDevice\CC2530DB\..\..\..\..\..\Co #
+#                          mponents\services\sdata\ -I                        #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\..\..\..\..\..\Components\stack\af\ #
+#                           -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic #
+#                          e-Project-for-editing\Projects\zstack\MyEnddevice\ #
+#                          EndDevice\CC2530DB\..\..\..\..\..\Components\stack #
+#                          \nwk\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\End #
+#                          Device-Project-for-editing\Projects\zstack\MyEndde #
+#                          vice\EndDevice\CC2530DB\..\..\..\..\..\Components\ #
+#                          stack\sapi\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\S #
+#                          RC\EndDevice-Project-for-editing\Projects\zstack\M #
+#                          yEnddevice\EndDevice\CC2530DB\..\..\..\..\..\Compo #
+#                          nents\stack\sec\ -I C:\Users\William\Desktop\±œ“µ… #
+#                          Ëº∆\SRC\EndDevice-Project-for-editing\Projects\zst #
+#                          ack\MyEnddevice\EndDevice\CC2530DB\..\..\..\..\..\ #
+#                          Components\stack\sys\ -I                           #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\..\..\..\..\..\Components\stack\zdo #
+#                          \ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevi #
+#                          ce-Project-for-editing\Projects\zstack\MyEnddevice #
+#                          \EndDevice\CC2530DB\..\..\..\..\..\Components\zmac #
+#                          \ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevi #
+#                          ce-Project-for-editing\Projects\zstack\MyEnddevice #
+#                          \EndDevice\CC2530DB\..\..\..\..\..\Components\zmac #
+#                          \f8w\ -Ohz                                         #
+#    List file          =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\EndDeviceEB\List\EnddeviceError.lst #
+#    Object file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\EndDeviceEB\Obj\EnddeviceError.r51  #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Project-for-editing\Projects\zstack\MyEnddevice\EndDevice\Source\EnddeviceError.c
+      1          #include "EnddeviceVariable.h"
+
+   \                                 In  segment SFR_AN, at 0x90
+   \   union <unnamed> volatile __sfr _A_P1
+   \                     _A_P1:
+   \   000000                DS 1
+      2          #include "hal_lcd.h"
+      3          #include "EnddeviceError.h"
+      4          
+      5          
+      6          
+      7          /**********************defines*****************************/
+      8          #define  NO_ERROR                       0x0000      // no error
+      9          #define  NTC_FLOOR_NORMAL_ROOM_BROKEN   0x0002      // the floor ntc normal and the room ntc broken:0 + 2
+     10          #define  NTC_FLOOR_NORMAL_ROOM_SHORT    0x0003      // the floor ntc normal and the room ntc short :0 + 3
+     11          
+     12          #define  NTC_FLOOR_BROKEN_ROOM_NORMAL   0x0008      // the floor ntc brokencircuit only  8 + 0
+     13          #define  NTC_FLOOR_BROKEN_ROOM_BROKEN   0x000A      // the floor ntc broken and the room ntc broken:8 + 2
+     14          #define  NTC_FLOOR_BROKEN_ROOM_SHORT    0x000B      // the floor ntc broken and the room ntc short :8 + 3
+     15          
+     16          #define  NTC_FLOOR_SHORT_ROOM_NORMAL    0x000C      // the floor ntc short and the room ntc normal: C + 0
+     17          #define  NTC_FLOOR_SHORT_ROOM_BROKEN    0x000D      // the floor ntc short and the room ntc broken: C + 2
+     18          #define  NTC_FLOOR_SHORT_ROOM_SHORT     0x000F     // the floor ntc short and the room ntc short : C + 3
+     19          
+     20          
+     21          /**********************Variables*****************************/
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     22          uint16 Error_Code_Saved = 0x0000;
+   \                     Error_Code_Saved:
+   \   000000                DS 2
+   \   000002                REQUIRE __INIT_XDATA_Z
+     23          
+     24          
+     25          
+     26          /**********************Local Functions*****************************/
+     27          
+     28          
+     29          
+     30          /*********************************************************************
+     31           * @fn      NTC_Error_Detect
+     32           *
+     33           * @brief   detect the ntc error
+     34           *         
+     35           * @param   Room_ADC_Result  - the room ntc ADC sample value.
+     36           *
+     37           * @param  Floor_ADC_Result - the floor ntc ADC sample value
+     38           *                   
+     39           *
+     40           * @return  the error code
+     41           **********************************************************************/
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     42          uint16 NTC_Error_Detect(uint16 Room_ADC_Result,uint16 Floor_ADC_Result)
+   \                     NTC_Error_Detect:
+     43          {
+   \   000000                ; Saved register size: 0
+   \   000000                ; Auto size: 0
+     44            uint16 error = 0x0000;// the bit1 is set if there is an error on room ntc£¨reset  if no error
+     45                //the bit0 is set if the NTC is broken circuit , reset if the ntc short circuit.
+     46                // samely the bit3 and bit2, if bit3 is set the error occur on the floor ntc,and etc...
+     47             if(Room_ADC_Result >= 1700)
+   \   000000   C3           CLR     C
+   \   000001   EA           MOV     A,R2
+   \   000002   94A4         SUBB    A,#-0x5c
+   \   000004   EB           MOV     A,R3
+   \   000005   9406         SUBB    A,#0x6
+   \   000007   4004         JC      ??NTC_Error_Detect_0
+     48             {
+     49                error |= 0x0002; // room ntc broken xx_10
+   \   000009   7A02         MOV     R2,#0x2
+   \   00000B   800F         SJMP    ??NTC_Error_Detect_1
+     50             }
+     51             else if(Room_ADC_Result <= 150)
+   \                     ??NTC_Error_Detect_0:
+   \   00000D   C3           CLR     C
+   \   00000E   EA           MOV     A,R2
+   \   00000F   9497         SUBB    A,#-0x69
+   \   000011   EB           MOV     A,R3
+   \   000012   9400         SUBB    A,#0x0
+   \   000014   5004         JNC     ??NTC_Error_Detect_2
+     52             {
+     53                error |= 0x0003;// room ntc short circuit xx_11
+   \   000016   7A03         MOV     R2,#0x3
+   \   000018   8002         SJMP    ??NTC_Error_Detect_1
+     54             }
+     55             else 
+     56             {
+     57               
+     58                error |= 0x0000;// no error with the room ntc xx_00
+   \                     ??NTC_Error_Detect_2:
+   \   00001A   7A00         MOV     R2,#0x0
+   \                     ??NTC_Error_Detect_1:
+   \   00001C   7B00         MOV     R3,#0x0
+     59             }
+     60             
+     61             if(Floor_ADC_Result >= 1700)
+   \   00001E   C3           CLR     C
+   \   00001F   EC           MOV     A,R4
+   \   000020   94A4         SUBB    A,#-0x5c
+   \   000022   ED           MOV     A,R5
+   \   000023   9406         SUBB    A,#0x6
+   \   000025   4004         JC      ??NTC_Error_Detect_3
+     62             {
+     63                error |= 0x0008;// floor ntc broken 10_xx
+   \   000027   7408         MOV     A,#0x8
+   \   000029   800B         SJMP    ??NTC_Error_Detect_4
+     64             }
+     65             else if(Floor_ADC_Result <= 150)
+   \                     ??NTC_Error_Detect_3:
+   \   00002B   C3           CLR     C
+   \   00002C   EC           MOV     A,R4
+   \   00002D   9497         SUBB    A,#-0x69
+   \   00002F   ED           MOV     A,R5
+   \   000030   9400         SUBB    A,#0x0
+   \   000032   5004         JNC     ??NTC_Error_Detect_5
+     66             {
+     67                error |= 0x000C;// floor ntc shortcircuit 11_xx
+   \   000034   740C         MOV     A,#0xc
+   \                     ??NTC_Error_Detect_4:
+   \   000036   4A           ORL     A,R2
+   \   000037   FA           MOV     R2,A
+     68             }
+     69             else
+     70             {
+     71                error |= 0x0000;// no error occur   00_xx 
+     72             }
+     73             
+     74             return error;
+   \                     ??NTC_Error_Detect_5:
+   \   000038   02....       LJMP    ?BRET
+     75          }
+     76          
+     77          
+     78          /*********************************************************************
+     79           * @fn      HandleError
+     80           *
+     81           * @brief  handle the error 
+     82           *         
+     83           * @param  Error_Code-the error code
+     84           *                   
+     85           * @return none
+     86           *
+     87           ***********************************************************************/
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     88          void HandleError(uint16 Error_Code)
+   \                     HandleError:
+     89          {
+   \   000000   74F7         MOV     A,#-0x9
+   \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
+   \   000005                ; Saved register size: 9
+   \   000005                ; Auto size: 0
+   \   000005   EA           MOV     A,R2
+   \   000006   FE           MOV     R6,A
+   \   000007   EB           MOV     A,R3
+   \   000008   FF           MOV     R7,A
+     90            
+     91           
+     92            switch(Error_Code)// handle the error here
+   \   000009   EE           MOV     A,R6
+   \   00000A   4F           ORL     A,R7
+   \   00000B   6015         JZ      ??HandleError_0
+     93            {
+     94            case NO_ERROR:
+     95              break;
+     96            default:
+     97               REL_CTL = 0;
+   \   00000D   C292         CLR     0x90.2
+     98              break;
+   \   00000F   90....       MOV     DPTR,#Error_Code_Saved
+   \   000012   E0           MOVX    A,@DPTR
+   \   000013   F8           MOV     R0,A
+   \   000014   A3           INC     DPTR
+   \   000015   E0           MOVX    A,@DPTR
+   \   000016   F9           MOV     R1,A
+   \   000017   E8           MOV     A,R0
+   \   000018   49           ORL     A,R1
+   \   000019   7007         JNZ     ??HandleError_0
+     99            }
+    100            // display the error picture here
+    101            if(Error_Code && (!Error_Code_Saved)) // load error picture if enter the error state
+    102            {
+    103               HalLcdWriteError(TRUE);
+   \   00001B                ; Setup parameters for call to function HalLcdWriteError
+   \   00001B   7901         MOV     R1,#0x1
+   \   00001D   12....       LCALL   ??HalLcdWriteError?relay
+   \   000020   8039         SJMP    ??HandleError_1
+    104            }
+    105            else if(Error_Code_Saved && (!Error_Code))// clear error picture and the error code when 
+   \                     ??HandleError_0:
+   \   000022   90....       MOV     DPTR,#Error_Code_Saved
+   \   000025   E0           MOVX    A,@DPTR
+   \   000026   F8           MOV     R0,A
+   \   000027   A3           INC     DPTR
+   \   000028   E0           MOVX    A,@DPTR
+   \   000029   F9           MOV     R1,A
+   \   00002A   E8           MOV     A,R0
+   \   00002B   49           ORL     A,R1
+   \   00002C   6029         JZ      ??HandleError_2
+   \   00002E   EE           MOV     A,R6
+   \   00002F   4F           ORL     A,R7
+   \   000030   7025         JNZ     ??HandleError_2
+    106                                                       //leave the error state
+    107            {
+    108               HalLcdWriteError(FALSE);
+   \   000032                ; Setup parameters for call to function HalLcdWriteError
+   \   000032   7900         MOV     R1,#0x0
+   \   000034   12....       LCALL   ??HalLcdWriteError?relay
+    109               HalLcdWriteErrorCode(Error_Code,FALSE); 
+   \   000037                ; Setup parameters for call to function HalLcdWriteErrorCode
+   \   000037   7900         MOV     R1,#0x0
+   \   000039   7A00         MOV     R2,#0x0
+   \   00003B   7B00         MOV     R3,#0x0
+   \   00003D   12....       LCALL   ??HalLcdWriteErrorCode?relay
+    110               HalLcd_HW_WriteAddr(2,30);
+   \   000040                ; Setup parameters for call to function HalLcd_HW_WriteAddr
+   \   000040   7A1E         MOV     R2,#0x1e
+   \   000042   7902         MOV     R1,#0x2
+   \   000044   12....       LCALL   ??HalLcd_HW_WriteAddr?relay
+    111               for(uint8 i = 0; i < 30; i++)
+   \   000047   75..1E       MOV     ?V0 + 0,#0x1e
+    112               {
+    113                  HalLcd_HW_WriteData(0x80); 
+   \                     ??HandleError_3:
+   \   00004A                ; Setup parameters for call to function HalLcd_HW_WriteData
+   \   00004A   7980         MOV     R1,#-0x80
+   \   00004C   12....       LCALL   ??HalLcd_HW_WriteData?relay
+    114               }
+   \   00004F   15..         DEC     ?V0 + 0
+   \   000051   E5..         MOV     A,?V0 + 0
+   \   000053   601B         JZ      ??HandleError_4
+   \   000055   80F3         SJMP    ??HandleError_3
+    115            }
+    116            else;
+    117            
+    118            
+    119            if(Error_Code && (Error_Code_Saved != Error_Code))// write the error code if the code changed
+   \                     ??HandleError_2:
+   \   000057   EE           MOV     A,R6
+   \   000058   4F           ORL     A,R7
+   \   000059   6015         JZ      ??HandleError_4
+   \                     ??HandleError_1:
+   \   00005B   90....       MOV     DPTR,#Error_Code_Saved
+   \   00005E   E0           MOVX    A,@DPTR
+   \   00005F   6E           XRL     A,R6
+   \   000060   7003         JNZ     ??HandleError_5
+   \   000062   A3           INC     DPTR
+   \   000063   E0           MOVX    A,@DPTR
+   \   000064   6F           XRL     A,R7
+   \                     ??HandleError_5:
+   \   000065   6009         JZ      ??HandleError_4
+    120            {
+    121              HalLcdWriteErrorCode(Error_Code,TRUE); 
+   \   000067                ; Setup parameters for call to function HalLcdWriteErrorCode
+   \   000067   7901         MOV     R1,#0x1
+   \   000069   EE           MOV     A,R6
+   \   00006A   FA           MOV     R2,A
+   \   00006B   EF           MOV     A,R7
+   \   00006C   FB           MOV     R3,A
+   \   00006D   12....       LCALL   ??HalLcdWriteErrorCode?relay
+    122            }
+    123            else;
+    124            Error_Code_Saved = Error_Code;
+   \                     ??HandleError_4:
+   \   000070   90....       MOV     DPTR,#Error_Code_Saved
+   \   000073   EE           MOV     A,R6
+   \   000074   F0           MOVX    @DPTR,A
+   \   000075   A3           INC     DPTR
+   \   000076   EF           MOV     A,R7
+   \   000077   F0           MOVX    @DPTR,A
+    125          }
+   \   000078   7F01         MOV     R7,#0x1
+   \   00007A   02....       LJMP    ?BANKED_LEAVE_XDATA
+   \   00007D                REQUIRE _A_P1
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??NTC_Error_Detect?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    NTC_Error_Detect
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??HandleError?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    HandleError
+
+   Maximum stack usage in bytes:
+
+     Function                  ISTACK PSTACK XSTACK
+     --------                  ------ ------ ------
+     HandleError                   0      0      9
+       -> HalLcdWriteError         0      0     18
+       -> HalLcdWriteError         0      0     18
+       -> HalLcdWriteErrorCode     0      0     18
+       -> HalLcd_HW_WriteAddr      0      0     18
+       -> HalLcd_HW_WriteData      0      0     18
+       -> HalLcdWriteErrorCode     0      0     18
+     NTC_Error_Detect              0      0      0
+
+
+   Segment part sizes:
+
+     Function/Label           Bytes
+     --------------           -----
+     _A_P1                       1
+     Error_Code_Saved            2
+     NTC_Error_Detect           59
+     HandleError               125
+     ??NTC_Error_Detect?relay    6
+     ??HandleError?relay         6
+
+ 
+ 184 bytes in segment BANKED_CODE
+  12 bytes in segment BANK_RELAYS
+   1 byte  in segment SFR_AN
+   2 bytes in segment XDATA_Z
+ 
+ 196 bytes of CODE  memory
+   0 bytes of DATA  memory (+ 1 byte shared)
+   2 bytes of XDATA memory
+
+Errors: none
+Warnings: none

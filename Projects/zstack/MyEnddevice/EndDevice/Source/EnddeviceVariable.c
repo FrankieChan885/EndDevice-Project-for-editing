@@ -93,3 +93,4 @@ uint8  debuglownum = 0;// for the low bit
 bool  DebugMode = FALSE;// for the debug mode  to use
 bool  Debug_Blink = FALSE; // for the information in the lcd in debug mode to blink
 uint8 Debug_Blink_Count = 0;// for the information in the lcd in debug mode to blink
+extern uint16 Error_Code = 0x0000;

@@ -133,9 +133,6 @@ extern uint8 SetFL_Temperature; // the floor Set Temperature
 extern int16 RM_Temperature; // the Room Temperature
 extern int16 FL_Temperature; // the floor Temperature
 
-extern bool Error;// if the NTC is not installed or short curcuit , error is set to true;
-extern bool Error_Last;//  error of last time
-
 extern bool LINKED; // whether the device linked to the coordinator or not
 extern uint8 send_tick;       // for sending message
 extern uint8 sample_tick; // the sample time tick
@@ -150,5 +147,4 @@ extern uint8  debuglownum;// for the low bit
 extern bool  DebugMode;// for the debug mode  to use
 extern bool  Debug_Blink; // for the information in the lcd in debug mode to blink
 extern uint8 Debug_Blink_Count;// for the information in the lcd in debug mode to blink
-
-
+extern uint16 Error_Code; // the error code for the error_handle

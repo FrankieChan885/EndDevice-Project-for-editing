@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 //                                                                            /
-// IAR C/C++ Compiler V8.10.1.10194/W32 for 8051        20/Apr/2015  20:00:20 /
+// IAR C/C++ Compiler V8.10.1.10194/W32 for 8051        21/Apr/2015  17:17:53 /
 // Copyright 2004-2011 IAR Systems AB.                                        /
 //                                                                            /
 //    Core               =  plain                                             /
@@ -9,20 +9,20 @@
 //    Calling convention =  xdata reentrant                                   /
 //    Constant location  =  data_rom                                          /
 //    Dptr setup         =  1,16                                              /
-//    Source file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   /
-//                          Project for editing\Projects\zstack\MyEnddevice\E /
-//                          ndDevice\Source\EnddeviceLCD.c                    /
-//    Command line       =  -f "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevi /
-//                          ce Project for editing\Projects\zstack\MyEnddevic /
-//                          e\EndDevice\CC2530DB\..\..\..\Tools\CC2530DB\f8wE /
-//                          ndev.cfg" (-DCPU32MHZ -DROOT=__near_func          /
+//    Source file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\Source\EnddeviceLCD.c                     /
+//    Command line       =  -f C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic /
+//                          e-Project-for-editing\Projects\zstack\MyEnddevice /
+//                          \EndDevice\CC2530DB\..\..\..\Tools\CC2530DB\f8wEn /
+//                          dev.cfg (-DCPU32MHZ -DROOT=__near_func            /
 //                          -DMAC_CFG_TX_DATA_MAX=3 -DMAC_CFG_TX_MAX=6        /
-//                          -DMAC_CFG_RX_MAX=3) -f "C:\Users\William\Desktop\ /
-//                          ±œ“µ…Ëº∆\SRC\EndDevice Project for                /
-//                          editing\Projects\zstack\MyEnddevice\EndDevice\CC2 /
-//                          530DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"      /
-//                          (-DZIGBEEPRO -DSECURE=0 -DZG_SECURE_DYNAMIC=0     /
-//                          -DREFLECTOR -DDEFAULT_CHANLIST=0x02000000         /
+//                          -DMAC_CFG_RX_MAX=3) -f C:\Users\William\Desktop\± /
+//                          œ“µ…Ëº∆\SRC\EndDevice-Project-for-editing\Project /
+//                          s\zstack\MyEnddevice\EndDevice\CC2530DB\..\..\..\ /
+//                          Tools\CC2530DB\f8wConfig.cfg (-DZIGBEEPRO         /
+//                          -DSECURE=0 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR      /
+//                          -DDEFAULT_CHANLIST=0x02000000                     /
 //                          -DZDAPP_CONFIG_PAN_ID=0xFFFF                      /
 //                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_M /
 //                          ASK=0x007F -DBEACON_REQUEST_DELAY=100             /
@@ -43,104 +43,100 @@
 //                          __code" -DGENERIC=__generic                       /
 //                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000       /
 //                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)  /
-//                          -DREJOIN_POLL_RATE=440 "C:\Users\William\Desktop\ /
-//                          ±œ“µ…Ëº∆\SRC\EndDevice Project for                /
-//                          editing\Projects\zstack\MyEnddevice\EndDevice\Sou /
-//                          rce\EnddeviceLCD.c" -D NWK_AUTO_POLL -D           /
-//                          NV_RESTORE=1 -D xZTOOL_P1 -D xMT_TASK -D          /
-//                          xMT_SYS_FUNC -D xMT_ZDO_FUNC -D                   /
-//                          xLCD_SUPPORTED=DEBUG -lC                          /
-//                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice  /
-//                          Project for editing\Projects\zstack\MyEnddevice\E /
-//                          ndDevice\CC2530DB\EndDeviceEB\List\" -lA          /
-//                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice  /
-//                          Project for editing\Projects\zstack\MyEnddevice\E /
-//                          ndDevice\CC2530DB\EndDeviceEB\List\"              /
+//                          -DREJOIN_POLL_RATE=440 C:\Users\William\Desktop\± /
+//                          œ“µ…Ëº∆\SRC\EndDevice-Project-for-editing\Project /
+//                          s\zstack\MyEnddevice\EndDevice\Source\EnddeviceLC /
+//                          D.c -D NWK_AUTO_POLL -D NV_RESTORE=1 -D           /
+//                          xZTOOL_P1 -D xMT_TASK -D xMT_SYS_FUNC -D          /
+//                          xMT_ZDO_FUNC -D xLCD_SUPPORTED=DEBUG -lC          /
+//                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\CC2530DB\EndDeviceEB\List\ -lA            /
+//                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\CC2530DB\EndDeviceEB\List\                /
 //                          --diag_suppress Pe001,Pa010 -o                    /
-//                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice  /
-//                          Project for editing\Projects\zstack\MyEnddevice\E /
-//                          ndDevice\CC2530DB\EndDeviceEB\Obj\" -e            /
+//                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\CC2530DB\EndDeviceEB\Obj\ -e              /
 //                          --no_code_motion --debug --core=plain             /
 //                          --dptr=16,1 --data_model=large                    /
 //                          --code_model=banked --calling_convention=xdata_re /
 //                          entrant --place_constants=data_rom                /
 //                          --nr_virtual_regs 16 -I                           /
-//                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice  /
-//                          Project for editing\Projects\zstack\MyEnddevice\E /
-//                          ndDevice\CC2530DB\" -I "C:\Users\William\Desktop\ /
-//                          ±œ“µ…Ëº∆\SRC\EndDevice Project for                /
-//                          editing\Projects\zstack\MyEnddevice\EndDevice\CC2 /
-//                          530DB\..\Source\" -I "C:\Users\William\Desktop\±œ /
-//                          “µ…Ëº∆\SRC\EndDevice Project for                  /
-//                          editing\Projects\zstack\MyEnddevice\EndDevice\CC2 /
-//                          530DB\..\..\..\ZMain\TI2530DB\" -I                /
-//                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice  /
-//                          Project for editing\Projects\zstack\MyEnddevice\E /
-//                          ndDevice\CC2530DB\..\..\..\..\..\Components\hal\i /
-//                          nclude\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SR /
-//                          C\EndDevice Project for                           /
-//                          editing\Projects\zstack\MyEnddevice\EndDevice\CC2 /
-//                          530DB\..\..\..\..\..\Components\hal\target\CC2530 /
-//                          EB\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\En /
-//                          dDevice Project for editing\Projects\zstack\MyEnd /
+//                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\CC2530DB\ -I C:\Users\William\Desktop\±œ“ /
+//                          µ…Ëº∆\SRC\EndDevice-Project-for-editing\Projects\ /
+//                          zstack\MyEnddevice\EndDevice\CC2530DB\..\Source\  /
+//                          -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic /
+//                          e-Project-for-editing\Projects\zstack\MyEnddevice /
+//                          \EndDevice\CC2530DB\..\..\..\ZMain\TI2530DB\ -I   /
+//                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\CC2530DB\..\..\..\..\..\Components\hal\in /
+//                          clude\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\E /
+//                          ndDevice-Project-for-editing\Projects\zstack\MyEn /
+//                          ddevice\EndDevice\CC2530DB\..\..\..\..\..\Compone /
+//                          nts\hal\target\CC2530EB\ -I                       /
+//                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\CC2530DB\..\..\..\..\..\Components\mac\in /
+//                          clude\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\E /
+//                          ndDevice-Project-for-editing\Projects\zstack\MyEn /
+//                          ddevice\EndDevice\CC2530DB\..\..\..\..\..\Compone /
+//                          nts\mac\high_level\ -I C:\Users\William\Desktop\± /
+//                          œ“µ…Ëº∆\SRC\EndDevice-Project-for-editing\Project /
+//                          s\zstack\MyEnddevice\EndDevice\CC2530DB\..\..\..\ /
+//                          ..\..\Components\mac\low_level\srf04\ -I          /
+//                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\CC2530DB\..\..\..\..\..\Components\mac\lo /
+//                          w_level\srf04\single_chip\ -I                     /
+//                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\CC2530DB\..\..\..\..\..\Components\mt\    /
+//                          -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic /
+//                          e-Project-for-editing\Projects\zstack\MyEnddevice /
+//                          \EndDevice\CC2530DB\..\..\..\..\..\Components\osa /
+//                          l\include\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\S /
+//                          RC\EndDevice-Project-for-editing\Projects\zstack\ /
+//                          MyEnddevice\EndDevice\CC2530DB\..\..\..\..\..\Com /
+//                          ponents\services\saddr\ -I                        /
+//                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\CC2530DB\..\..\..\..\..\Components\servic /
+//                          es\sdata\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SR /
+//                          C\EndDevice-Project-for-editing\Projects\zstack\M /
+//                          yEnddevice\EndDevice\CC2530DB\..\..\..\..\..\Comp /
+//                          onents\stack\af\ -I C:\Users\William\Desktop\±œ“µ /
+//                          …Ëº∆\SRC\EndDevice-Project-for-editing\Projects\z /
+//                          stack\MyEnddevice\EndDevice\CC2530DB\..\..\..\..\ /
+//                          ..\Components\stack\nwk\ -I                       /
+//                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\CC2530DB\..\..\..\..\..\Components\stack\ /
+//                          sapi\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\En /
+//                          dDevice-Project-for-editing\Projects\zstack\MyEnd /
 //                          device\EndDevice\CC2530DB\..\..\..\..\..\Componen /
-//                          ts\mac\include\" -I "C:\Users\William\Desktop\±œ“ /
-//                          µ…Ëº∆\SRC\EndDevice Project for                   /
-//                          editing\Projects\zstack\MyEnddevice\EndDevice\CC2 /
-//                          530DB\..\..\..\..\..\Components\mac\high_level\"  /
-//                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevi /
-//                          ce Project for editing\Projects\zstack\MyEnddevic /
-//                          e\EndDevice\CC2530DB\..\..\..\..\..\Components\ma /
-//                          c\low_level\srf04\" -I "C:\Users\William\Desktop\ /
-//                          ±œ“µ…Ëº∆\SRC\EndDevice Project for                /
-//                          editing\Projects\zstack\MyEnddevice\EndDevice\CC2 /
-//                          530DB\..\..\..\..\..\Components\mac\low_level\srf /
-//                          04\single_chip\" -I "C:\Users\William\Desktop\±œ“ /
-//                          µ…Ëº∆\SRC\EndDevice Project for                   /
-//                          editing\Projects\zstack\MyEnddevice\EndDevice\CC2 /
-//                          530DB\..\..\..\..\..\Components\mt\" -I           /
-//                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice  /
-//                          Project for editing\Projects\zstack\MyEnddevice\E /
-//                          ndDevice\CC2530DB\..\..\..\..\..\Components\osal\ /
-//                          include\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\S /
-//                          RC\EndDevice Project for                          /
-//                          editing\Projects\zstack\MyEnddevice\EndDevice\CC2 /
-//                          530DB\..\..\..\..\..\Components\services\saddr\"  /
-//                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevi /
-//                          ce Project for editing\Projects\zstack\MyEnddevic /
-//                          e\EndDevice\CC2530DB\..\..\..\..\..\Components\se /
-//                          rvices\sdata\" -I "C:\Users\William\Desktop\±œ“µ… /
-//                          Ëº∆\SRC\EndDevice Project for                     /
-//                          editing\Projects\zstack\MyEnddevice\EndDevice\CC2 /
-//                          530DB\..\..\..\..\..\Components\stack\af\" -I     /
-//                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice  /
-//                          Project for editing\Projects\zstack\MyEnddevice\E /
-//                          ndDevice\CC2530DB\..\..\..\..\..\Components\stack /
-//                          \nwk\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\ /
-//                          EndDevice Project for editing\Projects\zstack\MyE /
+//                          ts\stack\sec\ -I C:\Users\William\Desktop\±œ“µ…Ëº /
+//                          ∆\SRC\EndDevice-Project-for-editing\Projects\zsta /
+//                          ck\MyEnddevice\EndDevice\CC2530DB\..\..\..\..\..\ /
+//                          Components\stack\sys\ -I                          /
+//                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\CC2530DB\..\..\..\..\..\Components\stack\ /
+//                          zdo\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\End /
+//                          Device-Project-for-editing\Projects\zstack\MyEndd /
+//                          evice\EndDevice\CC2530DB\..\..\..\..\..\Component /
+//                          s\zmac\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\ /
+//                          EndDevice-Project-for-editing\Projects\zstack\MyE /
 //                          nddevice\EndDevice\CC2530DB\..\..\..\..\..\Compon /
-//                          ents\stack\sapi\" -I "C:\Users\William\Desktop\±œ /
-//                          “µ…Ëº∆\SRC\EndDevice Project for                  /
-//                          editing\Projects\zstack\MyEnddevice\EndDevice\CC2 /
-//                          530DB\..\..\..\..\..\Components\stack\sec\" -I    /
-//                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice  /
-//                          Project for editing\Projects\zstack\MyEnddevice\E /
-//                          ndDevice\CC2530DB\..\..\..\..\..\Components\stack /
-//                          \sys\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\ /
-//                          EndDevice Project for editing\Projects\zstack\MyE /
-//                          nddevice\EndDevice\CC2530DB\..\..\..\..\..\Compon /
-//                          ents\stack\zdo\" -I "C:\Users\William\Desktop\±œ“ /
-//                          µ…Ëº∆\SRC\EndDevice Project for                   /
-//                          editing\Projects\zstack\MyEnddevice\EndDevice\CC2 /
-//                          530DB\..\..\..\..\..\Components\zmac\" -I         /
-//                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice  /
-//                          Project for editing\Projects\zstack\MyEnddevice\E /
-//                          ndDevice\CC2530DB\..\..\..\..\..\Components\zmac\ /
-//                          f8w\" -Ohz                                        /
-//    List file          =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   /
-//                          Project for editing\Projects\zstack\MyEnddevice\E /
-//                          ndDevice\CC2530DB\EndDeviceEB\List\EnddeviceLCD.s /
-//                          51                                                /
+//                          ents\zmac\f8w\ -Ohz                               /
+//    List file          =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-P /
+//                          roject-for-editing\Projects\zstack\MyEnddevice\En /
+//                          dDevice\CC2530DB\EndDeviceEB\List\EnddeviceLCD.s5 /
+//                          1                                                 /
 //                                                                            /
 //                                                                            /
 ///////////////////////////////////////////////////////////////////////////////
@@ -266,39 +262,19 @@
         CFI ?RET_LOW Frame(CFA_SP, 1)
         CFI EndCommon cfiCommon0
         
-TemperADCSampleAndAverage SYMBOL "TemperADCSampleAndAverage"
-EnddeviceApp_LookupTemp SYMBOL "EnddeviceApp_LookupTemp"
 HalLcdWriteWiFiMod  SYMBOL "HalLcdWriteWiFiMod"
 HalLcdWriteChar5x8  SYMBOL "HalLcdWriteChar5x8"
 HalLcdWriteDebug    SYMBOL "HalLcdWriteDebug"
 HalLcdWriteRelayState SYMBOL "HalLcdWriteRelayState"
-HalLcdWriteError    SYMBOL "HalLcdWriteError"
 HalLcdWriteRealTemperature SYMBOL "HalLcdWriteRealTemperature"
-??EnddeviceApp_LookupTemp?relay SYMBOL "?relay", EnddeviceApp_LookupTemp
 ??HalLcdWriteChar5x8?relay SYMBOL "?relay", HalLcdWriteChar5x8
 ??HalLcdWriteDebug?relay SYMBOL "?relay", HalLcdWriteDebug
-??HalLcdWriteError?relay SYMBOL "?relay", HalLcdWriteError
 ??HalLcdWriteRealTemperature?relay SYMBOL "?relay", HalLcdWriteRealTemperature
 ??HalLcdWriteRelayState?relay SYMBOL "?relay", HalLcdWriteRelayState
 ??HalLcdWriteWiFiMod?relay SYMBOL "?relay", HalLcdWriteWiFiMod
-??TemperADCSampleAndAverage?relay SYMBOL "?relay", TemperADCSampleAndAverage
 EnddeviceApp_HandleLCD SYMBOL "EnddeviceApp_HandleLCD"
 ??EnddeviceApp_HandleLCD?relay SYMBOL "?relay", EnddeviceApp_HandleLCD
 
-        EXTERN TemperADCSampleAndAverage
-        FUNCTION TemperADCSampleAndAverage,0202H
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 12, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
-        EXTERN EnddeviceApp_LookupTemp
-        FUNCTION EnddeviceApp_LookupTemp,0202H
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 12, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
         EXTERN HalLcdWriteWiFiMod
         FUNCTION HalLcdWriteWiFiMod,0202H
         ARGFRAME ISTACK, 0, STACK
@@ -327,13 +303,6 @@ EnddeviceApp_HandleLCD SYMBOL "EnddeviceApp_HandleLCD"
         ARGFRAME XSTACK, 12, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
-        EXTERN HalLcdWriteError
-        FUNCTION HalLcdWriteError,0202H
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 12, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
         EXTERN HalLcdWriteRealTemperature
         FUNCTION HalLcdWriteRealTemperature,0202H
         ARGFRAME ISTACK, 0, STACK
@@ -341,28 +310,21 @@ EnddeviceApp_HandleLCD SYMBOL "EnddeviceApp_HandleLCD"
         ARGFRAME XSTACK, 12, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
-        EXTERN ??EnddeviceApp_LookupTemp?relay
-        FUNCTION ??EnddeviceApp_LookupTemp?relay,00H
         EXTERN ??HalLcdWriteChar5x8?relay
         FUNCTION ??HalLcdWriteChar5x8?relay,00H
         EXTERN ??HalLcdWriteDebug?relay
         FUNCTION ??HalLcdWriteDebug?relay,00H
-        EXTERN ??HalLcdWriteError?relay
-        FUNCTION ??HalLcdWriteError?relay,00H
         EXTERN ??HalLcdWriteRealTemperature?relay
         FUNCTION ??HalLcdWriteRealTemperature?relay,00H
         EXTERN ??HalLcdWriteRelayState?relay
         FUNCTION ??HalLcdWriteRelayState?relay,00H
         EXTERN ??HalLcdWriteWiFiMod?relay
         FUNCTION ??HalLcdWriteWiFiMod?relay,00H
-        EXTERN ??TemperADCSampleAndAverage?relay
-        FUNCTION ??TemperADCSampleAndAverage?relay,00H
         EXTERN BIT_SEL
         EXTERN DebugMode
         EXTERN Debug_Blink
         EXTERN Debug_Blink_Count
-        EXTERN Error
-        EXTERN Error_Last
+        EXTERN Error_Code
         EXTERN FL_Temperature
         EXTERN ID_OR_NET
         EXTERN LINKED
@@ -374,9 +336,8 @@ EnddeviceApp_HandleLCD SYMBOL "EnddeviceApp_HandleLCD"
         EXTERN _NIB
         EXTERN debugnum
         EXTERN rssi
-        EXTERN sample_tick
 
-// C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zstack\MyEnddevice\EndDevice\Source\EnddeviceLCD.c
+// C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Project-for-editing\Projects\zstack\MyEnddevice\EndDevice\Source\EnddeviceLCD.c
 //    1 #include "EnddeviceVariable.h"
 
         ASEGN SFR_AN:DATA:NOROOT,090H
@@ -409,50 +370,6 @@ EnddeviceApp_HandleLCD:
         CFI Function EnddeviceApp_HandleLCD
         CODE
 //   20 {
-        FUNCALL EnddeviceApp_HandleLCD, TemperADCSampleAndAverage
-        LOCFRAME ISTACK, 0, STACK
-        LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 12, STACK
-        LOCFRAME IOVERLAY, 0, STATIC
-        LOCFRAME DOVERLAY, 0, STATIC
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 12, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
-        FUNCALL EnddeviceApp_HandleLCD, TemperADCSampleAndAverage
-        LOCFRAME ISTACK, 0, STACK
-        LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 12, STACK
-        LOCFRAME IOVERLAY, 0, STATIC
-        LOCFRAME DOVERLAY, 0, STATIC
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 12, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
-        FUNCALL EnddeviceApp_HandleLCD, EnddeviceApp_LookupTemp
-        LOCFRAME ISTACK, 0, STACK
-        LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 12, STACK
-        LOCFRAME IOVERLAY, 0, STATIC
-        LOCFRAME DOVERLAY, 0, STATIC
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 12, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
-        FUNCALL EnddeviceApp_HandleLCD, EnddeviceApp_LookupTemp
-        LOCFRAME ISTACK, 0, STACK
-        LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 12, STACK
-        LOCFRAME IOVERLAY, 0, STATIC
-        LOCFRAME DOVERLAY, 0, STATIC
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 12, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
         FUNCALL EnddeviceApp_HandleLCD, HalLcdWriteWiFiMod
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -541,17 +458,6 @@ EnddeviceApp_HandleLCD:
         ARGFRAME XSTACK, 12, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
-        FUNCALL EnddeviceApp_HandleLCD, HalLcdWriteError
-        LOCFRAME ISTACK, 0, STACK
-        LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 12, STACK
-        LOCFRAME IOVERLAY, 0, STATIC
-        LOCFRAME DOVERLAY, 0, STATIC
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 12, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
         FUNCALL EnddeviceApp_HandleLCD, HalLcdWriteRealTemperature
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -564,17 +470,6 @@ EnddeviceApp_HandleLCD:
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         FUNCALL EnddeviceApp_HandleLCD, HalLcdWriteRealTemperature
-        LOCFRAME ISTACK, 0, STACK
-        LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 12, STACK
-        LOCFRAME IOVERLAY, 0, STATIC
-        LOCFRAME DOVERLAY, 0, STATIC
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 12, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
-        FUNCALL EnddeviceApp_HandleLCD, HalLcdWriteError
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
         LOCFRAME XSTACK, 12, STACK
@@ -603,131 +498,8 @@ EnddeviceApp_HandleLCD:
         CFI CFA_XSP16 add(XSP16, 12)
         ; Saved register size: 12
         ; Auto size: 0
-//   21     // get the next rssi and sample the temperature every 2s
-//   22     if(sample_tick == 10)
-        MOV     DPTR,#sample_tick
-        MOVX    A,@DPTR
-        XRL     A,#0xa
-        JZ      $+5
-        LJMP    ??EnddeviceApp_HandleLCD_0 & 0xFFFF
-//   23     {
-//   24  
-//   25        uint16 RM_ADC_Result = TemperADCSampleAndAverage(10,0);
-        ; Setup parameters for call to function TemperADCSampleAndAverage
-        MOV     R2,#0x0
-        MOV     R1,#0xa
-        LCALL   ??TemperADCSampleAndAverage?relay
-        MOV     ?V0 + 0,R2
-        MOV     ?V0 + 1,R3
-//   26        uint16 FL_ADC_Result = TemperADCSampleAndAverage(10,1);
-        ; Setup parameters for call to function TemperADCSampleAndAverage
-        MOV     R2,#0x1
-        MOV     R1,#0xa
-        LCALL   ??TemperADCSampleAndAverage?relay
-        MOV     ?V0 + 2,R2
-        MOV     ?V0 + 3,R3
-        MOV     R6,?V0 + 2
-        MOV     R7,?V0 + 3
-//   27        RM_Temperature = (uint16)EnddeviceApp_LookupTemp(RM_ADC_Result << 1);
-        ; Setup parameters for call to function EnddeviceApp_LookupTemp
-        MOV     A,?V0 + 0
-        CLR     C
-        RLC     A
-        MOV     R2,A
-        MOV     A,?V0 + 1
-        RLC     A
-        MOV     R3,A
-        LCALL   ??EnddeviceApp_LookupTemp?relay
-        MOV     DPTR,#RM_Temperature
-        MOV     A,R2
-        MOVX    @DPTR,A
-        INC     DPTR
-        MOV     A,R3
-        MOVX    @DPTR,A
-//   28        FL_Temperature = (uint16)EnddeviceApp_LookupTemp(FL_ADC_Result << 1);
-        ; Setup parameters for call to function EnddeviceApp_LookupTemp
-        MOV     A,R6
-        MOV     R2,A
-        MOV     A,R7
-        MOV     R3,A
-        MOV     A,R2
-        CLR     C
-        RLC     A
-        MOV     R2,A
-        MOV     A,R3
-        RLC     A
-        MOV     R3,A
-        LCALL   ??EnddeviceApp_LookupTemp?relay
-        MOV     DPTR,#FL_Temperature
-        MOV     A,R2
-        MOVX    @DPTR,A
-        INC     DPTR
-        MOV     A,R3
-        MOVX    @DPTR,A
-//   29         
-//   30    
-//   31         // an error occur
-//   32         if((RM_ADC_Result >= 1700) || 
-//   33            (FL_ADC_Result >= 1700) ||
-//   34            (RM_ADC_Result <= 150)  ||
-//   35            (FL_ADC_Result <= 150)
-//   36           )
-        CLR     C
-        MOV     A,?V0 + 0
-        SUBB    A,#-0x5c
-        MOV     A,?V0 + 1
-        SUBB    A,#0x6
-        JNC     ??EnddeviceApp_HandleLCD_1
-        CLR     C
-        MOV     A,R6
-        SUBB    A,#-0x5c
-        MOV     A,R7
-        SUBB    A,#0x6
-        JNC     ??EnddeviceApp_HandleLCD_1
-        CLR     C
-        MOV     A,?V0 + 0
-        SUBB    A,#-0x69
-        MOV     A,?V0 + 1
-        SUBB    A,#0x0
-        JC      ??EnddeviceApp_HandleLCD_1
-        CLR     C
-        MOV     A,R6
-        SUBB    A,#-0x69
-        MOV     A,R7
-        SUBB    A,#0x0
-        JNC     ??EnddeviceApp_HandleLCD_2
-//   37        {
-//   38             Error = TRUE; 
-??EnddeviceApp_HandleLCD_1:
-        MOV     DPTR,#Error
-        MOV     A,#0x1
-        MOVX    @DPTR,A
-//   39             REL_CTL = 0;
-        CLR     0x90.2
-        SJMP    ??EnddeviceApp_HandleLCD_3
-//   40        }
-//   41        else
-//   42        {
-//   43             Error = FALSE; 
-??EnddeviceApp_HandleLCD_2:
-        MOV     DPTR,#Error
-        CLR     A
-        MOVX    @DPTR,A
-//   44        }
-//   45        sample_tick = 0;
-??EnddeviceApp_HandleLCD_3:
-        MOV     DPTR,#sample_tick
-        CLR     A
-        MOVX    @DPTR,A
-//   46     } 
-//   47        
-//   48     sample_tick++;
-??EnddeviceApp_HandleLCD_0:
-        MOVX    A,@DPTR
-        INC     A
-        MOVX    @DPTR,A
-//   49      
-//   50     if(rssi >= -55)
+//   21     // get the next rssi and sample the temperature every 2s  
+//   22     if(rssi >= -55)
         MOV     DPTR,#rssi
         MOVX    A,@DPTR
         CLR     C
@@ -735,13 +507,13 @@ EnddeviceApp_HandleLCD:
         MOV     C,0xD0 /* PSW */.2
         XRL     A,PSW
         RLC     A
-        JC      ??EnddeviceApp_HandleLCD_4
-//   51       WiFi_Mode = 0;
+        JC      ??EnddeviceApp_HandleLCD_0
+//   23       WiFi_Mode = 0;
         MOV     DPTR,#WiFi_Mode
         CLR     A
-        SJMP    ??EnddeviceApp_HandleLCD_5
-//   52     else if(rssi >= -85)
-??EnddeviceApp_HandleLCD_4:
+        SJMP    ??EnddeviceApp_HandleLCD_1
+//   24     else if(rssi >= -85)
+??EnddeviceApp_HandleLCD_0:
         MOVX    A,@DPTR
         CLR     C
         SUBB    A,#-0x55
@@ -749,49 +521,49 @@ EnddeviceApp_HandleLCD:
         XRL     A,PSW
         RLC     A
         MOV     DPTR,#WiFi_Mode
-        JC      ??EnddeviceApp_HandleLCD_6
-//   53       WiFi_Mode = 1;
+        JC      ??EnddeviceApp_HandleLCD_2
+//   25       WiFi_Mode = 1;
         MOV     A,#0x1
-        SJMP    ??EnddeviceApp_HandleLCD_5
-//   54     else
-//   55       WiFi_Mode = 2;
-??EnddeviceApp_HandleLCD_6:
+        SJMP    ??EnddeviceApp_HandleLCD_1
+//   26     else
+//   27       WiFi_Mode = 2;
+??EnddeviceApp_HandleLCD_2:
         MOV     A,#0x2
-??EnddeviceApp_HandleLCD_5:
+??EnddeviceApp_HandleLCD_1:
         MOVX    @DPTR,A
-//   56     
-//   57     
-//   58     // write the wifi mode    
-//   59     if(LINKED)
+//   28     
+//   29     
+//   30     // write the wifi mode    
+//   31     if(LINKED)
         MOV     DPTR,#LINKED
         MOVX    A,@DPTR
-        JZ      ??EnddeviceApp_HandleLCD_7
-//   60     {
-//   61       HalLcdWriteWiFiMod(WiFi_Mode);
+        JZ      ??EnddeviceApp_HandleLCD_3
+//   32     {
+//   33       HalLcdWriteWiFiMod(WiFi_Mode);
         ; Setup parameters for call to function HalLcdWriteWiFiMod
         MOV     DPTR,#WiFi_Mode
         MOVX    A,@DPTR
         MOV     R1,A
-        SJMP    ??EnddeviceApp_HandleLCD_8
-//   62     }
-//   63     else
-//   64     {
-//   65       HalLcdWriteWiFiMod(3);// not linked to the zigbee net
-??EnddeviceApp_HandleLCD_7:
+        SJMP    ??EnddeviceApp_HandleLCD_4
+//   34     }
+//   35     else
+//   36     {
+//   37       HalLcdWriteWiFiMod(3);// not linked to the zigbee net
+??EnddeviceApp_HandleLCD_3:
         ; Setup parameters for call to function HalLcdWriteWiFiMod
         MOV     R1,#0x3
-??EnddeviceApp_HandleLCD_8:
+??EnddeviceApp_HandleLCD_4:
         LCALL   ??HalLcdWriteWiFiMod?relay
-//   66     }
-//   67    
-//   68    // write the debug information
-//   69    if(DebugMode)
+//   38     }
+//   39    
+//   40    // write the debug information
+//   41    if(DebugMode)
         MOV     DPTR,#DebugMode
         MOVX    A,@DPTR
         JNZ     $+5
-        LJMP    ??EnddeviceApp_HandleLCD_9 & 0xFFFF
-//   70    { 
-//   71       PANID = _NIB.nwkPanId;
+        LJMP    ??EnddeviceApp_HandleLCD_5 & 0xFFFF
+//   42    { 
+//   43       PANID = _NIB.nwkPanId;
         MOV     DPTR,#_NIB + 33
         MOVX    A,@DPTR
         MOV     R0,A
@@ -804,23 +576,23 @@ EnddeviceApp_HandleLCD:
         INC     DPTR
         MOV     A,R1
         MOVX    @DPTR,A
-//   72       
-//   73       // write the PANID of the net
-//   74       uint8 first = PANID / 4096;
-//   75       uint8 second = PANID / 256 % 16;
+//   44       
+//   45       // write the PANID of the net
+//   46       uint8 first = PANID / 4096;
+//   47       uint8 second = PANID / 256 % 16;
         ANL     A,#0xf
         MOV     R6,A
-//   76       uint8 third = PANID / 16 % 16;
+//   48       uint8 third = PANID / 16 % 16;
         MOV     DPTR,#PANID
         MOVX    A,@DPTR
         SWAP    A
         ANL     A,#0xf
         MOV     R7,A
-//   77       uint8 fourth = PANID % 16;
+//   49       uint8 fourth = PANID % 16;
         MOVX    A,@DPTR
         ANL     A,#0xf
         MOV     ?V0 + 0,A
-//   78       HalLcdWriteChar5x8(first,0,30,TRUE);
+//   50       HalLcdWriteChar5x8(first,0,30,TRUE);
         ; Setup parameters for call to function HalLcdWriteChar5x8
         MOV     R4,#0x1
         MOV     R3,#0x1e
@@ -835,7 +607,7 @@ EnddeviceApp_HandleLCD:
         LCALL   ?US_SHR
         MOV     R1,?V0 + 2
         LCALL   ??HalLcdWriteChar5x8?relay
-//   79       HalLcdWriteChar5x8(second,0,35,TRUE);
+//   51       HalLcdWriteChar5x8(second,0,35,TRUE);
         ; Setup parameters for call to function HalLcdWriteChar5x8
         MOV     R4,#0x1
         MOV     R3,#0x23
@@ -843,7 +615,7 @@ EnddeviceApp_HandleLCD:
         MOV     A,R6
         MOV     R1,A
         LCALL   ??HalLcdWriteChar5x8?relay
-//   80       HalLcdWriteChar5x8(third,0,40,TRUE);
+//   52       HalLcdWriteChar5x8(third,0,40,TRUE);
         ; Setup parameters for call to function HalLcdWriteChar5x8
         MOV     R4,#0x1
         MOV     R3,#0x28
@@ -851,16 +623,16 @@ EnddeviceApp_HandleLCD:
         MOV     A,R7
         MOV     R1,A
         LCALL   ??HalLcdWriteChar5x8?relay
-//   81       HalLcdWriteChar5x8(fourth,0,45,TRUE);
+//   53       HalLcdWriteChar5x8(fourth,0,45,TRUE);
         ; Setup parameters for call to function HalLcdWriteChar5x8
         MOV     R4,#0x1
         MOV     R3,#0x2d
         MOV     R2,#0x0
         MOV     R1,?V0 + 0
         LCALL   ??HalLcdWriteChar5x8?relay
-//   82       
-//   83       // write the change content of deviceID or netID
-//   84       if(Debug_Blink_Count++ == 3)
+//   54       
+//   55       // write the change content of deviceID or netID
+//   56       if(Debug_Blink_Count++ == 3)
         MOV     DPTR,#Debug_Blink_Count
         MOVX    A,@DPTR
         MOV     R0,A
@@ -869,17 +641,17 @@ EnddeviceApp_HandleLCD:
         MOVX    @DPTR,A
         MOV     A,#0x3
         XRL     A,R0
-        JNZ     ??EnddeviceApp_HandleLCD_9
-//   85       {
-//   86         Debug_Blink_Count = 0;
+        JNZ     ??EnddeviceApp_HandleLCD_5
+//   57       {
+//   58         Debug_Blink_Count = 0;
         CLR     A
         MOVX    @DPTR,A
-//   87         Debug_Blink ^= 1; // for the blink function
+//   59         Debug_Blink ^= 1; // for the blink function
         MOV     DPTR,#Debug_Blink
         MOVX    A,@DPTR
         XRL     A,#0x1
         MOVX    @DPTR,A
-//   88         HalLcdWriteDebug(debugnum,BIT_SEL,ID_OR_NET,TRUE,Debug_Blink);
+//   60         HalLcdWriteDebug(debugnum,BIT_SEL,ID_OR_NET,TRUE,Debug_Blink);
         ; Setup parameters for call to function HalLcdWriteDebug
         MOV     R5,A
         MOV     R4,#0x1
@@ -893,97 +665,72 @@ EnddeviceApp_HandleLCD:
         MOVX    A,@DPTR
         MOV     R1,A
         LCALL   ??HalLcdWriteDebug?relay
-//   89       }
-//   90       
-//   91     }
-//   92     
-//   93     
-//   94     // write the relay state
-//   95     HalLcdWriteRelayState(REL_CTL);
-??EnddeviceApp_HandleLCD_9:
+//   61       }
+//   62       
+//   63    }
+//   64     
+//   65     
+//   66     // write the relay state
+//   67     HalLcdWriteRelayState(REL_CTL);
+??EnddeviceApp_HandleLCD_5:
         ; Setup parameters for call to function HalLcdWriteRelayState
         MOV     C,0x90.2
         CLR     A
         RLC     A
         MOV     R1,A
         LCALL   ??HalLcdWriteRelayState?relay
-//   96  
-//   97     
-//   98     // write the real temperatrue
-//   99     if(!Error)// the error doesn't exist
-        MOV     DPTR,#Error
+//   68  
+//   69     
+//   70     // write the real temperatrue
+//   71     if(!Error_Code)// the error doesn't exist
+        MOV     DPTR,#Error_Code
         MOVX    A,@DPTR
-        MOV     DPTR,#Error_Last
-        JNZ     ??EnddeviceApp_HandleLCD_10
-//  100     {
-//  101         if(Error_Last)// the error has been removed  for the fisrst time
+        MOV     R0,A
+        INC     DPTR
         MOVX    A,@DPTR
-        JZ      ??EnddeviceApp_HandleLCD_11
-//  102         {
-//  103           HalLcdWriteError(FALSE);
-        ; Setup parameters for call to function HalLcdWriteError
-        MOV     R1,#0x0
-        LCALL   ??HalLcdWriteError?relay
-//  104         }
-//  105         if(!POWER)
-??EnddeviceApp_HandleLCD_11:
+        MOV     R1,A
+        MOV     A,R0
+        ORL     A,R1
+        JNZ     ??EnddeviceApp_HandleLCD_6
+//   72     {
+//   73         if(!POWER)
         MOV     DPTR,#POWER
         MOVX    A,@DPTR
-        JNZ     ??EnddeviceApp_HandleLCD_12
-//  106         {
-//  107            HalLcdWriteRealTemperature(RM_Temperature);
-??EnddeviceApp_HandleLCD_13:
+        JNZ     ??EnddeviceApp_HandleLCD_7
+//   74         {
+//   75            HalLcdWriteRealTemperature(RM_Temperature);
+??EnddeviceApp_HandleLCD_8:
         ; Setup parameters for call to function HalLcdWriteRealTemperature
         MOV     DPTR,#RM_Temperature
-??EnddeviceApp_HandleLCD_14:
+        SJMP    ??EnddeviceApp_HandleLCD_9
+//   76         }
+//   77         else
+//   78         {
+//   79           if(Real_Tem_Mod)
+??EnddeviceApp_HandleLCD_7:
+        MOV     DPTR,#Real_Tem_Mod
+        MOVX    A,@DPTR
+        JNZ     ??EnddeviceApp_HandleLCD_8
+//   80           {
+//   81             HalLcdWriteRealTemperature(RM_Temperature);//SetRM_Temperature * 10);
+//   82           }
+//   83           else
+//   84           {
+//   85             HalLcdWriteRealTemperature(FL_Temperature);
+        ; Setup parameters for call to function HalLcdWriteRealTemperature
+        MOV     DPTR,#FL_Temperature
+??EnddeviceApp_HandleLCD_9:
         MOVX    A,@DPTR
         MOV     R2,A
         INC     DPTR
         MOVX    A,@DPTR
         MOV     R3,A
         LCALL   ??HalLcdWriteRealTemperature?relay
-        SJMP    ??EnddeviceApp_HandleLCD_15
-//  108         }
-//  109         else
-//  110         {
-//  111           if(Real_Tem_Mod)
-??EnddeviceApp_HandleLCD_12:
-        MOV     DPTR,#Real_Tem_Mod
-        MOVX    A,@DPTR
-        JNZ     ??EnddeviceApp_HandleLCD_13
-//  112           {
-//  113             HalLcdWriteRealTemperature(RM_Temperature);//SetRM_Temperature * 10);
-//  114           }
-//  115           else
-//  116           {
-//  117             HalLcdWriteRealTemperature(FL_Temperature);
-        ; Setup parameters for call to function HalLcdWriteRealTemperature
-        MOV     DPTR,#FL_Temperature
-        SJMP    ??EnddeviceApp_HandleLCD_14
-//  118           }
-//  119         }
-//  120     }
-//  121     else// the error exists
-//  122     {
-//  123       if(!Error_Last)//the error occur for the fisrst time
-??EnddeviceApp_HandleLCD_10:
-        MOVX    A,@DPTR
-        JNZ     ??EnddeviceApp_HandleLCD_15
-//  124       {
-//  125         HalLcdWriteError(TRUE);
-        ; Setup parameters for call to function HalLcdWriteError
-        MOV     R1,#0x1
-        LCALL   ??HalLcdWriteError?relay
-//  126       }
-//  127     }
-//  128     
-//  129     Error_Last = Error;
-??EnddeviceApp_HandleLCD_15:
-        MOV     DPTR,#Error
-        MOVX    A,@DPTR
-        MOV     DPTR,#Error_Last
-        MOVX    @DPTR,A
-//  130 }
+//   86           }
+//   87        }
+//   88      }
+//   89  }
+??EnddeviceApp_HandleLCD_6:
         MOV     R7,#0x4
         LJMP    ?BANKED_LEAVE_XDATA
         CFI EndBlock cfiBlock0
@@ -996,16 +743,17 @@ EnddeviceApp_HandleLCD:
         DC24    EnddeviceApp_HandleLCD
 
         END
-//  131 
-//  132 
-//  133 
-//  134 
+//   90   
+//   91 
+//   92 
+//   93 
+//   94 
 // 
-// 425 bytes in segment BANKED_CODE
+// 260 bytes in segment BANKED_CODE
 //   6 bytes in segment BANK_RELAYS
 //   1 byte  in segment SFR_AN
 // 
-// 431 bytes of CODE memory
+// 266 bytes of CODE memory
 //   0 bytes of DATA memory (+ 1 byte shared)
 //
 //Errors: none

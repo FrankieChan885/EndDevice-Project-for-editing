@@ -75,7 +75,7 @@ static void zmain_vdd_check( void );
 int main(void)
 {
    // Turn off interrupts
-  osal_int_disable( INTS_ALL );
+    osal_int_disable( INTS_ALL );
 
   // Initialization for board related stuff such as LEDs and the oscilator
   HAL_BOARD_INIT();

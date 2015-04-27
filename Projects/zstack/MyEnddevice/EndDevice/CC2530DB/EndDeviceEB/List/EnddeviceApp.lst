@@ -1,6 +1,6 @@
 ###############################################################################
 #                                                                             #
-# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         20/Apr/2015  19:51:20 #
+# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         21/Apr/2015  17:17:57 #
 # Copyright 2004-2011 IAR Systems AB.                                         #
 #                                                                             #
 #    Core               =  plain                                              #
@@ -9,20 +9,20 @@
 #    Calling convention =  xdata reentrant                                    #
 #    Constant location  =  data_rom                                           #
 #    Dptr setup         =  1,16                                               #
-#    Source file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice    #
-#                          Project for editing\Projects\zstack\MyEnddevice\En #
-#                          dDevice\Source\EnddeviceApp.c                      #
-#    Command line       =  -f "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic #
-#                          e Project for editing\Projects\zstack\MyEnddevice\ #
-#                          EndDevice\CC2530DB\..\..\..\Tools\CC2530DB\f8wEnde #
-#                          v.cfg" (-DCPU32MHZ -DROOT=__near_func              #
+#    Source file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\Source\EnddeviceApp.c                        #
+#    Command line       =  -f C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice #
+#                          -Project-for-editing\Projects\zstack\MyEnddevice\E #
+#                          ndDevice\CC2530DB\..\..\..\Tools\CC2530DB\f8wEndev #
+#                          .cfg (-DCPU32MHZ -DROOT=__near_func                #
 #                          -DMAC_CFG_TX_DATA_MAX=3 -DMAC_CFG_TX_MAX=6         #
-#                          -DMAC_CFG_RX_MAX=3) -f "C:\Users\William\Desktop\± #
-#                          œ“µ…Ëº∆\SRC\EndDevice Project for                  #
-#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
-#                          30DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"        #
-#                          (-DZIGBEEPRO -DSECURE=0 -DZG_SECURE_DYNAMIC=0      #
-#                          -DREFLECTOR -DDEFAULT_CHANLIST=0x02000000          #
+#                          -DMAC_CFG_RX_MAX=3) -f C:\Users\William\Desktop\±œ #
+#                          “µ…Ëº∆\SRC\EndDevice-Project-for-editing\Projects\ #
+#                          zstack\MyEnddevice\EndDevice\CC2530DB\..\..\..\Too #
+#                          ls\CC2530DB\f8wConfig.cfg (-DZIGBEEPRO -DSECURE=0  #
+#                          -DZG_SECURE_DYNAMIC=0 -DREFLECTOR                  #
+#                          -DDEFAULT_CHANLIST=0x02000000                      #
 #                          -DZDAPP_CONFIG_PAN_ID=0xFFFF                       #
 #                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MA #
 #                          SK=0x007F -DBEACON_REQUEST_DELAY=100               #
@@ -43,108 +43,104 @@
 #                          __code" -DGENERIC=__generic                        #
 #                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000        #
 #                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)   #
-#                          -DREJOIN_POLL_RATE=440 "C:\Users\William\Desktop\± #
-#                          œ“µ…Ëº∆\SRC\EndDevice Project for                  #
-#                          editing\Projects\zstack\MyEnddevice\EndDevice\Sour #
-#                          ce\EnddeviceApp.c" -D NWK_AUTO_POLL -D             #
-#                          NV_RESTORE=1 -D xZTOOL_P1 -D xMT_TASK -D           #
-#                          xMT_SYS_FUNC -D xMT_ZDO_FUNC -D                    #
+#                          -DREJOIN_POLL_RATE=440 C:\Users\William\Desktop\±œ #
+#                          “µ…Ëº∆\SRC\EndDevice-Project-for-editing\Projects\ #
+#                          zstack\MyEnddevice\EndDevice\Source\EnddeviceApp.c #
+#                           -D NWK_AUTO_POLL -D NV_RESTORE=1 -D xZTOOL_P1 -D  #
+#                          xMT_TASK -D xMT_SYS_FUNC -D xMT_ZDO_FUNC -D        #
 #                          xLCD_SUPPORTED=DEBUG -lC                           #
-#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
-#                          Project for editing\Projects\zstack\MyEnddevice\En #
-#                          dDevice\CC2530DB\EndDeviceEB\List\" -lA            #
-#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
-#                          Project for editing\Projects\zstack\MyEnddevice\En #
-#                          dDevice\CC2530DB\EndDeviceEB\List\"                #
-#                          --diag_suppress Pe001,Pa010 -o                     #
-#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
-#                          Project for editing\Projects\zstack\MyEnddevice\En #
-#                          dDevice\CC2530DB\EndDeviceEB\Obj\" -e              #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\EndDeviceEB\List\ -lA               #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\EndDeviceEB\List\ --diag_suppress   #
+#                          Pe001,Pa010 -o C:\Users\William\Desktop\±œ“µ…Ëº∆\S #
+#                          RC\EndDevice-Project-for-editing\Projects\zstack\M #
+#                          yEnddevice\EndDevice\CC2530DB\EndDeviceEB\Obj\ -e  #
 #                          --no_code_motion --debug --core=plain --dptr=16,1  #
 #                          --data_model=large --code_model=banked             #
 #                          --calling_convention=xdata_reentrant               #
 #                          --place_constants=data_rom --nr_virtual_regs 16    #
-#                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic #
-#                          e Project for editing\Projects\zstack\MyEnddevice\ #
-#                          EndDevice\CC2530DB\" -I "C:\Users\William\Desktop\ #
-#                          ±œ“µ…Ëº∆\SRC\EndDevice Project for                 #
-#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
-#                          30DB\..\Source\" -I "C:\Users\William\Desktop\±œ“µ #
-#                          …Ëº∆\SRC\EndDevice Project for                     #
-#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
-#                          30DB\..\..\..\ZMain\TI2530DB\" -I                  #
-#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
-#                          Project for editing\Projects\zstack\MyEnddevice\En #
-#                          dDevice\CC2530DB\..\..\..\..\..\Components\hal\inc #
-#                          lude\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\E #
-#                          ndDevice Project for editing\Projects\zstack\MyEnd #
-#                          device\EndDevice\CC2530DB\..\..\..\..\..\Component #
-#                          s\hal\target\CC2530EB\" -I                         #
-#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
-#                          Project for editing\Projects\zstack\MyEnddevice\En #
-#                          dDevice\CC2530DB\..\..\..\..\..\Components\mac\inc #
-#                          lude\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\E #
-#                          ndDevice Project for editing\Projects\zstack\MyEnd #
-#                          device\EndDevice\CC2530DB\..\..\..\..\..\Component #
-#                          s\mac\high_level\" -I "C:\Users\William\Desktop\±œ #
-#                          “µ…Ëº∆\SRC\EndDevice Project for                   #
-#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
-#                          30DB\..\..\..\..\..\Components\mac\low_level\srf04 #
-#                          \" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDe #
-#                          vice Project for editing\Projects\zstack\MyEnddevi #
-#                          ce\EndDevice\CC2530DB\..\..\..\..\..\Components\ma #
-#                          c\low_level\srf04\single_chip\" -I                 #
-#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
-#                          Project for editing\Projects\zstack\MyEnddevice\En #
-#                          dDevice\CC2530DB\..\..\..\..\..\Components\mt\"    #
-#                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic #
-#                          e Project for editing\Projects\zstack\MyEnddevice\ #
-#                          EndDevice\CC2530DB\..\..\..\..\..\Components\osal\ #
-#                          include\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SR #
-#                          C\EndDevice Project for editing\Projects\zstack\My #
-#                          Enddevice\EndDevice\CC2530DB\..\..\..\..\..\Compon #
-#                          ents\services\saddr\" -I                           #
-#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
-#                          Project for editing\Projects\zstack\MyEnddevice\En #
-#                          dDevice\CC2530DB\..\..\..\..\..\Components\service #
-#                          s\sdata\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SR #
-#                          C\EndDevice Project for editing\Projects\zstack\My #
-#                          Enddevice\EndDevice\CC2530DB\..\..\..\..\..\Compon #
-#                          ents\stack\af\" -I "C:\Users\William\Desktop\±œ“µ… #
-#                          Ëº∆\SRC\EndDevice Project for                      #
-#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
-#                          30DB\..\..\..\..\..\Components\stack\nwk\" -I      #
-#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
-#                          Project for editing\Projects\zstack\MyEnddevice\En #
-#                          dDevice\CC2530DB\..\..\..\..\..\Components\stack\s #
-#                          api\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\En #
-#                          dDevice Project for editing\Projects\zstack\MyEndd #
+#                          -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice #
+#                          -Project-for-editing\Projects\zstack\MyEnddevice\E #
+#                          ndDevice\CC2530DB\ -I C:\Users\William\Desktop\±œ“ #
+#                          µ…Ëº∆\SRC\EndDevice-Project-for-editing\Projects\z #
+#                          stack\MyEnddevice\EndDevice\CC2530DB\..\Source\    #
+#                          -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice #
+#                          -Project-for-editing\Projects\zstack\MyEnddevice\E #
+#                          ndDevice\CC2530DB\..\..\..\ZMain\TI2530DB\ -I      #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\..\..\..\..\..\Components\hal\inclu #
+#                          de\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDe #
+#                          vice-Project-for-editing\Projects\zstack\MyEnddevi #
+#                          ce\EndDevice\CC2530DB\..\..\..\..\..\Components\ha #
+#                          l\target\CC2530EB\ -I C:\Users\William\Desktop\±œ“ #
+#                          µ…Ëº∆\SRC\EndDevice-Project-for-editing\Projects\z #
+#                          stack\MyEnddevice\EndDevice\CC2530DB\..\..\..\..\. #
+#                          .\Components\mac\include\ -I                       #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\..\..\..\..\..\Components\mac\high_ #
+#                          level\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\En #
+#                          dDevice-Project-for-editing\Projects\zstack\MyEndd #
 #                          evice\EndDevice\CC2530DB\..\..\..\..\..\Components #
-#                          \stack\sec\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆ #
-#                          \SRC\EndDevice Project for                         #
-#                          editing\Projects\zstack\MyEnddevice\EndDevice\CC25 #
-#                          30DB\..\..\..\..\..\Components\stack\sys\" -I      #
-#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice   #
-#                          Project for editing\Projects\zstack\MyEnddevice\En #
-#                          dDevice\CC2530DB\..\..\..\..\..\Components\stack\z #
-#                          do\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\End #
-#                          Device Project for editing\Projects\zstack\MyEndde #
+#                          \mac\low_level\srf04\ -I                           #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\..\..\..\..\..\Components\mac\low_l #
+#                          evel\srf04\single_chip\ -I                         #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\..\..\..\..\..\Components\mt\ -I    #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\..\..\..\..\..\Components\osal\incl #
+#                          ude\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndD #
+#                          evice-Project-for-editing\Projects\zstack\MyEnddev #
+#                          ice\EndDevice\CC2530DB\..\..\..\..\..\Components\s #
+#                          ervices\saddr\ -I C:\Users\William\Desktop\±œ“µ…Ëº #
+#                          ∆\SRC\EndDevice-Project-for-editing\Projects\zstac #
+#                          k\MyEnddevice\EndDevice\CC2530DB\..\..\..\..\..\Co #
+#                          mponents\services\sdata\ -I                        #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\..\..\..\..\..\Components\stack\af\ #
+#                           -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevic #
+#                          e-Project-for-editing\Projects\zstack\MyEnddevice\ #
+#                          EndDevice\CC2530DB\..\..\..\..\..\Components\stack #
+#                          \nwk\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\End #
+#                          Device-Project-for-editing\Projects\zstack\MyEndde #
 #                          vice\EndDevice\CC2530DB\..\..\..\..\..\Components\ #
-#                          zmac\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\E #
-#                          ndDevice Project for editing\Projects\zstack\MyEnd #
-#                          device\EndDevice\CC2530DB\..\..\..\..\..\Component #
-#                          s\zmac\f8w\" -Ohz                                  #
-#    List file          =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice    #
-#                          Project for editing\Projects\zstack\MyEnddevice\En #
-#                          dDevice\CC2530DB\EndDeviceEB\List\EnddeviceApp.lst #
-#    Object file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice    #
-#                          Project for editing\Projects\zstack\MyEnddevice\En #
-#                          dDevice\CC2530DB\EndDeviceEB\Obj\EnddeviceApp.r51  #
+#                          stack\sapi\ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\S #
+#                          RC\EndDevice-Project-for-editing\Projects\zstack\M #
+#                          yEnddevice\EndDevice\CC2530DB\..\..\..\..\..\Compo #
+#                          nents\stack\sec\ -I C:\Users\William\Desktop\±œ“µ… #
+#                          Ëº∆\SRC\EndDevice-Project-for-editing\Projects\zst #
+#                          ack\MyEnddevice\EndDevice\CC2530DB\..\..\..\..\..\ #
+#                          Components\stack\sys\ -I                           #
+#                          C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\..\..\..\..\..\Components\stack\zdo #
+#                          \ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevi #
+#                          ce-Project-for-editing\Projects\zstack\MyEnddevice #
+#                          \EndDevice\CC2530DB\..\..\..\..\..\Components\zmac #
+#                          \ -I C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevi #
+#                          ce-Project-for-editing\Projects\zstack\MyEnddevice #
+#                          \EndDevice\CC2530DB\..\..\..\..\..\Components\zmac #
+#                          \f8w\ -Ohz                                         #
+#    List file          =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\EndDeviceEB\List\EnddeviceApp.lst   #
+#    Object file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Pr #
+#                          oject-for-editing\Projects\zstack\MyEnddevice\EndD #
+#                          evice\CC2530DB\EndDeviceEB\Obj\EnddeviceApp.r51    #
 #                                                                             #
 #                                                                             #
 ###############################################################################
 
-C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zstack\MyEnddevice\EndDevice\Source\EnddeviceApp.c
+C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Project-for-editing\Projects\zstack\MyEnddevice\EndDevice\Source\EnddeviceApp.c
       1          /**************************************************************************************************
       2            Filename:       EnddeviceApp.c
       3            Revised:        $Date: 2009-03-18 15:56:27 -0700 (Wed, 18 Mar 2009) $
@@ -188,400 +184,409 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zst
    \                     P1DIR:
    \   000000                DS 1
      18          #include "EnddeviceApp.h"
-     19          #include "Enddevicekey.h"
-     20          #include "EnddeviceAF.h"
+     19          #include "EnddeviceAF.h"
+     20          #include "Enddevicekey.h"
      21          #include "EnddeviceLCD.h"
-     22          #include "NTC_Table.h"
-     23          #include "EnddeviceSampleADC.h"
-     24          #include "TemperatureControl.h"
-     25          
+     22          #include "EnddeviceSampleADC.h"
+     23          #include "EnddeviceError.h"
+     24          #include "NTC_Table.h"
+     25          #include "TemperatureControl.h"
      26          
-     27          //#include"MT_UART.c"
-     28          /*********************************************************************
-     29           * MACROS
-     30           */
-     31          
-     32          /*********************************************************************
-     33           * CONSTANTS
-     34           */
-     35          
-     36          /*********************************************************************
-     37           * TYPEDEFS
-     38           */
-     39          
-     40          /*********************************************************************
-     41           * LOCAL FUNCTIONS
-     42           */
-     43          
-     44          /*********************************************************************
-     45           * NETWORK LAYER CALLBACKS
-     46           */
-     47          
-     48          /*********************************************************************
-     49           * PUBLIC FUNCTIONS
-     50           */
-     51          
-     52          /*********************************************************************
-     53           * @fn      EnddeviceApp_Init
-     54           *
-     55           * @brief   Initialization function for the Generic App Task.
-     56           *          This is called during initialization and should contain
-     57           *          any application specific initialization (ie. hardware
-     58           *          initialization/setup, table initialization, power up
-     59           *          notificaiton ... ).
-     60           *
-     61           * @param   task_id - the ID assigned by OSAL.  This ID should be
-     62           *                    used to send messages and set timers.
-     63           *
-     64           * @return  none
-     65           */
+     27          
+     28          
+     29          //#include"MT_UART.c"
+     30          /*********************************************************************
+     31           * MACROS
+     32           */
+     33          
+     34          /*********************************************************************
+     35           * CONSTANTS
+     36           */
+     37          
+     38          /*********************************************************************
+     39           * TYPEDEFS
+     40           */
+     41          
+     42          /*********************************************************************
+     43           * LOCAL FUNCTIONS
+     44           */
+     45          
+     46          /*********************************************************************
+     47           * NETWORK LAYER CALLBACKS
+     48           */
+     49          
+     50          /*********************************************************************
+     51           * PUBLIC FUNCTIONS
+     52           */
+     53          
+     54          /*********************************************************************
+     55           * @fn      EnddeviceApp_Init
+     56           *
+     57           * @brief   Initialization function for the Generic App Task.
+     58           *          This is called during initialization and should contain
+     59           *          any application specific initialization (ie. hardware
+     60           *          initialization/setup, table initialization, power up
+     61           *          notificaiton ... ).
+     62           *
+     63           * @param   task_id - the ID assigned by OSAL.  This ID should be
+     64           *                    used to send messages and set timers.
+     65           *
+     66           * @return  none
+     67           */
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
-     66          void EnddeviceApp_Init( uint8 task_id )
+     68          void EnddeviceApp_Init( uint8 task_id )
    \                     EnddeviceApp_Init:
-     67          { 
+     69          { 
    \   000000   74F5         MOV     A,#-0xb
    \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
    \   000005                ; Saved register size: 11
    \   000005                ; Auto size: 0
    \   000005   E9           MOV     A,R1
-     68            //set the TaskID, 
-     69            EnddeviceApp_TaskID = task_id;
+     70            //set the TaskID, 
+     71            EnddeviceApp_TaskID = task_id;
    \   000006   90....       MOV     DPTR,#EnddeviceApp_TaskID
    \   000009   F0           MOVX    @DPTR,A
-     70            EnddeviceApp_NwkState = DEV_INIT;
+     72            EnddeviceApp_NwkState = DEV_INIT;
    \   00000A   90....       MOV     DPTR,#EnddeviceApp_NwkState
    \   00000D   7401         MOV     A,#0x1
    \   00000F   F0           MOVX    @DPTR,A
-     71            EnddeviceApp_TransID = 0;
+     73            EnddeviceApp_TransID = 0;
    \   000010   90....       MOV     DPTR,#EnddeviceApp_TransID
    \   000013   E4           CLR     A
    \   000014   F0           MOVX    @DPTR,A
-     72           // PANID = _NIB.nwkPanId;
-     73            P1SEL &= ~(BV(2));// set the P1_2 to be the GPIO to control the relay
+     74           // PANID = _NIB.nwkPanId;
+     75            P1SEL &= ~(BV(2));// set the P1_2 to be the GPIO to control the relay
    \   000015   53F4FB       ANL     0xf4,#0xfb
-     74            P1DIR |= BV(2);   // set to be output pin
+     76            P1DIR |= BV(2);   // set to be output pin
    \   000018   43FE04       ORL     0xfe,#0x4
-     75            REL_CTL = 0; // open the relay,shut down the heater
+     77            REL_CTL = 0; // open the relay,shut down the heater
    \   00001B   C292         CLR     0x90.2
-     76          
-     77            Enddevice_Init_NV();
+     78          
+     79            Enddevice_Init_NV();
    \   00001D                ; Setup parameters for call to function Enddevice_Init_NV
    \   00001D   12....       LCALL   ??Enddevice_Init_NV?relay
-     78           // HalLcdWriteEndMod(End_Mod);
-     79            
-     80            HalLcdWriteRealTempeMod(Real_Tem_Mod);
+     80           // HalLcdWriteEndMod(End_Mod);
+     81            
+     82            HalLcdWriteRealTempeMod(Real_Tem_Mod);
    \   000020                ; Setup parameters for call to function HalLcdWriteRealTempeMod
    \   000020   90....       MOV     DPTR,#Real_Tem_Mod
    \   000023   E0           MOVX    A,@DPTR
    \   000024   F9           MOV     R1,A
    \   000025   12....       LCALL   ??HalLcdWriteRealTempeMod?relay
-     81            HalLcdWritePower(TRUE);  // write the power picture
+     83            HalLcdWritePower(TRUE);  // write the power picture
    \   000028                ; Setup parameters for call to function HalLcdWritePower
    \   000028   7901         MOV     R1,#0x1
    \   00002A   12....       LCALL   ??HalLcdWritePower?relay
-     82            
-     83           // HalLcdWriteSetTemperature(SetRM_Temperature);
-     84           // HalLcdWriteRealTemperature(RM_Temperature);
-     85          
-     86          #if defined ( HOLD_AUTO_START )
-     87            // HOLD_AUTO_START is a compile option that will surpress ZDApp
-     88            //  from starting the device and wait for the application to
-     89            //  start the device.
-     90             ZDOInitDevice(0);
-     91          #endif
-     92          
-     93            // Setup for the  broadcast address
-     94            // Broadcast to everyone--------------------by Zimuge
-     95            EnddeviceApp_Broadcast_DstAddr.addrMode = (afAddrMode_t)AddrBroadcast;
+     84            
+     85           // HalLcdWriteSetTemperature(SetRM_Temperature);
+     86           // HalLcdWriteRealTemperature(RM_Temperature);
+     87          
+     88          #if defined ( HOLD_AUTO_START )
+     89            // HOLD_AUTO_START is a compile option that will surpress ZDApp
+     90            //  from starting the device and wait for the application to
+     91            //  start the device.
+     92             ZDOInitDevice(0);
+     93          #endif
+     94          
+     95            // Setup for the  broadcast address
+     96            // Broadcast to everyone--------------------by Zimuge
+     97            EnddeviceApp_Broadcast_DstAddr.addrMode = (afAddrMode_t)AddrBroadcast;
    \   00002D   90....       MOV     DPTR,#EnddeviceApp_Broadcast_DstAddr + 8
    \   000030   740F         MOV     A,#0xf
    \   000032   F0           MOVX    @DPTR,A
-     96            EnddeviceApp_Broadcast_DstAddr.endPoint = EnddeviceApp_ENDPOINT;
+     98            EnddeviceApp_Broadcast_DstAddr.endPoint = EnddeviceApp_ENDPOINT;
    \   000033   A3           INC     DPTR
    \   000034   7414         MOV     A,#0x14
    \   000036   F0           MOVX    @DPTR,A
-     97            EnddeviceApp_Broadcast_DstAddr.addr.shortAddr = 0xFFFF;
+     99            EnddeviceApp_Broadcast_DstAddr.addr.shortAddr = 0xFFFF;
    \   000037   90....       MOV     DPTR,#EnddeviceApp_Broadcast_DstAddr
    \   00003A   74FF         MOV     A,#-0x1
    \   00003C   F0           MOVX    @DPTR,A
    \   00003D   A3           INC     DPTR
    \   00003E   F0           MOVX    @DPTR,A
-     98          
-     99            // Setup for the group  address - Group 1
-    100            // send message to the group--------------------by Zimuge
-    101            EnddeviceApp_Group_DstAddr.addrMode = (afAddrMode_t)afAddrGroup;
+    100          
+    101            // Setup for the group  address - Group 1
+    102            // send message to the group--------------------by Zimuge
+    103            EnddeviceApp_Group_DstAddr.addrMode = (afAddrMode_t)afAddrGroup;
    \   00003F   90....       MOV     DPTR,#EnddeviceApp_Group_DstAddr + 8
    \   000042   7401         MOV     A,#0x1
    \   000044   F0           MOVX    @DPTR,A
-    102            EnddeviceApp_Group_DstAddr.endPoint = EnddeviceApp_ENDPOINT;
+    104            EnddeviceApp_Group_DstAddr.endPoint = EnddeviceApp_ENDPOINT;
    \   000045   A3           INC     DPTR
    \   000046   7414         MOV     A,#0x14
    \   000048   F0           MOVX    @DPTR,A
-    103            EnddeviceApp_Group_DstAddr.addr.shortAddr = GroupId;
-   \   000049   90....       MOV     DPTR,#GroupId
-   \   00004C   E0           MOVX    A,@DPTR
-   \   00004D   F8           MOV     R0,A
-   \   00004E   A3           INC     DPTR
-   \   00004F   E0           MOVX    A,@DPTR
-   \   000050   F9           MOV     R1,A
-   \   000051   90....       MOV     DPTR,#EnddeviceApp_Group_DstAddr
-   \   000054   E8           MOV     A,R0
-   \   000055   F0           MOVX    @DPTR,A
-   \   000056   A3           INC     DPTR
-   \   000057   E9           MOV     A,R1
-   \   000058   F0           MOVX    @DPTR,A
-    104            
-    105            // Setup for the point-2-point address -0x0000(coordinator)
-    106            // send message to the coordinator--------------------by Zimuge
-    107            EnddeviceApp_P2PDstAddr.addrMode = (afAddrMode_t)afAddr16Bit;
-   \   000059   90....       MOV     DPTR,#EnddeviceApp_P2PDstAddr + 8
-   \   00005C   7402         MOV     A,#0x2
-   \   00005E   F0           MOVX    @DPTR,A
-    108            EnddeviceApp_P2PDstAddr.endPoint = EnddeviceApp_ENDPOINT;
-   \   00005F   A3           INC     DPTR
-   \   000060   7414         MOV     A,#0x14
+    105            EnddeviceApp_Group_DstAddr.addr.shortAddr = GroupId;
+   \   000049   12....       LCALL   ?Subroutine7 & 0xFFFF
+   \                     ??CrossCallReturnLabel_8:
+   \   00004C   90....       MOV     DPTR,#EnddeviceApp_Group_DstAddr
+   \   00004F   E8           MOV     A,R0
+   \   000050   F0           MOVX    @DPTR,A
+   \   000051   A3           INC     DPTR
+   \   000052   E9           MOV     A,R1
+   \   000053   F0           MOVX    @DPTR,A
+    106            
+    107            // Setup for the point-2-point address -0x0000(coordinator)
+    108            // send message to the coordinator--------------------by Zimuge
+    109            EnddeviceApp_P2PDstAddr.addrMode = (afAddrMode_t)afAddr16Bit;
+   \   000054   90....       MOV     DPTR,#EnddeviceApp_P2PDstAddr + 8
+   \   000057   7402         MOV     A,#0x2
+   \   000059   F0           MOVX    @DPTR,A
+    110            EnddeviceApp_P2PDstAddr.endPoint = EnddeviceApp_ENDPOINT;
+   \   00005A   A3           INC     DPTR
+   \   00005B   7414         MOV     A,#0x14
+   \   00005D   F0           MOVX    @DPTR,A
+    111            EnddeviceApp_P2PDstAddr.addr.shortAddr = 0x0000;
+   \   00005E   90....       MOV     DPTR,#EnddeviceApp_P2PDstAddr
+   \   000061   E4           CLR     A
    \   000062   F0           MOVX    @DPTR,A
-    109            EnddeviceApp_P2PDstAddr.addr.shortAddr = 0x0000;
-   \   000063   90....       MOV     DPTR,#EnddeviceApp_P2PDstAddr
-   \   000066   E4           CLR     A
-   \   000067   F0           MOVX    @DPTR,A
-   \   000068   A3           INC     DPTR
-   \   000069   F0           MOVX    @DPTR,A
-    110            
-    111            // Fill out the endpoint description.
-    112            EnddeviceApp_epDesc.endPoint = EnddeviceApp_ENDPOINT;
-   \   00006A   90....       MOV     DPTR,#EnddeviceApp_epDesc
-   \   00006D   7414         MOV     A,#0x14
-   \   00006F   F0           MOVX    @DPTR,A
-    113            EnddeviceApp_epDesc.task_id = &EnddeviceApp_TaskID;
-   \   000070   A3           INC     DPTR
-   \   000071   74..         MOV     A,#EnddeviceApp_TaskID & 0xff
-   \   000073   F0           MOVX    @DPTR,A
-   \   000074   A3           INC     DPTR
-   \   000075   74..         MOV     A,#(EnddeviceApp_TaskID >> 8) & 0xff
-   \   000077   F0           MOVX    @DPTR,A
-    114            EnddeviceApp_epDesc.simpleDesc
-    115                      = (SimpleDescriptionFormat_t *)&EnddeviceApp_SimpleDesc;
-   \   000078   A3           INC     DPTR
-   \   000079   74..         MOV     A,#EnddeviceApp_SimpleDesc & 0xff
-   \   00007B   F0           MOVX    @DPTR,A
-   \   00007C   A3           INC     DPTR
-   \   00007D   74..         MOV     A,#(EnddeviceApp_SimpleDesc >> 8) & 0xff
-   \   00007F   F0           MOVX    @DPTR,A
-    116            EnddeviceApp_epDesc.latencyReq = noLatencyReqs;
-   \   000080   A3           INC     DPTR
-   \   000081   E4           CLR     A
-   \   000082   F0           MOVX    @DPTR,A
-    117          
-    118            
-    119            // Register the endpoint description with the AF
-    120            afRegister( &EnddeviceApp_epDesc );
-   \   000083                ; Setup parameters for call to function afRegister
-   \   000083   7A..         MOV     R2,#EnddeviceApp_epDesc & 0xff
-   \   000085   7B..         MOV     R3,#(EnddeviceApp_epDesc >> 8) & 0xff
-   \   000087   12....       LCALL   ??afRegister?relay
-    121          
-    122            // Register for all key events - This app will handle all key events
-    123           // register the key for the EnddeviceApp, so that the key's  callback 
-    124           //function can send the message to the osal,then the Enddevice can handle the event!!---------by Zimuge
-    125            RegisterForKeys( EnddeviceApp_TaskID );
-   \   00008A                ; Setup parameters for call to function RegisterForKeys
-   \   00008A   90....       MOV     DPTR,#EnddeviceApp_TaskID
-   \   00008D   E0           MOVX    A,@DPTR
-   \   00008E   F9           MOV     R1,A
-   \   00008F   12....       LCALL   ??RegisterForKeys?relay
-    126          
-    127            // By default, all devices start out in Group 1
-    128            EnddeviceApp_Group.ID = GroupId;//0x0001
-   \   000092   90....       MOV     DPTR,#GroupId
-   \   000095   E0           MOVX    A,@DPTR
-   \   000096   F8           MOV     R0,A
-   \   000097   A3           INC     DPTR
-   \   000098   E0           MOVX    A,@DPTR
-   \   000099   F9           MOV     R1,A
-   \   00009A   90....       MOV     DPTR,#EnddeviceApp_Group
-   \   00009D   E8           MOV     A,R0
-   \   00009E   F0           MOVX    @DPTR,A
-   \   00009F   A3           INC     DPTR
-   \   0000A0   E9           MOV     A,R1
-   \   0000A1   F0           MOVX    @DPTR,A
-    129            osal_memcpy( EnddeviceApp_Group.name, "Group 0", 7  );
-   \   0000A2                ; Setup parameters for call to function osal_memcpy
-   \   0000A2   75....       MOV     ?V0 + 0,#`?<Constant "Group 0">` & 0xff
-   \   0000A5   75....       MOV     ?V0 + 1,#(`?<Constant "Group 0">` >> 8) & 0xff
-   \   0000A8   75..00       MOV     ?V0 + 2,#0x0
-   \   0000AB   78..         MOV     R0,#?V0 + 0
-   \   0000AD   12....       LCALL   ?PUSH_XSTACK_I_THREE
-   \   0000B0   7C07         MOV     R4,#0x7
-   \   0000B2   7D00         MOV     R5,#0x0
-   \   0000B4   7A..         MOV     R2,#(EnddeviceApp_Group + 2) & 0xff
-   \   0000B6   7B..         MOV     R3,#((EnddeviceApp_Group + 2) >> 8) & 0xff
-   \   0000B8   12....       LCALL   ??osal_memcpy?relay
-   \   0000BB   7403         MOV     A,#0x3
-   \   0000BD   12....       LCALL   ?DEALLOC_XSTACK8
-    130            aps_AddGroup( EnddeviceApp_ENDPOINT, &EnddeviceApp_Group );
-   \   0000C0                ; Setup parameters for call to function aps_AddGroup
-   \   0000C0   7A..         MOV     R2,#EnddeviceApp_Group & 0xff
-   \   0000C2   7B..         MOV     R3,#(EnddeviceApp_Group >> 8) & 0xff
-   \   0000C4   7914         MOV     R1,#0x14
-   \   0000C6   12....       LCALL   ??aps_AddGroup?relay
-    131            
-    132            // Start scan the LCD periodic
-    133            osal_start_timerEx(EnddeviceApp_TaskID,
-    134                               EnddeviceApp_SCAN_LCD_MSG_EVT ,
-    135                               EnddeviceApp_SCAN_LCD_DURATION);
-   \   0000C9                ; Setup parameters for call to function osal_start_timerEx
-   \   0000C9   12....       LCALL   ?Subroutine6 & 0xFFFF
-    136            
-    137          }
-   \                     ??CrossCallReturnLabel_6:
-   \   0000CC   7F03         MOV     R7,#0x3
-   \   0000CE   02....       LJMP    ?BANKED_LEAVE_XDATA
-   \   0000D1                REQUIRE P1SEL
-   \   0000D1                REQUIRE P1DIR
-   \   0000D1                REQUIRE _A_P1
+   \   000063   A3           INC     DPTR
+   \   000064   F0           MOVX    @DPTR,A
+    112            
+    113            // Fill out the endpoint description.
+    114            EnddeviceApp_epDesc.endPoint = EnddeviceApp_ENDPOINT;
+   \   000065   90....       MOV     DPTR,#EnddeviceApp_epDesc
+   \   000068   7414         MOV     A,#0x14
+   \   00006A   F0           MOVX    @DPTR,A
+    115            EnddeviceApp_epDesc.task_id = &EnddeviceApp_TaskID;
+   \   00006B   A3           INC     DPTR
+   \   00006C   74..         MOV     A,#EnddeviceApp_TaskID & 0xff
+   \   00006E   F0           MOVX    @DPTR,A
+   \   00006F   A3           INC     DPTR
+   \   000070   74..         MOV     A,#(EnddeviceApp_TaskID >> 8) & 0xff
+   \   000072   F0           MOVX    @DPTR,A
+    116            EnddeviceApp_epDesc.simpleDesc
+    117                      = (SimpleDescriptionFormat_t *)&EnddeviceApp_SimpleDesc;
+   \   000073   A3           INC     DPTR
+   \   000074   74..         MOV     A,#EnddeviceApp_SimpleDesc & 0xff
+   \   000076   F0           MOVX    @DPTR,A
+   \   000077   A3           INC     DPTR
+   \   000078   74..         MOV     A,#(EnddeviceApp_SimpleDesc >> 8) & 0xff
+   \   00007A   F0           MOVX    @DPTR,A
+    118            EnddeviceApp_epDesc.latencyReq = noLatencyReqs;
+   \   00007B   A3           INC     DPTR
+   \   00007C   E4           CLR     A
+   \   00007D   F0           MOVX    @DPTR,A
+    119          
+    120            
+    121            // Register the endpoint description with the AF
+    122            afRegister( &EnddeviceApp_epDesc );
+   \   00007E                ; Setup parameters for call to function afRegister
+   \   00007E   7A..         MOV     R2,#EnddeviceApp_epDesc & 0xff
+   \   000080   7B..         MOV     R3,#(EnddeviceApp_epDesc >> 8) & 0xff
+   \   000082   12....       LCALL   ??afRegister?relay
+    123          
+    124            // Register for all key events - This app will handle all key events
+    125           // register the key for the EnddeviceApp, so that the key's  callback 
+    126           //function can send the message to the osal,then the Enddevice can handle the event!!---------by Zimuge
+    127            RegisterForKeys( EnddeviceApp_TaskID );
+   \   000085                ; Setup parameters for call to function RegisterForKeys
+   \   000085   90....       MOV     DPTR,#EnddeviceApp_TaskID
+   \   000088   E0           MOVX    A,@DPTR
+   \   000089   F9           MOV     R1,A
+   \   00008A   12....       LCALL   ??RegisterForKeys?relay
+    128          
+    129            // By default, all devices start out in Group 1
+    130            EnddeviceApp_Group.ID = GroupId;//0x0001
+   \   00008D   12....       LCALL   ?Subroutine7 & 0xFFFF
+   \                     ??CrossCallReturnLabel_9:
+   \   000090   90....       MOV     DPTR,#EnddeviceApp_Group
+   \   000093   E8           MOV     A,R0
+   \   000094   F0           MOVX    @DPTR,A
+   \   000095   A3           INC     DPTR
+   \   000096   E9           MOV     A,R1
+   \   000097   F0           MOVX    @DPTR,A
+    131            osal_memcpy( EnddeviceApp_Group.name, "Group 0", 7  );
+   \   000098                ; Setup parameters for call to function osal_memcpy
+   \   000098   75....       MOV     ?V0 + 0,#`?<Constant "Group 0">` & 0xff
+   \   00009B   75....       MOV     ?V0 + 1,#(`?<Constant "Group 0">` >> 8) & 0xff
+   \   00009E   75..00       MOV     ?V0 + 2,#0x0
+   \   0000A1   78..         MOV     R0,#?V0 + 0
+   \   0000A3   12....       LCALL   ?PUSH_XSTACK_I_THREE
+   \   0000A6   7C07         MOV     R4,#0x7
+   \   0000A8   7D00         MOV     R5,#0x0
+   \   0000AA   7A..         MOV     R2,#(EnddeviceApp_Group + 2) & 0xff
+   \   0000AC   7B..         MOV     R3,#((EnddeviceApp_Group + 2) >> 8) & 0xff
+   \   0000AE   12....       LCALL   ??osal_memcpy?relay
+   \   0000B1   7403         MOV     A,#0x3
+   \   0000B3   12....       LCALL   ?DEALLOC_XSTACK8
+    132            aps_AddGroup( EnddeviceApp_ENDPOINT, &EnddeviceApp_Group );
+   \   0000B6                ; Setup parameters for call to function aps_AddGroup
+   \   0000B6   7A..         MOV     R2,#EnddeviceApp_Group & 0xff
+   \   0000B8   7B..         MOV     R3,#(EnddeviceApp_Group >> 8) & 0xff
+   \   0000BA   7914         MOV     R1,#0x14
+   \   0000BC   12....       LCALL   ??aps_AddGroup?relay
+    133            
+    134            // Start scan the LCD periodic
+    135            osal_start_timerEx(EnddeviceApp_TaskID,
+    136                               EnddeviceApp_SCAN_LCD_MSG_EVT ,
+    137                               EnddeviceApp_SCAN_LCD_DURATION);
+   \   0000BF                ; Setup parameters for call to function osal_start_timerEx
+   \   0000BF   12....       LCALL   ?Subroutine6 & 0xFFFF
+    138            
+    139          }
+   \                     ??CrossCallReturnLabel_10:
+   \   0000C2   7F03         MOV     R7,#0x3
+   \   0000C4   02....       LJMP    ?BANKED_LEAVE_XDATA
+   \   0000C7                REQUIRE P1SEL
+   \   0000C7                REQUIRE P1DIR
+   \   0000C7                REQUIRE _A_P1
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine7:
+   \   000000   90....       MOV     DPTR,#GroupId
+   \   000003                REQUIRE ??Subroutine9_0
+   \   000003                ; // Fall through to label ??Subroutine9_0
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ??Subroutine9_0:
+   \   000000   E0           MOVX    A,@DPTR
+   \   000001   F8           MOV     R0,A
+   \   000002   A3           INC     DPTR
+   \   000003   E0           MOVX    A,@DPTR
+   \   000004   F9           MOV     R1,A
+   \   000005   22           RET
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
    \                     ?Subroutine6:
    \   000000   7CC8         MOV     R4,#-0x38
    \   000002   7D00         MOV     R5,#0x0
    \   000004   7A02         MOV     R2,#0x2
-   \   000006                REQUIRE ??Subroutine8_0
-   \   000006                ; // Fall through to label ??Subroutine8_0
+   \   000006                REQUIRE ??Subroutine10_0
+   \   000006                ; // Fall through to label ??Subroutine10_0
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
-   \                     ??Subroutine8_0:
+   \                     ??Subroutine10_0:
    \   000000   7B00         MOV     R3,#0x0
    \   000002   90....       MOV     DPTR,#EnddeviceApp_TaskID
    \   000005   E0           MOVX    A,@DPTR
    \   000006   F9           MOV     R1,A
    \   000007   12....       LCALL   ??osal_start_timerEx?relay
    \   00000A   22           RET
-    138          
-    139          /*********************************************************************
-    140           * @fn      EnddeviceApp_ProcessEvent
-    141           *
-    142           * @brief   Generic Application Task event processor.  This function
-    143           *          is called to process all events for the task.  Events
-    144           *          include timers, messages and any other user defined events.
-    145           *
-    146           * @param   task_id  - The OSAL assigned task ID.
-    147           * @param   events - events to process.  This is a bit map and can
-    148           *                   contain more than one event.
-    149           *
-    150           * @return  none
-    151           */
+    140          
+    141          /*********************************************************************
+    142           * @fn      EnddeviceApp_ProcessEvent
+    143           *
+    144           * @brief   Generic Application Task event processor.  This function
+    145           *          is called to process all events for the task.  Events
+    146           *          include timers, messages and any other user defined events.
+    147           *
+    148           * @param   task_id  - The OSAL assigned task ID.
+    149           * @param   events - events to process.  This is a bit map and can
+    150           *                   contain more than one event.
+    151           *
+    152           * @return  none
+    153           */
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
-    152          uint16 EnddeviceApp_ProcessEvent( uint8 task_id, uint16 events )
+    154          uint16 EnddeviceApp_ProcessEvent( uint8 task_id, uint16 events )
    \                     EnddeviceApp_ProcessEvent:
-    153          {
-   \   000000   74F4         MOV     A,#-0xc
+    155          {
+   \   000000   74F2         MOV     A,#-0xe
    \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
-   \   000005                ; Saved register size: 12
+   \   000005                ; Saved register size: 14
    \   000005                ; Auto size: 0
    \   000005   EA           MOV     A,R2
    \   000006   FE           MOV     R6,A
    \   000007   EB           MOV     A,R3
    \   000008   FF           MOV     R7,A
-    154            afIncomingMSGPacket_t *MSGpkt;
-    155            (void)task_id;  // Intentionally unreferenced parameter
-    156          
-    157            if ( events & SYS_EVENT_MSG )
+    156            afIncomingMSGPacket_t *MSGpkt;
+    157            (void)task_id;  // Intentionally unreferenced parameter
+    158          
+    159            if ( events & SYS_EVENT_MSG )
    \   000009   5480         ANL     A,#0x80
    \   00000B   7003         JNZ     $+5
    \   00000D   02....       LJMP    ??EnddeviceApp_ProcessEvent_0 & 0xFFFF
-    158            {
-    159              MSGpkt = (afIncomingMSGPacket_t *)osal_msg_receive( EnddeviceApp_TaskID );
+    160            {
+    161              MSGpkt = (afIncomingMSGPacket_t *)osal_msg_receive( EnddeviceApp_TaskID );
    \   000010                ; Setup parameters for call to function osal_msg_receive
    \   000010   800C         SJMP    ??EnddeviceApp_ProcessEvent_1
-    160              while ( MSGpkt )
-    161              {
-    162                switch (MSGpkt->hdr.event)
-    163                {
-    164                  // Received when a key is pressed
-    165                  case KEY_CHANGE:
-    166                    EnddeviceApp_HandleKeys( ((keyChange_t *)MSGpkt)->state, ((keyChange_t *)MSGpkt)->keys );
-    167                    break;
-    168          
-    169                  // Received when a messages is received (OTA) for this endpoint
-    170                  case AF_INCOMING_MSG_CMD:
-    171                    EnddeviceApp_HandleAfIncomingMessage( MSGpkt );
-    172                    break;
-    173          
-    174                  // Received whenever the device changes state in the network
-    175                  case ZDO_STATE_CHANGE:
-    176                    EnddeviceApp_NwkState = (devStates_t)(MSGpkt->hdr.status);
-    177                    if((EnddeviceApp_NwkState == DEV_END_DEVICE))
-    178                    {
-    179                      PANID = _NIB.nwkPanId;
-    180                      debugnum = MyDeviceId;
-    181                      LINKED = TRUE; // for the wifi mode , the device is connected to the net
-    182                     
-    183                      // register the device id in the gateway
-    184                      MsgBuf[0] = 0x01;
-    185                      MsgBuf[1] = MyDeviceId;
-    186                      MsgBuf[2] = CMD_SET_NEW_DEVICEID;
-    187                      MsgBuf[3] = MyDeviceId;
-    188                      EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
-    189                      
-    190                      // send the initial SetRM_Temperature parameter
-    191                      MsgBuf[0] = 1;
-    192                      MsgBuf[1] = MyDeviceId;
-    193                      MsgBuf[2] = CMD_SET_ROOM_TEMPER;
-    194                      MsgBuf[3] = SetRM_Temperature;
-    195                      EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
-    196                      
-    197                      // send the initial SetFL_Temperature parameter
-    198                      MsgBuf[0] = 1;
-    199                      MsgBuf[1] = MyDeviceId;
-    200                      MsgBuf[2] = CMD_SET_FLOOR_TEMPER;
-    201                      MsgBuf[3] = SetFL_Temperature;
-    202                      EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
-    203                      
-    204                      // send the initial POWER parameter
-    205                      MsgBuf[0] = 1;
-    206                      MsgBuf[1] = MyDeviceId;
-    207                      MsgBuf[2] = CMD_START_OR_SHUTDOWN;
-    208                      MsgBuf[3] = POWER;
-    209                      EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
-    210                     
-    211                      // send the initial mod parameter
-    212                      MsgBuf[0] = 1;
-    213                      MsgBuf[1] = MyDeviceId;
-    214                      MsgBuf[2] = CMD_SET_MODE;
-    215                      MsgBuf[3] = End_Mod;
-    216                      EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
-    217                   
-    218                     
-    219                     // Start sending the periodic message in a regular interval.
-    220                     osal_start_timerEx( EnddeviceApp_TaskID,
-    221                                        EnddeviceApp_SEND_PERIODIC_MSG_EVT,
-    222                                    EnddeviceApp_SEND_PERIODIC_MSG_TIMEOUT ); 
-    223                    }
-    224                    else
-    225                    {
-    226                      LINKED = FALSE; //  no existing on the network
+    162              while ( MSGpkt )
+    163              {
+    164                switch (MSGpkt->hdr.event)
+    165                {
+    166                  // Received when a key is pressed
+    167                  case KEY_CHANGE:
+    168                    EnddeviceApp_HandleKeys( ((keyChange_t *)MSGpkt)->state, ((keyChange_t *)MSGpkt)->keys );
+    169                    break;
+    170          
+    171                  // Received when a messages is received (OTA) for this endpoint
+    172                  case AF_INCOMING_MSG_CMD:
+    173                    EnddeviceApp_HandleAfIncomingMessage( MSGpkt );
+    174                    break;
+    175          
+    176                  // Received whenever the device changes state in the network
+    177                  case ZDO_STATE_CHANGE:
+    178                    EnddeviceApp_NwkState = (devStates_t)(MSGpkt->hdr.status);
+    179                    if((EnddeviceApp_NwkState == DEV_END_DEVICE))
+    180                    {
+    181                      PANID = _NIB.nwkPanId;
+    182                      debugnum = MyDeviceId;
+    183                      LINKED = TRUE; // for the wifi mode , the device is connected to the net
+    184                     
+    185                      // register the device id in the gateway
+    186                      MsgBuf[0] = 0x01;
+    187                      MsgBuf[1] = MyDeviceId;
+    188                      MsgBuf[2] = CMD_SET_NEW_DEVICEID;
+    189                      MsgBuf[3] = MyDeviceId;
+    190                      EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
+    191                      
+    192                      // send the initial SetRM_Temperature parameter
+    193                      MsgBuf[0] = 1;
+    194                      MsgBuf[1] = MyDeviceId;
+    195                      MsgBuf[2] = CMD_SET_ROOM_TEMPER;
+    196                      MsgBuf[3] = SetRM_Temperature;
+    197                      EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
+    198                      
+    199                      // send the initial SetFL_Temperature parameter
+    200                      MsgBuf[0] = 1;
+    201                      MsgBuf[1] = MyDeviceId;
+    202                      MsgBuf[2] = CMD_SET_FLOOR_TEMPER;
+    203                      MsgBuf[3] = SetFL_Temperature;
+    204                      EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
+    205                      
+    206                      // send the initial POWER parameter
+    207                      MsgBuf[0] = 1;
+    208                      MsgBuf[1] = MyDeviceId;
+    209                      MsgBuf[2] = CMD_START_OR_SHUTDOWN;
+    210                      MsgBuf[3] = POWER;
+    211                      EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
+    212                     
+    213                      // send the initial mod parameter
+    214                      MsgBuf[0] = 1;
+    215                      MsgBuf[1] = MyDeviceId;
+    216                      MsgBuf[2] = CMD_SET_MODE;
+    217                      MsgBuf[3] = End_Mod;
+    218                      EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
+    219                   
+    220                     
+    221                     // Start sending the periodic message in a regular interval.
+    222                     osal_start_timerEx( EnddeviceApp_TaskID,
+    223                                        EnddeviceApp_SEND_PERIODIC_MSG_EVT,
+    224                                    EnddeviceApp_SEND_PERIODIC_MSG_TIMEOUT ); 
+    225                    }
+    226                    else
+    227                    {
+    228                      LINKED = FALSE; //  no existing on the network
    \                     ??EnddeviceApp_ProcessEvent_2:
    \   000012   90....       MOV     DPTR,#LINKED
    \   000015   E4           CLR     A
    \   000016   F0           MOVX    @DPTR,A
-    227                    }
-    228                 break;
-    229               default:
+    229                    }
     230                 break;
-    231               }
-    232          
-    233                // Release the memory
-    234                osal_msg_deallocate( (uint8 *)MSGpkt );
+    231               default:
+    232                 break;
+    233               }
+    234          
+    235                // Release the memory
+    236                osal_msg_deallocate( (uint8 *)MSGpkt );
    \                     ??EnddeviceApp_ProcessEvent_3:
    \   000017                ; Setup parameters for call to function osal_msg_deallocate
    \   000017   AA..         MOV     R2,?V0 + 0
    \   000019   AB..         MOV     R3,?V0 + 1
    \   00001B   12....       LCALL   ??osal_msg_deallocate?relay
-    235                // Next - if one is available
-    236                MSGpkt = (afIncomingMSGPacket_t *)osal_msg_receive(EnddeviceApp_TaskID);
+    237                // Next - if one is available
+    238                MSGpkt = (afIncomingMSGPacket_t *)osal_msg_receive(EnddeviceApp_TaskID);
    \   00001E                ; Setup parameters for call to function osal_msg_receive
    \                     ??EnddeviceApp_ProcessEvent_1:
    \   00001E   90....       MOV     DPTR,#EnddeviceApp_TaskID
@@ -633,374 +638,464 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zst
    \   00006B   6406         XRL     A,#0x6
    \   00006D   70A3         JNZ     ??EnddeviceApp_ProcessEvent_2
    \   00006F   90....       MOV     DPTR,#_NIB + 33
-   \   000072   E0           MOVX    A,@DPTR
-   \   000073   F8           MOV     R0,A
-   \   000074   A3           INC     DPTR
-   \   000075   E0           MOVX    A,@DPTR
-   \   000076   F9           MOV     R1,A
-   \   000077   90....       MOV     DPTR,#PANID
-   \   00007A   E8           MOV     A,R0
-   \   00007B   F0           MOVX    @DPTR,A
-   \   00007C   A3           INC     DPTR
-   \   00007D   E9           MOV     A,R1
-   \   00007E   F0           MOVX    @DPTR,A
-   \   00007F   90....       MOV     DPTR,#MyDeviceId
-   \   000082   E0           MOVX    A,@DPTR
-   \   000083   90....       MOV     DPTR,#debugnum
-   \   000086   F0           MOVX    @DPTR,A
-   \   000087   90....       MOV     DPTR,#LINKED
-   \   00008A   7401         MOV     A,#0x1
-   \   00008C   F0           MOVX    @DPTR,A
-   \   00008D   90....       MOV     DPTR,#MsgBuf
-   \   000090   12....       LCALL   ??Subroutine10_0 & 0xFFFF
-   \                     ??CrossCallReturnLabel_25:
-   \   000093   740A         MOV     A,#0xa
-   \   000095   F0           MOVX    @DPTR,A
-   \   000096   90....       MOV     DPTR,#MyDeviceId
-   \   000099   E0           MOVX    A,@DPTR
-   \   00009A   90....       MOV     DPTR,#MsgBuf + 3
-   \   00009D   F0           MOVX    @DPTR,A
-   \   00009E                ; Setup parameters for call to function EnddeviceApp_SendP2PMessage
-   \   00009E   75....       MOV     ?V0 + 2,#MsgBuf & 0xff
-   \   0000A1   75....       MOV     ?V0 + 3,#(MsgBuf >> 8) & 0xff
-   \   0000A4   78..         MOV     R0,#?V0 + 2
-   \   0000A6   12....       LCALL   ?PUSH_XSTACK_I_TWO
-   \   0000A9   12....       LCALL   ?Subroutine2 & 0xFFFF
-   \                     ??CrossCallReturnLabel_10:
-   \   0000AC   12....       LCALL   ?DEALLOC_XSTACK8
-   \   0000AF   12....       LCALL   ?Subroutine1 & 0xFFFF
-   \                     ??CrossCallReturnLabel_20:
-   \   0000B2   7401         MOV     A,#0x1
-   \   0000B4   F0           MOVX    @DPTR,A
-   \   0000B5   90....       MOV     DPTR,#SetRM_Temperature
-   \   0000B8   12....       LCALL   ?Subroutine3 & 0xFFFF
-   \                     ??CrossCallReturnLabel_0:
-   \   0000BB   12....       LCALL   ?PUSH_XSTACK_I_TWO
-   \   0000BE   12....       LCALL   ?Subroutine2 & 0xFFFF
-   \                     ??CrossCallReturnLabel_11:
-   \   0000C1   12....       LCALL   ?DEALLOC_XSTACK8
-   \   0000C4   12....       LCALL   ?Subroutine1 & 0xFFFF
-   \                     ??CrossCallReturnLabel_21:
-   \   0000C7   7402         MOV     A,#0x2
-   \   0000C9   F0           MOVX    @DPTR,A
-   \   0000CA   90....       MOV     DPTR,#SetFL_Temperature
-   \   0000CD   12....       LCALL   ?Subroutine3 & 0xFFFF
-   \                     ??CrossCallReturnLabel_1:
-   \   0000D0   12....       LCALL   ?PUSH_XSTACK_I_TWO
-   \   0000D3   12....       LCALL   ?Subroutine2 & 0xFFFF
-   \                     ??CrossCallReturnLabel_12:
-   \   0000D6   12....       LCALL   ?DEALLOC_XSTACK8
-   \   0000D9   12....       LCALL   ?Subroutine1 & 0xFFFF
-   \                     ??CrossCallReturnLabel_22:
-   \   0000DC   74FF         MOV     A,#-0x1
-   \   0000DE   F0           MOVX    @DPTR,A
-   \   0000DF   90....       MOV     DPTR,#POWER
-   \   0000E2   12....       LCALL   ?Subroutine3 & 0xFFFF
-   \                     ??CrossCallReturnLabel_2:
-   \   0000E5   12....       LCALL   ?PUSH_XSTACK_I_TWO
-   \   0000E8   12....       LCALL   ?Subroutine2 & 0xFFFF
-   \                     ??CrossCallReturnLabel_13:
-   \   0000EB   12....       LCALL   ?DEALLOC_XSTACK8
-   \   0000EE   12....       LCALL   ?Subroutine1 & 0xFFFF
-   \                     ??CrossCallReturnLabel_23:
-   \   0000F1   740C         MOV     A,#0xc
-   \   0000F3   F0           MOVX    @DPTR,A
-   \   0000F4   90....       MOV     DPTR,#End_Mod
-   \   0000F7   12....       LCALL   ?Subroutine3 & 0xFFFF
-   \                     ??CrossCallReturnLabel_3:
-   \   0000FA   12....       LCALL   ?PUSH_XSTACK_I_TWO
-   \   0000FD   12....       LCALL   ?Subroutine2 & 0xFFFF
+   \   000072   12....       LCALL   ??Subroutine9_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_6:
+   \   000075   90....       MOV     DPTR,#PANID
+   \   000078   E8           MOV     A,R0
+   \   000079   F0           MOVX    @DPTR,A
+   \   00007A   A3           INC     DPTR
+   \   00007B   E9           MOV     A,R1
+   \   00007C   F0           MOVX    @DPTR,A
+   \   00007D   90....       MOV     DPTR,#MyDeviceId
+   \   000080   E0           MOVX    A,@DPTR
+   \   000081   90....       MOV     DPTR,#debugnum
+   \   000084   F0           MOVX    @DPTR,A
+   \   000085   90....       MOV     DPTR,#LINKED
+   \   000088   7401         MOV     A,#0x1
+   \   00008A   F0           MOVX    @DPTR,A
+   \   00008B   90....       MOV     DPTR,#MsgBuf
+   \   00008E   12....       LCALL   ??Subroutine12_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_29:
+   \   000091   740A         MOV     A,#0xa
+   \   000093   F0           MOVX    @DPTR,A
+   \   000094   90....       MOV     DPTR,#MyDeviceId
+   \   000097   E0           MOVX    A,@DPTR
+   \   000098   90....       MOV     DPTR,#MsgBuf + 3
+   \   00009B   F0           MOVX    @DPTR,A
+   \   00009C                ; Setup parameters for call to function EnddeviceApp_SendP2PMessage
+   \   00009C   75....       MOV     ?V0 + 2,#MsgBuf & 0xff
+   \   00009F   75....       MOV     ?V0 + 3,#(MsgBuf >> 8) & 0xff
+   \   0000A2   78..         MOV     R0,#?V0 + 2
+   \   0000A4   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   0000A7   12....       LCALL   ?Subroutine2 & 0xFFFF
    \                     ??CrossCallReturnLabel_14:
-   \   000100   12....       LCALL   ?DEALLOC_XSTACK8
-   \   000103                ; Setup parameters for call to function osal_start_timerEx
-   \   000103   7C88         MOV     R4,#-0x78
-   \   000105   7D13         MOV     R5,#0x13
-   \   000107   7A01         MOV     R2,#0x1
-   \   000109   12....       LCALL   ??Subroutine8_0 & 0xFFFF
-    237              }
-   \                     ??CrossCallReturnLabel_8:
-   \   00010C   02....       LJMP    ??EnddeviceApp_ProcessEvent_3 & 0xFFFF
-    238          
-    239              // return unprocessed events
-    240              return (events ^ SYS_EVENT_MSG);
-   \                     ??EnddeviceApp_ProcessEvent_4:
-   \   00010F   EE           MOV     A,R6
-   \   000110   FA           MOV     R2,A
-   \   000111   EF           MOV     A,R7
-   \   000112   6480         XRL     A,#0x80
-   \                     ??EnddeviceApp_ProcessEvent_8:
-   \   000114   FB           MOV     R3,A
-   \   000115   02....       LJMP    ??EnddeviceApp_ProcessEvent_9 & 0xFFFF
-    241            }
-    242          
-    243            // Send a message out - This event is generated by a timer
-    244            //  (setup in EnddeviceApp_Init()).
-    245            if ( events & EnddeviceApp_SEND_PERIODIC_MSG_EVT )
-   \                     ??EnddeviceApp_ProcessEvent_0:
-   \   000118   EE           MOV     A,R6
-   \   000119   A2E0         MOV     C,0xE0 /* A   */.0
-   \   00011B   4003         JC      $+5
-   \   00011D   02....       LJMP    ??EnddeviceApp_ProcessEvent_10 & 0xFFFF
-    246            {
-    247              if(send_tick == 0)
-   \   000120   90....       MOV     DPTR,#send_tick
-   \   000123   E0           MOVX    A,@DPTR
-   \   000124   700E         JNZ     ??EnddeviceApp_ProcessEvent_11
-    248              {
-    249                  //get the rssi
-    250                  MsgBuf[0] = 0x00;
-   \   000126   12....       LCALL   ?Subroutine0 & 0xFFFF
-    251                  MsgBuf[1] = MyDeviceId;
-    252                  MsgBuf[2] = CMD_GET_RSSI;
-    253                  EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,3,MsgBuf);   
-    254              }
-   \                     ??CrossCallReturnLabel_30:
-   \   000129   12....       LCALL   ?PUSH_XSTACK_I_TWO
-   \   00012C   7C03         MOV     R4,#0x3
-   \   00012E   12....       LCALL   ??Subroutine9_0 & 0xFFFF
-   \                     ??CrossCallReturnLabel_16:
-   \   000131   12....       LCALL   ?DEALLOC_XSTACK8
-    255                  
-    256              if(send_tick == 2)
-   \                     ??EnddeviceApp_ProcessEvent_11:
-   \   000134   90....       MOV     DPTR,#send_tick
-   \   000137   E0           MOVX    A,@DPTR
-   \   000138   6402         XRL     A,#0x2
-   \   00013A   705E         JNZ     ??EnddeviceApp_ProcessEvent_12
-    257              { 
-    258                 // send the room real temperature   
-    259                MsgBuf[0] = 2;
-   \   00013C   90....       MOV     DPTR,#MsgBuf
-   \   00013F   7402         MOV     A,#0x2
-   \   000141   12....       LCALL   ??Subroutine10_0 & 0xFFFF
-    260                MsgBuf[1] = MyDeviceId;
-    261                MsgBuf[2] = CMD_ROOM_REAL_TEMPER;
-   \                     ??CrossCallReturnLabel_26:
-   \   000144   7403         MOV     A,#0x3
-   \   000146   F0           MOVX    @DPTR,A
-    262                MsgBuf[3] = (RM_Temperature >> 8) & 0x00ff; 
-   \   000147   90....       MOV     DPTR,#RM_Temperature
-   \   00014A   12....       LCALL   ?Subroutine5 & 0xFFFF
-   \                     ??CrossCallReturnLabel_4:
-   \   00014D   12....       LCALL   ?SS_SHR
-   \   000150   E5..         MOV     A,?V0 + 0
-   \   000152   90....       MOV     DPTR,#MsgBuf + 3
-   \   000155   F0           MOVX    @DPTR,A
-    263                MsgBuf[4] = (RM_Temperature) & 0x00ff;
-   \   000156   90....       MOV     DPTR,#RM_Temperature
-   \   000159   E0           MOVX    A,@DPTR
-   \   00015A   90....       MOV     DPTR,#MsgBuf + 4
-   \   00015D   12....       LCALL   ??Subroutine11_0 & 0xFFFF
-    264                EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,5,MsgBuf);     
-   \                     ??CrossCallReturnLabel_32:
-   \   000160   12....       LCALL   ?PUSH_XSTACK_I_TWO
-   \   000163   7C05         MOV     R4,#0x5
-   \   000165   12....       LCALL   ??Subroutine9_0 & 0xFFFF
-   \                     ??CrossCallReturnLabel_17:
-   \   000168   12....       LCALL   ?DEALLOC_XSTACK8
-    265              
-    266                // send the floor real temperature
-    267                MsgBuf[0] = 2;
-   \   00016B   90....       MOV     DPTR,#MsgBuf
-   \   00016E   7402         MOV     A,#0x2
-   \   000170   12....       LCALL   ??Subroutine10_0 & 0xFFFF
-    268                MsgBuf[1] = MyDeviceId;
-    269                MsgBuf[2] = CMD_FLOOR_REAL_TEMPER;
-   \                     ??CrossCallReturnLabel_27:
-   \   000173   7404         MOV     A,#0x4
-   \   000175   F0           MOVX    @DPTR,A
-    270                MsgBuf[3] = (FL_Temperature >> 8) & 0x00ff; 
-   \   000176   90....       MOV     DPTR,#FL_Temperature
-   \   000179   12....       LCALL   ?Subroutine5 & 0xFFFF
-   \                     ??CrossCallReturnLabel_5:
-   \   00017C   12....       LCALL   ?SS_SHR
-   \   00017F   E5..         MOV     A,?V0 + 0
-   \   000181   90....       MOV     DPTR,#MsgBuf + 3
-   \   000184   F0           MOVX    @DPTR,A
-    271                MsgBuf[4] = (FL_Temperature) & 0x00ff;
-   \   000185   90....       MOV     DPTR,#FL_Temperature
-   \   000188   E0           MOVX    A,@DPTR
-   \   000189   90....       MOV     DPTR,#MsgBuf + 4
-   \   00018C   12....       LCALL   ??Subroutine11_0 & 0xFFFF
-    272                EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,5,MsgBuf); 
-    273              }
-   \                     ??CrossCallReturnLabel_33:
-   \   00018F   12....       LCALL   ?PUSH_XSTACK_I_TWO
-   \   000192   7C05         MOV     R4,#0x5
-   \   000194   12....       LCALL   ??Subroutine9_0 & 0xFFFF
-   \                     ??CrossCallReturnLabel_18:
-   \   000197   12....       LCALL   ?DEALLOC_XSTACK8
-    274              
-    275              
-    276              if(send_tick == 3)
-   \                     ??EnddeviceApp_ProcessEvent_12:
-   \   00019A   90....       MOV     DPTR,#send_tick
-   \   00019D   E0           MOVX    A,@DPTR
-   \   00019E   6403         XRL     A,#0x3
-   \   0001A0   700E         JNZ     ??EnddeviceApp_ProcessEvent_13
-    277              {
-    278                //get the rssi
-    279                  MsgBuf[0] = 0x00;
-   \   0001A2   12....       LCALL   ?Subroutine0 & 0xFFFF
-    280                  MsgBuf[1] = MyDeviceId;
-    281                  MsgBuf[2] = CMD_GET_RSSI;
-    282                  EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,3,MsgBuf);
-    283              }
-   \                     ??CrossCallReturnLabel_31:
-   \   0001A5   12....       LCALL   ?PUSH_XSTACK_I_TWO
-   \   0001A8   7C03         MOV     R4,#0x3
-   \   0001AA   12....       LCALL   ??Subroutine9_0 & 0xFFFF
-   \                     ??CrossCallReturnLabel_19:
-   \   0001AD   12....       LCALL   ?DEALLOC_XSTACK8
-    284              
-    285                
-    286              if(send_tick == 4)
-   \                     ??EnddeviceApp_ProcessEvent_13:
-   \   0001B0   90....       MOV     DPTR,#send_tick
-   \   0001B3   E0           MOVX    A,@DPTR
-   \   0001B4   6404         XRL     A,#0x4
-   \   0001B6   7049         JNZ     ??EnddeviceApp_ProcessEvent_14
-    287              {
-    288                //control the temperature in the mode auotmatically
-    289                if(End_Mod)
-   \   0001B8   90....       MOV     DPTR,#End_Mod
-   \   0001BB   E0           MOVX    A,@DPTR
-   \   0001BC   6027         JZ      ??EnddeviceApp_ProcessEvent_15
-    290                {
-    291                  REL_CTL = ControlTemperature(SetRM_Temperature,SetFL_Temperature,\
-    292                                               RM_Temperature,FL_Temperature);
-   \   0001BE                ; Setup parameters for call to function ControlTemperature
-   \   0001BE   90....       MOV     DPTR,#FL_Temperature
-   \   0001C1   12....       LCALL   ?PUSH_XSTACK8_X_TWO
-   \   0001C4   90....       MOV     DPTR,#RM_Temperature
-   \   0001C7   12....       LCALL   ?PUSH_XSTACK8_X_TWO
-   \   0001CA   90....       MOV     DPTR,#SetFL_Temperature
-   \   0001CD   E0           MOVX    A,@DPTR
-   \   0001CE   FC           MOV     R4,A
-   \   0001CF   7D00         MOV     R5,#0x0
-   \   0001D1   90....       MOV     DPTR,#SetRM_Temperature
-   \   0001D4   E0           MOVX    A,@DPTR
-   \   0001D5   FA           MOV     R2,A
-   \   0001D6   7B00         MOV     R3,#0x0
-   \   0001D8   12....       LCALL   ??ControlTemperature?relay
-   \   0001DB   7404         MOV     A,#0x4
-   \   0001DD   12....       LCALL   ?DEALLOC_XSTACK8
-   \   0001E0   E9           MOV     A,R1
-   \   0001E1   A2E0         MOV     C,0xE0 /* A   */.0
-   \   0001E3   9292         MOV     0x90.2,C
-    293                }
-    294                // send relay state
-    295                MsgBuf[0] = 1;
-   \                     ??EnddeviceApp_ProcessEvent_15:
-   \   0001E5   12....       LCALL   ?Subroutine1 & 0xFFFF
-    296                MsgBuf[1] = MyDeviceId;
-    297                MsgBuf[2] = CMD_RELAY_STATE;
+   \   0000AA   12....       LCALL   ?DEALLOC_XSTACK8
+   \   0000AD   12....       LCALL   ?Subroutine1 & 0xFFFF
    \                     ??CrossCallReturnLabel_24:
-   \   0001E8   7405         MOV     A,#0x5
-   \   0001EA   F0           MOVX    @DPTR,A
-    298                MsgBuf[3] = REL_CTL;
-   \   0001EB   A292         MOV     C,0x90.2
-   \   0001ED   E4           CLR     A
-   \   0001EE   33           RLC     A
-   \   0001EF   A3           INC     DPTR
-   \   0001F0   12....       LCALL   ??Subroutine11_0 & 0xFFFF
-    299                EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
-   \                     ??CrossCallReturnLabel_34:
-   \   0001F3   12....       LCALL   ?PUSH_XSTACK_I_TWO
-   \   0001F6   12....       LCALL   ?Subroutine2 & 0xFFFF
+   \   0000B0   7401         MOV     A,#0x1
+   \   0000B2   F0           MOVX    @DPTR,A
+   \   0000B3   90....       MOV     DPTR,#SetRM_Temperature
+   \   0000B6   12....       LCALL   ?Subroutine3 & 0xFFFF
+   \                     ??CrossCallReturnLabel_0:
+   \   0000B9   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   0000BC   12....       LCALL   ?Subroutine2 & 0xFFFF
    \                     ??CrossCallReturnLabel_15:
-   \   0001F9   12....       LCALL   ?DEALLOC_XSTACK8
-    300                send_tick = 0;
-   \   0001FC   90....       MOV     DPTR,#send_tick
-   \   0001FF   E4           CLR     A
-   \   000200   F0           MOVX    @DPTR,A
-    301              }
-    302              
-    303              send_tick++;
+   \   0000BF   12....       LCALL   ?DEALLOC_XSTACK8
+   \   0000C2   12....       LCALL   ?Subroutine1 & 0xFFFF
+   \                     ??CrossCallReturnLabel_25:
+   \   0000C5   7402         MOV     A,#0x2
+   \   0000C7   F0           MOVX    @DPTR,A
+   \   0000C8   90....       MOV     DPTR,#SetFL_Temperature
+   \   0000CB   12....       LCALL   ?Subroutine3 & 0xFFFF
+   \                     ??CrossCallReturnLabel_1:
+   \   0000CE   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   0000D1   12....       LCALL   ?Subroutine2 & 0xFFFF
+   \                     ??CrossCallReturnLabel_16:
+   \   0000D4   12....       LCALL   ?DEALLOC_XSTACK8
+   \   0000D7   12....       LCALL   ?Subroutine1 & 0xFFFF
+   \                     ??CrossCallReturnLabel_26:
+   \   0000DA   74FF         MOV     A,#-0x1
+   \   0000DC   F0           MOVX    @DPTR,A
+   \   0000DD   90....       MOV     DPTR,#POWER
+   \   0000E0   12....       LCALL   ?Subroutine3 & 0xFFFF
+   \                     ??CrossCallReturnLabel_2:
+   \   0000E3   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   0000E6   12....       LCALL   ?Subroutine2 & 0xFFFF
+   \                     ??CrossCallReturnLabel_17:
+   \   0000E9   12....       LCALL   ?DEALLOC_XSTACK8
+   \   0000EC   12....       LCALL   ?Subroutine1 & 0xFFFF
+   \                     ??CrossCallReturnLabel_27:
+   \   0000EF   740C         MOV     A,#0xc
+   \   0000F1   F0           MOVX    @DPTR,A
+   \   0000F2   90....       MOV     DPTR,#End_Mod
+   \   0000F5   12....       LCALL   ?Subroutine3 & 0xFFFF
+   \                     ??CrossCallReturnLabel_3:
+   \   0000F8   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   0000FB   12....       LCALL   ?Subroutine2 & 0xFFFF
+   \                     ??CrossCallReturnLabel_18:
+   \   0000FE   12....       LCALL   ?DEALLOC_XSTACK8
+   \   000101                ; Setup parameters for call to function osal_start_timerEx
+   \   000101   7C88         MOV     R4,#-0x78
+   \   000103   7D13         MOV     R5,#0x13
+   \   000105   7A01         MOV     R2,#0x1
+   \   000107   12....       LCALL   ??Subroutine10_0 & 0xFFFF
+    239              }
+   \                     ??CrossCallReturnLabel_12:
+   \   00010A   02....       LJMP    ??EnddeviceApp_ProcessEvent_3 & 0xFFFF
+    240          
+    241              // return unprocessed events
+    242              return (events ^ SYS_EVENT_MSG);
+   \                     ??EnddeviceApp_ProcessEvent_4:
+   \   00010D   EE           MOV     A,R6
+   \   00010E   FA           MOV     R2,A
+   \   00010F   EF           MOV     A,R7
+   \   000110   6480         XRL     A,#0x80
+   \                     ??EnddeviceApp_ProcessEvent_8:
+   \   000112   FB           MOV     R3,A
+   \   000113   02....       LJMP    ??EnddeviceApp_ProcessEvent_9 & 0xFFFF
+    243            }
+    244          
+    245            // Send a message out - This event is generated by a timer
+    246            //  (setup in EnddeviceApp_Init()).
+    247            if ( events & EnddeviceApp_SEND_PERIODIC_MSG_EVT )
+   \                     ??EnddeviceApp_ProcessEvent_0:
+   \   000116   EE           MOV     A,R6
+   \   000117   A2E0         MOV     C,0xE0 /* A   */.0
+   \   000119   4003         JC      $+5
+   \   00011B   02....       LJMP    ??EnddeviceApp_ProcessEvent_10 & 0xFFFF
+    248            {
+    249              if(send_tick == 0)
+   \   00011E   90....       MOV     DPTR,#send_tick
+   \   000121   E0           MOVX    A,@DPTR
+   \   000122   700E         JNZ     ??EnddeviceApp_ProcessEvent_11
+    250              {
+    251                  //get the rssi
+    252                  MsgBuf[0] = 0x00;
+   \   000124   12....       LCALL   ?Subroutine0 & 0xFFFF
+    253                  MsgBuf[1] = MyDeviceId;
+    254                  MsgBuf[2] = CMD_GET_RSSI;
+    255                  EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,3,MsgBuf);   
+    256              }
+   \                     ??CrossCallReturnLabel_34:
+   \   000127   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   00012A   7C03         MOV     R4,#0x3
+   \   00012C   12....       LCALL   ??Subroutine11_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_20:
+   \   00012F   12....       LCALL   ?DEALLOC_XSTACK8
+    257                  
+    258              if(send_tick == 2)
+   \                     ??EnddeviceApp_ProcessEvent_11:
+   \   000132   90....       MOV     DPTR,#send_tick
+   \   000135   E0           MOVX    A,@DPTR
+   \   000136   6402         XRL     A,#0x2
+   \   000138   705E         JNZ     ??EnddeviceApp_ProcessEvent_12
+    259              { 
+    260                 // send the room real temperature   
+    261                MsgBuf[0] = 2;
+   \   00013A   90....       MOV     DPTR,#MsgBuf
+   \   00013D   7402         MOV     A,#0x2
+   \   00013F   12....       LCALL   ??Subroutine12_0 & 0xFFFF
+    262                MsgBuf[1] = MyDeviceId;
+    263                MsgBuf[2] = CMD_ROOM_REAL_TEMPER;
+   \                     ??CrossCallReturnLabel_30:
+   \   000142   7403         MOV     A,#0x3
+   \   000144   F0           MOVX    @DPTR,A
+    264                MsgBuf[3] = (RM_Temperature >> 8) & 0x00ff; 
+   \   000145   90....       MOV     DPTR,#RM_Temperature
+   \   000148   12....       LCALL   ?Subroutine5 & 0xFFFF
+   \                     ??CrossCallReturnLabel_4:
+   \   00014B   12....       LCALL   ?SS_SHR
+   \   00014E   E5..         MOV     A,?V0 + 0
+   \   000150   90....       MOV     DPTR,#MsgBuf + 3
+   \   000153   F0           MOVX    @DPTR,A
+    265                MsgBuf[4] = (RM_Temperature) & 0x00ff;
+   \   000154   90....       MOV     DPTR,#RM_Temperature
+   \   000157   E0           MOVX    A,@DPTR
+   \   000158   90....       MOV     DPTR,#MsgBuf + 4
+   \   00015B   12....       LCALL   ??Subroutine13_0 & 0xFFFF
+    266                EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,5,MsgBuf);     
+   \                     ??CrossCallReturnLabel_36:
+   \   00015E   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   000161   7C05         MOV     R4,#0x5
+   \   000163   12....       LCALL   ??Subroutine11_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_21:
+   \   000166   12....       LCALL   ?DEALLOC_XSTACK8
+    267              
+    268                // send the floor real temperature
+    269                MsgBuf[0] = 2;
+   \   000169   90....       MOV     DPTR,#MsgBuf
+   \   00016C   7402         MOV     A,#0x2
+   \   00016E   12....       LCALL   ??Subroutine12_0 & 0xFFFF
+    270                MsgBuf[1] = MyDeviceId;
+    271                MsgBuf[2] = CMD_FLOOR_REAL_TEMPER;
+   \                     ??CrossCallReturnLabel_31:
+   \   000171   7404         MOV     A,#0x4
+   \   000173   F0           MOVX    @DPTR,A
+    272                MsgBuf[3] = (FL_Temperature >> 8) & 0x00ff; 
+   \   000174   90....       MOV     DPTR,#FL_Temperature
+   \   000177   12....       LCALL   ?Subroutine5 & 0xFFFF
+   \                     ??CrossCallReturnLabel_5:
+   \   00017A   12....       LCALL   ?SS_SHR
+   \   00017D   E5..         MOV     A,?V0 + 0
+   \   00017F   90....       MOV     DPTR,#MsgBuf + 3
+   \   000182   F0           MOVX    @DPTR,A
+    273                MsgBuf[4] = (FL_Temperature) & 0x00ff;
+   \   000183   90....       MOV     DPTR,#FL_Temperature
+   \   000186   E0           MOVX    A,@DPTR
+   \   000187   90....       MOV     DPTR,#MsgBuf + 4
+   \   00018A   12....       LCALL   ??Subroutine13_0 & 0xFFFF
+    274                EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,5,MsgBuf); 
+    275              }
+   \                     ??CrossCallReturnLabel_37:
+   \   00018D   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   000190   7C05         MOV     R4,#0x5
+   \   000192   12....       LCALL   ??Subroutine11_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_22:
+   \   000195   12....       LCALL   ?DEALLOC_XSTACK8
+    276              
+    277              
+    278              if(send_tick == 3)
+   \                     ??EnddeviceApp_ProcessEvent_12:
+   \   000198   90....       MOV     DPTR,#send_tick
+   \   00019B   E0           MOVX    A,@DPTR
+   \   00019C   6403         XRL     A,#0x3
+   \   00019E   700E         JNZ     ??EnddeviceApp_ProcessEvent_13
+    279              {
+    280                //get the rssi
+    281                  MsgBuf[0] = 0x00;
+   \   0001A0   12....       LCALL   ?Subroutine0 & 0xFFFF
+    282                  MsgBuf[1] = MyDeviceId;
+    283                  MsgBuf[2] = CMD_GET_RSSI;
+    284                  EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,3,MsgBuf);
+    285              }
+   \                     ??CrossCallReturnLabel_35:
+   \   0001A3   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   0001A6   7C03         MOV     R4,#0x3
+   \   0001A8   12....       LCALL   ??Subroutine11_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_23:
+   \   0001AB   12....       LCALL   ?DEALLOC_XSTACK8
+    286              
+    287                
+    288              if(send_tick == 4)
+   \                     ??EnddeviceApp_ProcessEvent_13:
+   \   0001AE   90....       MOV     DPTR,#send_tick
+   \   0001B1   E0           MOVX    A,@DPTR
+   \   0001B2   6404         XRL     A,#0x4
+   \   0001B4   7049         JNZ     ??EnddeviceApp_ProcessEvent_14
+    289              {
+    290                //control the temperature in the mode auotmatically
+    291                if(End_Mod)
+   \   0001B6   90....       MOV     DPTR,#End_Mod
+   \   0001B9   E0           MOVX    A,@DPTR
+   \   0001BA   6027         JZ      ??EnddeviceApp_ProcessEvent_15
+    292                {
+    293                  REL_CTL = ControlTemperature(SetRM_Temperature,SetFL_Temperature,\
+    294                                               RM_Temperature,FL_Temperature);
+   \   0001BC                ; Setup parameters for call to function ControlTemperature
+   \   0001BC   90....       MOV     DPTR,#FL_Temperature
+   \   0001BF   12....       LCALL   ?PUSH_XSTACK8_X_TWO
+   \   0001C2   90....       MOV     DPTR,#RM_Temperature
+   \   0001C5   12....       LCALL   ?PUSH_XSTACK8_X_TWO
+   \   0001C8   90....       MOV     DPTR,#SetFL_Temperature
+   \   0001CB   E0           MOVX    A,@DPTR
+   \   0001CC   FC           MOV     R4,A
+   \   0001CD   7D00         MOV     R5,#0x0
+   \   0001CF   90....       MOV     DPTR,#SetRM_Temperature
+   \   0001D2   E0           MOVX    A,@DPTR
+   \   0001D3   FA           MOV     R2,A
+   \   0001D4   7B00         MOV     R3,#0x0
+   \   0001D6   12....       LCALL   ??ControlTemperature?relay
+   \   0001D9   7404         MOV     A,#0x4
+   \   0001DB   12....       LCALL   ?DEALLOC_XSTACK8
+   \   0001DE   E9           MOV     A,R1
+   \   0001DF   A2E0         MOV     C,0xE0 /* A   */.0
+   \   0001E1   9292         MOV     0x90.2,C
+    295                }
+    296                // send relay state
+    297                MsgBuf[0] = 1;
+   \                     ??EnddeviceApp_ProcessEvent_15:
+   \   0001E3   12....       LCALL   ?Subroutine1 & 0xFFFF
+    298                MsgBuf[1] = MyDeviceId;
+    299                MsgBuf[2] = CMD_RELAY_STATE;
+   \                     ??CrossCallReturnLabel_28:
+   \   0001E6   7405         MOV     A,#0x5
+   \   0001E8   F0           MOVX    @DPTR,A
+    300                MsgBuf[3] = REL_CTL;
+   \   0001E9   A292         MOV     C,0x90.2
+   \   0001EB   E4           CLR     A
+   \   0001EC   33           RLC     A
+   \   0001ED   A3           INC     DPTR
+   \   0001EE   12....       LCALL   ??Subroutine13_0 & 0xFFFF
+    301                EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
+   \                     ??CrossCallReturnLabel_38:
+   \   0001F1   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   0001F4   12....       LCALL   ?Subroutine2 & 0xFFFF
+   \                     ??CrossCallReturnLabel_19:
+   \   0001F7   12....       LCALL   ?DEALLOC_XSTACK8
+    302                send_tick = 0;
+   \   0001FA   90....       MOV     DPTR,#send_tick
+   \   0001FD   E4           CLR     A
+   \   0001FE   F0           MOVX    @DPTR,A
+    303              }
+    304              
+    305              send_tick++;
    \                     ??EnddeviceApp_ProcessEvent_14:
-   \   000201   E0           MOVX    A,@DPTR
-   \   000202   04           INC     A
-   \   000203   F0           MOVX    @DPTR,A
-    304             
-    305              // restart the timer
-    306              osal_start_timerEx(EnddeviceApp_TaskID,
-    307                               EnddeviceApp_SEND_PERIODIC_MSG_EVT ,
-    308                               1000 + (osal_rand() & 0x000f)); 
-   \   000204                ; Setup parameters for call to function osal_rand
-   \   000204   12....       LCALL   ??osal_rand?relay
-   \   000207                ; Setup parameters for call to function osal_start_timerEx
-   \   000207   EA           MOV     A,R2
-   \   000208   540F         ANL     A,#0xf
-   \   00020A   24E8         ADD     A,#-0x18
-   \   00020C   FC           MOV     R4,A
-   \   00020D   E4           CLR     A
-   \   00020E   3403         ADDC    A,#0x3
-   \   000210   FD           MOV     R5,A
-   \   000211   7A01         MOV     R2,#0x1
-   \   000213   12....       LCALL   ??Subroutine8_0 & 0xFFFF
-    309              
-    310              return (events ^ EnddeviceApp_SEND_PERIODIC_MSG_EVT);
-   \                     ??CrossCallReturnLabel_9:
-   \   000216   EE           MOV     A,R6
-   \   000217   6401         XRL     A,#0x1
+   \   0001FF   E0           MOVX    A,@DPTR
+   \   000200   04           INC     A
+   \   000201   F0           MOVX    @DPTR,A
+    306             
+    307              // restart the timer
+    308              osal_start_timerEx(EnddeviceApp_TaskID,
+    309                               EnddeviceApp_SEND_PERIODIC_MSG_EVT ,
+    310                               1000 + (osal_rand() & 0x000f)); 
+   \   000202                ; Setup parameters for call to function osal_rand
+   \   000202   12....       LCALL   ??osal_rand?relay
+   \   000205                ; Setup parameters for call to function osal_start_timerEx
+   \   000205   EA           MOV     A,R2
+   \   000206   540F         ANL     A,#0xf
+   \   000208   24E8         ADD     A,#-0x18
+   \   00020A   FC           MOV     R4,A
+   \   00020B   E4           CLR     A
+   \   00020C   3403         ADDC    A,#0x3
+   \   00020E   FD           MOV     R5,A
+   \   00020F   7A01         MOV     R2,#0x1
+   \   000211   12....       LCALL   ??Subroutine10_0 & 0xFFFF
+    311              
+    312              return (events ^ EnddeviceApp_SEND_PERIODIC_MSG_EVT);
+   \                     ??CrossCallReturnLabel_13:
+   \   000214   EE           MOV     A,R6
+   \   000215   6401         XRL     A,#0x1
    \                     ??EnddeviceApp_ProcessEvent_16:
-   \   000219   FA           MOV     R2,A
-   \   00021A   EF           MOV     A,R7
-   \   00021B   02....       LJMP    ??EnddeviceApp_ProcessEvent_8 & 0xFFFF
-    311            }
-    312            
-    313            // Scan the LCD
-    314            if ( events & EnddeviceApp_SCAN_LCD_MSG_EVT)
+   \   000217   FA           MOV     R2,A
+   \   000218   EF           MOV     A,R7
+   \   000219   02....       LJMP    ??EnddeviceApp_ProcessEvent_8 & 0xFFFF
+    313            }
+    314            
+    315            // Scan the LCD
+    316            if ( events & EnddeviceApp_SCAN_LCD_MSG_EVT)
    \                     ??EnddeviceApp_ProcessEvent_10:
-   \   00021E   5402         ANL     A,#0x2
-   \   000220   600B         JZ      ??EnddeviceApp_ProcessEvent_17
-    315            {
-    316              
-    317              EnddeviceApp_HandleLCD();
-   \   000222                ; Setup parameters for call to function EnddeviceApp_HandleLCD
-   \   000222   12....       LCALL   ??EnddeviceApp_HandleLCD?relay
-    318              
-    319              osal_start_timerEx(EnddeviceApp_TaskID,
-    320                               EnddeviceApp_SCAN_LCD_MSG_EVT ,
-    321                               
-    322                               EnddeviceApp_SCAN_LCD_DURATION); 
-   \   000225                ; Setup parameters for call to function osal_start_timerEx
-   \   000225   12....       LCALL   ?Subroutine6 & 0xFFFF
-    323              
-    324              return (events ^ EnddeviceApp_SCAN_LCD_MSG_EVT);
+   \   00021C   5402         ANL     A,#0x2
+   \   00021E   607A         JZ      ??EnddeviceApp_ProcessEvent_17
+    317            {
+    318              if(sample_tick == 10) // sample the NTC ADC every 2 seconds
+   \   000220   90....       MOV     DPTR,#sample_tick
+   \   000223   E0           MOVX    A,@DPTR
+   \   000224   640A         XRL     A,#0xa
+   \   000226   7063         JNZ     ??EnddeviceApp_ProcessEvent_18
+    319              {
+    320           
+    321                 uint16 RM_ADC_Result = TemperADCSampleAndAverage(10,0);
+   \   000228                ; Setup parameters for call to function TemperADCSampleAndAverage
+   \   000228   7A00         MOV     R2,#0x0
+   \   00022A   790A         MOV     R1,#0xa
+   \   00022C   12....       LCALL   ??TemperADCSampleAndAverage?relay
+   \   00022F   8A..         MOV     ?V0 + 0,R2
+   \   000231   8B..         MOV     ?V0 + 1,R3
+    322                 uint16 FL_ADC_Result = TemperADCSampleAndAverage(10,1);
+   \   000233                ; Setup parameters for call to function TemperADCSampleAndAverage
+   \   000233   7A01         MOV     R2,#0x1
+   \   000235   790A         MOV     R1,#0xa
+   \   000237   12....       LCALL   ??TemperADCSampleAndAverage?relay
+   \   00023A   8A..         MOV     ?V0 + 2,R2
+   \   00023C   8B..         MOV     ?V0 + 3,R3
+    323                 
+    324                 //  detect the NTC error
+    325                  Error_Code = NTC_Error_Detect(RM_ADC_Result,FL_ADC_Result);
+   \   00023E                ; Setup parameters for call to function NTC_Error_Detect
+   \   00023E   AC..         MOV     R4,?V0 + 2
+   \   000240   AD..         MOV     R5,?V0 + 3
+   \   000242   AA..         MOV     R2,?V0 + 0
+   \   000244   AB..         MOV     R3,?V0 + 1
+   \   000246   12....       LCALL   ??NTC_Error_Detect?relay
+   \   000249   90....       MOV     DPTR,#Error_Code
+   \   00024C   EA           MOV     A,R2
+   \   00024D   F0           MOVX    @DPTR,A
+   \   00024E   A3           INC     DPTR
+   \   00024F   EB           MOV     A,R3
+   \   000250   F0           MOVX    @DPTR,A
+    326                  
+    327                  HandleError(Error_Code);    
+   \   000251                ; Setup parameters for call to function HandleError
+   \   000251   12....       LCALL   ??HandleError?relay
+    328                  if(!Error_Code)// no error detected  
+   \   000254   90....       MOV     DPTR,#Error_Code
+   \   000257   12....       LCALL   ??Subroutine9_0 & 0xFFFF
    \                     ??CrossCallReturnLabel_7:
-   \   000228   EE           MOV     A,R6
-   \   000229   6402         XRL     A,#0x2
-   \   00022B   80EC         SJMP    ??EnddeviceApp_ProcessEvent_16
-    325              
-    326            }
-    327            
-    328            //  reset the system
-    329            if ( events & EnddeviceApp_RESET_MSG_EVT)
-   \                     ??EnddeviceApp_ProcessEvent_17:
-   \   00022D   EE           MOV     A,R6
-   \   00022E   5404         ANL     A,#0x4
-   \   000230   600C         JZ      ??EnddeviceApp_ProcessEvent_18
-    330            {
-    331              SystemReset();  
-   \   000232   C2AF         CLR     0xa8.7
-   \   000234   C2AF         CLR     0xa8.7
-   \   000236   75C9AB       MOV     0xc9,#-0x55
-   \   000239   75C95B       MOV     0xc9,#0x5b
+   \   00025A   E8           MOV     A,R0
+   \   00025B   49           ORL     A,R1
+   \   00025C   7028         JNZ     ??EnddeviceApp_ProcessEvent_19
+    329                  {
+    330                     RM_Temperature = (uint16)EnddeviceApp_LookupTemp(RM_ADC_Result << 1);
+   \   00025E                ; Setup parameters for call to function EnddeviceApp_LookupTemp
+   \   00025E   E5..         MOV     A,?V0 + 0
+   \   000260   C3           CLR     C
+   \   000261   33           RLC     A
+   \   000262   FA           MOV     R2,A
+   \   000263   E5..         MOV     A,?V0 + 1
+   \   000265   33           RLC     A
+   \   000266   FB           MOV     R3,A
+   \   000267   12....       LCALL   ??EnddeviceApp_LookupTemp?relay
+   \   00026A   90....       MOV     DPTR,#RM_Temperature
+   \   00026D   EA           MOV     A,R2
+   \   00026E   F0           MOVX    @DPTR,A
+   \   00026F   A3           INC     DPTR
+   \   000270   EB           MOV     A,R3
+   \   000271   F0           MOVX    @DPTR,A
+    331                     FL_Temperature = (uint16)EnddeviceApp_LookupTemp(FL_ADC_Result << 1);
+   \   000272                ; Setup parameters for call to function EnddeviceApp_LookupTemp
+   \   000272   E5..         MOV     A,?V0 + 2
+   \   000274   C3           CLR     C
+   \   000275   33           RLC     A
+   \   000276   FA           MOV     R2,A
+   \   000277   E5..         MOV     A,?V0 + 3
+   \   000279   33           RLC     A
+   \   00027A   FB           MOV     R3,A
+   \   00027B   12....       LCALL   ??EnddeviceApp_LookupTemp?relay
+   \   00027E   90....       MOV     DPTR,#FL_Temperature
+   \   000281   EA           MOV     A,R2
+   \   000282   F0           MOVX    @DPTR,A
+   \   000283   A3           INC     DPTR
+   \   000284   EB           MOV     A,R3
+   \   000285   F0           MOVX    @DPTR,A
+    332                  }
+    333                 sample_tick = 0;  
    \                     ??EnddeviceApp_ProcessEvent_19:
-   \   00023C   80FE         SJMP    ??EnddeviceApp_ProcessEvent_19
-    332            }
-    333            return 0;
+   \   000286   90....       MOV     DPTR,#sample_tick
+   \   000289   E4           CLR     A
+   \   00028A   F0           MOVX    @DPTR,A
+    334              }   
+    335              sample_tick++;
    \                     ??EnddeviceApp_ProcessEvent_18:
-   \   00023E   7A00         MOV     R2,#0x0
-   \   000240   7B00         MOV     R3,#0x0
+   \   00028B   E0           MOVX    A,@DPTR
+   \   00028C   04           INC     A
+   \   00028D   F0           MOVX    @DPTR,A
+    336              
+    337              
+    338              EnddeviceApp_HandleLCD();
+   \   00028E                ; Setup parameters for call to function EnddeviceApp_HandleLCD
+   \   00028E   12....       LCALL   ??EnddeviceApp_HandleLCD?relay
+    339              
+    340              osal_start_timerEx(EnddeviceApp_TaskID,
+    341                               EnddeviceApp_SCAN_LCD_MSG_EVT ,
+    342                               
+    343                               EnddeviceApp_SCAN_LCD_DURATION); 
+   \   000291                ; Setup parameters for call to function osal_start_timerEx
+   \   000291   12....       LCALL   ?Subroutine6 & 0xFFFF
+    344              
+    345              return (events ^ EnddeviceApp_SCAN_LCD_MSG_EVT);
+   \                     ??CrossCallReturnLabel_11:
+   \   000294   EE           MOV     A,R6
+   \   000295   6402         XRL     A,#0x2
+   \   000297   02....       LJMP    ??EnddeviceApp_ProcessEvent_16 & 0xFFFF
+    346              
+    347            }
+    348            
+    349            //  reset the system
+    350            if ( events & EnddeviceApp_RESET_MSG_EVT)
+   \                     ??EnddeviceApp_ProcessEvent_17:
+   \   00029A   EE           MOV     A,R6
+   \   00029B   5404         ANL     A,#0x4
+   \   00029D   600C         JZ      ??EnddeviceApp_ProcessEvent_20
+    351            {
+    352              SystemReset();  
+   \   00029F   C2AF         CLR     0xa8.7
+   \   0002A1   C2AF         CLR     0xa8.7
+   \   0002A3   75C9AB       MOV     0xc9,#-0x55
+   \   0002A6   75C95B       MOV     0xc9,#0x5b
+   \                     ??EnddeviceApp_ProcessEvent_21:
+   \   0002A9   80FE         SJMP    ??EnddeviceApp_ProcessEvent_21
+    353            }
+    354            return 0;
+   \                     ??EnddeviceApp_ProcessEvent_20:
+   \   0002AB   7A00         MOV     R2,#0x0
+   \   0002AD   7B00         MOV     R3,#0x0
    \                     ??EnddeviceApp_ProcessEvent_9:
-   \   000242   7F04         MOV     R7,#0x4
-   \   000244   02....       LJMP    ?BANKED_LEAVE_XDATA
-   \   000247                REQUIRE _A_P1
-   \   000247                REQUIRE _A_IEN0
-   \   000247                REQUIRE WDCTL
-    334          }
+   \   0002AF   7F06         MOV     R7,#0x6
+   \   0002B1   02....       LJMP    ?BANKED_LEAVE_XDATA
+   \   0002B4                REQUIRE _A_P1
+   \   0002B4                REQUIRE _A_IEN0
+   \   0002B4                REQUIRE WDCTL
+    355          }
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
    \                     ?Subroutine5:
@@ -1028,11 +1123,11 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zst
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
    \                     ?Subroutine2:
    \   000000   7C04         MOV     R4,#0x4
-   \   000002                REQUIRE ??Subroutine9_0
-   \   000002                ; // Fall through to label ??Subroutine9_0
+   \   000002                REQUIRE ??Subroutine11_0
+   \   000002                ; // Fall through to label ??Subroutine11_0
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
-   \                     ??Subroutine9_0:
+   \                     ??Subroutine11_0:
    \   000000   7D00         MOV     R5,#0x0
    \   000002   7A01         MOV     R2,#0x1
    \   000004   7B00         MOV     R3,#0x0
@@ -1044,17 +1139,17 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zst
    \                     ?Subroutine1:
    \   000000   90....       MOV     DPTR,#MsgBuf
    \   000003   7401         MOV     A,#0x1
-   \   000005                REQUIRE ??Subroutine10_0
-   \   000005                ; // Fall through to label ??Subroutine10_0
+   \   000005                REQUIRE ??Subroutine12_0
+   \   000005                ; // Fall through to label ??Subroutine12_0
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
-   \                     ??Subroutine10_0:
-   \   000000   12....       LCALL   ?Subroutine7 & 0xFFFF
-   \                     ??CrossCallReturnLabel_28:
+   \                     ??Subroutine12_0:
+   \   000000   12....       LCALL   ?Subroutine8 & 0xFFFF
+   \                     ??CrossCallReturnLabel_32:
    \   000003   22           RET
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
-   \                     ?Subroutine7:
+   \                     ?Subroutine8:
    \   000000   F0           MOVX    @DPTR,A
    \   000001   90....       MOV     DPTR,#MyDeviceId
    \   000004   E0           MOVX    A,@DPTR
@@ -1067,14 +1162,14 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zst
    \                     ?Subroutine0:
    \   000000   90....       MOV     DPTR,#MsgBuf
    \   000003   E4           CLR     A
-   \   000004   12....       LCALL   ?Subroutine7 & 0xFFFF
-   \                     ??CrossCallReturnLabel_29:
+   \   000004   12....       LCALL   ?Subroutine8 & 0xFFFF
+   \                     ??CrossCallReturnLabel_33:
    \   000007   740F         MOV     A,#0xf
-   \   000009                REQUIRE ??Subroutine11_0
-   \   000009                ; // Fall through to label ??Subroutine11_0
+   \   000009                REQUIRE ??Subroutine13_0
+   \   000009                ; // Fall through to label ??Subroutine13_0
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
-   \                     ??Subroutine11_0:
+   \                     ??Subroutine13_0:
    \   000000   F0           MOVX    @DPTR,A
    \   000001                ; Setup parameters for call to function EnddeviceApp_SendP2PMessage
    \   000001                ; Setup parameters for call to function EnddeviceApp_SendP2PMessage
@@ -1085,23 +1180,23 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zst
    \   000004   75....       MOV     ?V0 + 1,#(MsgBuf >> 8) & 0xff
    \   000007   78..         MOV     R0,#?V0 + 0
    \   000009   22           RET
-    335          
+    356          
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
-    336           void Enddevice_Init_NV(void)
+    357           void Enddevice_Init_NV(void)
    \                     Enddevice_Init_NV:
-    337           {
+    358           {
    \   000000   74F6         MOV     A,#-0xa
    \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
    \   000005                ; Saved register size: 10
    \   000005                ; Auto size: 0
-    338               /***********************************************************************
-    339                *
-    340                *  Load MyDeviceId from the NV if exist ,write MyDeviceId if not exist
-    341                *
-    342                *************************************************************************/
-    343                // the item didn't exist and was initialized successfully
-    344                if(osal_nv_item_init(MY_DEVICEID_NV,1,NULL) == NV_ITEM_UNINIT)
+    359               /***********************************************************************
+    360                *
+    361                *  Load MyDeviceId from the NV if exist ,write MyDeviceId if not exist
+    362                *
+    363                *************************************************************************/
+    364                // the item didn't exist and was initialized successfully
+    365                if(osal_nv_item_init(MY_DEVICEID_NV,1,NULL) == NV_ITEM_UNINIT)
    \   000005                ; Setup parameters for call to function osal_nv_item_init
    \   000005   E4           CLR     A
    \   000006   F5..         MOV     ?V0 + 0,A
@@ -1109,13 +1204,13 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zst
    \   00000A   78..         MOV     R0,#?V0 + 0
    \   00000C   12....       LCALL   ?PUSH_XSTACK_I_TWO
    \   00000F   12....       LCALL   ?Subroutine4 & 0xFFFF
-   \                     ??CrossCallReturnLabel_35:
+   \                     ??CrossCallReturnLabel_39:
    \   000012   12....       LCALL   ?DEALLOC_XSTACK8
    \   000015   E9           MOV     A,R1
    \   000016   6409         XRL     A,#0x9
    \   000018   7023         JNZ     ??Enddevice_Init_NV_0
-    345                {
-    346                  osal_nv_write(MY_DEVICEID_NV,0,1,&MyDeviceId); // write the item
+    366                {
+    367                  osal_nv_write(MY_DEVICEID_NV,0,1,&MyDeviceId); // write the item
    \   00001A                ; Setup parameters for call to function osal_nv_write
    \   00001A   75....       MOV     ?V0 + 0,#MyDeviceId & 0xff
    \   00001D   75....       MOV     ?V0 + 1,#(MyDeviceId >> 8) & 0xff
@@ -1131,20 +1226,20 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zst
    \   000036   7B04         MOV     R3,#0x4
    \   000038   12....       LCALL   ??osal_nv_write?relay
    \   00003B   802F         SJMP    ??Enddevice_Init_NV_1
-    347                }
-    348                // the item existed already
-    349                else if(osal_nv_item_init(MY_DEVICEID_NV,1,NULL) == SUCCESS)
+    368                }
+    369                // the item existed already
+    370                else if(osal_nv_item_init(MY_DEVICEID_NV,1,NULL) == SUCCESS)
    \                     ??Enddevice_Init_NV_0:
    \   00003D                ; Setup parameters for call to function osal_nv_item_init
    \   00003D   78..         MOV     R0,#?V0 + 0
    \   00003F   12....       LCALL   ?PUSH_XSTACK_I_TWO
    \   000042   12....       LCALL   ?Subroutine4 & 0xFFFF
-   \                     ??CrossCallReturnLabel_36:
+   \                     ??CrossCallReturnLabel_40:
    \   000045   12....       LCALL   ?DEALLOC_XSTACK8
    \   000048   E9           MOV     A,R1
    \   000049   7026         JNZ     ??Enddevice_Init_NV_2
-    350                {
-    351                  osal_nv_read(MY_DEVICEID_NV,0,1,&MyDeviceId);// load the item to the RAM
+    371                {
+    372                  osal_nv_read(MY_DEVICEID_NV,0,1,&MyDeviceId);// load the item to the RAM
    \   00004B                ; Setup parameters for call to function osal_nv_read
    \   00004B   75....       MOV     ?V0 + 0,#MyDeviceId & 0xff
    \   00004E   75....       MOV     ?V0 + 1,#(MyDeviceId >> 8) & 0xff
@@ -1162,16 +1257,16 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zst
    \                     ??Enddevice_Init_NV_1:
    \   00006C   7404         MOV     A,#0x4
    \   00006E   12....       LCALL   ?DEALLOC_XSTACK8
-    352                }
-    353                else;
-    354                
-    355                
-    356                /***********************************************************************
-    357                *
-    358                *  Load SetRM_ from the NV if exist ,write MyDeviceId if not exist
-    359                *
-    360                *************************************************************************/
-    361                if(osal_nv_item_init(SET_RM_TEMP_NV,1,NULL) == NV_ITEM_UNINIT)
+    373                }
+    374                else;
+    375                
+    376                
+    377                /***********************************************************************
+    378                *
+    379                *  Load SetRM_ from the NV if exist ,write MyDeviceId if not exist
+    380                *
+    381                *************************************************************************/
+    382                if(osal_nv_item_init(SET_RM_TEMP_NV,1,NULL) == NV_ITEM_UNINIT)
    \                     ??Enddevice_Init_NV_2:
    \   000071                ; Setup parameters for call to function osal_nv_item_init
    \   000071   E4           CLR     A
@@ -1181,14 +1276,14 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zst
    \   000079   7C01         MOV     R4,#0x1
    \   00007B   7D00         MOV     R5,#0x0
    \   00007D   7A02         MOV     R2,#0x2
-   \   00007F   12....       LCALL   ??Subroutine12_0 & 0xFFFF
-   \                     ??CrossCallReturnLabel_37:
+   \   00007F   12....       LCALL   ??Subroutine14_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_41:
    \   000082   12....       LCALL   ?DEALLOC_XSTACK8
    \   000085   E9           MOV     A,R1
    \   000086   6409         XRL     A,#0x9
    \   000088   7023         JNZ     ??Enddevice_Init_NV_3
-    362                {
-    363                  osal_nv_write(SET_RM_TEMP_NV,0,1,&SetRM_Temperature); // write the item
+    383                {
+    384                  osal_nv_write(SET_RM_TEMP_NV,0,1,&SetRM_Temperature); // write the item
    \   00008A                ; Setup parameters for call to function osal_nv_write
    \   00008A   75....       MOV     ?V0 + 0,#SetRM_Temperature & 0xff
    \   00008D   75....       MOV     ?V0 + 1,#(SetRM_Temperature >> 8) & 0xff
@@ -1204,9 +1299,9 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zst
    \   0000A6   7B04         MOV     R3,#0x4
    \   0000A8   12....       LCALL   ??osal_nv_write?relay
    \   0000AB   8035         SJMP    ??Enddevice_Init_NV_4
-    364                }
-    365                // the item existed already
-    366                else if(osal_nv_item_init(SET_RM_TEMP_NV,1,NULL) == SUCCESS)
+    385                }
+    386                // the item existed already
+    387                else if(osal_nv_item_init(SET_RM_TEMP_NV,1,NULL) == SUCCESS)
    \                     ??Enddevice_Init_NV_3:
    \   0000AD                ; Setup parameters for call to function osal_nv_item_init
    \   0000AD   78..         MOV     R0,#?V0 + 0
@@ -1214,13 +1309,13 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zst
    \   0000B2   7C01         MOV     R4,#0x1
    \   0000B4   7D00         MOV     R5,#0x0
    \   0000B6   7A02         MOV     R2,#0x2
-   \   0000B8   12....       LCALL   ??Subroutine12_0 & 0xFFFF
-   \                     ??CrossCallReturnLabel_38:
+   \   0000B8   12....       LCALL   ??Subroutine14_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_42:
    \   0000BB   12....       LCALL   ?DEALLOC_XSTACK8
    \   0000BE   E9           MOV     A,R1
    \   0000BF   7026         JNZ     ??Enddevice_Init_NV_5
-    367                {
-    368                  osal_nv_read(SET_RM_TEMP_NV,0,1,&SetRM_Temperature);// load the item to the RAM
+    388                {
+    389                  osal_nv_read(SET_RM_TEMP_NV,0,1,&SetRM_Temperature);// load the item to the RAM
    \   0000C1                ; Setup parameters for call to function osal_nv_read
    \   0000C1   75....       MOV     ?V0 + 0,#SetRM_Temperature & 0xff
    \   0000C4   75....       MOV     ?V0 + 1,#(SetRM_Temperature >> 8) & 0xff
@@ -1238,16 +1333,16 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zst
    \                     ??Enddevice_Init_NV_4:
    \   0000E2   7404         MOV     A,#0x4
    \   0000E4   12....       LCALL   ?DEALLOC_XSTACK8
-    369                }
-    370                else;
-    371                
-    372              
-    373                /***********************************************************************
-    374                *
-    375                *  Load MyDeviceId from the NV if exist ,write MyDeviceId if not exist
-    376                *
-    377                *************************************************************************/
-    378                if(osal_nv_item_init(SET_FL_TEMP_NV,1,NULL) == NV_ITEM_UNINIT)
+    390                }
+    391                else;
+    392                
+    393              
+    394                /***********************************************************************
+    395                *
+    396                *  Load MyDeviceId from the NV if exist ,write MyDeviceId if not exist
+    397                *
+    398                *************************************************************************/
+    399                if(osal_nv_item_init(SET_FL_TEMP_NV,1,NULL) == NV_ITEM_UNINIT)
    \                     ??Enddevice_Init_NV_5:
    \   0000E7                ; Setup parameters for call to function osal_nv_item_init
    \   0000E7   E4           CLR     A
@@ -1257,14 +1352,14 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zst
    \   0000EF   7C01         MOV     R4,#0x1
    \   0000F1   7D00         MOV     R5,#0x0
    \   0000F3   7A03         MOV     R2,#0x3
-   \   0000F5   12....       LCALL   ??Subroutine12_0 & 0xFFFF
-   \                     ??CrossCallReturnLabel_39:
+   \   0000F5   12....       LCALL   ??Subroutine14_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_43:
    \   0000F8   12....       LCALL   ?DEALLOC_XSTACK8
    \   0000FB   E9           MOV     A,R1
    \   0000FC   6409         XRL     A,#0x9
    \   0000FE   7023         JNZ     ??Enddevice_Init_NV_6
-    379                {
-    380                  osal_nv_write(SET_FL_TEMP_NV,0,1,&SetFL_Temperature); // write the item
+    400                {
+    401                  osal_nv_write(SET_FL_TEMP_NV,0,1,&SetFL_Temperature); // write the item
    \   000100                ; Setup parameters for call to function osal_nv_write
    \   000100   75....       MOV     ?V0 + 0,#SetFL_Temperature & 0xff
    \   000103   75....       MOV     ?V0 + 1,#(SetFL_Temperature >> 8) & 0xff
@@ -1280,9 +1375,9 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zst
    \   00011C   7B04         MOV     R3,#0x4
    \   00011E   12....       LCALL   ??osal_nv_write?relay
    \   000121   8035         SJMP    ??Enddevice_Init_NV_7
-    381                }
-    382                // the item existed already
-    383                else if(osal_nv_item_init(SET_FL_TEMP_NV,1,NULL) == SUCCESS)
+    402                }
+    403                // the item existed already
+    404                else if(osal_nv_item_init(SET_FL_TEMP_NV,1,NULL) == SUCCESS)
    \                     ??Enddevice_Init_NV_6:
    \   000123                ; Setup parameters for call to function osal_nv_item_init
    \   000123   78..         MOV     R0,#?V0 + 0
@@ -1290,13 +1385,13 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zst
    \   000128   7C01         MOV     R4,#0x1
    \   00012A   7D00         MOV     R5,#0x0
    \   00012C   7A03         MOV     R2,#0x3
-   \   00012E   12....       LCALL   ??Subroutine12_0 & 0xFFFF
-   \                     ??CrossCallReturnLabel_40:
+   \   00012E   12....       LCALL   ??Subroutine14_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_44:
    \   000131   12....       LCALL   ?DEALLOC_XSTACK8
    \   000134   E9           MOV     A,R1
    \   000135   7026         JNZ     ??Enddevice_Init_NV_8
-    384                {
-    385                  osal_nv_read(SET_FL_TEMP_NV,0,1,&SetFL_Temperature);// load the item to the RAM
+    405                {
+    406                  osal_nv_read(SET_FL_TEMP_NV,0,1,&SetFL_Temperature);// load the item to the RAM
    \   000137                ; Setup parameters for call to function osal_nv_read
    \   000137   75....       MOV     ?V0 + 0,#SetFL_Temperature & 0xff
    \   00013A   75....       MOV     ?V0 + 1,#(SetFL_Temperature >> 8) & 0xff
@@ -1314,9 +1409,9 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zst
    \                     ??Enddevice_Init_NV_7:
    \   000158   7404         MOV     A,#0x4
    \   00015A   12....       LCALL   ?DEALLOC_XSTACK8
-    386                }
-    387                else;
-    388           }
+    407                }
+    408                else;
+    409           }
    \                     ??Enddevice_Init_NV_8:
    \   00015D   7F02         MOV     R7,#0x2
    \   00015F   02....       LJMP    ?BANKED_LEAVE_XDATA
@@ -1326,11 +1421,11 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zst
    \   000000   7C01         MOV     R4,#0x1
    \   000002   7D00         MOV     R5,#0x0
    \   000004   7A01         MOV     R2,#0x1
-   \   000006                REQUIRE ??Subroutine12_0
-   \   000006                ; // Fall through to label ??Subroutine12_0
+   \   000006                REQUIRE ??Subroutine14_0
+   \   000006                ; // Fall through to label ??Subroutine14_0
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
-   \                     ??Subroutine12_0:
+   \                     ??Subroutine14_0:
    \   000000   7B04         MOV     R3,#0x4
    \   000002   12....       LCALL   ??osal_nv_item_init?relay
    \   000005   7402         MOV     A,#0x2
@@ -1369,39 +1464,45 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zst
        -> osal_memcpy                   0      0     28
        -> aps_AddGroup                  0      0     22
        -> osal_start_timerEx            0      0     22
-     EnddeviceApp_ProcessEvent          0      0     16
-       -> osal_msg_receive              0      0     24
-       -> osal_msg_deallocate           0      0     24
-       -> osal_msg_receive              0      0     24
-       -> EnddeviceApp_HandleKeys       0      0     24
+     EnddeviceApp_ProcessEvent          0      0     18
+       -> osal_msg_receive              0      0     28
+       -> osal_msg_deallocate           0      0     28
+       -> osal_msg_receive              0      0     28
+       -> EnddeviceApp_HandleKeys       0      0     28
        -> EnddeviceApp_HandleAfIncomingMessage
-                                        0      0     24
-       -> EnddeviceApp_SendP2PMessage
                                         0      0     28
        -> EnddeviceApp_SendP2PMessage
-                                        0      0     28
+                                        0      0     32
        -> EnddeviceApp_SendP2PMessage
-                                        0      0     28
+                                        0      0     32
        -> EnddeviceApp_SendP2PMessage
-                                        0      0     28
+                                        0      0     32
        -> EnddeviceApp_SendP2PMessage
-                                        0      0     28
-       -> osal_start_timerEx            0      0     24
+                                        0      0     32
        -> EnddeviceApp_SendP2PMessage
-                                        0      0     28
+                                        0      0     32
+       -> osal_start_timerEx            0      0     28
        -> EnddeviceApp_SendP2PMessage
-                                        0      0     28
+                                        0      0     32
        -> EnddeviceApp_SendP2PMessage
-                                        0      0     28
+                                        0      0     32
        -> EnddeviceApp_SendP2PMessage
-                                        0      0     28
-       -> ControlTemperature            0      0     32
+                                        0      0     32
        -> EnddeviceApp_SendP2PMessage
-                                        0      0     28
-       -> osal_rand                     0      0     24
-       -> osal_start_timerEx            0      0     24
-       -> EnddeviceApp_HandleLCD        0      0     24
-       -> osal_start_timerEx            0      0     24
+                                        0      0     32
+       -> ControlTemperature            0      0     36
+       -> EnddeviceApp_SendP2PMessage
+                                        0      0     32
+       -> osal_rand                     0      0     28
+       -> osal_start_timerEx            0      0     28
+       -> TemperADCSampleAndAverage     0      0     28
+       -> TemperADCSampleAndAverage     0      0     28
+       -> NTC_Error_Detect              0      0     28
+       -> HandleError                   0      0     28
+       -> EnddeviceApp_LookupTemp       0      0     28
+       -> EnddeviceApp_LookupTemp       0      0     28
+       -> EnddeviceApp_HandleLCD        0      0     28
+       -> osal_start_timerEx            0      0     28
      Enddevice_Init_NV                  0      0     25
        -> osal_nv_item_init             0      0     24
        -> osal_nv_write                 0      0     28
@@ -1426,34 +1527,36 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice Project for editing\Projects\zst
      WDCTL                                1
      P1SEL                                1
      P1DIR                                1
-     EnddeviceApp_Init                  209
+     EnddeviceApp_Init                  199
+     ?Subroutine7                         3
+     ??Subroutine9_0                      6
      ?Subroutine6                         6
-     ??Subroutine8_0                     11
-     EnddeviceApp_ProcessEvent          583
+     ??Subroutine10_0                    11
+     EnddeviceApp_ProcessEvent          692
      ?Subroutine5                        12
      ?Subroutine3                         8
      ?Subroutine2                         2
-     ??Subroutine9_0                     12
+     ??Subroutine11_0                    12
      ?Subroutine1                         5
-     ??Subroutine10_0                     4
-     ?Subroutine7                        11
+     ??Subroutine12_0                     4
+     ?Subroutine8                        11
      ?Subroutine0                         9
-     ??Subroutine11_0                    10
+     ??Subroutine13_0                    10
      Enddevice_Init_NV                  354
      ?Subroutine4                         6
-     ??Subroutine12_0                     8
+     ??Subroutine14_0                     8
      ??EnddeviceApp_Init?relay            6
      ??EnddeviceApp_ProcessEvent?relay    6
      ??Enddevice_Init_NV?relay            6
      ?<Constant "Group 0">                8
 
  
- 1 250 bytes in segment BANKED_CODE
+ 1 358 bytes in segment BANKED_CODE
     18 bytes in segment BANK_RELAYS
      5 bytes in segment SFR_AN
      8 bytes in segment XDATA_ROM_C
  
- 1 268 bytes of CODE  memory
+ 1 376 bytes of CODE  memory
      8 bytes of CONST memory
      0 bytes of DATA  memory (+ 5 bytes shared)
 

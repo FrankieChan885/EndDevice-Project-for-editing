@@ -95,6 +95,10 @@ extern "C"
  *///
 extern void HalLcdInit(void);
 
+extern void HalLcd_HW_WriteData(uint8 data);
+
+extern void HalLcd_HW_WriteAddr(uint8 page,uint8 col);
+
 /*
  * Write a string to the LCD
  */
@@ -119,6 +123,8 @@ extern void HalLcdWriteWiFiMod(uint8 mod);
 extern void HalLcdWritePower(bool POWER);
 
 extern void HalLcdWriteError(bool clear);
+
+extern void HalLcdWriteErrorCode(uint16 error_code,bool clear);
 
 /* Load the set temperature according to the temper */
 extern void HalLcdWriteSetTemperature(uint8 temper,bool power);
@@ -146,6 +152,8 @@ extern void HalLcd_HW_WriteST(bool power);
 
 /*write the st unit*/
 extern void HalLcd_HW_WriteSTU(bool power);
+
+
 
 /**************************************************************************************************
 **************************************************************************************************/
