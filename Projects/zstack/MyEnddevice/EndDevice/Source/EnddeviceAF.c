@@ -17,9 +17,9 @@
 void EnddeviceApp_HandleAfIncomingMessage( afIncomingMSGPacket_t *pkt )
 {  
   uint8 *str = pkt->cmd.Data;
-  uint8 len = str[0];
-  uint8 id = str[1];
-  uint8 command = str[2];
+  uint8 len = str[FRAME_LEN];
+  uint8 id = str[FRAME_ROOMID];
+  uint8 command = str[FRAME_CMD];
   
  /*****************************for debug **************************/
    //  uint8  n = command /16;
@@ -34,12 +34,15 @@ void EnddeviceApp_HandleAfIncomingMessage( afIncomingMSGPacket_t *pkt )
   {
      if(len == 1)
      {
-        _NIB.nwkPanId = str[3];
-	    NLME_UpdateNV(0x01);
-	    SystemReset();
+        _NIB.nwkPanId = str[FRAME_PARAH];
+	    NLME_UpdateNV(0x01); 
+	    osal_start_timerEx(EnddeviceApp_TaskID,
+                     EnddeviceApp_RESET_MSG_EVT ,
+                    3000);   
      }     
   }
-
+  
+  
   if(id == MyDeviceId)
   {
     //HalLcdWriteDeviceID(pkt->clusterId,TRUE);// for test
@@ -56,11 +59,11 @@ void EnddeviceApp_HandleAfIncomingMessage( afIncomingMSGPacket_t *pkt )
               
               // if(POWER)// only when powered on,than we can set the temperature
               // {
-                 SetRM_Temperature = str[3];
-                 MsgBuf[0] = 1;
-                 MsgBuf[1] = MyDeviceId;
-                 MsgBuf[2] = CMD_SET_ROOM_TEMPER;
-                 MsgBuf[3] = SetRM_Temperature;
+                 SetRM_Temperature = str[FRAME_PARAH];
+                 MsgBuf[FRAME_LEN] = 1;
+                 MsgBuf[FRAME_ROOMID] = MyDeviceId;
+                 MsgBuf[FRAME_CMD] = CMD_SET_ROOM_TEMPER;
+                 MsgBuf[FRAME_PARAH] = SetRM_Temperature;
                  
                  if(osal_nv_item_init(SET_RM_TEMP_NV,1,NULL) == SUCCESS)
                  {
@@ -81,11 +84,11 @@ void EnddeviceApp_HandleAfIncomingMessage( afIncomingMSGPacket_t *pkt )
              {
                 //if(POWER)
              //   {
-                  SetFL_Temperature = str[3];
-                  MsgBuf[0] = 1;
-                  MsgBuf[1] = MyDeviceId;
-                  MsgBuf[2] = CMD_SET_FLOOR_TEMPER;
-                  MsgBuf[3] = SetFL_Temperature;
+                  SetFL_Temperature = str[FRAME_PARAH];
+                  MsgBuf[FRAME_LEN] = 1;
+                  MsgBuf[FRAME_ROOMID] = MyDeviceId;
+                  MsgBuf[FRAME_CMD] = CMD_SET_FLOOR_TEMPER;
+                  MsgBuf[FRAME_PARAH] = SetFL_Temperature;
                  if(osal_nv_item_init(SET_FL_TEMP_NV,1,NULL) == SUCCESS)
                  {
                      osal_nv_write(SET_FL_TEMP_NV,0,1,&SetFL_Temperature);// load the item to the NV
@@ -115,7 +118,7 @@ void EnddeviceApp_HandleAfIncomingMessage( afIncomingMSGPacket_t *pkt )
                 if(POWER && (!End_Mod))// only when powered on and the manual mod 
                   //than we can set the Relay   
                 {
-                  REL_CTL = str[3] & 0x01;
+                  REL_CTL = str[FRAME_PARAH] & 0x01;
                 }
               }
           break;
@@ -145,15 +148,15 @@ void EnddeviceApp_HandleAfIncomingMessage( afIncomingMSGPacket_t *pkt )
           {
             if(POWER)// only when powered on,than we can set the Mode
             {
-              End_Mod = str[3];
+              End_Mod = str[FRAME_PARAH];
               REL_CTL = 0;
               HalLcdWriteEndMod(End_Mod);// update the mode in LCD
               
               // send mode to the coordinator
-              MsgBuf[0] = 1;
-	          MsgBuf[1] = MyDeviceId;
-	          MsgBuf[2] = CMD_SET_MODE;
-	          MsgBuf[3] = End_Mod;
+              MsgBuf[FRAME_LEN] = 1;
+	          MsgBuf[FRAME_ROOMID] = MyDeviceId;
+	          MsgBuf[FRAME_CMD] = CMD_SET_MODE;
+	          MsgBuf[FRAME_PARAH] = End_Mod;
 	          EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
             }
           }
@@ -177,7 +180,7 @@ void EnddeviceApp_HandleAfIncomingMessage( afIncomingMSGPacket_t *pkt )
         case CMD_START_OR_SHUTDOWN:
           if(len == 1)
           {
-            POWER = str[3] & 0x01;
+            POWER = str[FRAME_PARAH] & 0x01;
               if(POWER) // power on
               {
                 REL_CTL = 0;
@@ -206,10 +209,10 @@ void EnddeviceApp_HandleAfIncomingMessage( afIncomingMSGPacket_t *pkt )
                 HalLcdWriteRealTempeMod(TRUE);
              }
              // send the power state to the coordinator
-            MsgBuf[0] = 1;
-            MsgBuf[1] = MyDeviceId;
-            MsgBuf[2] = CMD_START_OR_SHUTDOWN;
-            MsgBuf[3] = POWER;
+            MsgBuf[FRAME_LEN] = 1;
+            MsgBuf[FRAME_ROOMID] = MyDeviceId;
+            MsgBuf[FRAME_CMD] = CMD_START_OR_SHUTDOWN;
+            MsgBuf[FRAME_PARAH] = POWER;
             EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
          
          }

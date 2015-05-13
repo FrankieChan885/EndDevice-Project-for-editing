@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 //                                                                            /
-// IAR C/C++ Compiler V8.10.1.10194/W32 for 8051        21/Apr/2015  17:17:56 /
+// IAR C/C++ Compiler V8.10.1.10194/W32 for 8051        12/May/2015  16:29:43 /
 // Copyright 2004-2011 IAR Systems AB.                                        /
 //                                                                            /
 //    Core               =  plain                                             /
@@ -816,7 +816,7 @@ main:
         ARGFRAME DOVERLAY, 0, STATIC
         ; Auto size: 0
 //   77    // Turn off interrupts
-//   78   osal_int_disable( INTS_ALL );
+//   78     osal_int_disable( INTS_ALL );
         ; Setup parameters for call to function osal_int_disable
         MOV     R1,#-0x1
         LCALL   ??osal_int_disable?relay

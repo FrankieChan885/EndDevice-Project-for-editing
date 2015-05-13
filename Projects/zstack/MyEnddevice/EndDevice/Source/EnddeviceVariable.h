@@ -49,6 +49,7 @@
 #define CMD_TAKEN_TOKEN                 14 
 #define CMD_GET_RSSI                    15
 #define CMD_SET_PANID                   16
+#define CMD_UPLOAD_ALLDATA              17
 #define CMD_ACK                         254
 #define CMD_START_OR_SHUTDOWN           255 
 
@@ -148,3 +149,12 @@ extern bool  DebugMode;// for the debug mode  to use
 extern bool  Debug_Blink; // for the information in the lcd in debug mode to blink
 extern uint8 Debug_Blink_Count;// for the information in the lcd in debug mode to blink
 extern uint16 Error_Code; // the error code for the error_handle
+
+typedef enum
+{
+ FRAME_LEN = 0,
+ FRAME_ROOMID,
+ FRAME_CMD,
+ FRAME_PARAH,
+ FRAME_PARAL 
+}fram_field_t;

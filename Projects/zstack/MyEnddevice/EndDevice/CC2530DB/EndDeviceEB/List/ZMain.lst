@@ -1,6 +1,6 @@
 ###############################################################################
 #                                                                             #
-# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         21/Apr/2015  17:17:56 #
+# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         12/May/2015  16:29:43 #
 # Copyright 2004-2011 IAR Systems AB.                                         #
 #                                                                             #
 #    Core               =  plain                                              #
@@ -247,7 +247,7 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\EndDevice-Project-for-editing\Projects\zst
      76          {
    \   000000                ; Auto size: 0
      77             // Turn off interrupts
-     78            osal_int_disable( INTS_ALL );
+     78              osal_int_disable( INTS_ALL );
    \   000000                ; Setup parameters for call to function osal_int_disable
    \   000000   79FF         MOV     R1,#-0x1
    \   000002   12....       LCALL   ??osal_int_disable?relay

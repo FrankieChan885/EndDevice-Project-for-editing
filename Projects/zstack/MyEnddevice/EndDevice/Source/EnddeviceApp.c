@@ -183,41 +183,40 @@ uint16 EnddeviceApp_ProcessEvent( uint8 task_id, uint16 events )
             LINKED = TRUE; // for the wifi mode , the device is connected to the net
            
             // register the device id in the gateway
-            MsgBuf[0] = 0x01;
-            MsgBuf[1] = MyDeviceId;
-            MsgBuf[2] = CMD_SET_NEW_DEVICEID;
-            MsgBuf[3] = MyDeviceId;
+            MsgBuf[FRAME_LEN] = 0x01;
+            MsgBuf[FRAME_ROOMID] = MyDeviceId;
+            MsgBuf[FRAME_CMD] = CMD_SET_NEW_DEVICEID;
+            MsgBuf[FRAME_PARAH] = MyDeviceId;
             EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
             
-            // send the initial SetRM_Temperature parameter
-            MsgBuf[0] = 1;
-            MsgBuf[1] = MyDeviceId;
-            MsgBuf[2] = CMD_SET_ROOM_TEMPER;
-            MsgBuf[3] = SetRM_Temperature;
-            EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
             
-            // send the initial SetFL_Temperature parameter
-            MsgBuf[0] = 1;
-            MsgBuf[1] = MyDeviceId;
-            MsgBuf[2] = CMD_SET_FLOOR_TEMPER;
-            MsgBuf[3] = SetFL_Temperature;
+             // send the initial SetRM_Temperature parameter
+             MsgBuf[FRAME_LEN] = 1;
+             MsgBuf[FRAME_ROOMID] = MyDeviceId;
+            MsgBuf[FRAME_CMD] = CMD_SET_ROOM_TEMPER;
+            MsgBuf[FRAME_PARAH] = SetRM_Temperature;
             EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
-            
-            // send the initial POWER parameter
-            MsgBuf[0] = 1;
-            MsgBuf[1] = MyDeviceId;
-            MsgBuf[2] = CMD_START_OR_SHUTDOWN;
-            MsgBuf[3] = POWER;
-            EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
-           
-            // send the initial mod parameter
-            MsgBuf[0] = 1;
-            MsgBuf[1] = MyDeviceId;
-            MsgBuf[2] = CMD_SET_MODE;
-            MsgBuf[3] = End_Mod;
-            EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
-         
-           
+                
+          // send the initial SetFL_Temperature parameter
+          MsgBuf[FRAME_LEN] = 1;
+          MsgBuf[FRAME_ROOMID] = MyDeviceId;
+          MsgBuf[FRAME_CMD] = CMD_SET_FLOOR_TEMPER;
+          MsgBuf[FRAME_PARAH] = SetFL_Temperature;
+          EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
+                
+          // send the initial POWER parameter
+          MsgBuf[FRAME_LEN] = 1;
+          MsgBuf[FRAME_ROOMID] = MyDeviceId;
+          MsgBuf[FRAME_CMD] = CMD_START_OR_SHUTDOWN;
+          MsgBuf[FRAME_PARAH] = POWER;
+          EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
+               
+          // send the initial mod parameter
+          MsgBuf[FRAME_LEN] = 1;
+          MsgBuf[FRAME_ROOMID] = MyDeviceId;
+          MsgBuf[FRAME_CMD] = CMD_SET_MODE;
+          MsgBuf[FRAME_PARAH] = End_Mod;
+          EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
            // Start sending the periodic message in a regular interval.
            osal_start_timerEx( EnddeviceApp_TaskID,
                               EnddeviceApp_SEND_PERIODIC_MSG_EVT,
@@ -249,28 +248,28 @@ uint16 EnddeviceApp_ProcessEvent( uint8 task_id, uint16 events )
     if(send_tick == 0)
     {
         //get the rssi
-        MsgBuf[0] = 0x00;
-        MsgBuf[1] = MyDeviceId;
-        MsgBuf[2] = CMD_GET_RSSI;
+        MsgBuf[FRAME_LEN] = 0x00;
+        MsgBuf[FRAME_ROOMID] = MyDeviceId;
+        MsgBuf[FRAME_CMD] = CMD_GET_RSSI;
         EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,3,MsgBuf);   
     }
         
     if(send_tick == 2)
     { 
        // send the room real temperature   
-      MsgBuf[0] = 2;
-      MsgBuf[1] = MyDeviceId;
-      MsgBuf[2] = CMD_ROOM_REAL_TEMPER;
-      MsgBuf[3] = (RM_Temperature >> 8) & 0x00ff; 
-      MsgBuf[4] = (RM_Temperature) & 0x00ff;
+      MsgBuf[FRAME_LEN] = 2;
+      MsgBuf[FRAME_ROOMID] = MyDeviceId;
+      MsgBuf[FRAME_CMD] = CMD_ROOM_REAL_TEMPER;
+      MsgBuf[FRAME_PARAH] = (RM_Temperature >> 8) & 0x00ff; 
+      MsgBuf[FRAME_PARAL] = (RM_Temperature) & 0x00ff;
       EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,5,MsgBuf);     
     
       // send the floor real temperature
-      MsgBuf[0] = 2;
-      MsgBuf[1] = MyDeviceId;
-      MsgBuf[2] = CMD_FLOOR_REAL_TEMPER;
-      MsgBuf[3] = (FL_Temperature >> 8) & 0x00ff; 
-      MsgBuf[4] = (FL_Temperature) & 0x00ff;
+      MsgBuf[FRAME_LEN] = 2;
+      MsgBuf[FRAME_ROOMID] = MyDeviceId;
+      MsgBuf[FRAME_CMD] = CMD_FLOOR_REAL_TEMPER;
+      MsgBuf[FRAME_PARAH] = (FL_Temperature >> 8) & 0x00ff; 
+      MsgBuf[FRAME_PARAL] = (FL_Temperature) & 0x00ff;
       EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,5,MsgBuf); 
     }
     
@@ -278,9 +277,9 @@ uint16 EnddeviceApp_ProcessEvent( uint8 task_id, uint16 events )
     if(send_tick == 3)
     {
       //get the rssi
-        MsgBuf[0] = 0x00;
-        MsgBuf[1] = MyDeviceId;
-        MsgBuf[2] = CMD_GET_RSSI;
+        MsgBuf[FRAME_LEN] = 0x00;
+        MsgBuf[FRAME_ROOMID] = MyDeviceId;
+        MsgBuf[FRAME_CMD] = CMD_GET_RSSI;
         EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,3,MsgBuf);
     }
     
@@ -294,10 +293,10 @@ uint16 EnddeviceApp_ProcessEvent( uint8 task_id, uint16 events )
                                      RM_Temperature,FL_Temperature);
       }
       // send relay state
-      MsgBuf[0] = 1;
-      MsgBuf[1] = MyDeviceId;
-      MsgBuf[2] = CMD_RELAY_STATE;
-      MsgBuf[3] = REL_CTL;
+      MsgBuf[FRAME_LEN] = 1;
+      MsgBuf[FRAME_ROOMID] = MyDeviceId;
+      MsgBuf[FRAME_CMD] = CMD_RELAY_STATE;
+      MsgBuf[FRAME_PARAH] = REL_CTL;
       EnddeviceApp_SendP2PMessage(ENDDEVICE_DATA_CLUSTERID,4,MsgBuf);
       send_tick = 0;
     }
@@ -347,9 +346,9 @@ uint16 EnddeviceApp_ProcessEvent( uint8 task_id, uint16 events )
   }
   
   //  reset the system
-  if ( events & EnddeviceApp_RESET_MSG_EVT)
+  if(events & EnddeviceApp_RESET_MSG_EVT)
   {
-    SystemReset();  
+     SystemReset();  
   }
   return 0;
 }
